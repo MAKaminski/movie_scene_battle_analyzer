@@ -99,10 +99,10 @@ This repo includes GitHub Actions to handle the refresh process:
 
 - `.github/workflows/verify-site-snapshot.yml`
   - Runs on PRs to `main`
-  - Rebuilds snapshot artifacts and fails if committed JSON is stale
+  - Validates `data/moviescenebattles_dataset.json` and `data/site_stats.json` schema/consistency
 - `.github/workflows/refresh-site-snapshot.yml`
   - Runs daily (scheduled) and on manual dispatch
-  - Rebuilds artifacts and opens/updates an automated PR with refreshed data
+  - Rebuilds artifacts, verifies consistency, and opens/updates an automated PR with refreshed data
 
 ## Engaging Product Updates (Integrity-First Edition)
 

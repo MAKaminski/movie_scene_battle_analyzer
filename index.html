@@ -128,6 +128,18 @@
     </div>
 
     <script>
+      function safeUrl(rawUrl) {
+        try {
+          const parsed = new URL(rawUrl, window.location.origin);
+          if (parsed.protocol === "http:" || parsed.protocol === "https:") {
+            return parsed.href;
+          }
+        } catch (error) {
+          return null;
+        }
+        return null;
+      }
+
       async function loadStats() {
         try {
           const response = await fetch("data/site_stats.json", { cache: "no-store" });
@@ -158,12 +170,18 @@
           (stats.most_commented_posts || []).slice(0, 5).forEach((post) => {
             const item = document.createElement("li");
             const link = document.createElement("a");
-            link.href = post.url;
+            const resolvedUrl = safeUrl(post.url);
+            if (!resolvedUrl) {
+              item.textContent = `${post.title} (${post.comment_count} comments)`;
+              highlights.appendChild(item);
+              return;
+            }
+            link.href = resolvedUrl;
             link.target = "_blank";
             link.rel = "noopener noreferrer";
             link.textContent = post.title;
             item.appendChild(link);
-            highlights.append(` (${post.comment_count} comments)`);
+            item.append(` (${post.comment_count} comments)`);
             highlights.appendChild(item);
           });
         } catch (error) {
