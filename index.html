@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Movie Scene Battles - Live Stats</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #111827;
+        --panel: #1f2937;
+        --accent: #f59e0b;
+        --muted: #9ca3af;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(180deg, #0f172a 0%, #111827 100%);
+        color: #f9fafb;
+      }
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 24px 16px 40px;
+      }
+      .hero {
+        background: var(--panel);
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 16px;
+      }
+      h1 { margin: 0 0 8px; font-size: 28px; }
+      p { margin: 4px 0; color: var(--muted); }
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+        gap: 12px;
+        margin: 16px 0 20px;
+      }
+      .card {
+        background: var(--panel);
+        border-radius: 12px;
+        padding: 14px;
+      }
+      .card h2 {
+        margin: 0 0 8px;
+        font-size: 13px;
+        letter-spacing: 0.2px;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+      .value {
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--accent);
+      }
+      .panels {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+      .panel {
+        background: var(--panel);
+        border-radius: 12px;
+        padding: 16px;
+      }
+      .panel h3 {
+        margin-top: 0;
+        font-size: 16px;
+      }
+      ul {
+        margin: 0;
+        padding-left: 18px;
+      }
+      li { margin-bottom: 8px; }
+      a { color: #93c5fd; text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      .footnote { margin-top: 20px; font-size: 13px; }
+      .error { color: #fca5a5; }
+      @media (max-width: 820px) {
+        .panels { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="hero">
+        <h1>Movie Scene Battles - Live Website Stats</h1>
+        <p id="headline">Loading latest crawl snapshot...</p>
+        <p id="generated"></p>
+      </section>
+
+      <section class="cards">
+        <article class="card">
+          <h2>Total Posts Crawled</h2>
+          <div class="value" id="total-posts">-</div>
+        </article>
+        <article class="card">
+          <h2>Matchup-Style Titles</h2>
+          <div class="value" id="matchup-posts">-</div>
+        </article>
+        <article class="card">
+          <h2>Avg Comments / Post</h2>
+          <div class="value" id="avg-comments">-</div>
+        </article>
+        <article class="card">
+          <h2>Avg Words / Post</h2>
+          <div class="value" id="avg-words">-</div>
+        </article>
+      </section>
+
+      <section class="panels">
+        <article class="panel">
+          <h3>Top Categories</h3>
+          <ul id="top-categories"></ul>
+        </article>
+        <article class="panel">
+          <h3>Recent Battle Highlights</h3>
+          <ul id="highlights"></ul>
+        </article>
+      </section>
+
+      <p class="footnote">
+        Rankings remain integrity-first: this page reports crawl stats for transparency,
+        while canonical rankings should use versioned and auditable scoring logic.
+      </p>
+    </div>
+
+    <script>
+      async function loadStats() {
+        try {
+          const response = await fetch("data/site_stats.json", { cache: "no-store" });
+          if (!response.ok) throw new Error("Failed to fetch stats JSON.");
+          const payload = await response.json();
+          const stats = payload.stats;
+
+          document.getElementById("headline").textContent =
+            `${payload.site_title} snapshot across ${payload.generated_from_posts} posts`;
+          document.getElementById("generated").textContent =
+            `Crawl completed: ${stats.crawl_completed_at || "unknown"}`;
+
+          document.getElementById("total-posts").textContent = stats.total_posts;
+          document.getElementById("matchup-posts").textContent = stats.posts_with_explicit_matchup;
+          document.getElementById("avg-comments").textContent = stats.average_comments_per_post;
+          document.getElementById("avg-words").textContent = stats.average_words_per_post;
+
+          const topCategories = document.getElementById("top-categories");
+          topCategories.innerHTML = "";
+          (stats.top_categories || []).slice(0, 10).forEach((entry) => {
+            const item = document.createElement("li");
+            item.textContent = `${entry.name} (${entry.count})`;
+            topCategories.appendChild(item);
+          });
+
+          const highlights = document.getElementById("highlights");
+          highlights.innerHTML = "";
+          (stats.most_commented_posts || []).slice(0, 5).forEach((post) => {
+            const item = document.createElement("li");
+            const link = document.createElement("a");
+            link.href = post.url;
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+            link.textContent = post.title;
+            item.appendChild(link);
+            highlights.append(` (${post.comment_count} comments)`);
+            highlights.appendChild(item);
+          });
+        } catch (error) {
+          document.getElementById("headline").textContent =
+            "Could not load stats snapshot.";
+          document.getElementById("headline").classList.add("error");
+          document.getElementById("generated").textContent = String(error);
+          document.getElementById("generated").classList.add("error");
+        }
+      }
+
+      loadStats();
+    </script>
+  </body>
+</html>

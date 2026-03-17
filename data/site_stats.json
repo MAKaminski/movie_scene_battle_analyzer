@@ -1,0 +1,88 @@
+{
+  "site_title": "Movie Scene Battles",
+  "site_url": "https://moviescenebattles.blogspot.com",
+  "generated_from_posts": 218,
+  "stats": {
+    "total_posts": 218,
+    "total_comments": 0,
+    "average_comments_per_post": 0.0,
+    "average_words_per_post": 114.64,
+    "posts_with_explicit_matchup": 212,
+    "posts_by_year": {
+      "2000": 2,
+      "2025": 173,
+      "2026": 43
+    },
+    "top_categories": [
+      {
+        "name": "Alien 1979",
+        "count": 8
+      },
+      {
+        "name": "Psycho 1960",
+        "count": 8
+      },
+      {
+        "name": "Lord of the Rings: The Two Towers 2002",
+        "count": 8
+      },
+      {
+        "name": "Addams Family Values 1993",
+        "count": 8
+      },
+      {
+        "name": "Home Alone 2: Lost in New York 1992",
+        "count": 7
+      },
+      {
+        "name": "Scary Movie 3 2003",
+        "count": 7
+      },
+      {
+        "name": "They Live 1988",
+        "count": 7
+      },
+      {
+        "name": "Final Destination 2 2003",
+        "count": 7
+      },
+      {
+        "name": "Teenage Mutant Ninja Turtles 1990",
+        "count": 6
+      },
+      {
+        "name": "Independence Day 1996",
+        "count": 6
+      }
+    ],
+    "most_commented_posts": [
+      {
+        "title": "Gender Assuming vs Questions 3",
+        "url": "https://moviescenebattles.blogspot.com/2026/03/gender-assuming-vs-questions-3.html",
+        "comment_count": 0
+      },
+      {
+        "title": "Gender Assuming vs. Sweet Dreams",
+        "url": "https://moviescenebattles.blogspot.com/2026/03/gender-assuming-vs-sweet-dreams.html",
+        "comment_count": 0
+      },
+      {
+        "title": "Gender Assuming vs. Chili's Bad Evening",
+        "url": "https://moviescenebattles.blogspot.com/2026/03/gender-assuming-vs-chilis-bad-evening.html",
+        "comment_count": 0
+      },
+      {
+        "title": "Gender Assuming vs. This is My Song",
+        "url": "https://moviescenebattles.blogspot.com/2026/03/gender-assuming-vs-this-is-my-song.html",
+        "comment_count": 0
+      },
+      {
+        "title": "Wizard Confrontation vs. Gender Assuming",
+        "url": "https://moviescenebattles.blogspot.com/2026/03/wizard-confrontation-vs-gender-assuming.html",
+        "comment_count": 0
+      }
+    ],
+    "last_post_update": "2026-03-17 07:12:20.328000-07:00",
+    "crawl_completed_at": "2026-03-17 23:07:10.350588+00:00"
+  }
+}
