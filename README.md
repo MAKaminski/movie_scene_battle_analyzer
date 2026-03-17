@@ -103,7 +103,6 @@ This repo includes GitHub Actions to handle the refresh process:
 - `.github/workflows/refresh-site-snapshot.yml`
   - Runs daily (scheduled) and on manual dispatch
   - Rebuilds artifacts, verifies consistency, and opens/updates an automated PR with refreshed data
-
 ## Engaging Product Updates (Integrity-First Edition)
 
 These updates are designed to make the experience more fun while preserving the core mission: **let people rank movie scenes against one another fairly**.
