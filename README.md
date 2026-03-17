@@ -76,6 +76,33 @@ dataset = crawl_moviescenebattles(max_posts=300, include_content=False)
 save_dataset(dataset, "data/moviescenebattles_dataset.json")
 ```
 
+## Hosted stats page
+
+This repository now includes a deployable `index.html` page that reads live snapshot data from:
+
+- `data/site_stats.json`
+
+To refresh both the full dataset and website stats payload before deploy:
+
+```bash
+python3 scripts/build_site_snapshot.py
+```
+
+This writes:
+
+- `data/moviescenebattles_dataset.json`
+- `data/site_stats.json`
+
+## CI automation
+
+This repo includes GitHub Actions to handle the refresh process:
+
+- `.github/workflows/verify-site-snapshot.yml`
+  - Runs on PRs to `main`
+  - Validates `data/moviescenebattles_dataset.json` and `data/site_stats.json` schema/consistency
+- `.github/workflows/refresh-site-snapshot.yml`
+  - Runs daily (scheduled) and on manual dispatch
+  - Rebuilds artifacts, verifies consistency, and opens/updates an automated PR with refreshed data
 ## Engaging Product Updates (Integrity-First Edition)
 
 These updates are designed to make the experience more fun while preserving the core mission: **let people rank movie scenes against one another fairly**.
