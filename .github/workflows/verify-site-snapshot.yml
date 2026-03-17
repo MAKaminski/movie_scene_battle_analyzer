@@ -1,0 +1,30 @@
+name: Verify Site Snapshot
+
+on:
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  verify-snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Rebuild snapshot artifacts
+        run: python3 scripts/build_site_snapshot.py
+
+      - name: Ensure committed snapshot files are up to date
+        run: |
+          if ! git diff --quiet -- data/moviescenebattles_dataset.json data/site_stats.json; then
+            echo "Snapshot artifacts are stale. Run: python3 scripts/build_site_snapshot.py"
+            git diff -- data/moviescenebattles_dataset.json data/site_stats.json
+            exit 1
+          fi

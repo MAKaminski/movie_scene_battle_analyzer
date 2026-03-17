@@ -93,6 +93,17 @@ This writes:
 - `data/moviescenebattles_dataset.json`
 - `data/site_stats.json`
 
+## CI automation
+
+This repo includes GitHub Actions to handle the refresh process:
+
+- `.github/workflows/verify-site-snapshot.yml`
+  - Runs on PRs to `main`
+  - Rebuilds snapshot artifacts and fails if committed JSON is stale
+- `.github/workflows/refresh-site-snapshot.yml`
+  - Runs daily (scheduled) and on manual dispatch
+  - Rebuilds artifacts and opens/updates an automated PR with refreshed data
+
 ## Engaging Product Updates (Integrity-First Edition)
 
 These updates are designed to make the experience more fun while preserving the core mission: **let people rank movie scenes against one another fairly**.
