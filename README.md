@@ -20,6 +20,29 @@ movie_scene_battle_analyzer/
   models.py
 ```
 
+Additional operational components:
+
+```text
+scripts/
+  build_site_snapshot.py      # rebuilds dataset + site_stats payload
+  verify_site_snapshot.py     # schema + consistency checks between artifacts
+.github/workflows/
+  verify-site-snapshot.yml    # validates artifacts on PRs to main
+  refresh-site-snapshot.yml   # scheduled/manual artifact refresh + PR automation
+```
+
+## Architecture and data flow
+
+1. `crawl_moviescenebattles(...)` in `crawler.py` pages through the Blogspot feed (`start-index`, `max-results`) and normalizes each entry into `BattlePost`.
+2. `_build_stats(...)` derives site-level aggregates (`SiteStats`) from the normalized post list.
+3. `save_dataset(...)` writes a full `CrawlDataset` to `data/moviescenebattles_dataset.json`.
+4. `scripts/build_site_snapshot.py` rebuilds the dataset and writes `data/site_stats.json` with this shape:
+   - `site_title`
+   - `site_url`
+   - `generated_from_posts`
+   - `stats` (mirrors dataset `stats`)
+5. `scripts/verify_site_snapshot.py` validates required keys/types and enforces that `site_stats.json` is exactly derived from the dataset.
+
 ## Core data structures
 
 ### `BattlePost`
@@ -67,6 +90,13 @@ Optional:
 python3 -m movie_scene_battle_analyzer --include-content
 ```
 
+CLI defaults and constraints:
+
+- `--max-posts` default: `500`
+- `--output` default: `data/moviescenebattles_dataset.json`
+- `--include-content` default: disabled (stores `content_text=None` for posts)
+- `max_posts` must be greater than `0` (`ValueError` otherwise)
+
 ### Use in Python
 
 ```python
@@ -75,6 +105,20 @@ from movie_scene_battle_analyzer import crawl_moviescenebattles, save_dataset
 dataset = crawl_moviescenebattles(max_posts=300, include_content=False)
 save_dataset(dataset, "data/moviescenebattles_dataset.json")
 ```
+
+Public interface exported by `movie_scene_battle_analyzer`:
+
+- Data models: `BattlePost`, `CategoryCount`, `PostHighlight`, `SiteStats`, `CrawlDataset`
+- Functions:
+  - `crawl_moviescenebattles(max_posts=500, include_content=False, page_size=150, timeout=30)`
+  - `save_dataset(dataset, output_path)`
+
+Function constraints/pitfalls:
+
+- `max_posts <= 0` raises `ValueError`
+- `page_size <= 0` raises `ValueError`
+- Crawling is network-bound to `https://moviescenebattles.blogspot.com`; transient HTTP/network errors surface from `urllib`
+- `--include-content` increases output size because full post text is retained
 
 ## Hosted stats page
 
@@ -98,11 +142,54 @@ This writes:
 This repo includes GitHub Actions to handle the refresh process:
 
 - `.github/workflows/verify-site-snapshot.yml`
-  - Runs on PRs to `main`
-  - Validates `data/moviescenebattles_dataset.json` and `data/site_stats.json` schema/consistency
+  - Triggers: PRs to `main`, manual dispatch
+  - Runtime: Python `3.12`
+  - Runs `python3 scripts/verify_site_snapshot.py`
+  - Enforces required artifact shape and dataset/site_stats consistency
 - `.github/workflows/refresh-site-snapshot.yml`
-  - Runs daily (scheduled) and on manual dispatch
-  - Rebuilds artifacts, verifies consistency, and opens/updates an automated PR with refreshed data
+  - Triggers: schedule `20 6 * * *` (UTC), manual dispatch
+  - Runtime: Python `3.12`
+  - Runs:
+    1. `python3 scripts/build_site_snapshot.py`
+    2. `python3 scripts/verify_site_snapshot.py`
+    3. `peter-evans/create-pull-request@v7` to open/update branch `ci/refresh-site-snapshot`
+
+## Snapshot operations runbook
+
+### Refresh artifacts locally
+
+```bash
+python3 scripts/build_site_snapshot.py
+python3 scripts/verify_site_snapshot.py
+```
+
+Expected output:
+
+- `build_site_snapshot.py`: `Wrote data/moviescenebattles_dataset.json and data/site_stats.json`
+- `verify_site_snapshot.py`: `Snapshot validation passed.`
+
+### Troubleshoot validation failures
+
+If verification fails with:
+
+```text
+site_stats.json is out of sync with moviescenebattles_dataset.json.
+Run: python3 scripts/build_site_snapshot.py
+```
+
+Use this sequence:
+
+1. Rebuild artifacts: `python3 scripts/build_site_snapshot.py`
+2. Re-run verification: `python3 scripts/verify_site_snapshot.py`
+3. Commit both files together (`data/moviescenebattles_dataset.json` and `data/site_stats.json`) to keep CI green.
+
+### Common pitfalls
+
+- Regenerating only one artifact causes CI mismatch errors.
+- Non-positive `--max-posts` values fail fast in crawler input validation.
+- Large crawls with `--include-content` can significantly increase JSON size.
+- Network instability during crawling may require rerunning the snapshot build.
+
 ## Engaging Product Updates (Integrity-First Edition)
 
 These updates are designed to make the experience more fun while preserving the core mission: **let people rank movie scenes against one another fairly**.
