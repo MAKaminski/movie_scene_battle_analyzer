@@ -1,25 +1,33 @@
-# Product Updates - Engagement Refresh
+# Technical Updates
 
-## What we achieved
+## Snapshot automation and verification
 
-- **Launched a live crawler** for Movie Scene Battles so rankings can be powered by current, structured data.
-- **Added stat-rich datasets** (comments, category leaders, yearly activity, matchup signal) to improve ranking context.
-- **Made exports repeatable** so rankings can be regenerated and verified at any time.
+- Added `scripts/build_site_snapshot.py` to regenerate:
+  - `data/moviescenebattles_dataset.json`
+  - `data/site_stats.json`
+- Added `scripts/verify_site_snapshot.py` to enforce:
+  - required JSON keys
+  - strict consistency between dataset-derived stats and `site_stats.json`
 
-## New fun features in development
+## CI workflow coverage
 
-1. **Daily Head-to-Head Arena**
-   - One featured scene battle each day with community voting.
-2. **Category Clash Leaderboards**
-   - Rank scenes inside specific battle styles (e.g., rivalry, final showdown, courtroom scene).
-3. **Debate Boost**
-   - Highlight high-quality community arguments, not just vote totals.
-4. **Momentum Tracker**
-   - Show which battles are rising this week while preserving long-term ranking history.
+- Added `.github/workflows/verify-site-snapshot.yml`
+  - runs on PRs to `main` and manual dispatch
+  - executes snapshot validation script
+- Added `.github/workflows/refresh-site-snapshot.yml`
+  - scheduled daily (`20 6 * * *`) and manual dispatch
+  - rebuilds artifacts, verifies them, and opens/updates PR branch `ci/refresh-site-snapshot`
 
-## Integrity commitments
+## Stats page hardening
 
-- Canonical rankings remain formula-based and auditable.
-- Community interactions are tracked as separate signals until validated.
-- Ranking formula changes are versioned and documented.
-- Low-sample matchups display confidence indicators.
+- Updated `index.html` to validate outgoing post URLs before linking.
+- Invalid or non-HTTP(S) URLs now render as plain text instead of clickable links.
+- Snapshot fetch uses `cache: "no-store"` so the page favors current data.
+
+## Documentation improvements in this update
+
+- `README.md` now documents:
+  - CLI and Python public interfaces
+  - snapshot artifact contract
+  - local runbook for build/verify
+  - CI behavior and troubleshooting paths
