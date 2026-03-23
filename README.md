@@ -76,22 +76,37 @@ dataset = crawl_moviescenebattles(max_posts=300, include_content=False)
 save_dataset(dataset, "data/moviescenebattles_dataset.json")
 ```
 
+### Public interface notes and constraints
+
+- CLI entrypoint: `python3 -m movie_scene_battle_analyzer`
+  - `--max-posts` (default: `500`) must be greater than 0
+  - `--include-content` includes normalized body text in `BattlePost.content_text`
+  - `--output` defaults to `data/moviescenebattles_dataset.json`
+- Library API:
+  - `crawl_moviescenebattles(max_posts=500, include_content=False, page_size=150, timeout=30)`
+  - `save_dataset(dataset, output_path)`
+- The crawler fetches Blogspot feed pages via `start-index`/`max-results` pagination and stops when:
+  - `max_posts` is reached, or
+  - the feed returns no additional entries.
+
 ## Hosted stats page
 
-This repository now includes a deployable `index.html` page that reads live snapshot data from:
+The deployable `index.html` page reads `data/site_stats.json` and renders summary cards and highlight lists.
 
-- `data/site_stats.json`
+### Snapshot architecture and codepaths
 
-To refresh both the full dataset and website stats payload before deploy:
-
-```bash
-python3 scripts/build_site_snapshot.py
-```
-
-This writes:
-
-- `data/moviescenebattles_dataset.json`
-- `data/site_stats.json`
+- `scripts/build_site_snapshot.py`
+  - Crawls up to 1000 posts with `include_content=False`
+  - Writes:
+    - `data/moviescenebattles_dataset.json`
+    - `data/site_stats.json` (derived payload used by `index.html`)
+- `scripts/verify_site_snapshot.py`
+  - Asserts required keys exist in both artifacts
+  - Reconstructs expected `site_stats.json` from dataset fields and requires exact equality
+- `index.html`
+  - Fetches `data/site_stats.json` and expects:
+    - top-level keys: `site_title`, `site_url`, `generated_from_posts`, `stats`
+    - nested metrics used in UI cards and lists (`total_posts`, `posts_with_explicit_matchup`, `average_*`, `top_categories`, `most_commented_posts`)
 
 ## CI automation
 
@@ -103,6 +118,47 @@ This repo includes GitHub Actions to handle the refresh process:
 - `.github/workflows/refresh-site-snapshot.yml`
   - Runs daily (scheduled) and on manual dispatch
   - Rebuilds artifacts, verifies consistency, and opens/updates an automated PR with refreshed data
+
+## Snapshot operations runbook
+
+Use this sequence for local snapshot updates:
+
+```bash
+python3 scripts/build_site_snapshot.py
+python3 scripts/verify_site_snapshot.py
+```
+
+What each command guarantees:
+
+1. `build_site_snapshot.py`
+   - Regenerates both snapshot artifacts from the live blog feed.
+2. `verify_site_snapshot.py`
+   - Fails if either file is missing, malformed, or out of sync.
+   - Enforces that `site_stats.json` exactly matches a payload derived from the dataset.
+
+When changing snapshot-related code, keep these codepaths aligned:
+
+- crawler/data model changes: `movie_scene_battle_analyzer/crawler.py`, `movie_scene_battle_analyzer/models.py`
+- snapshot assembly: `scripts/build_site_snapshot.py`
+- validation contract: `scripts/verify_site_snapshot.py`
+- UI consumption: `index.html`
+- CI orchestration: `.github/workflows/verify-site-snapshot.yml`, `.github/workflows/refresh-site-snapshot.yml`
+
+## Troubleshooting
+
+- **`site_stats.json is out of sync with moviescenebattles_dataset.json`**
+  - Cause: the verifier compares exact payload equality.
+  - Fix: run `python3 scripts/build_site_snapshot.py` and commit both files together.
+- **`Missing required file: data/...`**
+  - Cause: snapshot artifacts were not generated or not checked in.
+  - Fix: regenerate with `build_site_snapshot.py`, then rerun `verify_site_snapshot.py`.
+- **`max_posts must be greater than 0`**
+  - Cause: invalid `--max-posts` input or API call argument.
+  - Fix: use a positive integer for `max_posts`.
+- **Stats page shows "Could not load stats snapshot."**
+  - Cause: `data/site_stats.json` is missing or invalid JSON for the current deployment.
+  - Fix: regenerate artifacts and verify locally before publishing.
+
 ## Engaging Product Updates (Integrity-First Edition)
 
 These updates are designed to make the experience more fun while preserving the core mission: **let people rank movie scenes against one another fairly**.
