@@ -89,6 +89,17 @@ def _to_post(entry: dict[str, Any], include_content: bool) -> BattlePost:
     )
 
 
+def _parse_total_results(feed: dict[str, Any]) -> int | None:
+    raw_total = feed.get("openSearch$totalResults", {}).get("$t")
+    if raw_total is None:
+        return None
+    try:
+        total = int(raw_total)
+    except (TypeError, ValueError):
+        return None
+    return total if total >= 0 else None
+
+
 def _build_stats(posts: list[BattlePost]) -> SiteStats:
     total_posts = len(posts)
     total_comments = sum(post.comment_count for post in posts)
@@ -152,15 +163,25 @@ def crawl_moviescenebattles(
     all_posts: list[BattlePost] = []
     start_index = 1
     site_title = "Movie Scene Battles"
+    expected_posts: int | None = None
 
     while len(all_posts) < max_posts:
         request_size = min(page_size, max_posts - len(all_posts))
         data = _fetch_feed_page(start_index=start_index, max_results=request_size, timeout=timeout)
         feed = data.get("feed", {})
         site_title = str(feed.get("title", {}).get("$t", site_title))
+        if expected_posts is None:
+            total_results = _parse_total_results(feed)
+            if total_results is not None:
+                expected_posts = min(total_results, max_posts)
         entries = feed.get("entry", [])
 
         if not entries:
+            if expected_posts is not None and len(all_posts) < expected_posts:
+                raise RuntimeError(
+                    f"Crawl terminated early: fetched {len(all_posts)} posts "
+                    f"but feed reports at least {expected_posts} available."
+                )
             break
 
         parsed_posts = [_to_post(entry, include_content=include_content) for entry in entries]
@@ -171,6 +192,11 @@ def crawl_moviescenebattles(
         start_index += len(entries)
 
     posts = all_posts[:max_posts]
+    if not posts:
+        raise RuntimeError(
+            "Crawl returned zero posts. The feed may be temporarily unavailable; "
+            "retry later instead of publishing an empty snapshot."
+        )
     stats = _build_stats(posts)
     return CrawlDataset(site_title=site_title, site_url=SITE_URL, posts=posts, stats=stats)
 
