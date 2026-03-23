@@ -1,17 +1,17 @@
 {
   "site_title": "Movie Scene Battles",
   "site_url": "https://moviescenebattles.blogspot.com",
-  "generated_from_posts": 218,
+  "generated_from_posts": 222,
   "stats": {
-    "total_posts": 218,
+    "total_posts": 222,
     "total_comments": 0,
     "average_comments_per_post": 0.0,
-    "average_words_per_post": 114.64,
-    "posts_with_explicit_matchup": 212,
+    "average_words_per_post": 114.26,
+    "posts_with_explicit_matchup": 216,
     "posts_by_year": {
       "2000": 2,
       "2025": 173,
-      "2026": 43
+      "2026": 47
     },
     "top_categories": [
       {
@@ -57,32 +57,32 @@
     ],
     "most_commented_posts": [
       {
+        "title": "Questions 3 vs. The Sunken Place",
+        "url": "https://moviescenebattles.blogspot.com/2026/03/questions-3-vs-sunken-place.html",
+        "comment_count": 0
+      },
+      {
+        "title": "Questions 3 vs. Let's Do the Math",
+        "url": "https://moviescenebattles.blogspot.com/2026/03/questions-3-vs-lets-do-math.html",
+        "comment_count": 0
+      },
+      {
+        "title": "Questions 3 vs Magic Dance",
+        "url": "https://moviescenebattles.blogspot.com/2026/03/questions-3-vs-magic-dance.html",
+        "comment_count": 0
+      },
+      {
+        "title": "Questions 3 vs. Badge Battle",
+        "url": "https://moviescenebattles.blogspot.com/2026/03/questions-3-vs-badge-battle.html",
+        "comment_count": 0
+      },
+      {
         "title": "Gender Assuming vs Questions 3",
         "url": "https://moviescenebattles.blogspot.com/2026/03/gender-assuming-vs-questions-3.html",
         "comment_count": 0
-      },
-      {
-        "title": "Gender Assuming vs. Sweet Dreams",
-        "url": "https://moviescenebattles.blogspot.com/2026/03/gender-assuming-vs-sweet-dreams.html",
-        "comment_count": 0
-      },
-      {
-        "title": "Gender Assuming vs. Chili's Bad Evening",
-        "url": "https://moviescenebattles.blogspot.com/2026/03/gender-assuming-vs-chilis-bad-evening.html",
-        "comment_count": 0
-      },
-      {
-        "title": "Gender Assuming vs. This is My Song",
-        "url": "https://moviescenebattles.blogspot.com/2026/03/gender-assuming-vs-this-is-my-song.html",
-        "comment_count": 0
-      },
-      {
-        "title": "Wizard Confrontation vs. Gender Assuming",
-        "url": "https://moviescenebattles.blogspot.com/2026/03/wizard-confrontation-vs-gender-assuming.html",
-        "comment_count": 0
       }
     ],
-    "last_post_update": "2026-03-17 07:12:20.328000-07:00",
-    "crawl_completed_at": "2026-03-17 23:46:51.527316+00:00"
+    "last_post_update": "2026-03-22 20:48:33.137000-07:00",
+    "crawl_completed_at": "2026-03-23 06:46:27.878213+00:00"
   }
 }

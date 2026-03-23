@@ -3,17 +3,73 @@
   "site_url": "https://moviescenebattles.blogspot.com",
   "posts": [
     {
+      "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-7717371558835584359",
+      "title": "Questions 3 vs. The Sunken Place",
+      "url": "https://moviescenebattles.blogspot.com/2026/03/questions-3-vs-sunken-place.html",
+      "published_at": "2026-03-22 20:48:00-07:00",
+      "updated_at": "2026-03-22 20:48:33.137000-07:00",
+      "comment_count": 0,
+      "categories": [
+        "Get Out 2017",
+        "Monty Python and the Holy Grail 1975"
+      ],
+      "word_count": 92,
+      "content_text": null
+    },
+    {
+      "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4742268783325652137",
+      "title": "Questions 3 vs. Let's Do the Math",
+      "url": "https://moviescenebattles.blogspot.com/2026/03/questions-3-vs-lets-do-math.html",
+      "published_at": "2026-03-19 21:07:00-07:00",
+      "updated_at": "2026-03-22 20:46:17.103000-07:00",
+      "comment_count": 0,
+      "categories": [
+        "Monty Python and the Holy Grail 1975",
+        "The Martian 2015"
+      ],
+      "word_count": 103,
+      "content_text": null
+    },
+    {
+      "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-7602302432158680996",
+      "title": "Questions 3 vs Magic Dance",
+      "url": "https://moviescenebattles.blogspot.com/2026/03/questions-3-vs-magic-dance.html",
+      "published_at": "2026-03-18 21:27:00-07:00",
+      "updated_at": "2026-03-19 21:02:57.961000-07:00",
+      "comment_count": 0,
+      "categories": [
+        "Labyrinth 1986",
+        "Monty Python and the Holy Grail 1975"
+      ],
+      "word_count": 81,
+      "content_text": null
+    },
+    {
+      "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-1790166348204736122",
+      "title": "Questions 3 vs. Badge Battle",
+      "url": "https://moviescenebattles.blogspot.com/2026/03/questions-3-vs-badge-battle.html",
+      "published_at": "2026-03-17 20:59:00-07:00",
+      "updated_at": "2026-03-18 21:22:34.245000-07:00",
+      "comment_count": 0,
+      "categories": [
+        "Monty Python and the Holy Grail 1975",
+        "Muppets Most Wanted 2014"
+      ],
+      "word_count": 92,
+      "content_text": null
+    },
+    {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-392215734712175596",
       "title": "Gender Assuming vs Questions 3",
       "url": "https://moviescenebattles.blogspot.com/2026/03/gender-assuming-vs-questions-3.html",
       "published_at": "2026-03-17 07:12:00-07:00",
-      "updated_at": "2026-03-17 07:12:20.328000-07:00",
+      "updated_at": "2026-03-17 20:57:26.462000-07:00",
       "comment_count": 0,
       "categories": [
         "Lord of the Rings: The Return of the King 2003",
         "Monty Python and the Holy Grail 1975"
       ],
-      "word_count": 90,
+      "word_count": 95,
       "content_text": null
     },
     {
@@ -3048,15 +3104,15 @@
     }
   ],
   "stats": {
-    "total_posts": 218,
+    "total_posts": 222,
     "total_comments": 0,
     "average_comments_per_post": 0.0,
-    "average_words_per_post": 114.64,
-    "posts_with_explicit_matchup": 212,
+    "average_words_per_post": 114.26,
+    "posts_with_explicit_matchup": 216,
     "posts_by_year": {
       "2000": 2,
       "2025": 173,
-      "2026": 43
+      "2026": 47
     },
     "top_categories": [
       {
@@ -3102,32 +3158,32 @@
     ],
     "most_commented_posts": [
       {
+        "title": "Questions 3 vs. The Sunken Place",
+        "url": "https://moviescenebattles.blogspot.com/2026/03/questions-3-vs-sunken-place.html",
+        "comment_count": 0
+      },
+      {
+        "title": "Questions 3 vs. Let's Do the Math",
+        "url": "https://moviescenebattles.blogspot.com/2026/03/questions-3-vs-lets-do-math.html",
+        "comment_count": 0
+      },
+      {
+        "title": "Questions 3 vs Magic Dance",
+        "url": "https://moviescenebattles.blogspot.com/2026/03/questions-3-vs-magic-dance.html",
+        "comment_count": 0
+      },
+      {
+        "title": "Questions 3 vs. Badge Battle",
+        "url": "https://moviescenebattles.blogspot.com/2026/03/questions-3-vs-badge-battle.html",
+        "comment_count": 0
+      },
+      {
         "title": "Gender Assuming vs Questions 3",
         "url": "https://moviescenebattles.blogspot.com/2026/03/gender-assuming-vs-questions-3.html",
         "comment_count": 0
-      },
-      {
-        "title": "Gender Assuming vs. Sweet Dreams",
-        "url": "https://moviescenebattles.blogspot.com/2026/03/gender-assuming-vs-sweet-dreams.html",
-        "comment_count": 0
-      },
-      {
-        "title": "Gender Assuming vs. Chili's Bad Evening",
-        "url": "https://moviescenebattles.blogspot.com/2026/03/gender-assuming-vs-chilis-bad-evening.html",
-        "comment_count": 0
-      },
-      {
-        "title": "Gender Assuming vs. This is My Song",
-        "url": "https://moviescenebattles.blogspot.com/2026/03/gender-assuming-vs-this-is-my-song.html",
-        "comment_count": 0
-      },
-      {
-        "title": "Wizard Confrontation vs. Gender Assuming",
-        "url": "https://moviescenebattles.blogspot.com/2026/03/wizard-confrontation-vs-gender-assuming.html",
-        "comment_count": 0
       }
     ],
-    "last_post_update": "2026-03-17 07:12:20.328000-07:00",
-    "crawl_completed_at": "2026-03-17 23:46:51.527316+00:00"
+    "last_post_update": "2026-03-22 20:48:33.137000-07:00",
+    "crawl_completed_at": "2026-03-23 06:46:27.878213+00:00"
   }
 }
