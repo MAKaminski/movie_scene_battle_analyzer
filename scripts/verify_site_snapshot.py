@@ -31,10 +31,7 @@ def _assert_required_stats_shape(site_stats: dict) -> None:
         raise ValueError("Site stats field `stats` must be an object")
 
 
-def main() -> None:
-    dataset_path = Path("data/moviescenebattles_dataset.json")
-    site_stats_path = Path("data/site_stats.json")
-
+def validate_snapshot_files(dataset_path: Path, site_stats_path: Path) -> None:
     dataset = _load_json(dataset_path)
     site_stats = _load_json(site_stats_path)
     _assert_required_dataset_shape(dataset)
@@ -52,6 +49,13 @@ def main() -> None:
             "site_stats.json is out of sync with moviescenebattles_dataset.json. "
             "Run: python3 scripts/build_site_snapshot.py"
         )
+
+
+def main() -> None:
+    dataset_path = Path("data/moviescenebattles_dataset.json")
+    site_stats_path = Path("data/site_stats.json")
+
+    validate_snapshot_files(dataset_path, site_stats_path)
 
     print("Snapshot validation passed.")
 
