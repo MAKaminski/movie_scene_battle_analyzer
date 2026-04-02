@@ -1,143 +1,154 @@
 # Movie Scene Battle Analyzer
 
-`movie_scene_battle_analyzer` crawls [Movie Scene Battles](https://moviescenebattles.blogspot.com), normalizes post data, and computes ranking-friendly site stats so movie matchups can be explored and compared with confidence.
+`movie_scene_battle_analyzer` crawls
+[Movie Scene Battles](https://moviescenebattles.blogspot.com), normalizes posts,
+and produces snapshot artifacts used by the hosted stats page and CI checks.
 
-## What this tool does
+## Intent and architecture
 
-- Crawls Blogspot feed pages from `https://moviescenebattles.blogspot.com`
-- Normalizes each post into a structured `BattlePost` record
-- Builds aggregate `SiteStats` (comments, category leaders, yearly posting trends, etc.)
-- Exports all data to JSON for downstream ranking, analytics, or product features
+The project has one core workflow:
 
-## Project structure
+1. Crawl Blogspot feed entries.
+2. Normalize each entry into typed records.
+3. Compute aggregate site stats.
+4. Write JSON artifacts consumed by `index.html` and CI verification.
+
+### Codepath map
 
 ```text
-movie_scene_battle_analyzer/
-  __init__.py
-  __main__.py
-  cli.py
-  crawler.py
-  models.py
+movie_scene_battle_analyzer/crawler.py    # feed fetch, normalization, stats computation
+movie_scene_battle_analyzer/models.py     # BattlePost/SiteStats/CrawlDataset dataclasses
+movie_scene_battle_analyzer/cli.py        # CLI args and crawl entrypoint
+scripts/build_site_snapshot.py            # builds dataset + site_stats artifacts
+scripts/verify_site_snapshot.py           # validates required keys + artifact consistency
+index.html                                # reads data/site_stats.json for live stats page
 ```
 
-## Core data structures
+## Public interfaces
 
-### `BattlePost`
-Stores one crawlable matchup post:
-- `post_id`
-- `title`
-- `url`
-- `published_at`
-- `updated_at`
-- `comment_count`
-- `categories`
-- `word_count`
-- `content_text` (optional)
-
-### `SiteStats`
-Stores aggregate website metrics:
-- `total_posts`
-- `total_comments`
-- `average_comments_per_post`
-- `average_words_per_post`
-- `posts_with_explicit_matchup`
-- `posts_by_year`
-- `top_categories`
-- `most_commented_posts`
-- `last_post_update`
-- `crawl_completed_at`
-
-### `CrawlDataset`
-Stores:
-- site metadata (`site_title`, `site_url`)
-- all normalized posts
-- computed aggregate stats
-
-## Usage
-
-### Run from CLI
+### CLI interface
 
 ```bash
 python3 -m movie_scene_battle_analyzer --max-posts 500 --output data/moviescenebattles_dataset.json
 ```
 
-Optional:
+Supported flags (from `movie_scene_battle_analyzer/cli.py`):
 
-```bash
-python3 -m movie_scene_battle_analyzer --include-content
-```
+- `--max-posts` (default `500`, must be `> 0`)
+- `--include-content` (stores extracted post body text in `content_text`)
+- `--output` (default `data/moviescenebattles_dataset.json`)
 
-### Use in Python
+### Python API
 
 ```python
 from movie_scene_battle_analyzer import crawl_moviescenebattles, save_dataset
 
-dataset = crawl_moviescenebattles(max_posts=300, include_content=False)
+dataset = crawl_moviescenebattles(
+    max_posts=300,        # must be > 0
+    include_content=False,
+    page_size=150,        # must be > 0
+    timeout=30,           # urllib timeout in seconds
+)
 save_dataset(dataset, "data/moviescenebattles_dataset.json")
 ```
 
-## Hosted stats page
+Exported API surface (`movie_scene_battle_analyzer/__init__.py`):
 
-This repository now includes a deployable `index.html` page that reads live snapshot data from:
+- `crawl_moviescenebattles(...) -> CrawlDataset`
+- `save_dataset(dataset, output_path) -> None`
+- dataclasses: `BattlePost`, `CategoryCount`, `PostHighlight`, `SiteStats`, `CrawlDataset`
 
-- `data/site_stats.json`
+## Data artifacts and constraints
 
-To refresh both the full dataset and website stats payload before deploy:
+### `data/moviescenebattles_dataset.json`
+
+Contains:
+
+- `site_title`
+- `site_url`
+- `posts` (`BattlePost[]`)
+- `stats` (`SiteStats`)
+
+### `data/site_stats.json`
+
+Contains:
+
+- `site_title`
+- `site_url`
+- `generated_from_posts`
+- `stats`
+
+`scripts/verify_site_snapshot.py` enforces that `data/site_stats.json` must match
+the expected payload derived from `data/moviescenebattles_dataset.json`.
+
+### Stats behavior (important for consumers)
+
+- `posts_with_explicit_matchup` is title-based and uses regex:
+  `\b(vs\.?|versus|v)\b` (case-insensitive).
+- `top_categories` is capped to 10 entries.
+- `most_commented_posts` is capped to 5 entries.
+- Datetime fields are serialized as strings in JSON output.
+
+## Runbook: refresh and verify snapshots
+
+### Local refresh
 
 ```bash
 python3 scripts/build_site_snapshot.py
 ```
 
-This writes:
+Writes:
 
 - `data/moviescenebattles_dataset.json`
 - `data/site_stats.json`
 
-## CI automation
+### Local verification
 
-This repo includes GitHub Actions to handle the refresh process:
+```bash
+python3 scripts/verify_site_snapshot.py
+```
+
+The check fails if either artifact is missing, has wrong top-level keys, or if
+`site_stats.json` is out of sync with `moviescenebattles_dataset.json`.
+
+### Hosted page
+
+`index.html` fetches `data/site_stats.json` with `cache: "no-store"` and renders:
+
+- total posts
+- matchup-style post count
+- average comments/words per post
+- top categories
+- most-commented post links
+
+## CI workflows
 
 - `.github/workflows/verify-site-snapshot.yml`
-  - Runs on PRs to `main`
-  - Validates `data/moviescenebattles_dataset.json` and `data/site_stats.json` schema/consistency
+  - triggers: PRs targeting `main`, manual dispatch
+  - action: runs `python3 scripts/verify_site_snapshot.py`
 - `.github/workflows/refresh-site-snapshot.yml`
-  - Runs daily (scheduled) and on manual dispatch
-  - Rebuilds artifacts, verifies consistency, and opens/updates an automated PR with refreshed data
-## Engaging Product Updates (Integrity-First Edition)
+  - triggers: daily cron (`20 6 * * *`), manual dispatch
+  - action: rebuilds artifacts, verifies, and opens/updates refresh PRs
 
-These updates are designed to make the experience more fun while preserving the core mission: **let people rank movie scenes against one another fairly**.
+## Troubleshooting and common pitfalls
 
-### Achievements to highlight
+- **`ValueError: max_posts must be greater than 0`**
+  - Cause: invalid `--max-posts` or API argument.
+  - Fix: pass a positive integer.
+- **`ValueError: page_size must be greater than 0`**
+  - Cause: invalid API usage of `crawl_moviescenebattles(page_size=...)`.
+  - Fix: keep `page_size >= 1`.
+- **`site_stats.json is out of sync` during verify**
+  - Cause: dataset changed without regenerating site stats.
+  - Fix: run `python3 scripts/build_site_snapshot.py` and commit both files.
+- **Network timeout or transient fetch failures**
+  - Cause: Blogspot feed unavailable/slow.
+  - Fix: retry; increase `timeout` when using the Python API.
+- **Unexpectedly large dataset files**
+  - Cause: `--include-content` stores full extracted post text per post.
+  - Fix: omit `--include-content` unless downstream consumers require body text.
 
-1. **Reliable crawl + structured dataset**
-   - We now convert raw Blogspot entries into a clean, reusable battle dataset.
-2. **Transparent ranking context**
-   - Category, comments, and publication trends are captured so users can understand *why* scenes perform well.
-3. **Repeatable exports**
-   - Snapshots can be generated again at any time, keeping rankings fresh and auditable.
+## Related docs
 
-### Fun user-facing features (without compromising ranking integrity)
-
-1. **Daily Head-to-Head**
-   - Users vote on one curated scene battle per day.
-   - Votes count separately from canonical rank until moderation checks pass.
-2. **Streaks for thoughtful voting**
-   - Reward consistency (e.g., 7-day vote streak) rather than vote volume spam.
-3. **Category Clash mode**
-   - Filter battles by themes (hero showdown, final act, best monologue) and compare category leaders.
-4. **Comment Power Meter**
-   - Show which battles generated the strongest discussion while keeping rank calculations transparent.
-5. **Debate Cards**
-   - One-click shareable cards with matchup title, current rank delta, and comment highlights.
-
-## Ranking integrity principles
-
-- Keep source crawl data immutable once snapshotted
-- Store vote events separately from base crawl stats
-- Version ranking formula changes so historical comparisons stay valid
-- Surface confidence indicators when sample sizes are small
-
-## Notes
-
-- Crawler uses Blogspot feed pagination (`start-index`, `max-results`)
-- No third-party dependencies are required
+- Product-oriented update notes: `UPDATES.md`
+- Agent behavior and integrity principles: `agents.md`
