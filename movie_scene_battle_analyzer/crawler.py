@@ -70,6 +70,17 @@ def _extract_permalink(entry: dict[str, Any]) -> str:
     return ""
 
 
+def _extract_total_results(feed: dict[str, Any]) -> int | None:
+    raw_total = feed.get("openSearch$totalResults", {}).get("$t")
+    if raw_total is None:
+        return None
+    try:
+        total = int(str(raw_total))
+    except (TypeError, ValueError):
+        return None
+    return max(total, 0)
+
+
 def _to_post(entry: dict[str, Any], include_content: bool) -> BattlePost:
     content_html = entry.get("content", {}).get("$t", "")
     content_text = _extract_text(content_html) if content_html else ""
@@ -153,20 +164,42 @@ def crawl_moviescenebattles(
     start_index = 1
     site_title = "Movie Scene Battles"
 
+    expected_total_results: int | None = None
     while len(all_posts) < max_posts:
         request_size = min(page_size, max_posts - len(all_posts))
         data = _fetch_feed_page(start_index=start_index, max_results=request_size, timeout=timeout)
         feed = data.get("feed", {})
         site_title = str(feed.get("title", {}).get("$t", site_title))
+        if expected_total_results is None:
+            expected_total_results = _extract_total_results(feed)
+        target_total = (
+            min(max_posts, expected_total_results)
+            if expected_total_results is not None
+            else None
+        )
         entries = feed.get("entry", [])
 
         if not entries:
+            if not all_posts:
+                raise RuntimeError(
+                    "Feed returned no entries on first page; aborting crawl to prevent empty output."
+                )
+            if target_total is not None and len(all_posts) < target_total:
+                raise RuntimeError(
+                    "Feed pagination ended unexpectedly before target post count was reached "
+                    f"(fetched {len(all_posts)}, expected {target_total})."
+                )
             break
 
         parsed_posts = [_to_post(entry, include_content=include_content) for entry in entries]
         all_posts.extend(parsed_posts)
 
         if len(entries) < request_size:
+            if target_total is not None and len(all_posts) < target_total:
+                raise RuntimeError(
+                    "Feed returned a short page before target post count was reached "
+                    f"(fetched {len(all_posts)}, expected {target_total})."
+                )
             break
         start_index += len(entries)
 
