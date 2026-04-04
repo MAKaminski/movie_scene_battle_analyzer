@@ -15,6 +15,10 @@ def main() -> None:
     stats_path = Path("data/site_stats.json")
 
     dataset = crawl_moviescenebattles(max_posts=1000, include_content=False)
+    if not dataset.posts:
+        raise RuntimeError(
+            "Crawler returned zero posts; refusing to overwrite snapshot artifacts with empty data."
+        )
     save_dataset(dataset, dataset_path)
 
     stats_payload = {
