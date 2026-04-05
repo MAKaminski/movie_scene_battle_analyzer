@@ -1,143 +1,166 @@
 # Movie Scene Battle Analyzer
 
-`movie_scene_battle_analyzer` crawls [Movie Scene Battles](https://moviescenebattles.blogspot.com), normalizes post data, and computes ranking-friendly site stats so movie matchups can be explored and compared with confidence.
+`movie_scene_battle_analyzer` crawls [Movie Scene Battles](https://moviescenebattles.blogspot.com), normalizes posts, and generates snapshot artifacts used by analytics and the hosted stats page.
 
-## What this tool does
+## Quick start
 
-- Crawls Blogspot feed pages from `https://moviescenebattles.blogspot.com`
-- Normalizes each post into a structured `BattlePost` record
-- Builds aggregate `SiteStats` (comments, category leaders, yearly posting trends, etc.)
-- Exports all data to JSON for downstream ranking, analytics, or product features
+### Prerequisites
 
-## Project structure
+- Python 3.12+ (used in CI workflows)
+- No third-party Python dependencies
 
-```text
-movie_scene_battle_analyzer/
-  __init__.py
-  __main__.py
-  cli.py
-  crawler.py
-  models.py
-```
-
-## Core data structures
-
-### `BattlePost`
-Stores one crawlable matchup post:
-- `post_id`
-- `title`
-- `url`
-- `published_at`
-- `updated_at`
-- `comment_count`
-- `categories`
-- `word_count`
-- `content_text` (optional)
-
-### `SiteStats`
-Stores aggregate website metrics:
-- `total_posts`
-- `total_comments`
-- `average_comments_per_post`
-- `average_words_per_post`
-- `posts_with_explicit_matchup`
-- `posts_by_year`
-- `top_categories`
-- `most_commented_posts`
-- `last_post_update`
-- `crawl_completed_at`
-
-### `CrawlDataset`
-Stores:
-- site metadata (`site_title`, `site_url`)
-- all normalized posts
-- computed aggregate stats
-
-## Usage
-
-### Run from CLI
-
-```bash
-python3 -m movie_scene_battle_analyzer --max-posts 500 --output data/moviescenebattles_dataset.json
-```
-
-Optional:
-
-```bash
-python3 -m movie_scene_battle_analyzer --include-content
-```
-
-### Use in Python
-
-```python
-from movie_scene_battle_analyzer import crawl_moviescenebattles, save_dataset
-
-dataset = crawl_moviescenebattles(max_posts=300, include_content=False)
-save_dataset(dataset, "data/moviescenebattles_dataset.json")
-```
-
-## Hosted stats page
-
-This repository now includes a deployable `index.html` page that reads live snapshot data from:
-
-- `data/site_stats.json`
-
-To refresh both the full dataset and website stats payload before deploy:
+### Build and verify snapshot artifacts
 
 ```bash
 python3 scripts/build_site_snapshot.py
+python3 scripts/verify_site_snapshot.py
 ```
 
-This writes:
+This refreshes and validates:
 
 - `data/moviescenebattles_dataset.json`
 - `data/site_stats.json`
 
-## CI automation
+## Architecture overview
 
-This repo includes GitHub Actions to handle the refresh process:
+### Core codepaths
+
+- `movie_scene_battle_analyzer/crawler.py`
+  - Fetches Blogspot feed pages (`start-index`, `max-results`)
+  - Converts feed entries into `BattlePost`
+  - Builds aggregate `SiteStats`
+- `movie_scene_battle_analyzer/models.py`
+  - Dataclasses for `BattlePost`, `SiteStats`, `CrawlDataset`
+- `movie_scene_battle_analyzer/cli.py`
+  - CLI wrapper around `crawl_moviescenebattles(...)` + `save_dataset(...)`
+- `scripts/build_site_snapshot.py`
+  - Generates both dataset and stats payload used by the site
+- `scripts/verify_site_snapshot.py`
+  - Validates required shape and strict consistency between both JSON artifacts
+- `index.html`
+  - Reads `data/site_stats.json` at runtime and renders dashboard cards/lists
+
+### Data flow
+
+1. Crawl posts from Blogspot feed into in-memory `CrawlDataset`
+2. Save full dataset to `data/moviescenebattles_dataset.json`
+3. Derive site payload (`generated_from_posts` + `stats`) to `data/site_stats.json`
+4. Verify `site_stats.json` exactly matches expected payload from dataset
+5. Serve `index.html`, which fetches `data/site_stats.json`
+
+## Public interfaces
+
+### CLI
+
+```bash
+python3 -m movie_scene_battle_analyzer \
+  --max-posts 500 \
+  --output data/moviescenebattles_dataset.json
+```
+
+Options:
+
+- `--max-posts` (int, default `500`): maximum posts to crawl
+- `--include-content` (flag): include normalized `content_text` in each post
+- `--output` (path, default `data/moviescenebattles_dataset.json`): output dataset path
+
+### Python API
+
+```python
+from movie_scene_battle_analyzer import crawl_moviescenebattles, save_dataset
+
+dataset = crawl_moviescenebattles(
+    max_posts=300,
+    include_content=False,
+    page_size=150,
+    timeout=30,
+)
+save_dataset(dataset, "data/moviescenebattles_dataset.json")
+```
+
+Constraints enforced by code:
+
+- `max_posts > 0`
+- `page_size > 0`
+
+### Snapshot payload contract
+
+`scripts/verify_site_snapshot.py` expects:
+
+- Dataset keys: `site_title`, `site_url`, `posts`, `stats`
+- Site stats keys: `site_title`, `site_url`, `generated_from_posts`, `stats`
+- `site_stats.json` content to exactly equal:
+  - `site_title`: dataset title
+  - `site_url`: dataset URL
+  - `generated_from_posts`: `len(dataset["posts"])`
+  - `stats`: `dataset["stats"]`
+
+## Operational runbooks
+
+### Local refresh runbook
+
+1. Rebuild artifacts:
+   ```bash
+   python3 scripts/build_site_snapshot.py
+   ```
+2. Verify consistency:
+   ```bash
+   python3 scripts/verify_site_snapshot.py
+   ```
+3. If publishing the dashboard, commit both JSON files together.
+
+### Local dashboard preview runbook
+
+`index.html` fetches `data/site_stats.json`, so run a local HTTP server from repo root:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then open `http://localhost:8000/index.html`.
+
+### CI runbook
 
 - `.github/workflows/verify-site-snapshot.yml`
-  - Runs on PRs to `main`
-  - Validates `data/moviescenebattles_dataset.json` and `data/site_stats.json` schema/consistency
+  - Runs on PRs targeting `main` (and manual dispatch)
+  - Executes `python3 scripts/verify_site_snapshot.py`
 - `.github/workflows/refresh-site-snapshot.yml`
-  - Runs daily (scheduled) and on manual dispatch
-  - Rebuilds artifacts, verifies consistency, and opens/updates an automated PR with refreshed data
-## Engaging Product Updates (Integrity-First Edition)
+  - Runs on schedule (`20 6 * * *`) and manual dispatch
+  - Rebuilds artifacts, verifies them, and opens/updates refresh PRs
 
-These updates are designed to make the experience more fun while preserving the core mission: **let people rank movie scenes against one another fairly**.
+## Troubleshooting and common pitfalls
 
-### Achievements to highlight
+### `site_stats.json is out of sync...`
 
-1. **Reliable crawl + structured dataset**
-   - We now convert raw Blogspot entries into a clean, reusable battle dataset.
-2. **Transparent ranking context**
-   - Category, comments, and publication trends are captured so users can understand *why* scenes perform well.
-3. **Repeatable exports**
-   - Snapshots can be generated again at any time, keeping rankings fresh and auditable.
+Cause: `data/moviescenebattles_dataset.json` changed without regenerating `data/site_stats.json`.
 
-### Fun user-facing features (without compromising ranking integrity)
+Fix:
 
-1. **Daily Head-to-Head**
-   - Users vote on one curated scene battle per day.
-   - Votes count separately from canonical rank until moderation checks pass.
-2. **Streaks for thoughtful voting**
-   - Reward consistency (e.g., 7-day vote streak) rather than vote volume spam.
-3. **Category Clash mode**
-   - Filter battles by themes (hero showdown, final act, best monologue) and compare category leaders.
-4. **Comment Power Meter**
-   - Show which battles generated the strongest discussion while keeping rank calculations transparent.
-5. **Debate Cards**
-   - One-click shareable cards with matchup title, current rank delta, and comment highlights.
+```bash
+python3 scripts/build_site_snapshot.py
+python3 scripts/verify_site_snapshot.py
+```
 
-## Ranking integrity principles
+### `Missing required file: data/...`
 
-- Keep source crawl data immutable once snapshotted
-- Store vote events separately from base crawl stats
-- Version ranking formula changes so historical comparisons stay valid
-- Surface confidence indicators when sample sizes are small
+Cause: snapshot artifacts do not exist in your working copy.
+
+Fix: run `python3 scripts/build_site_snapshot.py`.
+
+### Dashboard shows "Could not load stats snapshot."
+
+Common causes:
+
+- `data/site_stats.json` is missing
+- Repository opened directly via `file://` instead of an HTTP server
+- Invalid JSON structure in `data/site_stats.json`
+
+Fixes:
+
+- Rebuild and verify snapshot files
+- Serve with `python3 -m http.server`
 
 ## Notes
 
-- Crawler uses Blogspot feed pagination (`start-index`, `max-results`)
-- No third-party dependencies are required
+- Crawler user-agent: `movie-scene-battle-analyzer/1.0`
+- Feed endpoint: `https://moviescenebattles.blogspot.com/feeds/posts/default`
