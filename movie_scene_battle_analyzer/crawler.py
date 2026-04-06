@@ -70,6 +70,16 @@ def _extract_permalink(entry: dict[str, Any]) -> str:
     return ""
 
 
+def _extract_feed_total(feed: dict[str, Any]) -> int | None:
+    raw_total = feed.get("openSearch$totalResults", {}).get("$t")
+    if raw_total is None:
+        return None
+    try:
+        return int(raw_total)
+    except (TypeError, ValueError):
+        return None
+
+
 def _to_post(entry: dict[str, Any], include_content: bool) -> BattlePost:
     content_html = entry.get("content", {}).get("$t", "")
     content_text = _extract_text(content_html) if content_html else ""
@@ -152,21 +162,35 @@ def crawl_moviescenebattles(
     all_posts: list[BattlePost] = []
     start_index = 1
     site_title = "Movie Scene Battles"
+    expected_total_posts: int | None = None
 
     while len(all_posts) < max_posts:
         request_size = min(page_size, max_posts - len(all_posts))
         data = _fetch_feed_page(start_index=start_index, max_results=request_size, timeout=timeout)
         feed = data.get("feed", {})
         site_title = str(feed.get("title", {}).get("$t", site_title))
+        feed_total_posts = _extract_feed_total(feed)
+        if feed_total_posts is not None:
+            expected_total_posts = min(max_posts, feed_total_posts)
         entries = feed.get("entry", [])
 
         if not entries:
+            if expected_total_posts is not None and len(all_posts) < expected_total_posts:
+                raise RuntimeError(
+                    "Feed returned no entries before expected post count was reached; "
+                    "refusing to emit a partial dataset."
+                )
             break
 
         parsed_posts = [_to_post(entry, include_content=include_content) for entry in entries]
         all_posts.extend(parsed_posts)
 
         if len(entries) < request_size:
+            if expected_total_posts is not None and len(all_posts) < expected_total_posts:
+                raise RuntimeError(
+                    "Feed pagination ended early before expected post count was reached; "
+                    "refusing to emit a partial dataset."
+                )
             break
         start_index += len(entries)
 
