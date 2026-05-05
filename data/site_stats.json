@@ -1,19 +1,31 @@
 {
   "site_title": "Movie Scene Battles",
   "site_url": "https://moviescenebattles.blogspot.com",
-  "generated_from_posts": 218,
+  "generated_from_posts": 253,
   "stats": {
-    "total_posts": 218,
+    "total_posts": 253,
     "total_comments": 0,
     "average_comments_per_post": 0.0,
-    "average_words_per_post": 114.64,
-    "posts_with_explicit_matchup": 212,
+    "average_words_per_post": 112.2,
+    "posts_with_explicit_matchup": 247,
     "posts_by_year": {
       "2000": 2,
       "2025": 173,
-      "2026": 43
+      "2026": 78
     },
     "top_categories": [
+      {
+        "name": "Jurassic Park 1993",
+        "count": 10
+      },
+      {
+        "name": "Get Out 2017",
+        "count": 8
+      },
+      {
+        "name": "Home Alone 2: Lost in New York 1992",
+        "count": 8
+      },
       {
         "name": "Alien 1979",
         "count": 8
@@ -31,10 +43,6 @@
         "count": 8
       },
       {
-        "name": "Home Alone 2: Lost in New York 1992",
-        "count": 7
-      },
-      {
         "name": "Scary Movie 3 2003",
         "count": 7
       },
@@ -45,44 +53,36 @@
       {
         "name": "Final Destination 2 2003",
         "count": 7
-      },
-      {
-        "name": "Teenage Mutant Ninja Turtles 1990",
-        "count": 6
-      },
-      {
-        "name": "Independence Day 1996",
-        "count": 6
       }
     ],
     "most_commented_posts": [
       {
-        "title": "Gender Assuming vs Questions 3",
-        "url": "https://moviescenebattles.blogspot.com/2026/03/gender-assuming-vs-questions-3.html",
+        "title": "Nothing's Gonna Stop Us Now vs. Ice Cream Mystery",
+        "url": "https://moviescenebattles.blogspot.com/2026/05/nothings-gonna-stop-us-now-vs-ice-cream.html",
         "comment_count": 0
       },
       {
-        "title": "Gender Assuming vs. Sweet Dreams",
-        "url": "https://moviescenebattles.blogspot.com/2026/03/gender-assuming-vs-sweet-dreams.html",
+        "title": "Gird Your Loins vs. Nothing's Gonna Stop Us Now",
+        "url": "https://moviescenebattles.blogspot.com/2026/05/gird-your-loins-vs-nothings-gonna-stop.html",
         "comment_count": 0
       },
       {
-        "title": "Gender Assuming vs. Chili's Bad Evening",
-        "url": "https://moviescenebattles.blogspot.com/2026/03/gender-assuming-vs-chilis-bad-evening.html",
+        "title": "Friendship Ended vs. Gird Your Loins",
+        "url": "https://moviescenebattles.blogspot.com/2026/04/friendship-ended-vs-gird-your-loins.html",
         "comment_count": 0
       },
       {
-        "title": "Gender Assuming vs. This is My Song",
-        "url": "https://moviescenebattles.blogspot.com/2026/03/gender-assuming-vs-this-is-my-song.html",
+        "title": "Double Dancing vs. Friendship Ended",
+        "url": "https://moviescenebattles.blogspot.com/2026/04/double-dancing-vs-friendship-ended.html",
         "comment_count": 0
       },
       {
-        "title": "Wizard Confrontation vs. Gender Assuming",
-        "url": "https://moviescenebattles.blogspot.com/2026/03/wizard-confrontation-vs-gender-assuming.html",
+        "title": "Harvard Admissions Essay vs. Double Dancing",
+        "url": "https://moviescenebattles.blogspot.com/2026/04/harvard-admissions-essay-vs-double.html",
         "comment_count": 0
       }
     ],
-    "last_post_update": "2026-03-17 07:12:20.328000-07:00",
-    "crawl_completed_at": "2026-03-17 23:46:51.527316+00:00"
+    "last_post_update": "2026-05-04 21:19:59.321000-07:00",
+    "crawl_completed_at": "2026-05-05 07:06:14.362148+00:00"
   }
 }
