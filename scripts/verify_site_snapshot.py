@@ -2,7 +2,11 @@
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from movie_scene_battle_analyzer.insights import build_insights
 
 
 def _load_json(path: Path) -> dict:
@@ -50,6 +54,15 @@ def main() -> None:
     if site_stats != expected_payload:
         raise ValueError(
             "site_stats.json is out of sync with moviescenebattles_dataset.json. "
+            "Run: python3 scripts/build_site_snapshot.py"
+        )
+
+    insights_path = Path("data/site_insights.json")
+    insights = _load_json(insights_path)
+    expected_insights = json.loads(json.dumps(build_insights(dataset)))
+    if insights != expected_insights:
+        raise ValueError(
+            "site_insights.json is out of sync with moviescenebattles_dataset.json. "
             "Run: python3 scripts/build_site_snapshot.py"
         )
 

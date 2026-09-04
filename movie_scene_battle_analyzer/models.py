@@ -18,6 +18,15 @@ class BattlePost:
     categories: list[str] = field(default_factory=list)
     word_count: int = 0
     content_text: str | None = None
+    # Parsed from the post body ("Your Champion X (Movie) VS Your Challenger Y (Movie)").
+    # `battle_type` is "defense" when a reigning champion defends, "fresh" when two
+    # challengers meet after a retirement, or None for non-battle posts.
+    champion: str | None = None
+    champion_movie: str | None = None
+    challenger: str | None = None
+    challenger_movie: str | None = None
+    champion_wins_claimed: int | None = None
+    battle_type: str | None = None
 
 
 @dataclass(slots=True)
