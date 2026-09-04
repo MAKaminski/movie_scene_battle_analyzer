@@ -20,7 +20,11 @@
       "challenger": "The Bear",
       "challenger_movie": "Annihilation",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": null,
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-8198336697987893080",
@@ -40,7 +44,20 @@
       "challenger": "Slaps",
       "challenger_movie": "Vivacious Lady",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Slaps",
+          8
+        ],
+        [
+          "Blood Test",
+          7
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4068936095918368834",
@@ -60,7 +77,20 @@
       "challenger": "Blood Test",
       "challenger_movie": "The Thing",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Blood Test",
+          7
+        ],
+        [
+          "I Will Always Love You",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-8999761933295138124",
@@ -80,7 +110,20 @@
       "challenger": "Singin' in the Rain",
       "challenger_movie": "Singin' in the Rain",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "I Will Always Love You",
+          8
+        ],
+        [
+          "Singin' in the Rain",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-6674945478992218068",
@@ -100,7 +143,20 @@
       "challenger": "Toxic Love",
       "challenger_movie": "Fern Gully: The Last Rainforest",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "I Will Always Love You",
+          9
+        ],
+        [
+          "Toxic Love",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-7737242509739326362",
@@ -120,7 +176,20 @@
       "challenger": "I Will Always Love You",
       "challenger_movie": "The Best Little Whorehouse in Texas",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "I Will Always Love You",
+          8
+        ],
+        [
+          "Mer-Man",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-5464409159140915632",
@@ -140,7 +209,20 @@
       "challenger": "Mer-Man",
       "challenger_movie": "Zoolander",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Mer-Man",
+          7
+        ],
+        [
+          "First Person",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-8111010080923156814",
@@ -160,7 +242,20 @@
       "challenger": "Everybody Wants Some!!",
       "challenger_movie": "Better Off Dead",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "First Person",
+          6
+        ],
+        [
+          "Everybody Wants Some!!",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-3738109159770904154",
@@ -180,7 +275,20 @@
       "challenger": "Dogfight",
       "challenger_movie": "Hulk",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "First Person",
+          7
+        ],
+        [
+          "Dogfight",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-3723217319773930230",
@@ -200,7 +308,20 @@
       "challenger": "First Person",
       "challenger_movie": "Doom",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "First Person",
+          9
+        ],
+        [
+          "Horror Remakes",
+          8
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-5525497254571568538",
@@ -220,7 +341,20 @@
       "challenger": "Horror Remakes",
       "challenger_movie": "Scream 4",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Horror Remakes",
+          11
+        ],
+        [
+          "Folding a Child",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-6243132988527353540",
@@ -240,7 +374,20 @@
       "challenger": "Three Shells",
       "challenger_movie": "Demolition Man",
       "champion_wins_claimed": null,
-      "battle_type": "fresh"
+      "battle_type": "fresh",
+      "score_entries": [
+        [
+          "Folding a Child",
+          9
+        ],
+        [
+          "Three Shells",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-1768615583133645287",
@@ -260,7 +407,20 @@
       "challenger": "Skidsteer Battle",
       "challenger_movie": "Carnosaur",
       "champion_wins_claimed": 6,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Flames on the Side of My Facec",
+          7
+        ],
+        [
+          "Skidsteer Battle",
+          2
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-7148126741385565899",
@@ -280,7 +440,20 @@
       "challenger": "The Girls of Rock and Roll",
       "challenger_movie": "The Chipmunk Adventure",
       "champion_wins_claimed": 5,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Flames on the Side of My Face",
+          8
+        ],
+        [
+          "The Girls of Rock and Roll",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-8954998492892090034",
@@ -300,7 +473,20 @@
       "challenger": "Double Dents",
       "challenger_movie": "Meet Joe Black",
       "champion_wins_claimed": 4,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Flames on the Side of My Face",
+          7
+        ],
+        [
+          "Double Dents",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-6634339722525199285",
@@ -320,7 +506,20 @@
       "challenger": "I Don't Care",
       "challenger_movie": "In the Good Old Summertime",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Flames on the Side of My Face",
+          7
+        ],
+        [
+          "I Don't Care",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-1482984518693576323",
@@ -340,7 +539,20 @@
       "challenger": "Drug Bust",
       "challenger_movie": "Super Troopers",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Flames on the Side of My Face",
+          8
+        ],
+        [
+          "Drug Bust",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-3274192729397998126",
@@ -360,7 +572,20 @@
       "challenger": "Knuckle Puck Time",
       "challenger_movie": "D2: The Mighty Ducks",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Flames on the Side of My Face",
+          8
+        ],
+        [
+          "Knuckle Puck Time",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4420201546568382585",
@@ -380,7 +605,20 @@
       "challenger": "Flames on the Side of My Face",
       "challenger_movie": "Clue",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Flames on the Side of My Face",
+          8
+        ],
+        [
+          "Hunky Boys",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-3639553193386476430",
@@ -400,7 +638,20 @@
       "challenger": "Hunky Boys",
       "challenger_movie": "PG: Psycho Goreman",
       "champion_wins_claimed": 5,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Hunky Boys",
+          7
+        ],
+        [
+          "Freeway Freakout",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-7622272491663783237",
@@ -420,7 +671,25 @@
       "challenger": "An Unusual Lullaby",
       "challenger_movie": "Land of the Lost",
       "champion_wins_claimed": 4,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Freeway Freakout",
+          6
+        ],
+        [
+          "An Unusual Lullaby",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": [
+        {
+          "name": "Todd",
+          "scene": "An Unusual Lullaby"
+        }
+      ]
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-6698866185334753476",
@@ -440,7 +709,20 @@
       "challenger": "Finally",
       "challenger_movie": "The Adventures of Priscilla, Queen of the Desert",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Freeway Freakout",
+          8
+        ],
+        [
+          "Finally",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-3940847591120160688",
@@ -460,7 +742,20 @@
       "challenger": "It's in the Cloud!",
       "challenger_movie": "Nope",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Freeway Freakout",
+          5
+        ],
+        [
+          "It's in the Cloud!",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4965865148335701801",
@@ -480,7 +775,20 @@
       "challenger": "From the Inside",
       "challenger_movie": "The Bay",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Freeway Freakout",
+          8
+        ],
+        [
+          "From the Inside",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-5937115231149355597",
@@ -500,7 +808,20 @@
       "challenger": "Freeway Freakout",
       "challenger_movie": "Clueless",
       "champion_wins_claimed": 4,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Freeway Freakout",
+          7
+        ],
+        [
+          "Making a Bet",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-7038768251667405476",
@@ -520,7 +841,20 @@
       "challenger": "Silver Shamrock Commercial",
       "challenger_movie": "Halloween III: Season of the Witch",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Making a Bet",
+          7
+        ],
+        [
+          "Silver Shamrock Commercial",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-3071774019714270355",
@@ -540,7 +874,20 @@
       "challenger": "Skeleton Warriors",
       "challenger_movie": "Jason and the Argonauts",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Making a Bet",
+          7
+        ],
+        [
+          "Skeleton Warriors",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-431647723252770208",
@@ -560,7 +907,20 @@
       "challenger": "Lay All Your Love on Me",
       "challenger_movie": "Mamma Mia!",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Making a Bet",
+          8
+        ],
+        [
+          "Lay All Your Love on Me",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-1454749376794530713",
@@ -580,7 +940,20 @@
       "challenger": "Making a Bet",
       "challenger_movie": "Not Another Teen Movie",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Making a Bet",
+          8
+        ],
+        [
+          "God Bless You",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-2797173858398828598",
@@ -600,7 +973,20 @@
       "challenger": "The Reveal",
       "challenger_movie": "She's All That",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "God Bless You",
+          8
+        ],
+        [
+          "The Reveal",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-7093408910559636794",
@@ -620,7 +1006,20 @@
       "challenger": "Smokin'",
       "challenger_movie": "Scary Movie",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "God Bless You",
+          8
+        ],
+        [
+          "Smokin'",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-1795061200373939890",
@@ -640,7 +1039,20 @@
       "challenger": "God Bless You",
       "challenger_movie": "Jurassic Park",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "God Bless You",
+          9
+        ],
+        [
+          "The Infection Spreads",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-5588530292986383374",
@@ -660,7 +1072,20 @@
       "challenger": "The Infection Spreads",
       "challenger_movie": "Contagion",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Infection Spreads",
+          6
+        ],
+        [
+          "You Should Be Dancing",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-3342779966232388141",
@@ -680,7 +1105,20 @@
       "challenger": "You Should Be Dancing",
       "challenger_movie": "Saturday Night Fever",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "You Should Be Dancing",
+          7
+        ],
+        [
+          "She Seems Agitated",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-6735396798490576276",
@@ -700,7 +1138,20 @@
       "challenger": "Dance With Her",
       "challenger_movie": "Ex Machina",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "She Seems Agitated",
+          6
+        ],
+        [
+          "Dance With Her",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-331114574463135703",
@@ -720,7 +1171,20 @@
       "challenger": "She Seems Agitated",
       "challenger_movie": "The Mitchells vs. The Machines",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "She Seems Agitated",
+          8
+        ],
+        [
+          "First Contact",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-5952256113802987259",
@@ -740,7 +1204,20 @@
       "challenger": "First Contact",
       "challenger_movie": "Monsters vs. Aliens",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "First Contact",
+          7
+        ],
+        [
+          "Deep Moaning Blues",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-2200723166511213986",
@@ -760,7 +1237,20 @@
       "challenger": "Deep Moaning Blues",
       "challenger_movie": "Ma Rainey's Black Bottom",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Deep Moaning Blues",
+          6
+        ],
+        [
+          "A Lil' Ole Bitty Pissant Country Place",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-2844520074639246146",
@@ -780,7 +1270,20 @@
       "challenger": "A Lil' Ole Bitty Pissant Country Place",
       "challenger_movie": "The Best Little Whorehouse in Texas",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "A Lil' Ole Bitty Pissant Country Place",
+          6
+        ],
+        [
+          "Fireside Chat",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-5096710472002236151",
@@ -800,7 +1303,20 @@
       "challenger": "Drawing Discussion",
       "challenger_movie": "Shelter",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Fireside Chat",
+          8
+        ],
+        [
+          "Drawing Discussion",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-169338830186102545",
@@ -820,7 +1336,20 @@
       "challenger": "Fireside Chat",
       "challenger_movie": "Teenage Mutant Ninja Turtles",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Fireside Chat",
+          9
+        ],
+        [
+          "Top That!",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-9107740329489020563",
@@ -840,7 +1369,20 @@
       "challenger": "Cave Firefight",
       "challenger_movie": "Primitive War",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Top That!",
+          8
+        ],
+        [
+          "Cave Firefight",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-5430851235644232223",
@@ -860,7 +1402,20 @@
       "challenger": "Mugging the Merry Men",
       "challenger_movie": "Shrek",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Top That!",
+          7
+        ],
+        [
+          "Mugging the Merry Men",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-2288800181404350878",
@@ -880,7 +1435,20 @@
       "challenger": "Top That!",
       "challenger_movie": "Teen Witch",
       "champion_wins_claimed": 5,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Top That!",
+          10
+        ],
+        [
+          "The Legend of the Beast",
+          7
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-953262675704037281",
@@ -900,7 +1468,20 @@
       "challenger": "Could You Make Me a Woman?",
       "challenger_movie": "Mrs. Doubtfire",
       "champion_wins_claimed": 4,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Legend of the Beast",
+          6
+        ],
+        [
+          "Could You Make a Woman?",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4457113968712602113",
@@ -920,7 +1501,20 @@
       "challenger": "Speaking Whale",
       "challenger_movie": "Finding Nemo",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Legend of the Beast",
+          7
+        ],
+        [
+          "Speaking Whale",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-22656896381473373",
@@ -940,7 +1534,25 @@
       "challenger": "I Say a Little Prayer",
       "challenger_movie": "My Best Friend's Wedding",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Legend of the Beast",
+          5
+        ],
+        [
+          "I Say a Little Prayer",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": [
+        {
+          "name": "Rainy",
+          "scene": "I Say a Little Prayer"
+        }
+      ]
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4265413946400201720",
@@ -960,7 +1572,20 @@
       "challenger": "Rich Man's Frug",
       "challenger_movie": "Sweet Charity",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Legend of the Beast",
+          9
+        ],
+        [
+          "Rich Man's Frug",
+          2
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-157799940091242706",
@@ -980,7 +1605,20 @@
       "challenger": "The Legend of the Beast",
       "challenger_movie": "The Sandlot",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Legend of the Beast",
+          6
+        ],
+        [
+          "What It Sounds Like",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-3706368325785392343",
@@ -1000,7 +1638,20 @@
       "challenger": "Marisa Tomei",
       "challenger_movie": "Fire Island",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "What It Sounds Like",
+          6
+        ],
+        [
+          "Marisa Tomei",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-5157920794291897766",
@@ -1020,7 +1671,20 @@
       "challenger": "What It Sounds Like",
       "challenger_movie": "KPop Demon Hunters",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "What It Sounds Like",
+          7
+        ],
+        [
+          "Midnight Margaritas",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-3751133871427679937",
@@ -1040,7 +1704,20 @@
       "challenger": "Midnight Margaritas",
       "challenger_movie": "Practical Magic",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Midnight Margaritas",
+          7
+        ],
+        [
+          "Ninja Rap",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-1503367869157644182",
@@ -1060,7 +1737,20 @@
       "challenger": "The Ladies Who Lunch",
       "challenger_movie": "Camp",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Ninja Rap",
+          8
+        ],
+        [
+          "The Ladies Who Lunch",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4621948180371324674",
@@ -1080,7 +1770,20 @@
       "challenger": "Ninja Rap",
       "challenger_movie": "Teenage Mutant Ninja Turtles 2: The Secret of the Ooze",
       "champion_wins_claimed": null,
-      "battle_type": "fresh"
+      "battle_type": "fresh",
+      "score_entries": [
+        [
+          "Ninja Rap",
+          8
+        ],
+        [
+          "A Brand New Day",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4022356653454551712",
@@ -1100,7 +1803,20 @@
       "challenger": "I Can't Say No",
       "challenger_movie": "Oklahoma!",
       "champion_wins_claimed": 6,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Rules for Surviving Horror Movies",
+          9
+        ],
+        [
+          "I Can't Say No",
+          2
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-8964806559191507121",
@@ -1120,7 +1836,20 @@
       "challenger": "Zahra Learns",
       "challenger_movie": "Red, White, and Royal Blue",
       "champion_wins_claimed": 5,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Rules for Surviving Horror Movies",
+          10
+        ],
+        [
+          "Zahra Learns",
+          1
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-7413515047410275441",
@@ -1140,7 +1869,20 @@
       "challenger": "Take Me or Leave Me",
       "challenger_movie": "Rent",
       "champion_wins_claimed": 4,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Rules for Surviving Horror Movies",
+          10
+        ],
+        [
+          "Take Me or Leave Me",
+          1
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-6991403552728162178",
@@ -1160,7 +1902,20 @@
       "challenger": "Gender Roles",
       "challenger_movie": "But I'm a Cheerleader",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Rules for Surviving Horror Movies",
+          10
+        ],
+        [
+          "Gender Roles",
+          2
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-2498270667999934469",
@@ -1180,7 +1935,20 @@
       "challenger": "Walking Like John Wayne",
       "challenger_movie": "The Birdcage",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Rules for Surviving Horror Movies",
+          9
+        ],
+        [
+          "Walking Like John Wayne",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-293599606598365364",
@@ -1200,7 +1968,20 @@
       "challenger": "Drag Princess",
       "challenger_movie": "To Wong Foo, Thanks for Everything! Julie Newmar",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Rules for Surviving Horror Movies",
+          9
+        ],
+        [
+          "Drag Princess",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-1955311412586396333",
@@ -1220,7 +2001,20 @@
       "challenger": "The Rules for Surviving Horror Movies",
       "challenger_movie": "Scream",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Rules for Surviving Horror Movies",
+          11
+        ],
+        [
+          "Civilized",
+          2
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-6590024993269357237",
@@ -1240,7 +2034,20 @@
       "challenger": "Civilized",
       "challenger_movie": "Gremlins 2: The New Batch",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Civilized",
+          8
+        ],
+        [
+          "Hodunk Podunk",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-1801135247511078763",
@@ -1260,7 +2067,20 @@
       "challenger": "Hodunk Podunk",
       "challenger_movie": "Tales from the Crypt: Demon Knight",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Hodunk Podunk",
+          9
+        ],
+        [
+          "Sex Machine",
+          7
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-9153199625456048258",
@@ -1280,7 +2100,20 @@
       "challenger": "Sex Machine",
       "challenger_movie": "From Dusk Till Dawn",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Sex Machine",
+          7
+        ],
+        [
+          "Echuta",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-6520851553957448066",
@@ -1300,7 +2133,20 @@
       "challenger": "Echuta",
       "challenger_movie": "Star Wars: The Empire Strikes Back",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Echuta",
+          6
+        ],
+        [
+          "They Have Weapons",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-5729495008685929876",
@@ -1320,7 +2166,20 @@
       "challenger": "Mister Cellophane",
       "challenger_movie": "Chicago",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "They Have Weapons",
+          7
+        ],
+        [
+          "Mister Cellophane",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4867834856538610269",
@@ -1340,7 +2199,20 @@
       "challenger": "They Have Weapons",
       "challenger_movie": "Critters",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "They Have Weapons",
+          6
+        ],
+        [
+          "Fighting the Beast",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-1692548380957697993",
@@ -1360,7 +2232,20 @@
       "challenger": "Fighting the Beast",
       "challenger_movie": "Kung Fu Hustle",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Fighting the Beast",
+          6
+        ],
+        [
+          "Finishing the Game",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-967110232992007419",
@@ -1380,7 +2265,20 @@
       "challenger": "Elevator Retreat",
       "challenger_movie": "The Nice Guys",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Finishing the Game",
+          8
+        ],
+        [
+          "Elevator Retreat",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-8566409120979567405",
@@ -1400,7 +2298,20 @@
       "challenger": "Animality Battle",
       "challenger_movie": "Mortal Kombat: Annihilation",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Finishing the Game",
+          8
+        ],
+        [
+          "Animality Battle",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-1892926632840162140",
@@ -1420,7 +2331,20 @@
       "challenger": "Finishing the Game",
       "challenger_movie": "Jumanji",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Finishing the Game",
+          9
+        ],
+        [
+          "The Monster Attacks",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-7982864312025917499",
@@ -1440,7 +2364,20 @@
       "challenger": "The Monster Attacks",
       "challenger_movie": "The Host",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Monster Attacks",
+          9
+        ],
+        [
+          "Ice Cream Mystery",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-7357649501616556765",
@@ -1460,7 +2397,20 @@
       "challenger": "Ice Cream Mystery",
       "challenger_movie": "The Ringer",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Ice Cream Mystery",
+          7
+        ],
+        [
+          "Nothing's Gonna Stop Us Now",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-3665550550946420640",
@@ -1480,7 +2430,20 @@
       "challenger": "Nothing's Gonna Stop Us Now",
       "challenger_movie": "The Skeleton Twins",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Nothing's Gonna Stop Us Now",
+          9
+        ],
+        [
+          "Gird Your Loins",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4653102897033797602",
@@ -1500,7 +2463,20 @@
       "challenger": "Gird Your Loins",
       "challenger_movie": "The Devil Wears Prada",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Gird Your Loins",
+          6
+        ],
+        [
+          "Friendship Ended",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-1610090024988907048",
@@ -1520,7 +2496,20 @@
       "challenger": "Friendship Ended",
       "challenger_movie": "Crouching Tiger, Hidden Dragon",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Friendship Ended",
+          10
+        ],
+        [
+          "Double Dancing",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-6467397107943690680",
@@ -1540,7 +2529,20 @@
       "challenger": "Double Dancing",
       "challenger_movie": "Sonic the Hedgehog 3",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Double Dancing",
+          7
+        ],
+        [
+          "Harvard Admissions Essay",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-2205940936302029305",
@@ -1560,7 +2562,20 @@
       "challenger": "That's a Bingo!",
       "challenger_movie": "Inglourious Basterds",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Harvard Admissions Essay",
+          7
+        ],
+        [
+          "That's a Bingo!",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4649631095073957274",
@@ -1580,7 +2595,20 @@
       "challenger": "Harvard Admissions Essay",
       "challenger_movie": "Legally Blonde",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Harvard Admissions Essay",
+          7
+        ],
+        [
+          "I'm Melting!",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-818980088966962805",
@@ -1600,7 +2628,20 @@
       "challenger": "The Perfect Date",
       "challenger_movie": "Miss Congeniality",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "I'm Melting!",
+          7
+        ],
+        [
+          "The Perfect Date",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-5615059468661524754",
@@ -1620,7 +2661,20 @@
       "challenger": "I'm Melting!",
       "challenger_movie": "The Wizard of Oz",
       "champion_wins_claimed": null,
-      "battle_type": "fresh"
+      "battle_type": "fresh",
+      "score_entries": [
+        [
+          "I'm Melting!",
+          10
+        ],
+        [
+          "No Dames",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-3673547428704121006",
@@ -1640,7 +2694,20 @@
       "challenger": "Good Morning Baltimore",
       "challenger_movie": "Hairspray",
       "champion_wins_claimed": 6,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Rex Escapes",
+          8
+        ],
+        [
+          "Good Morning Baltimore",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4117595642833655472",
@@ -1660,7 +2727,20 @@
       "challenger": "Manic Mini-Me",
       "challenger_movie": "Austin Powers: The Spy Who Shagged Me",
       "champion_wins_claimed": 5,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Rex Escapes",
+          7
+        ],
+        [
+          "Manic Mini-Me",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-649324434066339695",
@@ -1680,7 +2760,20 @@
       "challenger": "The Truffle Shuffle",
       "challenger_movie": "The Goonies",
       "champion_wins_claimed": 4,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Rex Escapes",
+          9
+        ],
+        [
+          "The Truffle Shuffle",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-1119848740101568572",
@@ -1700,7 +2793,20 @@
       "challenger": "Scaffolding Fight",
       "challenger_movie": "Shang-Chi and the Legend of the Ten Rings",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Rex Escapes",
+          8
+        ],
+        [
+          "Scaffolding Fight",
+          2
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-7202226788535612890",
@@ -1720,7 +2826,20 @@
       "challenger": "And I'm Telling You I'm Not Going",
       "challenger_movie": "Dreamgirls",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Rex Escapes",
+          10
+        ],
+        [
+          "And I'm Telling You I'm Not Going",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-1310272384041713647",
@@ -1740,7 +2859,20 @@
       "challenger": "Martian Bedroom Invasion",
       "challenger_movie": "Mars Attacks!",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Rex Escapes",
+          8
+        ],
+        [
+          "Martian Bedroom Invasion",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-8648523683966195935",
@@ -1760,7 +2892,20 @@
       "challenger": "The Rex Escapes",
       "challenger_movie": "Jurassic Park",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Rex Escapes",
+          9
+        ],
+        [
+          "Come Play With Us",
+          1
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-7108181726189569250",
@@ -1780,7 +2925,20 @@
       "challenger": "Police Station Brawl",
       "challenger_movie": "Malignant",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Come Play With Us",
+          6
+        ],
+        [
+          "Police Station Brawl",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-8644644519162267166",
@@ -1800,7 +2958,20 @@
       "challenger": "Come Play With Us",
       "challenger_movie": "The Shining",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Come Play With Us",
+          7
+        ],
+        [
+          "No Knife Needed",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4022149868332892155",
@@ -1820,7 +2991,20 @@
       "challenger": "No Knife Needed",
       "challenger_movie": "Enter the Dragon",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "No Knife Needed",
+          7
+        ],
+        [
+          "Always Time for Lube",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-3084268291315411424",
@@ -1840,7 +3024,20 @@
       "challenger": "Secret Sentimentalist",
       "challenger_movie": "Casablanca",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Always Time for Lube",
+          7
+        ],
+        [
+          "Secret Sentimentalist",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-5328331498803744718",
@@ -1860,7 +3057,20 @@
       "challenger": "Casting Call",
       "challenger_movie": "A Chorus Line",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Always Time for Lube",
+          7
+        ],
+        [
+          "Casting Call",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4199568210104616054",
@@ -1880,7 +3090,20 @@
       "challenger": "Always Time for Lube",
       "challenger_movie": "Evolution",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Always Time for Lube",
+          7
+        ],
+        [
+          "The Crucifixion of Margaret White",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-5451924978202355677",
@@ -1900,7 +3123,20 @@
       "challenger": "The Crucifixion of Margaret White",
       "challenger_movie": "Carrie",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Crucifixion of Margaret White",
+          9
+        ],
+        [
+          "Not Bad for a Girl",
+          8
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-3116401725317410124",
@@ -1920,7 +3156,20 @@
       "challenger": "Shake It Off",
       "challenger_movie": "Sing",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Not Bad for a Girl",
+          6
+        ],
+        [
+          "Shake It Off",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-6304152047300632926",
@@ -1940,7 +3189,20 @@
       "challenger": "I Touch Myself",
       "challenger_movie": "Austin Powers: International Man of Mystery",
       "champion_wins_claimed": null,
-      "battle_type": "fresh"
+      "battle_type": "fresh",
+      "score_entries": [
+        [
+          "Not Bad for a Girl",
+          7
+        ],
+        [
+          "I Touch Myself",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-340004814750264881",
@@ -1960,7 +3222,20 @@
       "challenger": "Wasted Bullet",
       "challenger_movie": "Deep Rising",
       "champion_wins_claimed": 5,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Sunken Place",
+          7
+        ],
+        [
+          "Wasted Bullet",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-8010057590822637236",
@@ -1980,7 +3255,20 @@
       "challenger": "Inappropriate Commercial",
       "challenger_movie": "Southland Tales",
       "champion_wins_claimed": 5,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Sunken Place",
+          7
+        ],
+        [
+          "Inappropriate Commercial",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-5693262047333095255",
@@ -2000,7 +3288,20 @@
       "challenger": "Croaker Cameo",
       "challenger_movie": "I Know What You Did Last Summer",
       "champion_wins_claimed": 4,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Sunken Place",
+          6
+        ],
+        [
+          "Croaker Cameo",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-2646223801179695452",
@@ -2020,7 +3321,20 @@
       "challenger": "Lover's Lane",
       "challenger_movie": "Pleasantville",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Sunken Place",
+          8
+        ],
+        [
+          "Lover's Lane",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-7580054348340224324",
@@ -2040,7 +3354,20 @@
       "challenger": "Missy's Tryout",
       "challenger_movie": "Bring It On",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Sunken Place",
+          6
+        ],
+        [
+          "Missy's Tryout",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-5378066852158114015",
@@ -2060,7 +3387,20 @@
       "challenger": "Trying on Dresses",
       "challenger_movie": "Bridesmaids",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Sunken Place",
+          7
+        ],
+        [
+          "Trying on Dresses",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-7717371558835584359",
@@ -2080,7 +3420,20 @@
       "challenger": "The Sunken Place",
       "challenger_movie": "Get Out",
       "champion_wins_claimed": 4,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Sunken Place",
+          7
+        ],
+        [
+          "Questions 3",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4742268783325652137",
@@ -2100,7 +3453,20 @@
       "challenger": "Let's Do the Math",
       "challenger_movie": "The Martian",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Questions 3",
+          8
+        ],
+        [
+          "Let's Do the Math",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-7602302432158680996",
@@ -2120,7 +3486,20 @@
       "challenger": "Magic Dance",
       "challenger_movie": "Labyrinth",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Questions 3",
+          10
+        ],
+        [
+          "Magic Dance",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-1790166348204736122",
@@ -2140,7 +3519,20 @@
       "challenger": "Badge Battle",
       "challenger_movie": "Muppets Most Wanted",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Questions 3",
+          6
+        ],
+        [
+          "Badge Battle",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-392215734712175596",
@@ -2160,7 +3552,20 @@
       "challenger": "Questions 3",
       "challenger_movie": "Monty Python and the Holy Grail",
       "champion_wins_claimed": 4,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Questions 3",
+          7
+        ],
+        [
+          "Gender Assuming",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-1622051306717402192",
@@ -2180,7 +3585,20 @@
       "challenger": "Sweet Dreams",
       "challenger_movie": "X-Men: Apocalypse",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Gender Assuming",
+          6
+        ],
+        [
+          "Sweet Dreams",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-1051577951710497717",
@@ -2200,7 +3618,20 @@
       "challenger": "Chili's Bad Evening",
       "challenger_movie": "Friday the 13th Part III",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Gender Assuming",
+          8
+        ],
+        [
+          "Chili's Bad Evening",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4121164385798403973",
@@ -2220,7 +3651,20 @@
       "challenger": "This is My Song",
       "challenger_movie": "Billy's Hollywood Screen Kiss",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Gender Assuming",
+          8
+        ],
+        [
+          "This is My Song",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-6152053792928685445",
@@ -2240,7 +3684,20 @@
       "challenger": "Gender Assuming",
       "challenger_movie": "Lord of the Rings: The Return of the King",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Gender Assuming",
+          8
+        ],
+        [
+          "Wizard Confrontation",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-617696031241297047",
@@ -2260,7 +3717,20 @@
       "challenger": "Wizard Confrontation",
       "challenger_movie": "Wizards",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Wizard Confrontation",
+          5
+        ],
+        [
+          "Shattered Dream",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-35606488186356058",
@@ -2280,7 +3750,20 @@
       "challenger": "Shattered Dream",
       "challenger_movie": "Inception",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Shattered Dream",
+          7
+        ],
+        [
+          "Shpadoinkle Day",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-8749662589607346229",
@@ -2300,7 +3783,20 @@
       "challenger": "Wagon Wheel Watusi",
       "challenger_movie": "Burlesque",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Shpadoinkle Day",
+          8
+        ],
+        [
+          "Wagon Wheel Watusi",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-9072589411909519666",
@@ -2320,7 +3816,20 @@
       "challenger": "Shpadoinkle Day",
       "challenger_movie": "Cannibal: The Musical",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Shpadoinkle Day",
+          7
+        ],
+        [
+          "Batty Rap",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-2073545378275952260",
@@ -2340,7 +3849,20 @@
       "challenger": "Batty Rap",
       "challenger_movie": "Fern Gully: The Last Rainforest",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Batty Rap",
+          6
+        ],
+        [
+          "Shpadoinkle Day",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4901639936539432275",
@@ -2360,7 +3882,20 @@
       "challenger": "The First to Fall",
       "challenger_movie": "The Long Walk",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Don't Want None of This",
+          6
+        ],
+        [
+          "The First to Fall",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": true,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-6796868454619342345",
@@ -2380,7 +3915,20 @@
       "challenger": "Don't Want None of This",
       "challenger_movie": "Walk Hard: The Dewey Cox Story",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Don't Want None of This",
+          8
+        ],
+        [
+          "Welcome to the Party",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-3682595193243277508",
@@ -2400,7 +3948,20 @@
       "challenger": "Welcome to the Party",
       "challenger_movie": "Die Hard",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Welcome to the Party",
+          10
+        ],
+        [
+          "The Attack",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-8353069268963135592",
@@ -2420,7 +3981,20 @@
       "challenger": "Backseat Driver",
       "challenger_movie": "Tomorrow Never Dies",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Attack",
+          9
+        ],
+        [
+          "Backseat Driver",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-5180311419986899156",
@@ -2440,7 +4014,20 @@
       "challenger": "Hollywood Tornadoes",
       "challenger_movie": "The Day After Tomorrow",
       "champion_wins_claimed": null,
-      "battle_type": "fresh"
+      "battle_type": "fresh",
+      "score_entries": [
+        [
+          "The Attack",
+          7
+        ],
+        [
+          "Hollywood Tornadoes",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-7413325522372678935",
@@ -2460,7 +4047,20 @@
       "challenger": "Underwater Stalking",
       "challenger_movie": "Creature from the Black Lagoon",
       "champion_wins_claimed": 6,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "KEVIN!",
+          8
+        ],
+        [
+          "Underwater Stalking",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-8804062403009540860",
@@ -2480,7 +4080,20 @@
       "challenger": "Baby Mine",
       "challenger_movie": "Dumbo",
       "champion_wins_claimed": 5,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "KEVIN!",
+          7
+        ],
+        [
+          "Baby Mine",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-2441434077782285513",
@@ -2500,7 +4113,25 @@
       "challenger": "The Purrfect Spell",
       "challenger_movie": "Bell, Book and Candle",
       "champion_wins_claimed": 4,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "KEVIN!",
+          11
+        ],
+        [
+          "The Purrfect Spell",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": [
+        {
+          "name": "Ren\u00e9e",
+          "scene": "The Purrfect Spell"
+        }
+      ]
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-8045176125678754274",
@@ -2520,7 +4151,20 @@
       "challenger": "Talos Attacks!",
       "challenger_movie": "Jason and the Argonauts",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "KEVIN!",
+          9
+        ],
+        [
+          "Talos Attacks!",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-1578121021895613061",
@@ -2540,7 +4184,20 @@
       "challenger": "Bad Bunnies",
       "challenger_movie": "Night of the Lepus",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "KEVIN!",
+          9
+        ],
+        [
+          "Bad Bunnies",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4972526094622662542",
@@ -2560,7 +4217,20 @@
       "challenger": "A Kiss at the End of the Rainbow",
       "challenger_movie": "A Mighty Wind",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "KEVIN!",
+          16
+        ],
+        [
+          "A Kiss at the End of the Rainbow",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-6702336154574189546",
@@ -2580,7 +4250,20 @@
       "challenger": "KEVIN!",
       "challenger_movie": "Home Alone 2: Lost in New York",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "KEVIN!",
+          9
+        ],
+        [
+          "Remodel Request",
+          8
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4930855472212622863",
@@ -2600,7 +4283,20 @@
       "challenger": "Table Talk",
       "challenger_movie": "Best in Show",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Remodel Request",
+          12
+        ],
+        [
+          "Table Talk",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-395384730553285668",
@@ -2620,7 +4316,20 @@
       "challenger": "Remodel Request",
       "challenger_movie": "Beetlejuice",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Remodel Request",
+          13
+        ],
+        [
+          "The Albertsons Audition",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-944495678419753809",
@@ -2640,7 +4349,20 @@
       "challenger": "The Albertsons Audtion",
       "challenger_movie": "Waiting for Guffman",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Albertsons Audition",
+          9
+        ],
+        [
+          "I Made Fire!",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-8768788719658439836",
@@ -2660,7 +4382,20 @@
       "challenger": "I Made Fire!",
       "challenger_movie": "Cast Away",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "I Made Fire!",
+          8
+        ],
+        [
+          "Friendly Wink",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-635691755662174454",
@@ -2680,7 +4415,20 @@
       "challenger": "Friendly Wink",
       "challenger_movie": "Anaconda",
       "champion_wins_claimed": 6,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Friendly Wink",
+          8
+        ],
+        [
+          "Do You Count Holidays?",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-3835676140764854860",
@@ -2700,7 +4448,20 @@
       "challenger": "Jai Jai Shivshankar",
       "challenger_movie": "War",
       "champion_wins_claimed": 5,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Do You Count Holidays?",
+          9
+        ],
+        [
+          "Jai Jai Shivshankar",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-6047115905953914566",
@@ -2720,7 +4481,25 @@
       "challenger": "Summoning Song",
       "challenger_movie": "I Am Dragon",
       "champion_wins_claimed": 4,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Do You Count Holidays?",
+          8
+        ],
+        [
+          "Summoning Song",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": [
+        {
+          "name": "Ren\u00e9e",
+          "scene": "Summoning Song"
+        }
+      ]
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-6506017066608886461",
@@ -2740,7 +4519,20 @@
       "challenger": "Shallow",
       "challenger_movie": "A Star is Born",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Do You Count Holidays?",
+          9
+        ],
+        [
+          "Shallow",
+          8
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-2696667630013776678",
@@ -2760,7 +4552,20 @@
       "challenger": "Speech, Interrupted",
       "challenger_movie": "Deep Blue Sea",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Do You Count Holidays?",
+          8
+        ],
+        [
+          "Speech, Interrupted",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-485016087735620282",
@@ -2780,7 +4585,20 @@
       "challenger": "Petey's Bad Song",
       "challenger_movie": "Fantastic Mr. Fox",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Do You Count Holidays?",
+          9
+        ],
+        [
+          "Petey's Bad Song",
+          7
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-415785105034971434",
@@ -2800,7 +4618,20 @@
       "challenger": "Do You Count Holidays?",
       "challenger_movie": "Scary Movie 3",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Do You Count Holidays?",
+          8
+        ],
+        [
+          "Tunnel Tire Change",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-270142480052614836",
@@ -2820,7 +4651,20 @@
       "challenger": "Tunnel Tire Change",
       "challenger_movie": "28 Days Later",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Tunnel Tire Change",
+          8
+        ],
+        [
+          "Dominos",
+          7
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-3062460870296978763",
@@ -2840,7 +4684,20 @@
       "challenger": "Me Lobster",
       "challenger_movie": "The Lighthouse",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Dominos",
+          9
+        ],
+        [
+          "Me Lobster",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-6387566508353439567",
@@ -2860,7 +4717,20 @@
       "challenger": "What's Up Danger?",
       "challenger_movie": "Spider-Man: Into the Spider-Verse",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Dominos",
+          7
+        ],
+        [
+          "What's Up Danger?",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-9163501687144500018",
@@ -2880,7 +4750,20 @@
       "challenger": "Dominos",
       "challenger_movie": "V for Vendetta",
       "champion_wins_claimed": 4,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Dominos",
+          9
+        ],
+        [
+          "Battle of Wits",
+          8
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-2655856817358939758",
@@ -2900,7 +4783,20 @@
       "challenger": "T-Spheres and Terrific",
       "challenger_movie": "Superman",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Battle of Wits",
+          12
+        ],
+        [
+          "T-Spheres and Terrific",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-480720254824029093",
@@ -2920,7 +4816,20 @@
       "challenger": "TRAIN!",
       "challenger_movie": "Stand By Me",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Battle of Wits",
+          10
+        ],
+        [
+          "TRAIN!",
+          9
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-2449648366931486962",
@@ -2940,7 +4849,20 @@
       "challenger": "Up to Eleven",
       "challenger_movie": "This Is Spinal Tap",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Battle of Wits",
+          11
+        ],
+        [
+          "Up to Eleven",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-5129671102844847728",
@@ -2960,7 +4882,20 @@
       "challenger": "Battle of Wits",
       "challenger_movie": "The Princess Bride",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Battle of Wits",
+          13
+        ],
+        [
+          "I'll Have What She's Having",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-1291480121349147287",
@@ -2980,7 +4915,20 @@
       "challenger": "You Can't Handle the Truth",
       "challenger_movie": "A Few Good Men",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "I'll Have What She's Having",
+          7
+        ],
+        [
+          "You Can't Handle the Truth!",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4030304212949406944",
@@ -3000,7 +4948,20 @@
       "challenger": "I'll Have What She's Having",
       "challenger_movie": "When Harry Met Sally...",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "I'll Have What She's Having",
+          11
+        ],
+        [
+          "Have Yourself a Merry Little Christmas",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-2408781878474846379",
@@ -3017,7 +4978,11 @@
       "challenger": null,
       "challenger_movie": null,
       "champion_wins_claimed": null,
-      "battle_type": null
+      "battle_type": null,
+      "score_entries": null,
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-5091511357900813370",
@@ -3037,7 +5002,20 @@
       "challenger": "Have Yourself a Merry Little Christmas",
       "challenger_movie": "Meet Me in St. Louis",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Have Yourself a Merry Little Christmas",
+          8
+        ],
+        [
+          "Oh Fudge!",
+          7
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-2454288050304775959",
@@ -3057,7 +5035,20 @@
       "challenger": "Oh Fudge!",
       "challenger_movie": "A Christmas Story",
       "champion_wins_claimed": 6,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Oh Fudge!",
+          8
+        ],
+        [
+          "Out of Bubblegum",
+          7
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-8432850775231740763",
@@ -3077,7 +5068,25 @@
       "challenger": "Dear Mr. Klaus",
       "challenger_movie": "Klaus",
       "champion_wins_claimed": 5,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Out of Bubblegum",
+          11
+        ],
+        [
+          "Dear Mr. Klaus",
+          7
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": [
+        {
+          "name": "Ren\u00e9e",
+          "scene": "Dear Mr. Klaus"
+        }
+      ]
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-3592928860797056314",
@@ -3097,7 +5106,20 @@
       "challenger": "It Feels Like Christmas",
       "challenger_movie": "A Muppet Christmas Carol",
       "champion_wins_claimed": 4,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Out of Bubblegum",
+          9
+        ],
+        [
+          "It Feels Like Christmas",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-7990777825631513041",
@@ -3117,7 +5139,20 @@
       "challenger": "Zero to Hero",
       "challenger_movie": "Hercules",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Out of Bubblegum",
+          9
+        ],
+        [
+          "Zero to Hero",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4772886068952176594",
@@ -3137,7 +5172,20 @@
       "challenger": "Saving MJ",
       "challenger_movie": "Spider-Man: No Way Home",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Out of Bubblegum",
+          11
+        ],
+        [
+          "Saving MJ",
+          10
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-318818340608412408",
@@ -3157,7 +5205,20 @@
       "challenger": "Falling With Style",
       "challenger_movie": "Toy Story",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Out of Bubblegum",
+          7
+        ],
+        [
+          "Falling With Style",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-5661944582880318912",
@@ -3177,7 +5238,25 @@
       "challenger": "Out of Bubblegum",
       "challenger_movie": "They Live",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Out of Bubblegum",
+          8
+        ],
+        [
+          "The Rescue",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": [
+        {
+          "name": "Ren\u00e9e",
+          "scene": "The Rescue"
+        }
+      ]
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-6691283660768990233",
@@ -3197,7 +5276,25 @@
       "challenger": "The Rescue",
       "challenger_movie": "RRR",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Rescue",
+          8
+        ],
+        [
+          "Dusted",
+          7
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": [
+        {
+          "name": "Ren\u00e9e",
+          "scene": "The Rescue"
+        }
+      ]
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-2914480470088231285",
@@ -3217,7 +5314,20 @@
       "challenger": "Dusted",
       "challenger_movie": "Avengers: Infinity War",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Dusted",
+          5
+        ],
+        [
+          "Nobody Like U",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-8963834711414091252",
@@ -3237,7 +5347,20 @@
       "challenger": "Nobody Like U",
       "challenger_movie": "Turning Red",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Nobody Like U",
+          7
+        ],
+        [
+          "Define Dancing",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-8607982377652739310",
@@ -3257,7 +5380,20 @@
       "challenger": "Battleship Battle",
       "challenger_movie": "Godzilla vs. Kong",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Define Dancing",
+          7
+        ],
+        [
+          "Battleship Battle",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-2053429662964339304",
@@ -3277,7 +5413,20 @@
       "challenger": "The Crash",
       "challenger_movie": "Cool Runnings",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Define Dancing",
+          8
+        ],
+        [
+          "The Crash",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-3880596898933105629",
@@ -3297,7 +5446,20 @@
       "challenger": "Define Dancing",
       "challenger_movie": "WALL-E",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Define Dancing",
+          7
+        ],
+        [
+          "Do Something!",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-8408847495532335227",
@@ -3317,7 +5479,20 @@
       "challenger": "Turkey Lurkey Time",
       "challenger_movie": "Camp",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Do Something!",
+          9
+        ],
+        [
+          "Turkey Lurkey Time",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4988629020314310225",
@@ -3337,7 +5512,20 @@
       "challenger": "Do Something!",
       "challenger_movie": "The Truman Show",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Do Something!",
+          8
+        ],
+        [
+          "Subway Fight",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-8358033708564791264",
@@ -3357,7 +5545,20 @@
       "challenger": "Bad Shooting",
       "challenger_movie": "Cocaine Bear",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Subway Fight",
+          7
+        ],
+        [
+          "Bad Shooting",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": true,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-2861911470487631786",
@@ -3377,7 +5578,20 @@
       "challenger": "Subway Fight",
       "challenger_movie": "The Matrix",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Subway Fight",
+          14
+        ],
+        [
+          "Marigolds",
+          7
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-2148845786669371008",
@@ -3397,7 +5611,20 @@
       "challenger": "Marigolds",
       "challenger_movie": "The Gay Deceivers",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Marigolds",
+          9
+        ],
+        [
+          "Distortus Rex",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4952173733422071040",
@@ -3417,7 +5644,20 @@
       "challenger": "Distortus Rex",
       "challenger_movie": "Jurassic World Rebirth",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Distortus Rex",
+          8
+        ],
+        [
+          "Think",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4190839506719852258",
@@ -3437,7 +5677,20 @@
       "challenger": "The Big Move",
       "challenger_movie": "Crazy, Stupid, Love",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Think",
+          7
+        ],
+        [
+          "The Big Move",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-7918567182948641612",
@@ -3457,7 +5710,20 @@
       "challenger": "Think",
       "challenger_movie": "The Blues Brothers",
       "champion_wins_claimed": null,
-      "battle_type": "fresh"
+      "battle_type": "fresh",
+      "score_entries": [
+        [
+          "Think",
+          7
+        ],
+        [
+          "Ya Got Trouble",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-7190647154383458492",
@@ -3477,7 +5743,20 @@
       "challenger": "Kanine Krunchies",
       "challenger_movie": "101 Dalmatians",
       "champion_wins_claimed": 6,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Chest Burst",
+          6
+        ],
+        [
+          "Kanine Krunchies",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-6136324056971848462",
@@ -3497,7 +5776,20 @@
       "challenger": "Kick the Bucket",
       "challenger_movie": "It's a Mad, Mad, Mad, Mad World",
       "champion_wins_claimed": 5,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Chest Burst",
+          10
+        ],
+        [
+          "Kick the Bucket",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-2694449076787517490",
@@ -3517,7 +5809,20 @@
       "challenger": "You Make My Dreams Come True(",
       "challenger_movie": "500",
       "champion_wins_claimed": 4,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Chest Burst",
+          9
+        ],
+        [
+          "You Make My Dreams Come True",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-1186152491609394640",
@@ -3537,7 +5842,20 @@
       "challenger": "The Heart of the Ocean",
       "challenger_movie": "Titanic",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Chest Burst",
+          11
+        ],
+        [
+          "The Heart of the Ocean",
+          2
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-6294992422702526568",
@@ -3557,7 +5875,20 @@
       "challenger": "La Vie Boheme",
       "challenger_movie": "Rent",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Chest Burst",
+          9
+        ],
+        [
+          "La Vie Boheme",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-7396179709094389815",
@@ -3577,7 +5908,20 @@
       "challenger": "You Can't Kill the Boogeyman",
       "challenger_movie": "Halloween",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Chest Burst",
+          9
+        ],
+        [
+          "You Can't Kill the Boogeyman",
+          8
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-7115194685330255933",
@@ -3597,7 +5941,20 @@
       "challenger": "Chest Burst",
       "challenger_movie": "Alien",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Chest Burst",
+          7
+        ],
+        [
+          "Calling Casey",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-416165375569533159",
@@ -3617,7 +5974,20 @@
       "challenger": "Tina's Nightmare",
       "challenger_movie": "A Nightmare on Elm Street",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Calling Casey",
+          7
+        ],
+        [
+          "Tina's Nightmare",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-61921555831974884",
@@ -3637,7 +6007,20 @@
       "challenger": "The Hungry Fridge",
       "challenger_movie": "Requiem for a Dream",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Calling Casey",
+          8
+        ],
+        [
+          "The Hungry Fridge",
+          2
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4857559960211856550",
@@ -3657,7 +6040,20 @@
       "challenger": "Calling Casey",
       "challenger_movie": "Scream",
       "champion_wins_claimed": 4,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Calling Casey",
+          7
+        ],
+        [
+          "Transformation",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-7825380252416442714",
@@ -3677,7 +6073,20 @@
       "challenger": "The Eye Behind the Door",
       "challenger_movie": "Black Christmas",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Transformation",
+          8
+        ],
+        [
+          "The Eye Behind the Door",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-3288138727477150887",
@@ -3697,7 +6106,20 @@
       "challenger": "The Baby",
       "challenger_movie": "Trainspotting",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Transformation",
+          8
+        ],
+        [
+          "The Baby",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-1615375894022139725",
@@ -3717,7 +6139,20 @@
       "challenger": "Video Legend",
       "challenger_movie": "The Ring",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Transformation",
+          9
+        ],
+        [
+          "Video Legend",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4168326237655443064",
@@ -3737,7 +6172,20 @@
       "challenger": "Transformation",
       "challenger_movie": "An American Werewolf in London",
       "champion_wins_claimed": null,
-      "battle_type": "fresh"
+      "battle_type": "fresh",
+      "score_entries": [
+        [
+          "Transformation",
+          13
+        ],
+        [
+          "What Are You Waiting For?",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4937417899793973092",
@@ -3757,7 +6205,20 @@
       "challenger": "The Doors are Breathing",
       "challenger_movie": "The Haunting",
       "champion_wins_claimed": 6,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Shower Troubles",
+          10
+        ],
+        [
+          "The Doors are Breathing",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-11346126010454691",
@@ -3777,7 +6238,20 @@
       "challenger": "Trowel of Terror",
       "challenger_movie": "Night of the Living Dead",
       "champion_wins_claimed": 5,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Shower Troubles",
+          8
+        ],
+        [
+          "Trowel of Terror",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4028534198343685271",
@@ -3797,7 +6271,20 @@
       "challenger": "A New Story",
       "challenger_movie": "ParaNorman",
       "champion_wins_claimed": 4,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Shower Troubles",
+          10
+        ],
+        [
+          "A New Story",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-1749297320385250759",
@@ -3817,7 +6304,20 @@
       "challenger": "Not So Sweet Tunnel",
       "challenger_movie": "Willy Wonka and the Chocolate Factory",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Shower Troubles",
+          9
+        ],
+        [
+          "Not So Sweet Tunnel",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-214439856583287006",
@@ -3837,7 +6337,20 @@
       "challenger": "Meet the Wheelers",
       "challenger_movie": "Return to Oz",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Shower Troubles",
+          9
+        ],
+        [
+          "Meet the Wheelers",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-1610023599217372793",
@@ -3857,7 +6370,20 @@
       "challenger": "It's a B-Movie",
       "challenger_movie": "The Brave Little Toaster",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Shower Troubles",
+          10
+        ],
+        [
+          "It's a B-Movie",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-5667909204694574895",
@@ -3877,7 +6403,20 @@
       "challenger": "Shower Troubles",
       "challenger_movie": "Psycho",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Shower Troubles",
+          6
+        ],
+        [
+          "The Hobbling",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-797327271630566821",
@@ -3897,7 +6436,20 @@
       "challenger": "The Hobbling",
       "challenger_movie": "Misery",
       "champion_wins_claimed": 4,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Hobbling",
+          7
+        ],
+        [
+          "Movie Theater Etiquette",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-2140998477155411596",
@@ -3917,7 +6469,20 @@
       "challenger": "One of Us",
       "challenger_movie": "Freaks",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Movie Theater Etiquette",
+          6
+        ],
+        [
+          "One of Us",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-3946749143412771493",
@@ -3937,7 +6502,20 @@
       "challenger": "The Lawnmower",
       "challenger_movie": "Sinister",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Movie Theater Etiquette",
+          9
+        ],
+        [
+          "The Lawnmower",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-7213731568219679823",
@@ -3957,7 +6535,20 @@
       "challenger": "I Put a Spell on You",
       "challenger_movie": "Hocus Pocus",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Movie Theater Etiquette",
+          8
+        ],
+        [
+          "I Put a Spell on You",
+          7
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-6699037115309708191",
@@ -3977,7 +6568,20 @@
       "challenger": "Movie Theater Etiquette",
       "challenger_movie": "Scary Movie",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Movie Theater Etiquette",
+          9
+        ],
+        [
+          "See Don Run",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-8921520508498280675",
@@ -3997,7 +6601,25 @@
       "challenger": "See Don Run",
       "challenger_movie": "28 Weeks later",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "See Don Run",
+          7
+        ],
+        [
+          "ET Meets the Siblings",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": [
+        {
+          "name": "Rainy",
+          "scene": "ET Meets the Siblings"
+        }
+      ]
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-6384089803730912616",
@@ -4017,7 +6639,25 @@
       "challenger": "Goodbye Pat",
       "challenger_movie": "Suspiria",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "ET Meets the Siblings",
+          8
+        ],
+        [
+          "Goodbye Pat",
+          7
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": [
+        {
+          "name": "Rainy",
+          "scene": "ET Meets the Siblings"
+        }
+      ]
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-2520627201319571920",
@@ -4037,7 +6677,29 @@
       "challenger": "ET Meets the Siblings",
       "challenger_movie": "E.T. the Extra-Terrestrial",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "ET Meets the Siblings",
+          10
+        ],
+        [
+          "A Friendly Warning",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": [
+        {
+          "name": "Nicktendo",
+          "scene": "A Friendly Warning"
+        },
+        {
+          "name": "Rainy",
+          "scene": "ET Meets the Siblings"
+        }
+      ]
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-421709732142828216",
@@ -4057,7 +6719,25 @@
       "challenger": "A Friendly Warning",
       "challenger_movie": "Desperado",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "A Friendly Warning",
+          8
+        ],
+        [
+          "Cerulean",
+          7
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": [
+        {
+          "name": "Nicktendo",
+          "scene": "A Friendly Warning"
+        }
+      ]
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-3220767545773343772",
@@ -4077,7 +6757,20 @@
       "challenger": "Cerulean",
       "challenger_movie": "The Devil Wears Prada",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Cerulean",
+          7
+        ],
+        [
+          "Not Giving a Damn",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4694590583754689028",
@@ -4097,7 +6790,20 @@
       "challenger": "Not Giving a Damn",
       "challenger_movie": "Gone With the Wind",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Not Giving a Damn",
+          9
+        ],
+        [
+          "Piano Dancing",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-3909601105516881977",
@@ -4117,7 +6823,20 @@
       "challenger": "Weather Report",
       "challenger_movie": "Mean Girls",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Piano Dancing",
+          8
+        ],
+        [
+          "Weather Report",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-8903418130628837734",
@@ -4137,7 +6856,20 @@
       "challenger": "Piano Dancing",
       "challenger_movie": "Big",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Piano Dancing",
+          8
+        ],
+        [
+          "I 2 I",
+          7
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-5301737646396920133",
@@ -4157,7 +6889,20 @@
       "challenger": "I 2 I",
       "challenger_movie": "A Goofy Movie",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "I 2 I",
+          10
+        ],
+        [
+          "Hail to the King",
+          7
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-537655501053147393",
@@ -4177,7 +6922,20 @@
       "challenger": "Hail to the King",
       "challenger_movie": "Godzilla: King of the Monsters",
       "champion_wins_claimed": null,
-      "battle_type": "fresh"
+      "battle_type": "fresh",
+      "score_entries": [
+        [
+          "Hail to the King",
+          9
+        ],
+        [
+          "Refusing to Change",
+          2
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-8242565234233872951",
@@ -4197,7 +6955,20 @@
       "challenger": "How to Properly Insult",
       "challenger_movie": "Roxanne",
       "champion_wins_claimed": 6,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Tales That Matter",
+          12
+        ],
+        [
+          "How to Properly Insult",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-5327112236551603831",
@@ -4217,7 +6988,20 @@
       "challenger": "America",
       "challenger_movie": "West Side Story",
       "champion_wins_claimed": 5,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Tales That Matter",
+          11
+        ],
+        [
+          "America",
+          7
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-3977043855734717686",
@@ -4237,7 +7021,20 @@
       "challenger": "Zombie Tail",
       "challenger_movie": "Train to Busan",
       "champion_wins_claimed": 4,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Tales That Matter",
+          9
+        ],
+        [
+          "Zombie Tail",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-1707238783788903606",
@@ -4257,7 +7054,20 @@
       "challenger": "Space Needle Disaster",
       "challenger_movie": "Final Destination Bloodlines",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Tales That Matter",
+          7
+        ],
+        [
+          "Space Needle Disaster",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-407170829224697197",
@@ -4274,7 +7084,11 @@
       "challenger": null,
       "challenger_movie": null,
       "champion_wins_claimed": null,
-      "battle_type": null
+      "battle_type": null,
+      "score_entries": null,
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-142454607646962410",
@@ -4294,7 +7108,20 @@
       "challenger": "Smurf Talk",
       "challenger_movie": "Donnie Darko",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Tales That Matter",
+          6
+        ],
+        [
+          "Smurf Talk",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-5185730529193261588",
@@ -4314,7 +7141,20 @@
       "challenger": "Lose Your Head",
       "challenger_movie": "The Omen",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Tales That Matter",
+          7
+        ],
+        [
+          "Lose Your Head",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-5332576825444032480",
@@ -4334,7 +7174,20 @@
       "challenger": "The Tales That Matter",
       "challenger_movie": "The Lord of the Rings: The Two Towers",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Tales That Matter",
+          8
+        ],
+        [
+          "The Torture of the Gingerbread Man",
+          7
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-5228804460100042836",
@@ -4354,7 +7207,20 @@
       "challenger": "The Torture of the Gingerbread Man",
       "challenger_movie": "Shrek",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Torture of the Gingerbread Man",
+          10
+        ],
+        [
+          "Pie in Your Face",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-7117149761877474160",
@@ -4374,7 +7240,20 @@
       "challenger": "Clap Game",
       "challenger_movie": "The Conjuring",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Pie in Your Face",
+          7
+        ],
+        [
+          "Clap Game",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-5953550393477191943",
@@ -4394,7 +7273,20 @@
       "challenger": "Pie in Your Face",
       "challenger_movie": "Killer Klowns from Outer Space",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Pie in Your Face",
+          7
+        ],
+        [
+          "Poof!",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-447260589520565301",
@@ -4414,7 +7306,20 @@
       "challenger": "Poof!",
       "challenger_movie": "Prophecy",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Poof!",
+          6
+        ],
+        [
+          "Sister Suffragette",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-6984473980280834303",
@@ -4434,7 +7339,20 @@
       "challenger": "Sister Suffragette",
       "challenger_movie": "Mary Poppins",
       "champion_wins_claimed": 5,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Sister Suffragette",
+          7
+        ],
+        [
+          "Fighting Shredder",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-3795833967960857707",
@@ -4454,7 +7372,20 @@
       "challenger": "The Eruption Starts",
       "challenger_movie": "Dante's Peak",
       "champion_wins_claimed": 4,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Fighting Shredder",
+          5
+        ],
+        [
+          "The Eruption Starts",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4534602324590230340",
@@ -4474,7 +7405,20 @@
       "challenger": "Tai's Harshness",
       "challenger_movie": "Clueless",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Fighting Shredder",
+          6
+        ],
+        [
+          "Tai's Harshness",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-6855198057891710695",
@@ -4494,7 +7438,20 @@
       "challenger": "Pinball Wizard",
       "challenger_movie": "Tommy",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Fighting Shredder",
+          8
+        ],
+        [
+          "Pinball Wizard",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4393606410901607253",
@@ -4514,7 +7471,20 @@
       "challenger": "Make 'Em Laugh",
       "challenger_movie": "Singin' in the Rain",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Fighting Shredder",
+          9
+        ],
+        [
+          "Make 'Em Laugh",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-2845547289762756238",
@@ -4534,7 +7504,20 @@
       "challenger": "Fighting Shredder",
       "challenger_movie": "Teenage Mutant Ninja Turtles",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Fighting Shredder",
+          8
+        ],
+        [
+          "Negotiation",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-1690070697170710006",
@@ -4554,7 +7537,20 @@
       "challenger": "Negotiation",
       "challenger_movie": "The Fifth Element",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Negotiation",
+          7
+        ],
+        [
+          "Gymnastics",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4053598045148486066",
@@ -4574,7 +7570,20 @@
       "challenger": "Gymnastics",
       "challenger_movie": "The Lost World: Jurassic Park",
       "champion_wins_claimed": 4,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Gymnastics",
+          8
+        ],
+        [
+          "Best Friends",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-694168325692877274",
@@ -4594,7 +7603,20 @@
       "challenger": "End of His Rope",
       "challenger_movie": "The Mist",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Best Friends",
+          6
+        ],
+        [
+          "End of His Rope",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-8449370403038807753",
@@ -4614,7 +7636,20 @@
       "challenger": "The DMV",
       "challenger_movie": "Zootopia",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Best Friends",
+          7
+        ],
+        [
+          "The DMV",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-2999347552182685689",
@@ -4634,7 +7669,20 @@
       "challenger": "The First Day",
       "challenger_movie": "A Quiet Place Part II",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Best Friends",
+          8
+        ],
+        [
+          "The First Day",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-8263428454490859925",
@@ -4654,7 +7702,20 @@
       "challenger": "Best Friends",
       "challenger_movie": "Scary Movie 2",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Best Friends",
+          8
+        ],
+        [
+          "The Tree Attacks",
+          2
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-7425138123075903741",
@@ -4674,7 +7735,20 @@
       "challenger": "Red Circle Club",
       "challenger_movie": "John Wick",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Tree Attacks",
+          8
+        ],
+        [
+          "Red Circle Club",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-3522853687016542975",
@@ -4694,7 +7768,20 @@
       "challenger": "The Tree Attacks",
       "challenger_movie": "Poltergeist",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Tree Attacks",
+          7
+        ],
+        [
+          "The Star Lasso Experience",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-2941657440814280527",
@@ -4714,7 +7801,25 @@
       "challenger": "The Star Lasso Experience",
       "challenger_movie": "Nope",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Star Lasso Experience",
+          9
+        ],
+        [
+          "The Wrong Week to Quit Sniffing Glue",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": [
+        {
+          "name": "Rainy",
+          "scene": "The Wrong Week to Quit Sniffing Glue"
+        }
+      ]
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-3310536692238193061",
@@ -4734,7 +7839,25 @@
       "challenger": "The Wrong Week to Quit Sniffing Glue",
       "challenger_movie": "Airplane!",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Wrong Week to Quit Sniffing Glue",
+          8
+        ],
+        [
+          "The Exorcism of Jonah Hill",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": [
+        {
+          "name": "Rainy",
+          "scene": "The Wrong Week to Quit Sniffing Glue"
+        }
+      ]
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-2630280425063807678",
@@ -4754,7 +7877,20 @@
       "challenger": "Horses Don't Like Me",
       "challenger_movie": "Near Dark",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Exorcism of Jonah Hill",
+          7
+        ],
+        [
+          "Horses Don't Like Me",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-6586714085822327484",
@@ -4774,7 +7910,20 @@
       "challenger": "Bad Dreams",
       "challenger_movie": "Imaginary",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Exorcism of Jonah Hill",
+          9
+        ],
+        [
+          "Bad Dreams",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4253934647531613038",
@@ -4794,7 +7943,25 @@
       "challenger": "The Exorcism of Jonah Hill",
       "challenger_movie": "This Is the End",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Exorcism of Jonah Hill",
+          7
+        ],
+        [
+          "Snake Story",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": [
+        {
+          "name": "Alan",
+          "scene": "Snake Story"
+        }
+      ]
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-6523353051769519120",
@@ -4814,7 +7981,25 @@
       "challenger": "Snake Story",
       "challenger_movie": "Natural Born Killers",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Snake Story",
+          5
+        ],
+        [
+          "Bundt Cake",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": [
+        {
+          "name": "Alan",
+          "scene": "Snake Story"
+        }
+      ]
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-1042362510178770477",
@@ -4834,7 +8019,20 @@
       "challenger": "Beachside Dance Off",
       "challenger_movie": "Psycho Beach Party",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Bundt Cake",
+          6
+        ],
+        [
+          "Beachside Dance Off",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-1860160872462345950",
@@ -4854,7 +8052,20 @@
       "challenger": "Bundt Cake",
       "challenger_movie": "My Big Fat Greek Wedding",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Bundt Cake",
+          5
+        ],
+        [
+          "Nothing to See Here",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-3268959233406429808",
@@ -4874,7 +8085,20 @@
       "challenger": "Nothing to See Here",
       "challenger_movie": "The Naked Gun",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Nothing to See Here",
+          6
+        ],
+        [
+          "Drug Test",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-8130626932043324761",
@@ -4894,7 +8118,20 @@
       "challenger": "Drug Test",
       "challenger_movie": "The Faculty",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Drug Test",
+          8
+        ],
+        [
+          "Whistle While You Work",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-3254561556575955758",
@@ -4914,7 +8151,20 @@
       "challenger": "Whistle While You Work",
       "challenger_movie": "Snow White and the Seven Dwarfs",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Whistle While You Work",
+          7
+        ],
+        [
+          "Savage Comeback",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-1998543444356989867",
@@ -4934,7 +8184,20 @@
       "challenger": "Nothing Small Into a Bar",
       "challenger_movie": "Harvey",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Savage Comeback",
+          7
+        ],
+        [
+          "Nothing Small Into a Bar",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4341795515961683362",
@@ -4954,7 +8217,20 @@
       "challenger": "Savage Comeback",
       "challenger_movie": "Sleepaway Camp",
       "champion_wins_claimed": 6,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Savage Comeback",
+          6
+        ],
+        [
+          "Wrecked",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-6818125132611802188",
@@ -4974,7 +8250,20 @@
       "challenger": "Going Supernova",
       "challenger_movie": "Fantastic Four",
       "champion_wins_claimed": 5,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Wrecked",
+          7
+        ],
+        [
+          "Going Supernova",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-6835005989262937351",
@@ -4994,7 +8283,20 @@
       "challenger": "Turning Heads",
       "challenger_movie": "The Exorcist",
       "champion_wins_claimed": 4,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Wrecked",
+          9
+        ],
+        [
+          "Turning Heads",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-6240686829504480083",
@@ -5014,7 +8316,20 @@
       "challenger": "Caught in a Web",
       "challenger_movie": "Enemy",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Wrecked",
+          10
+        ],
+        [
+          "Caught in a Web",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-6935953138610788618",
@@ -5034,7 +8349,25 @@
       "challenger": "Snack Sabotage",
       "challenger_movie": "KPop Demon Hunters",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Wrecked",
+          6
+        ],
+        [
+          "Snack Sabotage",
+          2
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": [
+        {
+          "name": "Ren\u00e9e and Mary",
+          "scene": "Snack Sabotage"
+        }
+      ]
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-6185408370578631402",
@@ -5054,7 +8387,20 @@
       "challenger": "Fighting Paddy",
       "challenger_movie": "Charlie's Angels: Full Throttle",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Wrecked",
+          8
+        ],
+        [
+          "Fighting Paddy",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-3450940941264004409",
@@ -5074,7 +8420,20 @@
       "challenger": "Wrecked",
       "challenger_movie": "Final Destination 2",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Wrecked",
+          6
+        ],
+        [
+          "Only When It Was Funny",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-8901754931559695420",
@@ -5094,7 +8453,20 @@
       "challenger": "LA, Destroyed",
       "challenger_movie": "2012",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Only When It Was Funny",
+          8
+        ],
+        [
+          "LA, Destroyed",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-7746641313385134061",
@@ -5114,7 +8486,20 @@
       "challenger": "Benny's a Good Dog",
       "challenger_movie": "The War of the Roses",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Only When It Was Funny",
+          7
+        ],
+        [
+          "Benny's a Good Dog",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4186057726740677044",
@@ -5134,7 +8519,20 @@
       "challenger": "Only When It Was Funny",
       "challenger_movie": "Who Framed Roger Rabbit?",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Only When It Was Funny",
+          9
+        ],
+        [
+          "Mahjong",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-5122357624917950834",
@@ -5154,7 +8552,20 @@
       "challenger": "Mahjong",
       "challenger_movie": "Crazy Rich Asians",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Mahjong",
+          7
+        ],
+        [
+          "Fate Refused",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-5790159302018752563",
@@ -5174,7 +8585,20 @@
       "challenger": "Fate Refused",
       "challenger_movie": "No Country for Old Men",
       "champion_wins_claimed": 5,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Fate Refused",
+          6
+        ],
+        [
+          "Time's Up",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-2368915062399093345",
@@ -5194,7 +8618,20 @@
       "challenger": "Where There's a Whip, There's a Way",
       "challenger_movie": "The Return of the King",
       "champion_wins_claimed": 4,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Time's Up",
+          9
+        ],
+        [
+          "Where There's a Whip, There's a Way",
+          7
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-2502962288774911334",
@@ -5214,7 +8651,20 @@
       "challenger": "I'm Tired",
       "challenger_movie": "Blazing Saddles",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Time's Up",
+          11
+        ],
+        [
+          "I'm Tired",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-5129874978793164631",
@@ -5234,7 +8684,20 @@
       "challenger": "News Rumble",
       "challenger_movie": "Anchorman: The Legend of Ron Burgundy",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Time's Up",
+          9
+        ],
+        [
+          "News Rumble",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-8413347458616791032",
@@ -5254,7 +8717,20 @@
       "challenger": "Stuck in the Middle with You",
       "challenger_movie": "Reservoir Dogs",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Time's Up",
+          7
+        ],
+        [
+          "Stuck in the Middle with You",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-7180247550395762594",
@@ -5274,7 +8750,20 @@
       "challenger": "Time's Up",
       "challenger_movie": "Independence Day",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Time's Up",
+          9
+        ],
+        [
+          "Who's the Blackest?",
+          2
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-2670703701440276496",
@@ -5294,7 +8783,20 @@
       "challenger": "Who's the Blackest?",
       "challenger_movie": "The Blackening",
       "champion_wins_claimed": 4,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Who's the Blackest?",
+          6
+        ],
+        [
+          "Bi-Furious",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-2508010157683825187",
@@ -5314,7 +8816,20 @@
       "challenger": "No Man's Land",
       "challenger_movie": "Wonder Woman",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Bi-Furious",
+          6
+        ],
+        [
+          "No Man's Land",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-9007669697958508129",
@@ -5334,7 +8849,20 @@
       "challenger": "Gwangi Fights an Elephant",
       "challenger_movie": "The Valley of Gwangi",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Bi-Furious",
+          7
+        ],
+        [
+          "Gwangi Fights an Elephant",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-1722141376040693959",
@@ -5354,7 +8882,20 @@
       "challenger": "Alma's Discovery",
       "challenger_movie": "Brokeback Mountain",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Bi-Furious",
+          7
+        ],
+        [
+          "Alma's Discovery",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-5886378392186292606",
@@ -5374,7 +8915,20 @@
       "challenger": "Bi-Furious",
       "challenger_movie": "Scott Pilgrim vs. The World",
       "champion_wins_claimed": 4,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Bi-Furious",
+          7
+        ],
+        [
+          "Rocky Road to Dublin",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-7888593238381562560",
@@ -5394,7 +8948,20 @@
       "challenger": "What is a House?",
       "challenger_movie": "Paris is Burning",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Rocky Road to Dublin",
+          6
+        ],
+        [
+          "What is a House?",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-5528801470241074087",
@@ -5414,7 +8981,20 @@
       "challenger": "Come Out",
       "challenger_movie": "Milk",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Rocky Road to Dublin",
+          7
+        ],
+        [
+          "Come Out",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-1449873948872420319",
@@ -5434,7 +9014,20 @@
       "challenger": "Last Season Prada Shoes",
       "challenger_movie": "Legally Blonde",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Rocky Road to Dublin",
+          8
+        ],
+        [
+          "Last Season Prada Shoes",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-6879235327612460904",
@@ -5454,7 +9047,20 @@
       "challenger": "Rocky Road to Dublin",
       "challenger_movie": "Sinners",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Rocky Road to Dublin",
+          10
+        ],
+        [
+          "Spectacular, Spectacular",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-8948855608099080140",
@@ -5474,7 +9080,20 @@
       "challenger": "Spectacular, Spectacular",
       "challenger_movie": "Moulin Rouge!",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Spectacular, Spectacular",
+          6
+        ],
+        [
+          "New York, New York",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-3504013376162238301",
@@ -5494,7 +9113,20 @@
       "challenger": "Follow the Yellow Brick Road",
       "challenger_movie": "The Wizard of Oz",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "New York, New York",
+          6
+        ],
+        [
+          "Follow the Yellow Brick Road",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-5716821310329756029",
@@ -5514,7 +9146,20 @@
       "challenger": "New York, New York",
       "challenger_movie": "On the Town",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "New York, New York",
+          6
+        ],
+        [
+          "The Point of No Return",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-3495223156946906493",
@@ -5534,7 +9179,20 @@
       "challenger": "The Point of No Return",
       "challenger_movie": "The Phantom of the Opera",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Point of No Return",
+          7
+        ],
+        [
+          "Mrs. Deagle's Demise",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-517697852738622471",
@@ -5554,7 +9212,20 @@
       "challenger": "Intervention",
       "challenger_movie": "Finding Nemo",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Mrs. Deagle's Demise",
+          8
+        ],
+        [
+          "Intervention",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4159784100770091629",
@@ -5574,7 +9245,20 @@
       "challenger": "Mrs. Deagle's Demise",
       "challenger_movie": "Gremlins",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Mrs. Deagle's Demise",
+          6
+        ],
+        [
+          "Riff Off",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-1966118878407992882",
@@ -5594,7 +9278,20 @@
       "challenger": "Riff Off",
       "challenger_movie": "Pitch Perfect",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Riff Off",
+          6
+        ],
+        [
+          "It Was Tuesday",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-5946578500340576199",
@@ -5614,7 +9311,20 @@
       "challenger": "It Was Tuesday",
       "challenger_movie": "Street Fighter",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "It Was Tuesday",
+          6
+        ],
+        [
+          "Rolling Down the Hill",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-617718772916758089",
@@ -5634,7 +9344,20 @@
       "challenger": "Rock DJ",
       "challenger_movie": "Better Man",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Rolling Down the Hill",
+          6
+        ],
+        [
+          "Rock DJ",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-1898562126075710876",
@@ -5654,7 +9377,20 @@
       "challenger": "Rolling Down the Hill",
       "challenger_movie": "Kung Pow: Enter the Fist",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Rolling Down the Hill",
+          6
+        ],
+        [
+          "The Wrong Rec Room",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-2878266356705743925",
@@ -5674,7 +9410,20 @@
       "challenger": "The Little People",
       "challenger_movie": "Bride of Frankenstein",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Wrong Rec Room",
+          9
+        ],
+        [
+          "The Little People",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-7251204556432503187",
@@ -5694,7 +9443,20 @@
       "challenger": "Play Time",
       "challenger_movie": "The Warriors",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Wrong Rec Room",
+          9
+        ],
+        [
+          "Play Time",
+          1
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-2022053376969921345",
@@ -5714,7 +9476,20 @@
       "challenger": "The Wrong Rec Room",
       "challenger_movie": "Tremors",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Wrong Rec Room",
+          8
+        ],
+        [
+          "Introducing Jobu",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-3480607586006382465",
@@ -5734,7 +9509,20 @@
       "challenger": "Introducing Jobu",
       "challenger_movie": "Everything Everywhere All At Once",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Introducing Jobu",
+          5
+        ],
+        [
+          "Friday Night Knock-Out",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-6698432178784661181",
@@ -5754,7 +9542,20 @@
       "challenger": "Friday Night Knock-Out",
       "challenger_movie": "Friday the 13th Part VIII: Jason Takes Manhattan",
       "champion_wins_claimed": null,
-      "battle_type": "fresh"
+      "battle_type": "fresh",
+      "score_entries": [
+        [
+          "Friday Night Knock-Out",
+          6
+        ],
+        [
+          "The Giant Bee",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-3209357440066989028",
@@ -5774,7 +9575,20 @@
       "challenger": "Albert Will Not Perform",
       "challenger_movie": "The Birdcage",
       "champion_wins_claimed": 6,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Pastels",
+          6
+        ],
+        [
+          "Albert Will Not Perform",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-7606072443981363088",
@@ -5794,7 +9608,20 @@
       "challenger": "Minnesota's Oldest Living Lutheran",
       "challenger_movie": "Drop Dead Gorgeous",
       "champion_wins_claimed": 5,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Pastels",
+          6
+        ],
+        [
+          "Minnesota's Oldest Living Lutheran",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4416508540544472105",
@@ -5814,7 +9641,20 @@
       "challenger": "An Unsafe Phone Booth",
       "challenger_movie": "The Blob",
       "champion_wins_claimed": 4,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Pastels",
+          5
+        ],
+        [
+          "An Unsafe Phone Booth",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-5688114277282795358",
@@ -5834,7 +9674,20 @@
       "challenger": "The Best Speech Ever",
       "challenger_movie": "Team America: World Police",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Pastels",
+          6
+        ],
+        [
+          "The Best Speech Ever",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-7836102199272626662",
@@ -5854,7 +9707,20 @@
       "challenger": "Large Marge",
       "challenger_movie": "Pee-wee's Big Adventure",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Pastels",
+          9
+        ],
+        [
+          "Large Marge",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-3952675138238956589",
@@ -5874,7 +9740,20 @@
       "challenger": "Honest Subtitles",
       "challenger_movie": "Annie Hall",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Pastels",
+          10
+        ],
+        [
+          "Honest Subtitles",
+          1
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-5184588788972211979",
@@ -5894,7 +9773,20 @@
       "challenger": "Pastels",
       "challenger_movie": "Addams Family Values",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Pastels",
+          7
+        ],
+        [
+          "Hooked",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-1402532891159652354",
@@ -5914,7 +9806,20 @@
       "challenger": "Don't Scramble the Eggs",
       "challenger_movie": "Lake Placid 2",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Hooked",
+          6
+        ],
+        [
+          "Don't Scramble the Eggs",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-7601481466693035415",
@@ -5934,7 +9839,20 @@
       "challenger": "Hooked",
       "challenger_movie": "The Texas Chainsaw Massacre",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Hooked",
+          7
+        ],
+        [
+          "Miss Hilly's Special Pie",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": true,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-1067911509827623189",
@@ -5954,7 +9872,20 @@
       "challenger": "Surface Pressure",
       "challenger_movie": "Encanto",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Miss Hilly's Special Pie",
+          7
+        ],
+        [
+          "Surface Pressure",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-1783167324236715025",
@@ -5974,7 +9905,20 @@
       "challenger": "Revolting Children",
       "challenger_movie": "Matilda the Musical",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Miss Hilly's Special Pie",
+          11
+        ],
+        [
+          "Revolting Children",
+          2
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-187785051627960137",
@@ -5994,7 +9938,20 @@
       "challenger": "Miss Hilly's Special Pie",
       "challenger_movie": "The Help",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Miss Hilly's Special Pie",
+          7
+        ],
+        [
+          "Trick Question",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4043471163051499865",
@@ -6014,7 +9971,20 @@
       "challenger": "Trick Question",
       "challenger_movie": "My Cousin Vinny",
       "champion_wins_claimed": 4,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Trick Question",
+          7
+        ],
+        [
+          "You Play Ball Like a Girl!",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-6204677911401242543",
@@ -6034,7 +10004,20 @@
       "challenger": "Fugue for Tinhorns",
       "challenger_movie": "Guys and Dolls",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "You Play Ball Like a Girl!",
+          7
+        ],
+        [
+          "Fugue for Tinhorns",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-8919769615128232639",
@@ -6054,7 +10037,20 @@
       "challenger": "Ben's Boat",
       "challenger_movie": "Jaws",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "You Play Ball Like a Girl!",
+          7
+        ],
+        [
+          "Ben's Boat",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-3202860234908205830",
@@ -6074,7 +10070,20 @@
       "challenger": "Campfire Tales",
       "challenger_movie": "The Fog",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "You Play Ball Like a Girl!",
+          6
+        ],
+        [
+          "Campfire Tales",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-5874911666506956704",
@@ -6094,7 +10103,20 @@
       "challenger": "You Play Ball Like a Girl!",
       "challenger_movie": "The Sandlot",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "You Play Ball Like a Girl!",
+          8
+        ],
+        [
+          "The Prophecy",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-2308474136854125806",
@@ -6114,7 +10136,20 @@
       "challenger": "The Prophecy",
       "challenger_movie": "The Lego Movie",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The Prophecy",
+          8
+        ],
+        [
+          "Losing Concentration",
+          7
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": true,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-8021291489213054833",
@@ -6134,7 +10169,20 @@
       "challenger": "Distracting Mewtwo",
       "challenger_movie": "Detective Pikachu",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Losing Concentration",
+          6
+        ],
+        [
+          "Distracting Mewtwo",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-3209042265655047998",
@@ -6154,7 +10202,20 @@
       "challenger": "Losing Concentration",
       "challenger_movie": "Dungeons & Dragons: Honor Among Thieves",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Losing Concentration",
+          8
+        ],
+        [
+          "Introducing Godzilla",
+          7
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-8042957926824802959",
@@ -6174,7 +10235,20 @@
       "challenger": "Harlan's Plan",
       "challenger_movie": "Knives Out",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Introducing Godzilla",
+          6
+        ],
+        [
+          "Harlan's Plan",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4974885055140825758",
@@ -6194,7 +10268,20 @@
       "challenger": "Ron's Weed Room",
       "challenger_movie": "Attack the Block",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Introducing Godzilla",
+          8
+        ],
+        [
+          "Ron's Weed Room",
+          2
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-7724109571173907640",
@@ -6214,7 +10301,20 @@
       "challenger": "Introducing Godzilla",
       "challenger_movie": "Godzilla",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Introducing Godzilla",
+          7
+        ],
+        [
+          "He Never Screams",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-6730859869832362066",
@@ -6234,7 +10334,20 @@
       "challenger": "He Never Screams",
       "challenger_movie": "Sin City",
       "champion_wins_claimed": 3,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "He Never Screams",
+          5
+        ],
+        [
+          "The New Pope",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4289126922721276780",
@@ -6254,7 +10367,20 @@
       "challenger": "Mrs. Ritter",
       "challenger_movie": "The Pope of Greenwich Village",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The New Pope",
+          5
+        ],
+        [
+          "Mrs. Ritter",
+          1
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-1490929360997987463",
@@ -6274,7 +10400,20 @@
       "challenger": "Playing Dead",
       "challenger_movie": "The Monkey King 3",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The New Pope",
+          6
+        ],
+        [
+          "Playing Dead",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-7530977148741565321",
@@ -6294,7 +10433,20 @@
       "challenger": "The New Pope",
       "challenger_movie": "Eurotrip",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "The New Pope",
+          7
+        ],
+        [
+          "Zuckerman's Famous Pig",
+          2
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-5189425199655750466",
@@ -6314,7 +10466,20 @@
       "challenger": "Zuckerman's Famous Pig",
       "challenger_movie": "Charlotte's Web",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Zuckerman's Famous Pig",
+          8
+        ],
+        [
+          "Bus Ride Battle",
+          2
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-8950030676814309286",
@@ -6334,7 +10499,20 @@
       "challenger": "A Visit from the Easter Bunny",
       "challenger_movie": "Critters 2: The Main Course",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Bus Ride Battle",
+          8
+        ],
+        [
+          "A Visit from the Easter Bunny",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-7768636618533137148",
@@ -6354,7 +10532,20 @@
       "challenger": "Bus Ride Battle",
       "challenger_movie": "Shang-Chi and the Legend of the Ten Rings",
       "champion_wins_claimed": 2,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "Bus Ride Battle",
+          5
+        ],
+        [
+          "When Doves Die",
+          3
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-668045694218739263",
@@ -6374,7 +10565,20 @@
       "challenger": "Move",
       "challenger_movie": "Dreamgirls",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "When Doves Die",
+          7
+        ],
+        [
+          "Move",
+          6
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-3623814459202943558",
@@ -6394,7 +10598,20 @@
       "challenger": "When Doves Die",
       "challenger_movie": "Mars Attacks!",
       "champion_wins_claimed": 1,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": [
+        [
+          "When Doves Die",
+          5
+        ],
+        [
+          "Clever Girl",
+          4
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-3629192677525864518",
@@ -6414,7 +10631,20 @@
       "challenger": "Gabriel, Revealed",
       "challenger_movie": "Malignant",
       "champion_wins_claimed": null,
-      "battle_type": "fresh"
+      "battle_type": "fresh",
+      "score_entries": [
+        [
+          "Clever Girl",
+          11
+        ],
+        [
+          "Gabriel, Revealed",
+          5
+        ]
+      ],
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-2825842442670897389",
@@ -6433,7 +10663,11 @@
       "challenger": null,
       "challenger_movie": null,
       "champion_wins_claimed": null,
-      "battle_type": null
+      "battle_type": null,
+      "score_entries": null,
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-5496703433252410213",
@@ -6453,7 +10687,11 @@
       "challenger": null,
       "challenger_movie": null,
       "champion_wins_claimed": null,
-      "battle_type": null
+      "battle_type": null,
+      "score_entries": null,
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4007355251865181035",
@@ -6480,7 +10718,11 @@
       "challenger": null,
       "challenger_movie": null,
       "champion_wins_claimed": null,
-      "battle_type": null
+      "battle_type": null,
+      "score_entries": null,
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     },
     {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-9168063431678872418",
@@ -6497,7 +10739,11 @@
       "challenger": "pppChallenger",
       "challenger_movie": "Movie",
       "champion_wins_claimed": null,
-      "battle_type": "defense"
+      "battle_type": "defense",
+      "score_entries": null,
+      "score_unparsed": null,
+      "tiebreaker": false,
+      "submitters": []
     }
   ],
   "stats": {
@@ -6581,6 +10827,6 @@
       }
     ],
     "last_post_update": "2026-09-03 06:35:45.558000-07:00",
-    "crawl_completed_at": "2026-09-04 13:59:05.551547+00:00"
+    "crawl_completed_at": "2026-09-04 14:44:22.415532+00:00"
   }
 }

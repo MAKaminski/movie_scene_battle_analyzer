@@ -27,6 +27,13 @@ class BattlePost:
     challenger_movie: str | None = None
     champion_wins_claimed: int | None = None
     battle_type: str | None = None
+    # Published poll result: [[scene, votes], [scene, votes]], highest first.
+    # `tiebreaker` marks a poll that ended level and was decided by the site owner.
+    score_entries: list[tuple[str, int]] | None = None
+    score_unparsed: str | None = None
+    tiebreaker: bool = False
+    # [{"name": credited person, "scene": the scene their credit sits beside}]
+    submitters: list[dict[str, str]] = field(default_factory=list)
 
 
 @dataclass(slots=True)

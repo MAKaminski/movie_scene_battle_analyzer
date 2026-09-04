@@ -29,6 +29,18 @@
     "non_battle_posts": 6,
     "winners_inferred": 318,
     "winner_inference_rate": 99.7,
+    "scored_battles": 317,
+    "poll_vs_chain_checks": 317,
+    "poll_vs_chain_mismatches": [],
+    "poll_vs_chain_agreement_rate": 100.0,
+    "unreadable_scores": [
+      {
+        "title": "Don't Want None of This vs. Batty Rap",
+        "url": "https://moviescenebattles.blogspot.com/2026/03/dont-want-none-of-this-vs-batty-rap.html",
+        "date": "2026-03-04",
+        "text": "Batty Rap 6, Shpadoinkle Day 4"
+      }
+    ],
     "win_counter_checks": 309,
     "win_counter_agreement": 308,
     "win_counter_agreement_rate": 99.7,
@@ -1670,6 +1682,824 @@
       "win_rate": 38.9
     }
   ],
+  "voting": {
+    "scored_battles": 317,
+    "total_votes": 3962,
+    "avg_turnout": 12.5,
+    "median_turnout": 12,
+    "min_turnout": 6,
+    "max_turnout": 21,
+    "avg_margin": 3.12,
+    "one_vote_battles": 97,
+    "one_vote_share": 30.6,
+    "tiebreakers": [
+      {
+        "title": "Losing Concentration vs. The Prophecy",
+        "url": "https://moviescenebattles.blogspot.com/2025/05/losing-concentration-vs-prophecy.html",
+        "date": "2025-05-04",
+        "champion": "Losing Concentration",
+        "champion_movie": "Dungeons & Dragons: Honor Among Thieves",
+        "champion_votes": 7,
+        "challenger": "The Prophecy",
+        "challenger_movie": "The Lego Movie",
+        "challenger_votes": 8,
+        "turnout": 15,
+        "margin": 1,
+        "tiebreaker": true
+      },
+      {
+        "title": "Miss Hilly's Special Pie vs. Hooked",
+        "url": "https://moviescenebattles.blogspot.com/2025/05/miss-hillys-special-pie-vs-hooked.html",
+        "date": "2025-05-15",
+        "champion": "Miss Hilly's Special Pie",
+        "champion_movie": "The Help",
+        "champion_votes": 6,
+        "challenger": "Hooked",
+        "challenger_movie": "The Texas Chainsaw Massacre",
+        "challenger_votes": 7,
+        "turnout": 13,
+        "margin": 1,
+        "tiebreaker": true
+      },
+      {
+        "title": "Subway Fight vs. Bad Shooting",
+        "url": "https://moviescenebattles.blogspot.com/2025/11/subway-fight-vs-bad-shooting.html",
+        "date": "2025-11-23",
+        "champion": "Subway Battle",
+        "champion_movie": "The Matrix",
+        "champion_votes": 7,
+        "challenger": "Bad Shooting",
+        "challenger_movie": "Cocaine Bear",
+        "challenger_votes": 6,
+        "turnout": 13,
+        "margin": 1,
+        "tiebreaker": true
+      },
+      {
+        "title": "Don't Want None of This vs. The First to Fall",
+        "url": "https://moviescenebattles.blogspot.com/2026/03/dont-want-none-of-this-vs-first-to-fall.html",
+        "date": "2026-03-02",
+        "champion": "Don't Want None of This",
+        "champion_movie": "Walk Hard: The Dewey Cox Story",
+        "champion_votes": 6,
+        "challenger": "The First to Fall",
+        "challenger_movie": "The Long Walk",
+        "challenger_votes": 5,
+        "turnout": 11,
+        "margin": 1,
+        "tiebreaker": true
+      }
+    ],
+    "turnout_by_month": [
+      {
+        "month": "2025-04",
+        "battles": 14,
+        "total_votes": 152,
+        "avg_turnout": 10.86
+      },
+      {
+        "month": "2025-05",
+        "battles": 20,
+        "total_votes": 229,
+        "avg_turnout": 11.45
+      },
+      {
+        "month": "2025-06",
+        "battles": 22,
+        "total_votes": 243,
+        "avg_turnout": 11.05
+      },
+      {
+        "month": "2025-07",
+        "battles": 22,
+        "total_votes": 274,
+        "avg_turnout": 12.45
+      },
+      {
+        "month": "2025-08",
+        "battles": 21,
+        "total_votes": 237,
+        "avg_turnout": 11.29
+      },
+      {
+        "month": "2025-09",
+        "battles": 21,
+        "total_votes": 289,
+        "avg_turnout": 13.76
+      },
+      {
+        "month": "2025-10",
+        "battles": 22,
+        "total_votes": 290,
+        "avg_turnout": 13.18
+      },
+      {
+        "month": "2025-11",
+        "battles": 14,
+        "total_votes": 180,
+        "avg_turnout": 12.86
+      },
+      {
+        "month": "2025-12",
+        "battles": 13,
+        "total_votes": 186,
+        "avg_turnout": 14.31
+      },
+      {
+        "month": "2026-01",
+        "battles": 18,
+        "total_votes": 273,
+        "avg_turnout": 15.17
+      },
+      {
+        "month": "2026-02",
+        "battles": 13,
+        "total_votes": 197,
+        "avg_turnout": 15.15
+      },
+      {
+        "month": "2026-03",
+        "battles": 22,
+        "total_votes": 257,
+        "avg_turnout": 11.68
+      },
+      {
+        "month": "2026-04",
+        "battles": 22,
+        "total_votes": 269,
+        "avg_turnout": 12.23
+      },
+      {
+        "month": "2026-05",
+        "battles": 15,
+        "total_votes": 189,
+        "avg_turnout": 12.6
+      },
+      {
+        "month": "2026-06",
+        "battles": 21,
+        "total_votes": 249,
+        "avg_turnout": 11.86
+      },
+      {
+        "month": "2026-07",
+        "battles": 17,
+        "total_votes": 200,
+        "avg_turnout": 11.76
+      },
+      {
+        "month": "2026-08",
+        "battles": 18,
+        "total_votes": 220,
+        "avg_turnout": 12.22
+      },
+      {
+        "month": "2026-09",
+        "battles": 2,
+        "total_votes": 28,
+        "avg_turnout": 14.0
+      }
+    ],
+    "turnout_by_streak": [
+      {
+        "wins_before_battle": 1,
+        "battles": 142,
+        "avg_turnout": 12.57
+      },
+      {
+        "wins_before_battle": 2,
+        "battles": 70,
+        "avg_turnout": 12.2
+      },
+      {
+        "wins_before_battle": 3,
+        "battles": 41,
+        "avg_turnout": 12.32
+      },
+      {
+        "wins_before_battle": 4,
+        "battles": 26,
+        "avg_turnout": 12.58
+      },
+      {
+        "wins_before_battle": 5,
+        "battles": 16,
+        "avg_turnout": 13.25
+      },
+      {
+        "wins_before_battle": 6,
+        "battles": 12,
+        "avg_turnout": 12.33
+      }
+    ],
+    "margin_histogram": [
+      {
+        "margin": 1,
+        "battles": 97
+      },
+      {
+        "margin": 2,
+        "battles": 56
+      },
+      {
+        "margin": 3,
+        "battles": 50
+      },
+      {
+        "margin": 4,
+        "battles": 40
+      },
+      {
+        "margin": 5,
+        "battles": 29
+      },
+      {
+        "margin": 6,
+        "battles": 19
+      },
+      {
+        "margin": 7,
+        "battles": 11
+      },
+      {
+        "margin": 8,
+        "battles": 6
+      },
+      {
+        "margin": 9,
+        "battles": 6
+      },
+      {
+        "margin": 10,
+        "battles": 2
+      },
+      {
+        "margin": 11,
+        "battles": 1
+      }
+    ],
+    "closest_battles": [
+      {
+        "title": "Out of Bubblegum vs. Saving MJ",
+        "url": "https://moviescenebattles.blogspot.com/2025/12/out-of-bubblegum-vs-saving-mj.html",
+        "date": "2025-12-10",
+        "champion": "Out of Bubblegum",
+        "champion_movie": "They Live",
+        "champion_votes": 11,
+        "challenger": "Saving MJ",
+        "challenger_movie": "Spider-Man: No Way Home",
+        "challenger_votes": 10,
+        "turnout": 21,
+        "margin": 1,
+        "tiebreaker": false
+      },
+      {
+        "title": "Battle of Wits vs. TRAIN!",
+        "url": "https://moviescenebattles.blogspot.com/2026/01/battle-of-wits-vs-train.html",
+        "date": "2026-01-08",
+        "champion": "Battle of Wits",
+        "champion_movie": "The Princess Bride",
+        "champion_votes": 10,
+        "challenger": "TRAIN!",
+        "challenger_movie": "Stand By Me",
+        "challenger_votes": 9,
+        "turnout": 19,
+        "margin": 1,
+        "tiebreaker": false
+      },
+      {
+        "title": "Chest Burst vs. You Can't Kill the Boogeyman",
+        "url": "https://moviescenebattles.blogspot.com/2025/10/chest-burst-vs-you-cant-kill-boogeyman.html",
+        "date": "2025-10-30",
+        "champion": "Chest Burst",
+        "champion_movie": "Alien",
+        "champion_votes": 9,
+        "challenger": "You Can't Kill the Boogeyman",
+        "challenger_movie": "Halloween",
+        "challenger_votes": 8,
+        "turnout": 17,
+        "margin": 1,
+        "tiebreaker": false
+      },
+      {
+        "title": "Battle of Wits vs. Dominos",
+        "url": "https://moviescenebattles.blogspot.com/2026/01/battle-of-wits-vs-dominos.html",
+        "date": "2026-01-12",
+        "champion": "Battle of Wits",
+        "champion_movie": "The Princess Bride",
+        "champion_votes": 8,
+        "challenger": "Dominos",
+        "challenger_movie": "V for Vendetta",
+        "challenger_votes": 9,
+        "turnout": 17,
+        "margin": 1,
+        "tiebreaker": false
+      },
+      {
+        "title": "Do You Count Holidays? vs. Shallow",
+        "url": "https://moviescenebattles.blogspot.com/2026/01/do-you-count-holidays-vs-shallow.html",
+        "date": "2026-01-22",
+        "champion": "Do You Count Holidays?",
+        "champion_movie": "Scary Movie 3",
+        "champion_votes": 9,
+        "challenger": "Shallow",
+        "challenger_movie": "A Star is Born",
+        "challenger_votes": 8,
+        "turnout": 17,
+        "margin": 1,
+        "tiebreaker": false
+      },
+      {
+        "title": "Remodel Request vs. KEVIN!",
+        "url": "https://moviescenebattles.blogspot.com/2026/02/remodel-request-vs-kevin.html",
+        "date": "2026-02-04",
+        "champion": "Remodel Request",
+        "champion_movie": "Beetlejuice",
+        "champion_votes": 8,
+        "challenger": "KEVIN!",
+        "challenger_movie": "Home Alone 2: Lost in New York",
+        "challenger_votes": 9,
+        "turnout": 17,
+        "margin": 1,
+        "tiebreaker": false
+      },
+      {
+        "title": "Not Bad for a Girl vs. The Crucifixion of Margaret White",
+        "url": "https://moviescenebattles.blogspot.com/2026/04/not-bad-for-girl-vs-crucifixion-of.html",
+        "date": "2026-04-02",
+        "champion": "Not Bad for a Girl",
+        "champion_movie": "Spaceballs",
+        "champion_votes": 8,
+        "challenger": "The Crucifixion of Margaret White",
+        "challenger_movie": "Carrie",
+        "challenger_votes": 9,
+        "turnout": 17,
+        "margin": 1,
+        "tiebreaker": false
+      },
+      {
+        "title": "Horror Remakes vs. First Person",
+        "url": "https://moviescenebattles.blogspot.com/2026/08/horror-remakes-vs-first-person.html",
+        "date": "2026-08-18",
+        "champion": "Horror Remakes",
+        "champion_movie": "Scream 4",
+        "champion_votes": 8,
+        "challenger": "First Person",
+        "challenger_movie": "Doom",
+        "challenger_votes": 9,
+        "turnout": 17,
+        "margin": 1,
+        "tiebreaker": false
+      }
+    ],
+    "biggest_blowouts": [
+      {
+        "title": "KEVIN! vs. A Kiss at the End of the Rainbow",
+        "url": "https://moviescenebattles.blogspot.com/2026/02/kevin-vs-kiss-at-end-of-rainbow.html",
+        "date": "2026-02-05",
+        "champion": "KEVIN!",
+        "champion_movie": "Home Alone 2: Lost in New York",
+        "champion_votes": 16,
+        "challenger": "A Kiss at the End of the Rainbow",
+        "challenger_movie": "A Mighty Wind",
+        "challenger_votes": 5,
+        "turnout": 21,
+        "margin": 11,
+        "tiebreaker": false
+      },
+      {
+        "title": "I'll Have What She's Having vs. Battle of Wits",
+        "url": "https://moviescenebattles.blogspot.com/2026/01/ill-have-what-shes-having-vs-battle-of.html",
+        "date": "2026-01-06",
+        "champion": "I'll Have What She's Having",
+        "champion_movie": "When Harry Met Sally...",
+        "champion_votes": 3,
+        "challenger": "Battle of Wits",
+        "challenger_movie": "The Princess Bride",
+        "challenger_votes": 13,
+        "turnout": 16,
+        "margin": 10,
+        "tiebreaker": false
+      },
+      {
+        "title": "The Albertsons Audition vs. Remodel Request",
+        "url": "https://moviescenebattles.blogspot.com/2026/02/the-albertsons-audition-vs-remodel.html",
+        "date": "2026-02-02",
+        "champion": "The Albertsons Audition",
+        "champion_movie": "Waiting for Guffman",
+        "champion_votes": 3,
+        "challenger": "Remodel Request",
+        "challenger_movie": "Beetlejuice",
+        "challenger_votes": 13,
+        "turnout": 16,
+        "margin": 10,
+        "tiebreaker": false
+      },
+      {
+        "title": "Miss Hilly's Special Pie vs. Revolting Children",
+        "url": "https://moviescenebattles.blogspot.com/2025/05/miss-hillys-special-pie-vs-revolting.html",
+        "date": "2025-05-13",
+        "champion": "Miss Hilly's Special Pie",
+        "champion_movie": "The Help",
+        "champion_votes": 11,
+        "challenger": "Revolting Children",
+        "challenger_movie": "Matilda the Musical",
+        "challenger_votes": 2,
+        "turnout": 13,
+        "margin": 9,
+        "tiebreaker": false
+      },
+      {
+        "title": "Pastels vs. Honest Subtitles",
+        "url": "https://moviescenebattles.blogspot.com/2025/05/pastels-vs-honest-subtitles.html",
+        "date": "2025-05-20",
+        "champion": "Pastels",
+        "champion_movie": "Addams Family Values",
+        "champion_votes": 10,
+        "challenger": "Honest Subtitles",
+        "challenger_movie": "Annie Hall",
+        "challenger_votes": 1,
+        "turnout": 11,
+        "margin": 9,
+        "tiebreaker": false
+      },
+      {
+        "title": "Chest Burst vs. The Heart of the Ocean",
+        "url": "https://moviescenebattles.blogspot.com/2025/11/chest-burst-vs-heart-of-ocean.html",
+        "date": "2025-11-10",
+        "champion": "Chest Burst",
+        "champion_movie": "Alien",
+        "champion_votes": 11,
+        "challenger": "The Heart of the Ocean",
+        "challenger_movie": "Titanic",
+        "challenger_votes": 2,
+        "turnout": 13,
+        "margin": 9,
+        "tiebreaker": false
+      },
+      {
+        "title": "Civilized vs. The Rules for Surviving Horror Movies",
+        "url": "https://moviescenebattles.blogspot.com/2026/05/civilized-vs-rules-for-surviving-horror.html",
+        "date": "2026-05-28",
+        "champion": "Civilized",
+        "champion_movie": "Gremlins 2: The New Batch",
+        "champion_votes": 2,
+        "challenger": "The Rules for Surviving Horror Movies",
+        "challenger_movie": "Scream",
+        "challenger_votes": 11,
+        "turnout": 13,
+        "margin": 9,
+        "tiebreaker": false
+      },
+      {
+        "title": "The Rules for Surviving Horror Movies vs. Take Me or Leave Me",
+        "url": "https://moviescenebattles.blogspot.com/2026/06/the-rules-for-surviving-horror-movies_0874843345.html",
+        "date": "2026-06-03",
+        "champion": "The Rules for Surviving Horror Movies",
+        "champion_movie": "Scream",
+        "champion_votes": 10,
+        "challenger": "Take Me or Leave Me",
+        "challenger_movie": "Rent",
+        "challenger_votes": 1,
+        "turnout": 11,
+        "margin": 9,
+        "tiebreaker": false
+      }
+    ],
+    "highest_turnout": [
+      {
+        "title": "Marigolds vs. Subway Fight",
+        "url": "https://moviescenebattles.blogspot.com/2025/11/marigolds-vs-subway-fight.html",
+        "date": "2025-11-20",
+        "champion": "Marigolds",
+        "champion_movie": "The Gay Deceivers",
+        "champion_votes": 7,
+        "challenger": "Subway Fight",
+        "challenger_movie": "The Matrix",
+        "challenger_votes": 14,
+        "turnout": 21,
+        "margin": 7,
+        "tiebreaker": false
+      },
+      {
+        "title": "Out of Bubblegum vs. Saving MJ",
+        "url": "https://moviescenebattles.blogspot.com/2025/12/out-of-bubblegum-vs-saving-mj.html",
+        "date": "2025-12-10",
+        "champion": "Out of Bubblegum",
+        "champion_movie": "They Live",
+        "champion_votes": 11,
+        "challenger": "Saving MJ",
+        "challenger_movie": "Spider-Man: No Way Home",
+        "challenger_votes": 10,
+        "turnout": 21,
+        "margin": 1,
+        "tiebreaker": false
+      },
+      {
+        "title": "KEVIN! vs. A Kiss at the End of the Rainbow",
+        "url": "https://moviescenebattles.blogspot.com/2026/02/kevin-vs-kiss-at-end-of-rainbow.html",
+        "date": "2026-02-05",
+        "champion": "KEVIN!",
+        "champion_movie": "Home Alone 2: Lost in New York",
+        "champion_votes": 16,
+        "challenger": "A Kiss at the End of the Rainbow",
+        "challenger_movie": "A Mighty Wind",
+        "challenger_votes": 5,
+        "turnout": 21,
+        "margin": 11,
+        "tiebreaker": false
+      },
+      {
+        "title": "Battle of Wits vs. TRAIN!",
+        "url": "https://moviescenebattles.blogspot.com/2026/01/battle-of-wits-vs-train.html",
+        "date": "2026-01-08",
+        "champion": "Battle of Wits",
+        "champion_movie": "The Princess Bride",
+        "champion_votes": 10,
+        "challenger": "TRAIN!",
+        "challenger_movie": "Stand By Me",
+        "challenger_votes": 9,
+        "turnout": 19,
+        "margin": 1,
+        "tiebreaker": false
+      },
+      {
+        "title": "The Tales That Matter vs. America",
+        "url": "https://moviescenebattles.blogspot.com/2025/09/the-tales-that-matter-vs-america.html",
+        "date": "2025-09-16",
+        "champion": "The Tales That Matter",
+        "champion_movie": "The Lord of the Rings: The Two Towers",
+        "champion_votes": 11,
+        "challenger": "America",
+        "challenger_movie": "West Side Story",
+        "challenger_votes": 7,
+        "turnout": 18,
+        "margin": 4,
+        "tiebreaker": false
+      },
+      {
+        "title": "The Tales That Matter vs. How to Properly Insult",
+        "url": "https://moviescenebattles.blogspot.com/2025/09/the-tales-that-matter-vs-how-to.html",
+        "date": "2025-09-17",
+        "champion": "The Tales That Matter",
+        "champion_movie": "The Lord of the Rings: The Two Towers",
+        "champion_votes": 12,
+        "challenger": "How to Properly Insult",
+        "challenger_movie": "Roxanne",
+        "challenger_votes": 6,
+        "turnout": 18,
+        "margin": 6,
+        "tiebreaker": false
+      },
+      {
+        "title": "What Are You Waiting For? vs. Transformation",
+        "url": "https://moviescenebattles.blogspot.com/2025/10/what-are-you-waiting-for-vs.html",
+        "date": "2025-10-20",
+        "champion": "What Are You Waiting For?",
+        "champion_movie": "I Know What You Did Last Summer",
+        "champion_votes": 5,
+        "challenger": "Transformation",
+        "challenger_movie": "An American Werewolf in London",
+        "challenger_votes": 13,
+        "turnout": 18,
+        "margin": 8,
+        "tiebreaker": false
+      },
+      {
+        "title": "Out of Bubblegum vs. Dear Mr. Klaus",
+        "url": "https://moviescenebattles.blogspot.com/2025/12/out-of-bubblegum-vs-dear-mr-klaus.html",
+        "date": "2025-12-15",
+        "champion": "Out of Bubblegum",
+        "champion_movie": "They Live",
+        "champion_votes": 11,
+        "challenger": "Dear Mr. Klaus",
+        "challenger_movie": "Klaus",
+        "challenger_votes": 7,
+        "turnout": 18,
+        "margin": 4,
+        "tiebreaker": false
+      }
+    ],
+    "most_dominant_reigns": [
+      {
+        "scene": "The Rules for Surviving Horror Movies",
+        "movie": "Scream",
+        "wins": 7,
+        "avg_margin": 6.5,
+        "total_votes_for": 57,
+        "battles": 6
+      },
+      {
+        "scene": "KEVIN!",
+        "movie": "Home Alone 2: Lost in New York",
+        "wins": 7,
+        "avg_margin": 5.33,
+        "total_votes_for": 60,
+        "battles": 6
+      },
+      {
+        "scene": "Chest Burst",
+        "movie": "Alien",
+        "wins": 7,
+        "avg_margin": 5.0,
+        "total_votes_for": 54,
+        "battles": 6
+      },
+      {
+        "scene": "The Rex Escapes",
+        "movie": "Jurassic Park",
+        "wins": 7,
+        "avg_margin": 4.67,
+        "total_votes_for": 50,
+        "battles": 6
+      },
+      {
+        "scene": "Shower Troubles",
+        "movie": "Psycho",
+        "wins": 7,
+        "avg_margin": 4.33,
+        "total_votes_for": 56,
+        "battles": 6
+      },
+      {
+        "scene": "The Wrong Rec Room",
+        "movie": "Tremors",
+        "wins": 3,
+        "avg_margin": 4.33,
+        "total_votes_for": 23,
+        "battles": 3
+      },
+      {
+        "scene": "Pastels",
+        "movie": "Addams Family Values",
+        "wins": 7,
+        "avg_margin": 3.5,
+        "total_votes_for": 42,
+        "battles": 6
+      },
+      {
+        "scene": "Flames on the Side of My Face",
+        "movie": "Clue",
+        "wins": 7,
+        "avg_margin": 3.5,
+        "total_votes_for": 45,
+        "battles": 6
+      }
+    ]
+  },
+  "submitters": {
+    "people": [
+      {
+        "name": "Ren\u00e9e",
+        "scenes": [
+          {
+            "scene": "The Rescue (RRR)",
+            "battles": 2,
+            "wins": 1,
+            "losses": 1
+          },
+          {
+            "scene": "Dear Mr. Klaus (Klaus)",
+            "battles": 1,
+            "wins": 0,
+            "losses": 1
+          },
+          {
+            "scene": "Summoning Song (I Am Dragon)",
+            "battles": 1,
+            "wins": 0,
+            "losses": 1
+          },
+          {
+            "scene": "The Purrfect Spell (Bell, Book and Candle)",
+            "battles": 1,
+            "wins": 0,
+            "losses": 1
+          }
+        ],
+        "scene_count": 4,
+        "battles": 5,
+        "wins": 1,
+        "losses": 4,
+        "win_rate": 20.0,
+        "best_run": 1,
+        "first_credit": "2025-12-07",
+        "last_credit": "2026-02-10"
+      },
+      {
+        "name": "Rainy",
+        "scenes": [
+          {
+            "scene": "ET Meets the Siblings (E.T. the Extra-Terrestrial)",
+            "battles": 3,
+            "wins": 2,
+            "losses": 1
+          },
+          {
+            "scene": "The Wrong Week to Quit Sniffing Glue (Airplane!)",
+            "battles": 2,
+            "wins": 1,
+            "losses": 1
+          },
+          {
+            "scene": "I Say a Little Prayer (My Best Friend's Wedding)",
+            "battles": 1,
+            "wins": 0,
+            "losses": 1
+          }
+        ],
+        "scene_count": 3,
+        "battles": 6,
+        "wins": 3,
+        "losses": 3,
+        "win_rate": 50.0,
+        "best_run": 2,
+        "first_credit": "2025-08-11",
+        "last_credit": "2026-06-18"
+      },
+      {
+        "name": "Alan",
+        "scenes": [
+          {
+            "scene": "Snake Story (Natural Born Killers)",
+            "battles": 2,
+            "wins": 1,
+            "losses": 1
+          }
+        ],
+        "scene_count": 1,
+        "battles": 2,
+        "wins": 1,
+        "losses": 1,
+        "win_rate": 50.0,
+        "best_run": 1,
+        "first_credit": "2025-08-05",
+        "last_credit": "2025-08-06"
+      },
+      {
+        "name": "Nicktendo",
+        "scenes": [
+          {
+            "scene": "A Friendly Warning (Desperado)",
+            "battles": 2,
+            "wins": 1,
+            "losses": 1
+          }
+        ],
+        "scene_count": 1,
+        "battles": 2,
+        "wins": 1,
+        "losses": 1,
+        "win_rate": 50.0,
+        "best_run": 1,
+        "first_credit": "2025-09-28",
+        "last_credit": "2025-09-29"
+      },
+      {
+        "name": "Ren\u00e9e and Mary",
+        "scenes": [
+          {
+            "scene": "Snack Sabotage (KPop Demon Hunters)",
+            "battles": 1,
+            "wins": 0,
+            "losses": 1
+          }
+        ],
+        "scene_count": 1,
+        "battles": 1,
+        "wins": 0,
+        "losses": 1,
+        "win_rate": 0.0,
+        "best_run": 0,
+        "first_credit": "2025-07-21",
+        "last_credit": "2025-07-21"
+      },
+      {
+        "name": "Todd",
+        "scenes": [
+          {
+            "scene": "An Unusual Lullaby (Land of the Lost)",
+            "battles": 1,
+            "wins": 0,
+            "losses": 1
+          }
+        ],
+        "scene_count": 1,
+        "battles": 1,
+        "wins": 0,
+        "losses": 1,
+        "win_rate": 0.0,
+        "best_run": 0,
+        "first_credit": "2026-08-02",
+        "last_credit": "2026-08-02"
+      }
+    ],
+    "credited_people": 6,
+    "credited_battles": 16,
+    "credited_share": 5.0,
+    "unmatched_credits": 0,
+    "total_credited_scenes": 11
+  },
   "cadence": {
     "monthly": [
       {
@@ -1938,6 +2768,9 @@
       "challenger": "The Bear",
       "challenger_movie": "Annihilation",
       "champion_wins_before": 1,
+      "champion_votes": null,
+      "challenger_votes": null,
+      "tiebreaker": false,
       "winner": null,
       "retired_champion": false
     },
@@ -1950,6 +2783,9 @@
       "challenger": "Slaps",
       "challenger_movie": "Vivacious Lady",
       "champion_wins_before": 1,
+      "champion_votes": 7,
+      "challenger_votes": 8,
+      "tiebreaker": false,
       "winner": "Slaps",
       "retired_champion": false
     },
@@ -1962,6 +2798,9 @@
       "challenger": "Blood Test",
       "challenger_movie": "The Thing",
       "champion_wins_before": 3,
+      "champion_votes": 6,
+      "challenger_votes": 7,
+      "tiebreaker": false,
       "winner": "Blood Test",
       "retired_champion": false
     },
@@ -1974,6 +2813,9 @@
       "challenger": "Singin' in the Rain",
       "challenger_movie": "Singin' in the Rain",
       "champion_wins_before": 2,
+      "champion_votes": 8,
+      "challenger_votes": 4,
+      "tiebreaker": false,
       "winner": "I Will Always Love You",
       "retired_champion": false
     },
@@ -1986,6 +2828,9 @@
       "challenger": "Toxic Love",
       "challenger_movie": "Fern Gully: The Last Rainforest",
       "champion_wins_before": 1,
+      "champion_votes": 9,
+      "challenger_votes": 6,
+      "tiebreaker": false,
       "winner": "I Will Always Love You",
       "retired_champion": false
     },
@@ -1998,6 +2843,9 @@
       "challenger": "I Will Always Love You",
       "challenger_movie": "The Best Little Whorehouse in Texas",
       "champion_wins_before": 1,
+      "champion_votes": 3,
+      "challenger_votes": 8,
+      "tiebreaker": false,
       "winner": "I Will Always Love You",
       "retired_champion": false
     },
@@ -2010,6 +2858,9 @@
       "challenger": "Mer-Man",
       "challenger_movie": "Zoolander",
       "champion_wins_before": 3,
+      "champion_votes": 5,
+      "challenger_votes": 7,
+      "tiebreaker": false,
       "winner": "Mer-Man",
       "retired_champion": false
     },
@@ -2022,6 +2873,9 @@
       "challenger": "Everybody Wants Some!!",
       "challenger_movie": "Better Off Dead",
       "champion_wins_before": 2,
+      "champion_votes": 6,
+      "challenger_votes": 5,
+      "tiebreaker": false,
       "winner": "First Person",
       "retired_champion": false
     },
@@ -2034,6 +2888,9 @@
       "challenger": "Dogfight",
       "challenger_movie": "Hulk",
       "champion_wins_before": 1,
+      "champion_votes": 7,
+      "challenger_votes": 4,
+      "tiebreaker": false,
       "winner": "First Person",
       "retired_champion": false
     },
@@ -2046,6 +2903,9 @@
       "challenger": "First Person",
       "challenger_movie": "Doom",
       "champion_wins_before": 1,
+      "champion_votes": 8,
+      "challenger_votes": 9,
+      "tiebreaker": false,
       "winner": "First Person",
       "retired_champion": false
     },
@@ -2058,6 +2918,9 @@
       "challenger": "Horror Remakes",
       "challenger_movie": "Scream 4",
       "champion_wins_before": 1,
+      "champion_votes": 3,
+      "challenger_votes": 11,
+      "tiebreaker": false,
       "winner": "Horror Remakes",
       "retired_champion": false
     },
@@ -2070,6 +2933,9 @@
       "challenger": "Three Shells",
       "challenger_movie": "Demolition Man",
       "champion_wins_before": 0,
+      "champion_votes": 9,
+      "challenger_votes": 4,
+      "tiebreaker": false,
       "winner": "Folding a Child",
       "retired_champion": false
     },
@@ -2082,6 +2948,9 @@
       "challenger": "Skidsteer Battle",
       "challenger_movie": "Carnosaur",
       "champion_wins_before": 6,
+      "champion_votes": 7,
+      "challenger_votes": 2,
+      "tiebreaker": false,
       "winner": "Flames on the Side of My Face",
       "retired_champion": true
     },
@@ -2094,6 +2963,9 @@
       "challenger": "The Girls of Rock and Roll",
       "challenger_movie": "The Chipmunk Adventure",
       "champion_wins_before": 5,
+      "champion_votes": 8,
+      "challenger_votes": 5,
+      "tiebreaker": false,
       "winner": "Flames on the Side of My Face",
       "retired_champion": false
     },
@@ -2106,6 +2978,9 @@
       "challenger": "Double Dents",
       "challenger_movie": "Meet Joe Black",
       "champion_wins_before": 4,
+      "champion_votes": 7,
+      "challenger_votes": 5,
+      "tiebreaker": false,
       "winner": "Flames on the Side of My Face",
       "retired_champion": false
     }

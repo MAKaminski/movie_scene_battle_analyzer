@@ -16,7 +16,7 @@ from __future__ import annotations
 import calendar
 import math
 import re
-from collections import Counter
+from collections import Counter, defaultdict
 from datetime import date, datetime, timedelta
 from difflib import SequenceMatcher
 from typing import Any
@@ -124,6 +124,10 @@ def _battles_from_posts(posts: list[dict[str, Any]]) -> list[dict[str, Any]]:
                 "champion_wins_claimed": post.get("champion_wins_claimed"),
                 "battle_type": post.get("battle_type") or "defense",
                 "word_count": int(post.get("word_count") or 0),
+                "score_entries": post.get("score_entries"),
+                "score_unparsed": post.get("score_unparsed"),
+                "tiebreaker": bool(post.get("tiebreaker")),
+                "submitters": list(post.get("submitters") or []),
             }
         )
     battles.sort(key=lambda item: (item["published_at"], item["post_id"] or ""))
@@ -197,6 +201,8 @@ def _build_reigns(battles: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], 
             "status": "reigning",
             "dethroned_by": None,
             "battle_urls": [],
+            "margins": [],
+            "votes_for": [],
         }
 
     for battle in battles:
@@ -234,6 +240,9 @@ def _build_reigns(battles: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], 
 
         battle["champion_wins_before"] = current["wins"]
         current["battle_urls"].append(battle["url"])
+        if battle.get("champion_votes") is not None:
+            current["margins"].append(battle["champion_votes"] - battle["challenger_votes"])
+            current["votes_for"].append(battle["champion_votes"])
         winner = battle["winner_side"]
         if winner is None:
             continue
@@ -290,6 +299,235 @@ def _serialize_reign(reign: dict[str, Any], years: dict[str, int | None]) -> dic
         "dethroned_by": reign["dethroned_by"],
         "defeated": reign["defeated"],
         "first_battle_url": reign["battle_urls"][0] if reign["battle_urls"] else None,
+    }
+
+
+def _attach_scores(battles: list[dict[str, Any]]) -> dict[str, Any]:
+    """
+    Attach each battle's published vote counts to its two sides.
+
+    The score line names the scenes in its own words, so each name is matched
+    against the matchup's champion and challenger rather than trusted by order.
+    Whichever side polled higher is the poll winner, which gives an independent
+    check on the winner inferred from the succession of posts.
+    """
+    scored = 0
+    mismatched: list[dict[str, Any]] = []
+    unreadable: list[dict[str, Any]] = []
+    for battle in battles:
+        battle["champion_votes"] = None
+        battle["challenger_votes"] = None
+        battle["poll_winner_side"] = None
+        if battle.get("score_unparsed"):
+            unreadable.append(
+                {
+                    "title": battle["title"],
+                    "url": battle["url"],
+                    "date": battle["published_at"].date().isoformat(),
+                    "text": battle["score_unparsed"],
+                }
+            )
+            continue
+        entries = battle.get("score_entries")
+        if not entries:
+            continue
+        sides = {"champion": battle["champion"], "challenger": battle["challenger"]}
+        assigned: dict[str, int] = {}
+        for raw_name, votes in entries:
+            best_side, best_ratio = None, 0.0
+            for side, name in sides.items():
+                ratio = SequenceMatcher(None, _slug(name), _slug(raw_name)).ratio()
+                if ratio > best_ratio:
+                    best_side, best_ratio = side, ratio
+            if best_ratio < FUZZY_NAME_THRESHOLD or best_side in assigned:
+                assigned = {}
+                break
+            assigned[best_side] = int(votes)
+        if len(assigned) != 2:
+            unreadable.append(
+                {
+                    "title": battle["title"],
+                    "url": battle["url"],
+                    "date": battle["published_at"].date().isoformat(),
+                    "text": ", ".join(f"{name} {votes}" for name, votes in entries),
+                }
+            )
+            continue
+        battle["champion_votes"] = assigned["champion"]
+        battle["challenger_votes"] = assigned["challenger"]
+        battle["poll_winner_side"] = (
+            "champion" if assigned["champion"] >= assigned["challenger"] else "challenger"
+        )
+        scored += 1
+        if battle["winner_side"] and battle["poll_winner_side"] != battle["winner_side"]:
+            mismatched.append(
+                {
+                    "title": battle["title"],
+                    "url": battle["url"],
+                    "date": battle["published_at"].date().isoformat(),
+                    "poll_winner": battle[battle["poll_winner_side"]],
+                    "chain_winner": battle[battle["winner_side"]],
+                }
+            )
+    return {"scored": scored, "mismatched": mismatched, "unreadable": unreadable}
+
+
+def _voting(battles: list[dict[str, Any]], reigns: list[dict[str, Any]]) -> dict[str, Any]:
+    """Turnout, margins, tiebreakers and how decisively each reign was voted in."""
+    scored = [b for b in battles if b["champion_votes"] is not None]
+    if not scored:
+        return {"scored_battles": 0}
+
+    turnouts = [b["champion_votes"] + b["challenger_votes"] for b in scored]
+    margins = [abs(b["champion_votes"] - b["challenger_votes"]) for b in scored]
+    one_vote = [b for b in scored if abs(b["champion_votes"] - b["challenger_votes"]) == 1]
+    tiebreakers = [b for b in scored if b["tiebreaker"]]
+
+    monthly: dict[str, list[int]] = defaultdict(list)
+    for battle, turnout in zip(scored, turnouts):
+        monthly[_month_label(battle["published_at"].date())].append(turnout)
+    turnout_by_month = [
+        {
+            "month": month,
+            "battles": len(values),
+            "total_votes": sum(values),
+            "avg_turnout": _mean([float(v) for v in values]),
+        }
+        for month, values in sorted(monthly.items())
+    ]
+
+    margin_hist: Counter[int] = Counter(margins)
+    def _row(battle: dict[str, Any]) -> dict[str, Any]:
+        return {
+            "title": battle["title"],
+            "url": battle["url"],
+            "date": battle["published_at"].date().isoformat(),
+            "champion": battle["champion"],
+            "champion_movie": battle["champion_movie"],
+            "champion_votes": battle["champion_votes"],
+            "challenger": battle["challenger"],
+            "challenger_movie": battle["challenger_movie"],
+            "challenger_votes": battle["challenger_votes"],
+            "turnout": battle["champion_votes"] + battle["challenger_votes"],
+            "margin": abs(battle["champion_votes"] - battle["challenger_votes"]),
+            "tiebreaker": battle["tiebreaker"],
+        }
+
+    # Turnout against how many wins the champion had already banked: do long
+    # reigns pull a bigger electorate, or does the audience tune out?
+    by_streak: dict[int, list[int]] = defaultdict(list)
+    for battle in scored:
+        if battle["battle_type"] == "defense":
+            by_streak[battle.get("champion_wins_before", 0)].append(
+                battle["champion_votes"] + battle["challenger_votes"]
+            )
+    turnout_by_streak = [
+        {"wins_before_battle": rung, "battles": len(values), "avg_turnout": _mean([float(v) for v in values])}
+        for rung, values in sorted(by_streak.items())
+        if rung >= 1
+    ]
+
+    dominant = sorted(
+        (
+            {
+                "scene": reign["scene"],
+                "movie": reign["movie"],
+                "wins": reign["wins"],
+                "avg_margin": _mean([float(m) for m in reign["margins"]]),
+                "total_votes_for": sum(reign["votes_for"]),
+                "battles": len(reign["margins"]),
+            }
+            for reign in reigns
+            if reign["margins"] and reign["wins"] >= 3
+        ),
+        key=lambda row: (-(row["avg_margin"] or 0), -row["wins"]),
+    )
+
+    return {
+        "scored_battles": len(scored),
+        "total_votes": sum(turnouts),
+        "avg_turnout": _mean([float(t) for t in turnouts]),
+        "median_turnout": sorted(turnouts)[len(turnouts) // 2],
+        "min_turnout": min(turnouts),
+        "max_turnout": max(turnouts),
+        "avg_margin": _mean([float(m) for m in margins]),
+        "one_vote_battles": len(one_vote),
+        "one_vote_share": _pct(len(one_vote), len(scored)),
+        "tiebreakers": [_row(b) for b in tiebreakers],
+        "turnout_by_month": turnout_by_month,
+        "turnout_by_streak": turnout_by_streak,
+        "margin_histogram": [
+            {"margin": margin, "battles": margin_hist.get(margin, 0)}
+            for margin in range(1, max(margin_hist) + 1)
+        ],
+        "closest_battles": [_row(b) for b in sorted(scored, key=lambda b: (abs(b["champion_votes"] - b["challenger_votes"]), -(b["champion_votes"] + b["challenger_votes"])))[:8]],
+        "biggest_blowouts": [_row(b) for b in sorted(scored, key=lambda b: -abs(b["champion_votes"] - b["challenger_votes"]))[:8]],
+        "highest_turnout": [_row(b) for b in sorted(scored, key=lambda b: -(b["champion_votes"] + b["challenger_votes"]))[:8]],
+        "most_dominant_reigns": dominant[:8],
+    }
+
+
+def _submitters(battles: list[dict[str, Any]]) -> dict[str, Any]:
+    """The credited community: who sends scenes in, and how those scenes fare."""
+    people: dict[str, dict[str, Any]] = {}
+    unmatched = 0
+    for battle in battles:
+        for credit in battle.get("submitters") or []:
+            # Resolve the credited scene to one side of this battle. The credit
+            # rides its scene through the whole reign, so it can sit on either.
+            side, best = None, 0.0
+            for candidate in ("champion", "challenger"):
+                ratio = SequenceMatcher(None, _slug(battle[candidate]), _slug(credit.get("scene", ""))).ratio()
+                if ratio > best:
+                    side, best = candidate, ratio
+            if best < FUZZY_NAME_THRESHOLD:
+                unmatched += 1
+                continue
+            name = credit["name"]
+            record = people.setdefault(
+                name,
+                {"name": name, "scenes": {}, "battles": 0, "wins": 0, "losses": 0, "first": None, "last": None},
+            )
+            scene_key = f"{battle[side]} ({battle[f'{side}_movie']})"
+            scene = record["scenes"].setdefault(scene_key, {"scene": scene_key, "battles": 0, "wins": 0, "losses": 0})
+            record["battles"] += 1
+            scene["battles"] += 1
+            if battle["winner_side"] == side:
+                record["wins"] += 1
+                scene["wins"] += 1
+            elif battle["winner_side"]:
+                record["losses"] += 1
+                scene["losses"] += 1
+            day = battle["published_at"].date().isoformat()
+            record["first"] = min(record["first"] or day, day)
+            record["last"] = max(record["last"] or day, day)
+
+    rows = sorted(
+        (
+            {
+                "name": r["name"],
+                "scenes": sorted(r["scenes"].values(), key=lambda s: (-s["wins"], s["scene"])),
+                "scene_count": len(r["scenes"]),
+                "battles": r["battles"],
+                "wins": r["wins"],
+                "losses": r["losses"],
+                "win_rate": _pct(r["wins"], r["wins"] + r["losses"]),
+                "best_run": max((s["wins"] for s in r["scenes"].values()), default=0),
+                "first_credit": r["first"],
+                "last_credit": r["last"],
+            }
+            for r in people.values()
+        ),
+        key=lambda row: (-row["scene_count"], -row["wins"], row["name"]),
+    )
+    credited = sum(1 for b in battles if b.get("submitters"))
+    return {
+        "people": rows,
+        "credited_people": len(rows),
+        "credited_battles": credited,
+        "credited_share": _pct(credited, len(battles)),
+        "unmatched_credits": unmatched,
+        "total_credited_scenes": sum(row["scene_count"] for row in rows),
     }
 
 
@@ -517,6 +755,7 @@ def build_insights(dataset: dict[str, Any]) -> dict[str, Any]:
 
     years, unmatched_movies = _resolve_movie_years(battles)
     decided = _infer_winners(battles)
+    score_audit = _attach_scores(battles)
     reigns, claims = _build_reigns(battles)
     as_of = max(b["published_at"] for b in battles).date()
 
@@ -588,6 +827,13 @@ def build_insights(dataset: dict[str, Any]) -> dict[str, Any]:
             "non_battle_posts": len(non_battle_posts),
             "winners_inferred": decided,
             "winner_inference_rate": _pct(decided, len(battles)),
+            "scored_battles": score_audit["scored"],
+            "poll_vs_chain_checks": score_audit["scored"],
+            "poll_vs_chain_mismatches": score_audit["mismatched"],
+            "poll_vs_chain_agreement_rate": _pct(
+                score_audit["scored"] - len(score_audit["mismatched"]), score_audit["scored"]
+            ),
+            "unreadable_scores": score_audit["unreadable"],
             "win_counter_checks": claims["checked"],
             "win_counter_agreement": claims["agree"],
             "win_counter_agreement_rate": _pct(claims["agree"], claims["checked"]),
@@ -642,6 +888,8 @@ def build_insights(dataset: dict[str, Any]) -> dict[str, Any]:
         "movie_leaderboard": movie_board[:15],
         "movie_count": len(movie_board),
         "decades": decade_board,
+        "voting": _voting(battles, reigns),
+        "submitters": _submitters(battles),
         "cadence": _cadence(battles, as_of),
         "momentum": _momentum(battles, as_of),
         "recent_battles": [
@@ -654,6 +902,9 @@ def build_insights(dataset: dict[str, Any]) -> dict[str, Any]:
                 "challenger": b["challenger"],
                 "challenger_movie": b["challenger_movie"],
                 "champion_wins_before": b.get("champion_wins_before", 0),
+                "champion_votes": b["champion_votes"],
+                "challenger_votes": b["challenger_votes"],
+                "tiebreaker": b["tiebreaker"],
                 "winner": (
                     b["champion"] if b["winner_side"] == "champion"
                     else b["challenger"] if b["winner_side"] == "challenger"

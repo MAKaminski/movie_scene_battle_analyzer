@@ -76,6 +76,67 @@ _MATCHUP_PATTERN = re.compile(
     flags=re.IGNORECASE | re.DOTALL,
 )
 _WINS_CLAIMED_PATTERN = re.compile(r"The Case for .+?\((\d+)\):", flags=re.DOTALL)
+_SCORE_BLOCK_PATTERN = re.compile(
+    r"The Score:\s*(?P<body>.*?)\s*(?:Have a suggestion|$)", flags=re.DOTALL
+)
+_TIEBREAKER_PATTERN = re.compile(r"\(\s*tiebreaker used\s*\)", flags=re.IGNORECASE)
+_SCORE_PAIR_PATTERN = re.compile(r"\s*(\d+)\s*\*?\s*(?:,|$)")
+_SUBMITTER_PATTERN = re.compile(r"\(\s*(?:Scene\s+)?submitted by\s+([^)]{1,60})\)", flags=re.IGNORECASE)
+
+
+def parse_score(content_text: str) -> dict[str, Any]:
+    """
+    Extract the published poll result from a post body.
+
+    Each closed battle ends with "The Score: <scene> <votes>, <scene> <votes>",
+    highest first, sometimes annotated with "*" and "(tiebreaker used)" when the
+    poll ended level and the site owner cast the deciding vote. The scene names
+    are matched by the caller, since they can carry the same typos as the title.
+    """
+    match = _SCORE_BLOCK_PATTERN.search(content_text)
+    if not match:
+        return {}
+    body = match.group("body").strip()
+    if not body:
+        return {}
+    tiebreaker = bool(_TIEBREAKER_PATTERN.search(body))
+    body = _TIEBREAKER_PATTERN.sub("", body).strip()
+
+    entries: list[tuple[str, int]] = []
+    cursor = 0
+    for pair in _SCORE_PAIR_PATTERN.finditer(body):
+        name = body[cursor : pair.start()].strip().strip(",").strip()
+        if name:
+            entries.append((_clean_name(name), int(pair.group(1))))
+        cursor = pair.end()
+    if len(entries) != 2:
+        return {"score_unparsed": body, "tiebreaker": tiebreaker}
+    return {"score_entries": entries, "tiebreaker": tiebreaker}
+
+
+_CASE_HEADING_PATTERN = re.compile(r"The Case for\s+(?P<scene>.+?)\s*(?:\(\d+\))?\s*:", flags=re.DOTALL)
+
+
+def parse_submitters(content_text: str) -> list[dict[str, str]]:
+    """
+    Names credited with submitting a scene, tied to the scene they belong to.
+
+    The credit is appended to the end of that scene's "The Case for <scene>:"
+    paragraph, and it is repeated in every post of that scene's reign - so the
+    credited side is whichever case block the marker falls inside, not simply
+    the challenger.
+    """
+    headings = [(m.end(), _clean_name(m.group("scene"))) for m in _CASE_HEADING_PATTERN.finditer(content_text)]
+    credits: list[dict[str, str]] = []
+    for match in _SUBMITTER_PATTERN.finditer(content_text):
+        scene = ""
+        for position, name in headings:
+            if position <= match.start():
+                scene = name
+            else:
+                break
+        credits.append({"name": _clean_name(match.group(1)), "scene": scene})
+    return credits
 
 
 def _clean_name(value: str) -> str:
@@ -112,6 +173,9 @@ def _to_post(entry: dict[str, Any], include_content: bool) -> BattlePost:
     categories = [str(tag.get("term")) for tag in entry.get("category", []) if tag.get("term")]
     comments = int(entry.get("thr$total", {}).get("$t", 0))
     matchup = parse_matchup(content_text) if content_text else {}
+    if matchup:
+        matchup.update(parse_score(content_text))
+        matchup["submitters"] = parse_submitters(content_text)
 
     return BattlePost(
         post_id=str(entry.get("id", {}).get("$t", "")),
