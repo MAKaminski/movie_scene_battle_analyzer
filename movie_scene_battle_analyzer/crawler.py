@@ -70,11 +70,48 @@ def _extract_permalink(entry: dict[str, Any]) -> str:
     return ""
 
 
+_MATCHUP_PATTERN = re.compile(
+    r"Your\s+(Champion|Challenger)\s*(?P<left>.+?)\s*\((?P<left_movie>[^()]+)\)\s*VS\s*"
+    r"Your\s+Challenger\s*(?P<right>.+?)\s*\((?P<right_movie>[^()]+)\)",
+    flags=re.IGNORECASE | re.DOTALL,
+)
+_WINS_CLAIMED_PATTERN = re.compile(r"The Case for .+?\((\d+)\):", flags=re.DOTALL)
+
+
+def _clean_name(value: str) -> str:
+    return re.sub(r"\s+", " ", value).strip()
+
+
+def parse_matchup(content_text: str) -> dict[str, Any]:
+    """
+    Extract the champion/challenger block from a post body.
+
+    Every battle post opens with "Your Champion <scene>(<movie>) VS Your Challenger
+    <scene>(<movie>)". After a champion retires, both sides are introduced as
+    "Your Challenger", which marks a fresh matchup. The champion's case is titled
+    "The Case for <scene> (<wins>):" which exposes the site's own win counter.
+    """
+    match = _MATCHUP_PATTERN.search(content_text)
+    if not match:
+        return {}
+    left_role = match.group(1).lower()
+    wins_match = _WINS_CLAIMED_PATTERN.search(content_text)
+    return {
+        "champion": _clean_name(match.group("left")),
+        "champion_movie": _clean_name(match.group("left_movie")),
+        "challenger": _clean_name(match.group("right")),
+        "challenger_movie": _clean_name(match.group("right_movie")),
+        "champion_wins_claimed": int(wins_match.group(1)) if wins_match else None,
+        "battle_type": "defense" if left_role == "champion" else "fresh",
+    }
+
+
 def _to_post(entry: dict[str, Any], include_content: bool) -> BattlePost:
     content_html = entry.get("content", {}).get("$t", "")
     content_text = _extract_text(content_html) if content_html else ""
     categories = [str(tag.get("term")) for tag in entry.get("category", []) if tag.get("term")]
     comments = int(entry.get("thr$total", {}).get("$t", 0))
+    matchup = parse_matchup(content_text) if content_text else {}
 
     return BattlePost(
         post_id=str(entry.get("id", {}).get("$t", "")),
@@ -86,6 +123,7 @@ def _to_post(entry: dict[str, Any], include_content: bool) -> BattlePost:
         categories=categories,
         word_count=len(content_text.split()),
         content_text=content_text if include_content else None,
+        **matchup,
     )
 
 

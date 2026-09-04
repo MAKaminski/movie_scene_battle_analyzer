@@ -1,0 +1,2145 @@
+{
+  "site_title": "Movie Scene Battles",
+  "site_url": "https://moviescenebattles.blogspot.com",
+  "generated_from_posts": 325,
+  "as_of": "2026-09-03",
+  "first_battle_at": "2025-04-13",
+  "retirement_wins": 7,
+  "summary": {
+    "battles": 319,
+    "decided_battles": 318,
+    "pending_battles": 1,
+    "defenses": 308,
+    "fresh_matchups": 10,
+    "upsets": 133,
+    "upset_rate": 43.2,
+    "unique_scenes": 332,
+    "unique_movies": 303,
+    "reigns": 143,
+    "finished_reigns": 142,
+    "retired_scenes": 9,
+    "average_reign_wins": 2.23,
+    "median_reign_wins": 2,
+    "average_words_per_battle": 109.15,
+    "days_active": 509
+  },
+  "data_quality": {
+    "posts_total": 325,
+    "battle_posts": 319,
+    "non_battle_posts": 6,
+    "winners_inferred": 318,
+    "winner_inference_rate": 99.7,
+    "win_counter_checks": 309,
+    "win_counter_agreement": 308,
+    "win_counter_agreement_rate": 99.7,
+    "movies_without_label_year": 0,
+    "name_drift": [
+      {
+        "from": "Pie in Your Face",
+        "to": "Pie in Your Facec",
+        "movie": "Killer Klowns from Outer Space",
+        "date": "2025-09-07",
+        "url": "https://moviescenebattles.blogspot.com/2025/09/pie-in-your-face-vs-torture-of.html"
+      },
+      {
+        "from": "Subway Fight",
+        "to": "Subway Battle",
+        "movie": "The Matrix",
+        "date": "2025-11-23",
+        "url": "https://moviescenebattles.blogspot.com/2025/11/subway-fight-vs-bad-shooting.html"
+      },
+      {
+        "from": "Subway Battle",
+        "to": "Subway Fight",
+        "movie": "The Matrix",
+        "date": "2025-11-24",
+        "url": "https://moviescenebattles.blogspot.com/2025/11/subway-fight-vs-do-something.html"
+      },
+      {
+        "from": "The Albertsons Audtion",
+        "to": "The Albertsons Audition",
+        "movie": "Waiting for Guffman",
+        "date": "2026-02-02",
+        "url": "https://moviescenebattles.blogspot.com/2026/02/the-albertsons-audition-vs-remodel.html"
+      }
+    ],
+    "win_counter_mismatches": [
+      {
+        "title": "The Sunken Place vs. Wasted Bullet",
+        "url": "https://moviescenebattles.blogspot.com/2026/03/the-sunken-place-vs-wasted-bullet.html",
+        "date": "2026-03-30",
+        "claimed": 5,
+        "inferred": 6
+      }
+    ],
+    "hall_of_fame_labels": [
+      "Addams Family Values 1993",
+      "Alien 1979",
+      "Clue 1985",
+      "Get Out 2017",
+      "Home Alone 2: Lost in New York 1992",
+      "Jurassic Park 1993",
+      "Lord of the Rings: The Two Towers 2002",
+      "Psycho 1960",
+      "Scream 1996"
+    ],
+    "hall_of_fame_label_count": 9,
+    "retired_reigns_found": 9,
+    "hall_of_fame_matches_page": true
+  },
+  "head_to_head": {
+    "title": "Slaps vs. The Bear",
+    "url": "https://moviescenebattles.blogspot.com/2026/09/slaps-vs-bear.html",
+    "published_at": "2026-09-03",
+    "battle_type": "defense",
+    "champion": "Slaps",
+    "champion_movie": "Vivacious Lady",
+    "champion_movie_year": 1938,
+    "champion_wins": 1,
+    "challenger": "The Bear",
+    "challenger_movie": "Annihilation",
+    "challenger_movie_year": 2018,
+    "decided": false,
+    "wins_to_retire": 6
+  },
+  "current_reign": {
+    "scene": "Slaps",
+    "movie": "Vivacious Lady",
+    "movie_year": 1938,
+    "wins": 1,
+    "status": "reigning",
+    "started_at": "2026-09-02",
+    "ended_at": null,
+    "days_on_top": 0,
+    "dethroned_by": null,
+    "defeated": [
+      {
+        "scene": "Blood Test",
+        "movie": "The Thing",
+        "date": "2026-09-02",
+        "url": "https://moviescenebattles.blogspot.com/2026/09/blood-test-vs-slaps.html"
+      }
+    ],
+    "first_battle_url": "https://moviescenebattles.blogspot.com/2026/09/slaps-vs-bear.html"
+  },
+  "hall_of_fame": [
+    {
+      "scene": "Pastels",
+      "movie": "Addams Family Values",
+      "movie_year": 1993,
+      "wins": 7,
+      "status": "retired",
+      "started_at": "2025-05-19",
+      "ended_at": "2025-05-28",
+      "days_on_top": 9,
+      "dethroned_by": null,
+      "defeated": [
+        {
+          "scene": "Hooked",
+          "movie": "The Texas Chainsaw Massacre",
+          "date": "2025-05-19",
+          "url": "https://moviescenebattles.blogspot.com/2025/05/hooked-vs-pastels.html"
+        },
+        {
+          "scene": "Honest Subtitles",
+          "movie": "Annie Hall",
+          "date": "2025-05-20",
+          "url": "https://moviescenebattles.blogspot.com/2025/05/pastels-vs-honest-subtitles.html"
+        },
+        {
+          "scene": "Large Marge",
+          "movie": "Pee-wee's Big Adventure",
+          "date": "2025-05-21",
+          "url": "https://moviescenebattles.blogspot.com/2025/05/pastels-vs-large-marge.html"
+        },
+        {
+          "scene": "The Best Speech Ever",
+          "movie": "Team America: World Police",
+          "date": "2025-05-22",
+          "url": "https://moviescenebattles.blogspot.com/2025/05/pastels-vs-best-speech-ever.html"
+        },
+        {
+          "scene": "An Unsafe Phone Booth",
+          "movie": "The Blob",
+          "date": "2025-05-26",
+          "url": "https://moviescenebattles.blogspot.com/2025/05/pastels-vs-unsafe-phone-booth.html"
+        },
+        {
+          "scene": "Minnesota's Oldest Living Lutheran",
+          "movie": "Drop Dead Gorgeous",
+          "date": "2025-05-27",
+          "url": "https://moviescenebattles.blogspot.com/2025/05/pastels-vs-minnesotas-oldest-living.html"
+        },
+        {
+          "scene": "Albert Will Not Perform",
+          "movie": "The Birdcage",
+          "date": "2025-05-28",
+          "url": "https://moviescenebattles.blogspot.com/2025/05/pastels-vs-albert-will-not-perform.html"
+        }
+      ],
+      "first_battle_url": "https://moviescenebattles.blogspot.com/2025/05/pastels-vs-honest-subtitles.html"
+    },
+    {
+      "scene": "The Tales That Matter",
+      "movie": "The Lord of the Rings: The Two Towers",
+      "movie_year": 2002,
+      "wins": 7,
+      "status": "retired",
+      "started_at": "2025-09-08",
+      "ended_at": "2025-09-17",
+      "days_on_top": 9,
+      "dethroned_by": null,
+      "defeated": [
+        {
+          "scene": "The Torture of the Gingerbread Man",
+          "movie": "Shrek",
+          "date": "2025-09-08",
+          "url": "https://moviescenebattles.blogspot.com/2025/09/the-torture-of-gingerbread-man-vs-tales.html"
+        },
+        {
+          "scene": "Lose Your Head",
+          "movie": "The Omen",
+          "date": "2025-09-09",
+          "url": "https://moviescenebattles.blogspot.com/2025/09/the-tales-that-matter-vs-lose-your-head.html"
+        },
+        {
+          "scene": "Smurf Talk",
+          "movie": "Donnie Darko",
+          "date": "2025-09-10",
+          "url": "https://moviescenebattles.blogspot.com/2025/09/the-tales-that-matter-vs-smurf-talk.html"
+        },
+        {
+          "scene": "Space Needle Disaster",
+          "movie": "Final Destination Bloodlines",
+          "date": "2025-09-14",
+          "url": "https://moviescenebattles.blogspot.com/2025/09/the-tales-that-matter-vs-space-needle.html"
+        },
+        {
+          "scene": "Zombie Tail",
+          "movie": "Train to Busan",
+          "date": "2025-09-15",
+          "url": "https://moviescenebattles.blogspot.com/2025/09/the-tales-that-matter-vs-zombie-tail.html"
+        },
+        {
+          "scene": "America",
+          "movie": "West Side Story",
+          "date": "2025-09-16",
+          "url": "https://moviescenebattles.blogspot.com/2025/09/the-tales-that-matter-vs-america.html"
+        },
+        {
+          "scene": "How to Properly Insult",
+          "movie": "Roxanne",
+          "date": "2025-09-17",
+          "url": "https://moviescenebattles.blogspot.com/2025/09/the-tales-that-matter-vs-how-to.html"
+        }
+      ],
+      "first_battle_url": "https://moviescenebattles.blogspot.com/2025/09/the-tales-that-matter-vs-lose-your-head.html"
+    },
+    {
+      "scene": "Shower Troubles",
+      "movie": "Psycho",
+      "movie_year": 1960,
+      "wins": 7,
+      "status": "retired",
+      "started_at": "2025-10-09",
+      "ended_at": "2025-10-19",
+      "days_on_top": 10,
+      "dethroned_by": null,
+      "defeated": [
+        {
+          "scene": "The Hobbling",
+          "movie": "Misery",
+          "date": "2025-10-09",
+          "url": "https://moviescenebattles.blogspot.com/2025/10/the-hobbling-vs-shower-troubles.html"
+        },
+        {
+          "scene": "It's a B-Movie",
+          "movie": "The Brave Little Toaster",
+          "date": "2025-10-12",
+          "url": "https://moviescenebattles.blogspot.com/2025/10/shower-troubles-vs-its-b-movie.html"
+        },
+        {
+          "scene": "Meet the Wheelers",
+          "movie": "Return to Oz",
+          "date": "2025-10-13",
+          "url": "https://moviescenebattles.blogspot.com/2025/10/shower-troubles-vs-meet-wheelers.html"
+        },
+        {
+          "scene": "Not So Sweet Tunnel",
+          "movie": "Willy Wonka and the Chocolate Factory",
+          "date": "2025-10-14",
+          "url": "https://moviescenebattles.blogspot.com/2025/10/shower-troubles-vs-not-so-sweet-tunnel.html"
+        },
+        {
+          "scene": "A New Story",
+          "movie": "ParaNorman",
+          "date": "2025-10-15",
+          "url": "https://moviescenebattles.blogspot.com/2025/10/shower-troubles-vs-new-story.html"
+        },
+        {
+          "scene": "Trowel of Terror",
+          "movie": "Night of the Living Dead",
+          "date": "2025-10-16",
+          "url": "https://moviescenebattles.blogspot.com/2025/10/shower-troubles-vs-trowel-of-terror.html"
+        },
+        {
+          "scene": "The Doors are Breathing",
+          "movie": "The Haunting",
+          "date": "2025-10-19",
+          "url": "https://moviescenebattles.blogspot.com/2025/10/shower-troubles-vs-doors-are-breathing.html"
+        }
+      ],
+      "first_battle_url": "https://moviescenebattles.blogspot.com/2025/10/shower-troubles-vs-its-b-movie.html"
+    },
+    {
+      "scene": "Chest Burst",
+      "movie": "Alien",
+      "movie_year": 1979,
+      "wins": 7,
+      "status": "retired",
+      "started_at": "2025-10-29",
+      "ended_at": "2025-11-13",
+      "days_on_top": 15,
+      "dethroned_by": null,
+      "defeated": [
+        {
+          "scene": "Calling Casey",
+          "movie": "Scream",
+          "date": "2025-10-29",
+          "url": "https://moviescenebattles.blogspot.com/2025/10/calling-casey-vs-chest-burst.html"
+        },
+        {
+          "scene": "You Can't Kill the Boogeyman",
+          "movie": "Halloween",
+          "date": "2025-10-30",
+          "url": "https://moviescenebattles.blogspot.com/2025/10/chest-burst-vs-you-cant-kill-boogeyman.html"
+        },
+        {
+          "scene": "La Vie Boheme",
+          "movie": "Rent",
+          "date": "2025-11-09",
+          "url": "https://moviescenebattles.blogspot.com/2025/11/chest-burst-vs-la-vie-boheme.html"
+        },
+        {
+          "scene": "The Heart of the Ocean",
+          "movie": "Titanic",
+          "date": "2025-11-10",
+          "url": "https://moviescenebattles.blogspot.com/2025/11/chest-burst-vs-heart-of-ocean.html"
+        },
+        {
+          "scene": "You Make My Dreams Come True(",
+          "movie": "500",
+          "date": "2025-11-11",
+          "url": "https://moviescenebattles.blogspot.com/2025/11/chest-burst-vs-you-make-my-dreams-come.html"
+        },
+        {
+          "scene": "Kick the Bucket",
+          "movie": "It's a Mad, Mad, Mad, Mad World",
+          "date": "2025-11-12",
+          "url": "https://moviescenebattles.blogspot.com/2025/11/chest-burst-vs-kick-bucket.html"
+        },
+        {
+          "scene": "Kanine Krunchies",
+          "movie": "101 Dalmatians",
+          "date": "2025-11-13",
+          "url": "https://moviescenebattles.blogspot.com/2025/11/chest-burst-vs-kanine-krunchies.html"
+        }
+      ],
+      "first_battle_url": "https://moviescenebattles.blogspot.com/2025/10/chest-burst-vs-you-cant-kill-boogeyman.html"
+    },
+    {
+      "scene": "KEVIN!",
+      "movie": "Home Alone 2: Lost in New York",
+      "movie_year": 1992,
+      "wins": 7,
+      "status": "retired",
+      "started_at": "2026-02-04",
+      "ended_at": "2026-02-12",
+      "days_on_top": 8,
+      "dethroned_by": null,
+      "defeated": [
+        {
+          "scene": "Remodel Request",
+          "movie": "Beetlejuice",
+          "date": "2026-02-04",
+          "url": "https://moviescenebattles.blogspot.com/2026/02/remodel-request-vs-kevin.html"
+        },
+        {
+          "scene": "A Kiss at the End of the Rainbow",
+          "movie": "A Mighty Wind",
+          "date": "2026-02-05",
+          "url": "https://moviescenebattles.blogspot.com/2026/02/kevin-vs-kiss-at-end-of-rainbow.html"
+        },
+        {
+          "scene": "Bad Bunnies",
+          "movie": "Night of the Lepus",
+          "date": "2026-02-08",
+          "url": "https://moviescenebattles.blogspot.com/2026/02/kevin-vs-bad-bunnies.html"
+        },
+        {
+          "scene": "Talos Attacks!",
+          "movie": "Jason and the Argonauts",
+          "date": "2026-02-09",
+          "url": "https://moviescenebattles.blogspot.com/2026/02/kevin-vs-talos-attacks.html"
+        },
+        {
+          "scene": "The Purrfect Spell",
+          "movie": "Bell, Book and Candle",
+          "date": "2026-02-10",
+          "url": "https://moviescenebattles.blogspot.com/2026/02/kevin-vs-purrfect-spell.html"
+        },
+        {
+          "scene": "Baby Mine",
+          "movie": "Dumbo",
+          "date": "2026-02-11",
+          "url": "https://moviescenebattles.blogspot.com/2026/02/kevin-vs-baby-mine.html"
+        },
+        {
+          "scene": "Underwater Stalking",
+          "movie": "Creature from the Black Lagoon",
+          "date": "2026-02-12",
+          "url": "https://moviescenebattles.blogspot.com/2026/02/kevin-vs-underwater-stalking.html"
+        }
+      ],
+      "first_battle_url": "https://moviescenebattles.blogspot.com/2026/02/kevin-vs-kiss-at-end-of-rainbow.html"
+    },
+    {
+      "scene": "The Sunken Place",
+      "movie": "Get Out",
+      "movie_year": 2017,
+      "wins": 7,
+      "status": "retired",
+      "started_at": "2026-03-22",
+      "ended_at": "2026-03-30",
+      "days_on_top": 8,
+      "dethroned_by": null,
+      "defeated": [
+        {
+          "scene": "Questions 3",
+          "movie": "Monty Python and the Holy Grail",
+          "date": "2026-03-22",
+          "url": "https://moviescenebattles.blogspot.com/2026/03/questions-3-vs-sunken-place.html"
+        },
+        {
+          "scene": "Trying on Dresses",
+          "movie": "Bridesmaids",
+          "date": "2026-03-23",
+          "url": "https://moviescenebattles.blogspot.com/2026/03/the-sunken-place-vs-trying-on-dresses.html"
+        },
+        {
+          "scene": "Missy's Tryout",
+          "movie": "Bring It On",
+          "date": "2026-03-24",
+          "url": "https://moviescenebattles.blogspot.com/2026/03/the-sunken-place-vs-missys-tryout.html"
+        },
+        {
+          "scene": "Lover's Lane",
+          "movie": "Pleasantville",
+          "date": "2026-03-25",
+          "url": "https://moviescenebattles.blogspot.com/2026/03/the-sunken-place-vs-lovers-lane.html"
+        },
+        {
+          "scene": "Croaker Cameo",
+          "movie": "I Know What You Did Last Summer",
+          "date": "2026-03-26",
+          "url": "https://moviescenebattles.blogspot.com/2026/03/the-sunken-place-vs-croaker-cameo.html"
+        },
+        {
+          "scene": "Inappropriate Commercial",
+          "movie": "Southland Tales",
+          "date": "2026-03-29",
+          "url": "https://moviescenebattles.blogspot.com/2026/03/the-sunken-place-vs-inappropriate.html"
+        },
+        {
+          "scene": "Wasted Bullet",
+          "movie": "Deep Rising",
+          "date": "2026-03-30",
+          "url": "https://moviescenebattles.blogspot.com/2026/03/the-sunken-place-vs-wasted-bullet.html"
+        }
+      ],
+      "first_battle_url": "https://moviescenebattles.blogspot.com/2026/03/the-sunken-place-vs-trying-on-dresses.html"
+    },
+    {
+      "scene": "The Rex Escapes",
+      "movie": "Jurassic Park",
+      "movie_year": 1993,
+      "wins": 7,
+      "status": "retired",
+      "started_at": "2026-04-13",
+      "ended_at": "2026-04-21",
+      "days_on_top": 8,
+      "dethroned_by": null,
+      "defeated": [
+        {
+          "scene": "Come Play With Us",
+          "movie": "The Shining",
+          "date": "2026-04-13",
+          "url": "https://moviescenebattles.blogspot.com/2026/04/come-play-with-us-vs-rex-escapes.html"
+        },
+        {
+          "scene": "Martian Bedroom Invasion",
+          "movie": "Mars Attacks!",
+          "date": "2026-04-14",
+          "url": "https://moviescenebattles.blogspot.com/2026/04/the-rex-escapes-vs-martian-bedroom.html"
+        },
+        {
+          "scene": "And I'm Telling You I'm Not Going",
+          "movie": "Dreamgirls",
+          "date": "2026-04-15",
+          "url": "https://moviescenebattles.blogspot.com/2026/04/the-rex-escapes-vs-and-im-telling-you.html"
+        },
+        {
+          "scene": "Scaffolding Fight",
+          "movie": "Shang-Chi and the Legend of the Ten Rings",
+          "date": "2026-04-16",
+          "url": "https://moviescenebattles.blogspot.com/2026/04/the-rex-escapes-vs-scaffolding-fight.html"
+        },
+        {
+          "scene": "The Truffle Shuffle",
+          "movie": "The Goonies",
+          "date": "2026-04-20",
+          "url": "https://moviescenebattles.blogspot.com/2026/04/the-rex-escapes-vs-truffle-shuffle.html"
+        },
+        {
+          "scene": "Manic Mini-Me",
+          "movie": "Austin Powers: The Spy Who Shagged Me",
+          "date": "2026-04-21",
+          "url": "https://moviescenebattles.blogspot.com/2026/04/the-rex-escapes-vs-manic-mini-me.html"
+        },
+        {
+          "scene": "Good Morning Baltimore",
+          "movie": "Hairspray",
+          "date": "2026-04-21",
+          "url": "https://moviescenebattles.blogspot.com/2026/04/the-rex-escapes-vs-good-morning.html"
+        }
+      ],
+      "first_battle_url": "https://moviescenebattles.blogspot.com/2026/04/the-rex-escapes-vs-martian-bedroom.html"
+    },
+    {
+      "scene": "The Rules for Surviving Horror Movies",
+      "movie": "Scream",
+      "movie_year": 1996,
+      "wins": 7,
+      "status": "retired",
+      "started_at": "2026-05-28",
+      "ended_at": "2026-06-07",
+      "days_on_top": 10,
+      "dethroned_by": null,
+      "defeated": [
+        {
+          "scene": "Civilized",
+          "movie": "Gremlins 2: The New Batch",
+          "date": "2026-05-28",
+          "url": "https://moviescenebattles.blogspot.com/2026/05/civilized-vs-rules-for-surviving-horror.html"
+        },
+        {
+          "scene": "Drag Princess",
+          "movie": "To Wong Foo, Thanks for Everything! Julie Newmar",
+          "date": "2026-05-31",
+          "url": "https://moviescenebattles.blogspot.com/2026/05/the-rules-for-surviving-horror-movies.html"
+        },
+        {
+          "scene": "Walking Like John Wayne",
+          "movie": "The Birdcage",
+          "date": "2026-06-01",
+          "url": "https://moviescenebattles.blogspot.com/2026/06/the-rules-for-surviving-horror-movies.html"
+        },
+        {
+          "scene": "Gender Roles",
+          "movie": "But I'm a Cheerleader",
+          "date": "2026-06-02",
+          "url": "https://moviescenebattles.blogspot.com/2026/06/the-rules-for-surviving-horror-movies_068073634.html"
+        },
+        {
+          "scene": "Take Me or Leave Me",
+          "movie": "Rent",
+          "date": "2026-06-03",
+          "url": "https://moviescenebattles.blogspot.com/2026/06/the-rules-for-surviving-horror-movies_0874843345.html"
+        },
+        {
+          "scene": "Zahra Learns",
+          "movie": "Red, White, and Royal Blue",
+          "date": "2026-06-04",
+          "url": "https://moviescenebattles.blogspot.com/2026/06/the-rules-for-surviving-horror-movies_0121497301.html"
+        },
+        {
+          "scene": "I Can't Say No",
+          "movie": "Oklahoma!",
+          "date": "2026-06-07",
+          "url": "https://moviescenebattles.blogspot.com/2026/06/the-rules-for-surviving-horror-movies_0531064426.html"
+        }
+      ],
+      "first_battle_url": "https://moviescenebattles.blogspot.com/2026/05/the-rules-for-surviving-horror-movies.html"
+    },
+    {
+      "scene": "Flames on the Side of My Face",
+      "movie": "Clue",
+      "movie_year": 1985,
+      "wins": 7,
+      "status": "retired",
+      "started_at": "2026-08-04",
+      "ended_at": "2026-08-13",
+      "days_on_top": 9,
+      "dethroned_by": null,
+      "defeated": [
+        {
+          "scene": "Hunky Boys",
+          "movie": "PG: Psycho Goreman",
+          "date": "2026-08-04",
+          "url": "https://moviescenebattles.blogspot.com/2026/08/hunky-boys-vs-flames-on-side-of-my-face.html"
+        },
+        {
+          "scene": "Knuckle Puck Time",
+          "movie": "D2: The Mighty Ducks",
+          "date": "2026-08-05",
+          "url": "https://moviescenebattles.blogspot.com/2026/08/flames-on-side-of-my-face-vs-knuckle.html"
+        },
+        {
+          "scene": "Drug Bust",
+          "movie": "Super Troopers",
+          "date": "2026-08-06",
+          "url": "https://moviescenebattles.blogspot.com/2026/08/flames-on-side-of-my-face-vs-drug-bust.html"
+        },
+        {
+          "scene": "I Don't Care",
+          "movie": "In the Good Old Summertime",
+          "date": "2026-08-09",
+          "url": "https://moviescenebattles.blogspot.com/2026/08/flames-on-side-of-my-face-vs-i-dont-care.html"
+        },
+        {
+          "scene": "Double Dents",
+          "movie": "Meet Joe Black",
+          "date": "2026-08-11",
+          "url": "https://moviescenebattles.blogspot.com/2026/08/flames-on-side-of-my-face-vs-double.html"
+        },
+        {
+          "scene": "The Girls of Rock and Roll",
+          "movie": "The Chipmunk Adventure",
+          "date": "2026-08-12",
+          "url": "https://moviescenebattles.blogspot.com/2026/08/flames-on-side-of-my-face-vs-girls-of.html"
+        },
+        {
+          "scene": "Skidsteer Battle",
+          "movie": "Carnosaur",
+          "date": "2026-08-13",
+          "url": "https://moviescenebattles.blogspot.com/2026/08/flames-on-side-of-my-face-vs-skidsteer.html"
+        }
+      ],
+      "first_battle_url": "https://moviescenebattles.blogspot.com/2026/08/flames-on-side-of-my-face-vs-knuckle.html"
+    }
+  ],
+  "longest_reigns": [
+    {
+      "scene": "Chest Burst",
+      "movie": "Alien",
+      "movie_year": 1979,
+      "wins": 7,
+      "status": "retired",
+      "started_at": "2025-10-29",
+      "ended_at": "2025-11-13",
+      "days_on_top": 15,
+      "dethroned_by": null,
+      "defeated": [
+        {
+          "scene": "Calling Casey",
+          "movie": "Scream",
+          "date": "2025-10-29",
+          "url": "https://moviescenebattles.blogspot.com/2025/10/calling-casey-vs-chest-burst.html"
+        },
+        {
+          "scene": "You Can't Kill the Boogeyman",
+          "movie": "Halloween",
+          "date": "2025-10-30",
+          "url": "https://moviescenebattles.blogspot.com/2025/10/chest-burst-vs-you-cant-kill-boogeyman.html"
+        },
+        {
+          "scene": "La Vie Boheme",
+          "movie": "Rent",
+          "date": "2025-11-09",
+          "url": "https://moviescenebattles.blogspot.com/2025/11/chest-burst-vs-la-vie-boheme.html"
+        },
+        {
+          "scene": "The Heart of the Ocean",
+          "movie": "Titanic",
+          "date": "2025-11-10",
+          "url": "https://moviescenebattles.blogspot.com/2025/11/chest-burst-vs-heart-of-ocean.html"
+        },
+        {
+          "scene": "You Make My Dreams Come True(",
+          "movie": "500",
+          "date": "2025-11-11",
+          "url": "https://moviescenebattles.blogspot.com/2025/11/chest-burst-vs-you-make-my-dreams-come.html"
+        },
+        {
+          "scene": "Kick the Bucket",
+          "movie": "It's a Mad, Mad, Mad, Mad World",
+          "date": "2025-11-12",
+          "url": "https://moviescenebattles.blogspot.com/2025/11/chest-burst-vs-kick-bucket.html"
+        },
+        {
+          "scene": "Kanine Krunchies",
+          "movie": "101 Dalmatians",
+          "date": "2025-11-13",
+          "url": "https://moviescenebattles.blogspot.com/2025/11/chest-burst-vs-kanine-krunchies.html"
+        }
+      ],
+      "first_battle_url": "https://moviescenebattles.blogspot.com/2025/10/chest-burst-vs-you-cant-kill-boogeyman.html"
+    },
+    {
+      "scene": "Shower Troubles",
+      "movie": "Psycho",
+      "movie_year": 1960,
+      "wins": 7,
+      "status": "retired",
+      "started_at": "2025-10-09",
+      "ended_at": "2025-10-19",
+      "days_on_top": 10,
+      "dethroned_by": null,
+      "defeated": [
+        {
+          "scene": "The Hobbling",
+          "movie": "Misery",
+          "date": "2025-10-09",
+          "url": "https://moviescenebattles.blogspot.com/2025/10/the-hobbling-vs-shower-troubles.html"
+        },
+        {
+          "scene": "It's a B-Movie",
+          "movie": "The Brave Little Toaster",
+          "date": "2025-10-12",
+          "url": "https://moviescenebattles.blogspot.com/2025/10/shower-troubles-vs-its-b-movie.html"
+        },
+        {
+          "scene": "Meet the Wheelers",
+          "movie": "Return to Oz",
+          "date": "2025-10-13",
+          "url": "https://moviescenebattles.blogspot.com/2025/10/shower-troubles-vs-meet-wheelers.html"
+        },
+        {
+          "scene": "Not So Sweet Tunnel",
+          "movie": "Willy Wonka and the Chocolate Factory",
+          "date": "2025-10-14",
+          "url": "https://moviescenebattles.blogspot.com/2025/10/shower-troubles-vs-not-so-sweet-tunnel.html"
+        },
+        {
+          "scene": "A New Story",
+          "movie": "ParaNorman",
+          "date": "2025-10-15",
+          "url": "https://moviescenebattles.blogspot.com/2025/10/shower-troubles-vs-new-story.html"
+        },
+        {
+          "scene": "Trowel of Terror",
+          "movie": "Night of the Living Dead",
+          "date": "2025-10-16",
+          "url": "https://moviescenebattles.blogspot.com/2025/10/shower-troubles-vs-trowel-of-terror.html"
+        },
+        {
+          "scene": "The Doors are Breathing",
+          "movie": "The Haunting",
+          "date": "2025-10-19",
+          "url": "https://moviescenebattles.blogspot.com/2025/10/shower-troubles-vs-doors-are-breathing.html"
+        }
+      ],
+      "first_battle_url": "https://moviescenebattles.blogspot.com/2025/10/shower-troubles-vs-its-b-movie.html"
+    },
+    {
+      "scene": "The Rules for Surviving Horror Movies",
+      "movie": "Scream",
+      "movie_year": 1996,
+      "wins": 7,
+      "status": "retired",
+      "started_at": "2026-05-28",
+      "ended_at": "2026-06-07",
+      "days_on_top": 10,
+      "dethroned_by": null,
+      "defeated": [
+        {
+          "scene": "Civilized",
+          "movie": "Gremlins 2: The New Batch",
+          "date": "2026-05-28",
+          "url": "https://moviescenebattles.blogspot.com/2026/05/civilized-vs-rules-for-surviving-horror.html"
+        },
+        {
+          "scene": "Drag Princess",
+          "movie": "To Wong Foo, Thanks for Everything! Julie Newmar",
+          "date": "2026-05-31",
+          "url": "https://moviescenebattles.blogspot.com/2026/05/the-rules-for-surviving-horror-movies.html"
+        },
+        {
+          "scene": "Walking Like John Wayne",
+          "movie": "The Birdcage",
+          "date": "2026-06-01",
+          "url": "https://moviescenebattles.blogspot.com/2026/06/the-rules-for-surviving-horror-movies.html"
+        },
+        {
+          "scene": "Gender Roles",
+          "movie": "But I'm a Cheerleader",
+          "date": "2026-06-02",
+          "url": "https://moviescenebattles.blogspot.com/2026/06/the-rules-for-surviving-horror-movies_068073634.html"
+        },
+        {
+          "scene": "Take Me or Leave Me",
+          "movie": "Rent",
+          "date": "2026-06-03",
+          "url": "https://moviescenebattles.blogspot.com/2026/06/the-rules-for-surviving-horror-movies_0874843345.html"
+        },
+        {
+          "scene": "Zahra Learns",
+          "movie": "Red, White, and Royal Blue",
+          "date": "2026-06-04",
+          "url": "https://moviescenebattles.blogspot.com/2026/06/the-rules-for-surviving-horror-movies_0121497301.html"
+        },
+        {
+          "scene": "I Can't Say No",
+          "movie": "Oklahoma!",
+          "date": "2026-06-07",
+          "url": "https://moviescenebattles.blogspot.com/2026/06/the-rules-for-surviving-horror-movies_0531064426.html"
+        }
+      ],
+      "first_battle_url": "https://moviescenebattles.blogspot.com/2026/05/the-rules-for-surviving-horror-movies.html"
+    },
+    {
+      "scene": "Pastels",
+      "movie": "Addams Family Values",
+      "movie_year": 1993,
+      "wins": 7,
+      "status": "retired",
+      "started_at": "2025-05-19",
+      "ended_at": "2025-05-28",
+      "days_on_top": 9,
+      "dethroned_by": null,
+      "defeated": [
+        {
+          "scene": "Hooked",
+          "movie": "The Texas Chainsaw Massacre",
+          "date": "2025-05-19",
+          "url": "https://moviescenebattles.blogspot.com/2025/05/hooked-vs-pastels.html"
+        },
+        {
+          "scene": "Honest Subtitles",
+          "movie": "Annie Hall",
+          "date": "2025-05-20",
+          "url": "https://moviescenebattles.blogspot.com/2025/05/pastels-vs-honest-subtitles.html"
+        },
+        {
+          "scene": "Large Marge",
+          "movie": "Pee-wee's Big Adventure",
+          "date": "2025-05-21",
+          "url": "https://moviescenebattles.blogspot.com/2025/05/pastels-vs-large-marge.html"
+        },
+        {
+          "scene": "The Best Speech Ever",
+          "movie": "Team America: World Police",
+          "date": "2025-05-22",
+          "url": "https://moviescenebattles.blogspot.com/2025/05/pastels-vs-best-speech-ever.html"
+        },
+        {
+          "scene": "An Unsafe Phone Booth",
+          "movie": "The Blob",
+          "date": "2025-05-26",
+          "url": "https://moviescenebattles.blogspot.com/2025/05/pastels-vs-unsafe-phone-booth.html"
+        },
+        {
+          "scene": "Minnesota's Oldest Living Lutheran",
+          "movie": "Drop Dead Gorgeous",
+          "date": "2025-05-27",
+          "url": "https://moviescenebattles.blogspot.com/2025/05/pastels-vs-minnesotas-oldest-living.html"
+        },
+        {
+          "scene": "Albert Will Not Perform",
+          "movie": "The Birdcage",
+          "date": "2025-05-28",
+          "url": "https://moviescenebattles.blogspot.com/2025/05/pastels-vs-albert-will-not-perform.html"
+        }
+      ],
+      "first_battle_url": "https://moviescenebattles.blogspot.com/2025/05/pastels-vs-honest-subtitles.html"
+    },
+    {
+      "scene": "The Tales That Matter",
+      "movie": "The Lord of the Rings: The Two Towers",
+      "movie_year": 2002,
+      "wins": 7,
+      "status": "retired",
+      "started_at": "2025-09-08",
+      "ended_at": "2025-09-17",
+      "days_on_top": 9,
+      "dethroned_by": null,
+      "defeated": [
+        {
+          "scene": "The Torture of the Gingerbread Man",
+          "movie": "Shrek",
+          "date": "2025-09-08",
+          "url": "https://moviescenebattles.blogspot.com/2025/09/the-torture-of-gingerbread-man-vs-tales.html"
+        },
+        {
+          "scene": "Lose Your Head",
+          "movie": "The Omen",
+          "date": "2025-09-09",
+          "url": "https://moviescenebattles.blogspot.com/2025/09/the-tales-that-matter-vs-lose-your-head.html"
+        },
+        {
+          "scene": "Smurf Talk",
+          "movie": "Donnie Darko",
+          "date": "2025-09-10",
+          "url": "https://moviescenebattles.blogspot.com/2025/09/the-tales-that-matter-vs-smurf-talk.html"
+        },
+        {
+          "scene": "Space Needle Disaster",
+          "movie": "Final Destination Bloodlines",
+          "date": "2025-09-14",
+          "url": "https://moviescenebattles.blogspot.com/2025/09/the-tales-that-matter-vs-space-needle.html"
+        },
+        {
+          "scene": "Zombie Tail",
+          "movie": "Train to Busan",
+          "date": "2025-09-15",
+          "url": "https://moviescenebattles.blogspot.com/2025/09/the-tales-that-matter-vs-zombie-tail.html"
+        },
+        {
+          "scene": "America",
+          "movie": "West Side Story",
+          "date": "2025-09-16",
+          "url": "https://moviescenebattles.blogspot.com/2025/09/the-tales-that-matter-vs-america.html"
+        },
+        {
+          "scene": "How to Properly Insult",
+          "movie": "Roxanne",
+          "date": "2025-09-17",
+          "url": "https://moviescenebattles.blogspot.com/2025/09/the-tales-that-matter-vs-how-to.html"
+        }
+      ],
+      "first_battle_url": "https://moviescenebattles.blogspot.com/2025/09/the-tales-that-matter-vs-lose-your-head.html"
+    },
+    {
+      "scene": "Flames on the Side of My Face",
+      "movie": "Clue",
+      "movie_year": 1985,
+      "wins": 7,
+      "status": "retired",
+      "started_at": "2026-08-04",
+      "ended_at": "2026-08-13",
+      "days_on_top": 9,
+      "dethroned_by": null,
+      "defeated": [
+        {
+          "scene": "Hunky Boys",
+          "movie": "PG: Psycho Goreman",
+          "date": "2026-08-04",
+          "url": "https://moviescenebattles.blogspot.com/2026/08/hunky-boys-vs-flames-on-side-of-my-face.html"
+        },
+        {
+          "scene": "Knuckle Puck Time",
+          "movie": "D2: The Mighty Ducks",
+          "date": "2026-08-05",
+          "url": "https://moviescenebattles.blogspot.com/2026/08/flames-on-side-of-my-face-vs-knuckle.html"
+        },
+        {
+          "scene": "Drug Bust",
+          "movie": "Super Troopers",
+          "date": "2026-08-06",
+          "url": "https://moviescenebattles.blogspot.com/2026/08/flames-on-side-of-my-face-vs-drug-bust.html"
+        },
+        {
+          "scene": "I Don't Care",
+          "movie": "In the Good Old Summertime",
+          "date": "2026-08-09",
+          "url": "https://moviescenebattles.blogspot.com/2026/08/flames-on-side-of-my-face-vs-i-dont-care.html"
+        },
+        {
+          "scene": "Double Dents",
+          "movie": "Meet Joe Black",
+          "date": "2026-08-11",
+          "url": "https://moviescenebattles.blogspot.com/2026/08/flames-on-side-of-my-face-vs-double.html"
+        },
+        {
+          "scene": "The Girls of Rock and Roll",
+          "movie": "The Chipmunk Adventure",
+          "date": "2026-08-12",
+          "url": "https://moviescenebattles.blogspot.com/2026/08/flames-on-side-of-my-face-vs-girls-of.html"
+        },
+        {
+          "scene": "Skidsteer Battle",
+          "movie": "Carnosaur",
+          "date": "2026-08-13",
+          "url": "https://moviescenebattles.blogspot.com/2026/08/flames-on-side-of-my-face-vs-skidsteer.html"
+        }
+      ],
+      "first_battle_url": "https://moviescenebattles.blogspot.com/2026/08/flames-on-side-of-my-face-vs-knuckle.html"
+    },
+    {
+      "scene": "KEVIN!",
+      "movie": "Home Alone 2: Lost in New York",
+      "movie_year": 1992,
+      "wins": 7,
+      "status": "retired",
+      "started_at": "2026-02-04",
+      "ended_at": "2026-02-12",
+      "days_on_top": 8,
+      "dethroned_by": null,
+      "defeated": [
+        {
+          "scene": "Remodel Request",
+          "movie": "Beetlejuice",
+          "date": "2026-02-04",
+          "url": "https://moviescenebattles.blogspot.com/2026/02/remodel-request-vs-kevin.html"
+        },
+        {
+          "scene": "A Kiss at the End of the Rainbow",
+          "movie": "A Mighty Wind",
+          "date": "2026-02-05",
+          "url": "https://moviescenebattles.blogspot.com/2026/02/kevin-vs-kiss-at-end-of-rainbow.html"
+        },
+        {
+          "scene": "Bad Bunnies",
+          "movie": "Night of the Lepus",
+          "date": "2026-02-08",
+          "url": "https://moviescenebattles.blogspot.com/2026/02/kevin-vs-bad-bunnies.html"
+        },
+        {
+          "scene": "Talos Attacks!",
+          "movie": "Jason and the Argonauts",
+          "date": "2026-02-09",
+          "url": "https://moviescenebattles.blogspot.com/2026/02/kevin-vs-talos-attacks.html"
+        },
+        {
+          "scene": "The Purrfect Spell",
+          "movie": "Bell, Book and Candle",
+          "date": "2026-02-10",
+          "url": "https://moviescenebattles.blogspot.com/2026/02/kevin-vs-purrfect-spell.html"
+        },
+        {
+          "scene": "Baby Mine",
+          "movie": "Dumbo",
+          "date": "2026-02-11",
+          "url": "https://moviescenebattles.blogspot.com/2026/02/kevin-vs-baby-mine.html"
+        },
+        {
+          "scene": "Underwater Stalking",
+          "movie": "Creature from the Black Lagoon",
+          "date": "2026-02-12",
+          "url": "https://moviescenebattles.blogspot.com/2026/02/kevin-vs-underwater-stalking.html"
+        }
+      ],
+      "first_battle_url": "https://moviescenebattles.blogspot.com/2026/02/kevin-vs-kiss-at-end-of-rainbow.html"
+    },
+    {
+      "scene": "The Sunken Place",
+      "movie": "Get Out",
+      "movie_year": 2017,
+      "wins": 7,
+      "status": "retired",
+      "started_at": "2026-03-22",
+      "ended_at": "2026-03-30",
+      "days_on_top": 8,
+      "dethroned_by": null,
+      "defeated": [
+        {
+          "scene": "Questions 3",
+          "movie": "Monty Python and the Holy Grail",
+          "date": "2026-03-22",
+          "url": "https://moviescenebattles.blogspot.com/2026/03/questions-3-vs-sunken-place.html"
+        },
+        {
+          "scene": "Trying on Dresses",
+          "movie": "Bridesmaids",
+          "date": "2026-03-23",
+          "url": "https://moviescenebattles.blogspot.com/2026/03/the-sunken-place-vs-trying-on-dresses.html"
+        },
+        {
+          "scene": "Missy's Tryout",
+          "movie": "Bring It On",
+          "date": "2026-03-24",
+          "url": "https://moviescenebattles.blogspot.com/2026/03/the-sunken-place-vs-missys-tryout.html"
+        },
+        {
+          "scene": "Lover's Lane",
+          "movie": "Pleasantville",
+          "date": "2026-03-25",
+          "url": "https://moviescenebattles.blogspot.com/2026/03/the-sunken-place-vs-lovers-lane.html"
+        },
+        {
+          "scene": "Croaker Cameo",
+          "movie": "I Know What You Did Last Summer",
+          "date": "2026-03-26",
+          "url": "https://moviescenebattles.blogspot.com/2026/03/the-sunken-place-vs-croaker-cameo.html"
+        },
+        {
+          "scene": "Inappropriate Commercial",
+          "movie": "Southland Tales",
+          "date": "2026-03-29",
+          "url": "https://moviescenebattles.blogspot.com/2026/03/the-sunken-place-vs-inappropriate.html"
+        },
+        {
+          "scene": "Wasted Bullet",
+          "movie": "Deep Rising",
+          "date": "2026-03-30",
+          "url": "https://moviescenebattles.blogspot.com/2026/03/the-sunken-place-vs-wasted-bullet.html"
+        }
+      ],
+      "first_battle_url": "https://moviescenebattles.blogspot.com/2026/03/the-sunken-place-vs-trying-on-dresses.html"
+    },
+    {
+      "scene": "The Rex Escapes",
+      "movie": "Jurassic Park",
+      "movie_year": 1993,
+      "wins": 7,
+      "status": "retired",
+      "started_at": "2026-04-13",
+      "ended_at": "2026-04-21",
+      "days_on_top": 8,
+      "dethroned_by": null,
+      "defeated": [
+        {
+          "scene": "Come Play With Us",
+          "movie": "The Shining",
+          "date": "2026-04-13",
+          "url": "https://moviescenebattles.blogspot.com/2026/04/come-play-with-us-vs-rex-escapes.html"
+        },
+        {
+          "scene": "Martian Bedroom Invasion",
+          "movie": "Mars Attacks!",
+          "date": "2026-04-14",
+          "url": "https://moviescenebattles.blogspot.com/2026/04/the-rex-escapes-vs-martian-bedroom.html"
+        },
+        {
+          "scene": "And I'm Telling You I'm Not Going",
+          "movie": "Dreamgirls",
+          "date": "2026-04-15",
+          "url": "https://moviescenebattles.blogspot.com/2026/04/the-rex-escapes-vs-and-im-telling-you.html"
+        },
+        {
+          "scene": "Scaffolding Fight",
+          "movie": "Shang-Chi and the Legend of the Ten Rings",
+          "date": "2026-04-16",
+          "url": "https://moviescenebattles.blogspot.com/2026/04/the-rex-escapes-vs-scaffolding-fight.html"
+        },
+        {
+          "scene": "The Truffle Shuffle",
+          "movie": "The Goonies",
+          "date": "2026-04-20",
+          "url": "https://moviescenebattles.blogspot.com/2026/04/the-rex-escapes-vs-truffle-shuffle.html"
+        },
+        {
+          "scene": "Manic Mini-Me",
+          "movie": "Austin Powers: The Spy Who Shagged Me",
+          "date": "2026-04-21",
+          "url": "https://moviescenebattles.blogspot.com/2026/04/the-rex-escapes-vs-manic-mini-me.html"
+        },
+        {
+          "scene": "Good Morning Baltimore",
+          "movie": "Hairspray",
+          "date": "2026-04-21",
+          "url": "https://moviescenebattles.blogspot.com/2026/04/the-rex-escapes-vs-good-morning.html"
+        }
+      ],
+      "first_battle_url": "https://moviescenebattles.blogspot.com/2026/04/the-rex-escapes-vs-martian-bedroom.html"
+    },
+    {
+      "scene": "Wrecked",
+      "movie": "Final Destination 2",
+      "movie_year": 2003,
+      "wins": 6,
+      "status": "dethroned",
+      "started_at": "2025-07-17",
+      "ended_at": "2025-07-27",
+      "days_on_top": 10,
+      "dethroned_by": {
+        "scene": "Savage Comeback",
+        "movie": "Sleepaway Camp"
+      },
+      "defeated": [
+        {
+          "scene": "Only When It Was Funny",
+          "movie": "Who Framed Roger Rabbit?",
+          "date": "2025-07-17",
+          "url": "https://moviescenebattles.blogspot.com/2025/07/only-when-it-was-funny-vs-wrecked.html"
+        },
+        {
+          "scene": "Fighting Paddy",
+          "movie": "Charlie's Angels: Full Throttle",
+          "date": "2025-07-20",
+          "url": "https://moviescenebattles.blogspot.com/2025/07/wrecked-vs-fighting-paddy.html"
+        },
+        {
+          "scene": "Snack Sabotage",
+          "movie": "KPop Demon Hunters",
+          "date": "2025-07-21",
+          "url": "https://moviescenebattles.blogspot.com/2025/07/wrecked-vs-snack-sabotage.html"
+        },
+        {
+          "scene": "Caught in a Web",
+          "movie": "Enemy",
+          "date": "2025-07-22",
+          "url": "https://moviescenebattles.blogspot.com/2025/07/wrecked-vs-caught-in-web.html"
+        },
+        {
+          "scene": "Turning Heads",
+          "movie": "The Exorcist",
+          "date": "2025-07-23",
+          "url": "https://moviescenebattles.blogspot.com/2025/07/wrecked-vs-turning-heads.html"
+        },
+        {
+          "scene": "Going Supernova",
+          "movie": "Fantastic Four",
+          "date": "2025-07-24",
+          "url": "https://moviescenebattles.blogspot.com/2025/07/wrecked-vs-going-supernova.html"
+        }
+      ],
+      "first_battle_url": "https://moviescenebattles.blogspot.com/2025/07/wrecked-vs-fighting-paddy.html"
+    },
+    {
+      "scene": "Out of Bubblegum",
+      "movie": "They Live",
+      "movie_year": 1988,
+      "wins": 6,
+      "status": "dethroned",
+      "started_at": "2025-12-08",
+      "ended_at": "2025-12-17",
+      "days_on_top": 9,
+      "dethroned_by": {
+        "scene": "Oh Fudge!",
+        "movie": "A Christmas Story"
+      },
+      "defeated": [
+        {
+          "scene": "The Rescue",
+          "movie": "RRR",
+          "date": "2025-12-08",
+          "url": "https://moviescenebattles.blogspot.com/2025/12/the-rescue-vs-out-of-bubblegum.html"
+        },
+        {
+          "scene": "Falling With Style",
+          "movie": "Toy Story",
+          "date": "2025-12-09",
+          "url": "https://moviescenebattles.blogspot.com/2025/12/out-of-bubblegum-vs-falling-with-style.html"
+        },
+        {
+          "scene": "Saving MJ",
+          "movie": "Spider-Man: No Way Home",
+          "date": "2025-12-10",
+          "url": "https://moviescenebattles.blogspot.com/2025/12/out-of-bubblegum-vs-saving-mj.html"
+        },
+        {
+          "scene": "Zero to Hero",
+          "movie": "Hercules",
+          "date": "2025-12-11",
+          "url": "https://moviescenebattles.blogspot.com/2025/12/out-of-bubblegum-vs-zero-to-hero.html"
+        },
+        {
+          "scene": "It Feels Like Christmas",
+          "movie": "A Muppet Christmas Carol",
+          "date": "2025-12-14",
+          "url": "https://moviescenebattles.blogspot.com/2025/12/out-of-bubblegum-vs-it-feels-like.html"
+        },
+        {
+          "scene": "Dear Mr. Klaus",
+          "movie": "Klaus",
+          "date": "2025-12-15",
+          "url": "https://moviescenebattles.blogspot.com/2025/12/out-of-bubblegum-vs-dear-mr-klaus.html"
+        }
+      ],
+      "first_battle_url": "https://moviescenebattles.blogspot.com/2025/12/out-of-bubblegum-vs-falling-with-style.html"
+    },
+    {
+      "scene": "Do You Count Holidays?",
+      "movie": "Scary Movie 3",
+      "movie_year": 2003,
+      "wins": 6,
+      "status": "dethroned",
+      "started_at": "2026-01-19",
+      "ended_at": "2026-01-28",
+      "days_on_top": 9,
+      "dethroned_by": {
+        "scene": "Friendly Wink",
+        "movie": "Anaconda"
+      },
+      "defeated": [
+        {
+          "scene": "Tunnel Tire Change",
+          "movie": "28 Days Later",
+          "date": "2026-01-19",
+          "url": "https://moviescenebattles.blogspot.com/2026/01/tunnel-tire-change-vs-do-you-count.html"
+        },
+        {
+          "scene": "Petey's Bad Song",
+          "movie": "Fantastic Mr. Fox",
+          "date": "2026-01-20",
+          "url": "https://moviescenebattles.blogspot.com/2026/01/do-you-count-holidays-vs-peteys-bad-song.html"
+        },
+        {
+          "scene": "Speech, Interrupted",
+          "movie": "Deep Blue Sea",
+          "date": "2026-01-21",
+          "url": "https://moviescenebattles.blogspot.com/2026/01/do-you-count-holidays-vs-speech.html"
+        },
+        {
+          "scene": "Shallow",
+          "movie": "A Star is Born",
+          "date": "2026-01-22",
+          "url": "https://moviescenebattles.blogspot.com/2026/01/do-you-count-holidays-vs-shallow.html"
+        },
+        {
+          "scene": "Summoning Song",
+          "movie": "I Am Dragon",
+          "date": "2026-01-25",
+          "url": "https://moviescenebattles.blogspot.com/2026/01/do-you-count-holidays-vs-summoning-song.html"
+        },
+        {
+          "scene": "Jai Jai Shivshankar",
+          "movie": "War",
+          "date": "2026-01-26",
+          "url": "https://moviescenebattles.blogspot.com/2026/01/do-you-count-holidays-vs-jai-jai.html"
+        }
+      ],
+      "first_battle_url": "https://moviescenebattles.blogspot.com/2026/01/do-you-count-holidays-vs-peteys-bad-song.html"
+    }
+  ],
+  "reign_length_distribution": [
+    {
+      "wins": 1,
+      "reigns": 71
+    },
+    {
+      "wins": 2,
+      "reigns": 30
+    },
+    {
+      "wins": 3,
+      "reigns": 15
+    },
+    {
+      "wins": 4,
+      "reigns": 10
+    },
+    {
+      "wins": 5,
+      "reigns": 4
+    },
+    {
+      "wins": 6,
+      "reigns": 3
+    },
+    {
+      "wins": 7,
+      "reigns": 9
+    }
+  ],
+  "streak_survival": [
+    {
+      "wins_before_battle": 1,
+      "defenses": 142,
+      "held": 71,
+      "hold_rate": 50.0
+    },
+    {
+      "wins_before_battle": 2,
+      "defenses": 71,
+      "held": 41,
+      "hold_rate": 57.7
+    },
+    {
+      "wins_before_battle": 3,
+      "defenses": 41,
+      "held": 26,
+      "hold_rate": 63.4
+    },
+    {
+      "wins_before_battle": 4,
+      "defenses": 26,
+      "held": 16,
+      "hold_rate": 61.5
+    },
+    {
+      "wins_before_battle": 5,
+      "defenses": 16,
+      "held": 12,
+      "hold_rate": 75.0
+    },
+    {
+      "wins_before_battle": 6,
+      "defenses": 12,
+      "held": 9,
+      "hold_rate": 75.0
+    }
+  ],
+  "giant_killers": [
+    {
+      "scene": "Savage Comeback",
+      "movie": "Sleepaway Camp",
+      "beat": "Wrecked",
+      "beat_movie": "Final Destination 2",
+      "champion_wins_before": 6,
+      "date": "2025-07-27",
+      "url": "https://moviescenebattles.blogspot.com/2025/07/wrecked-vs-savage-comeback.html"
+    },
+    {
+      "scene": "Oh Fudge!",
+      "movie": "A Christmas Story",
+      "beat": "Out of Bubblegum",
+      "beat_movie": "They Live",
+      "champion_wins_before": 6,
+      "date": "2025-12-17",
+      "url": "https://moviescenebattles.blogspot.com/2025/12/out-of-bubblegum-vs-oh-fudge.html"
+    },
+    {
+      "scene": "Friendly Wink",
+      "movie": "Anaconda",
+      "beat": "Do You Count Holidays?",
+      "beat_movie": "Scary Movie 3",
+      "champion_wins_before": 6,
+      "date": "2026-01-28",
+      "url": "https://moviescenebattles.blogspot.com/2026/01/do-you-count-holidays-vs-friendly-wink.html"
+    },
+    {
+      "scene": "Fate Refused",
+      "movie": "No Country for Old Men",
+      "beat": "Time's Up",
+      "beat_movie": "Independence Day",
+      "champion_wins_before": 5,
+      "date": "2025-07-10",
+      "url": "https://moviescenebattles.blogspot.com/2025/07/times-up-vs-fate-refused.html"
+    },
+    {
+      "scene": "Sister Suffragette",
+      "movie": "Mary Poppins",
+      "beat": "Fighting Shredder",
+      "beat_movie": "Teenage Mutant Ninja Turtles",
+      "champion_wins_before": 5,
+      "date": "2025-09-01",
+      "url": "https://moviescenebattles.blogspot.com/2025/09/fighting-shredder-vs-sister-suffragette.html"
+    },
+    {
+      "scene": "Top That!",
+      "movie": "Teen Witch",
+      "beat": "The Legend of the Beast",
+      "beat_movie": "The Sandlot",
+      "champion_wins_before": 5,
+      "date": "2026-06-22",
+      "url": "https://moviescenebattles.blogspot.com/2026/06/the-legend-of-beast-vs-top-that.html"
+    },
+    {
+      "scene": "Hunky Boys",
+      "movie": "PG: Psycho Goreman",
+      "beat": "Freeway Freakout",
+      "beat_movie": "Clueless",
+      "champion_wins_before": 5,
+      "date": "2026-08-03",
+      "url": "https://moviescenebattles.blogspot.com/2026/08/freeway-freakout-vs-hunky-boys.html"
+    },
+    {
+      "scene": "Trick Question",
+      "movie": "My Cousin Vinny",
+      "beat": "You Play Ball Like a Girl!",
+      "beat_movie": "The Sandlot",
+      "champion_wins_before": 4,
+      "date": "2025-05-11",
+      "url": "https://moviescenebattles.blogspot.com/2025/05/you-play-ball-like-girl-vs-trick.html"
+    }
+  ],
+  "movie_leaderboard": [
+    {
+      "movie": "Jurassic Park",
+      "year": 1993,
+      "scenes": 3,
+      "battles": 13,
+      "wins": 11,
+      "losses": 2,
+      "win_rate": 84.6,
+      "retired_scenes": 1
+    },
+    {
+      "movie": "Scream",
+      "year": 1996,
+      "scenes": 2,
+      "battles": 11,
+      "wins": 10,
+      "losses": 1,
+      "win_rate": 90.9,
+      "retired_scenes": 1
+    },
+    {
+      "movie": "The Sandlot",
+      "year": 1993,
+      "scenes": 2,
+      "battles": 11,
+      "wins": 9,
+      "losses": 2,
+      "win_rate": 81.8,
+      "retired_scenes": 0
+    },
+    {
+      "movie": "Teenage Mutant Ninja Turtles",
+      "year": 1990,
+      "scenes": 2,
+      "battles": 9,
+      "wins": 7,
+      "losses": 2,
+      "win_rate": 77.8,
+      "retired_scenes": 0
+    },
+    {
+      "movie": "Addams Family Values",
+      "year": 1993,
+      "scenes": 1,
+      "battles": 7,
+      "wins": 7,
+      "losses": 0,
+      "win_rate": 100.0,
+      "retired_scenes": 1
+    },
+    {
+      "movie": "Alien",
+      "year": 1979,
+      "scenes": 1,
+      "battles": 7,
+      "wins": 7,
+      "losses": 0,
+      "win_rate": 100.0,
+      "retired_scenes": 1
+    },
+    {
+      "movie": "Clue",
+      "year": 1985,
+      "scenes": 1,
+      "battles": 7,
+      "wins": 7,
+      "losses": 0,
+      "win_rate": 100.0,
+      "retired_scenes": 1
+    },
+    {
+      "movie": "Get Out",
+      "year": 2017,
+      "scenes": 1,
+      "battles": 7,
+      "wins": 7,
+      "losses": 0,
+      "win_rate": 100.0,
+      "retired_scenes": 1
+    },
+    {
+      "movie": "Home Alone 2: Lost in New York",
+      "year": 1992,
+      "scenes": 1,
+      "battles": 7,
+      "wins": 7,
+      "losses": 0,
+      "win_rate": 100.0,
+      "retired_scenes": 1
+    },
+    {
+      "movie": "Psycho",
+      "year": 1960,
+      "scenes": 1,
+      "battles": 7,
+      "wins": 7,
+      "losses": 0,
+      "win_rate": 100.0,
+      "retired_scenes": 1
+    },
+    {
+      "movie": "The Lord of the Rings: The Two Towers",
+      "year": 2002,
+      "scenes": 1,
+      "battles": 7,
+      "wins": 7,
+      "losses": 0,
+      "win_rate": 100.0,
+      "retired_scenes": 1
+    },
+    {
+      "movie": "Final Destination 2",
+      "year": 2003,
+      "scenes": 1,
+      "battles": 7,
+      "wins": 6,
+      "losses": 1,
+      "win_rate": 85.7,
+      "retired_scenes": 0
+    },
+    {
+      "movie": "Scary Movie 3",
+      "year": 2003,
+      "scenes": 1,
+      "battles": 7,
+      "wins": 6,
+      "losses": 1,
+      "win_rate": 85.7,
+      "retired_scenes": 0
+    },
+    {
+      "movie": "They Live",
+      "year": 1988,
+      "scenes": 1,
+      "battles": 7,
+      "wins": 6,
+      "losses": 1,
+      "win_rate": 85.7,
+      "retired_scenes": 0
+    },
+    {
+      "movie": "Clueless",
+      "year": 1995,
+      "scenes": 2,
+      "battles": 7,
+      "wins": 5,
+      "losses": 2,
+      "win_rate": 71.4,
+      "retired_scenes": 0
+    }
+  ],
+  "movie_count": 303,
+  "decades": [
+    {
+      "decade": "1930s",
+      "movies": 6,
+      "battles": 12,
+      "wins": 5,
+      "losses": 6,
+      "win_rate": 45.5
+    },
+    {
+      "decade": "1940s",
+      "movies": 5,
+      "battles": 8,
+      "wins": 3,
+      "losses": 5,
+      "win_rate": 37.5
+    },
+    {
+      "decade": "1950s",
+      "movies": 6,
+      "battles": 7,
+      "wins": 0,
+      "losses": 7,
+      "win_rate": 0.0
+    },
+    {
+      "decade": "1960s",
+      "movies": 12,
+      "battles": 21,
+      "wins": 9,
+      "losses": 12,
+      "win_rate": 42.9
+    },
+    {
+      "decade": "1970s",
+      "movies": 23,
+      "battles": 41,
+      "wins": 19,
+      "losses": 22,
+      "win_rate": 46.3
+    },
+    {
+      "decade": "1980s",
+      "movies": 49,
+      "battles": 114,
+      "wins": 65,
+      "losses": 49,
+      "win_rate": 57.0
+    },
+    {
+      "decade": "1990s",
+      "movies": 63,
+      "battles": 162,
+      "wins": 93,
+      "losses": 69,
+      "win_rate": 57.4
+    },
+    {
+      "decade": "2000s",
+      "movies": 65,
+      "battles": 146,
+      "wins": 74,
+      "losses": 72,
+      "win_rate": 50.7
+    },
+    {
+      "decade": "2010s",
+      "movies": 45,
+      "battles": 73,
+      "wins": 29,
+      "losses": 43,
+      "win_rate": 40.3
+    },
+    {
+      "decade": "2020s",
+      "movies": 29,
+      "battles": 54,
+      "wins": 21,
+      "losses": 33,
+      "win_rate": 38.9
+    }
+  ],
+  "cadence": {
+    "monthly": [
+      {
+        "month": "2025-04",
+        "actual": 14,
+        "estimate": null,
+        "delta": null,
+        "is_partial": false,
+        "projected": null
+      },
+      {
+        "month": "2025-05",
+        "actual": 20,
+        "estimate": 14.0,
+        "delta": 6.0,
+        "is_partial": false,
+        "projected": null
+      },
+      {
+        "month": "2025-06",
+        "actual": 22,
+        "estimate": 17.0,
+        "delta": 5.0,
+        "is_partial": false,
+        "projected": null
+      },
+      {
+        "month": "2025-07",
+        "actual": 22,
+        "estimate": 18.7,
+        "delta": 3.3,
+        "is_partial": false,
+        "projected": null
+      },
+      {
+        "month": "2025-08",
+        "actual": 21,
+        "estimate": 21.3,
+        "delta": -0.3,
+        "is_partial": false,
+        "projected": null
+      },
+      {
+        "month": "2025-09",
+        "actual": 21,
+        "estimate": 21.7,
+        "delta": -0.7,
+        "is_partial": false,
+        "projected": null
+      },
+      {
+        "month": "2025-10",
+        "actual": 22,
+        "estimate": 21.3,
+        "delta": 0.7,
+        "is_partial": false,
+        "projected": null
+      },
+      {
+        "month": "2025-11",
+        "actual": 14,
+        "estimate": 21.3,
+        "delta": -7.3,
+        "is_partial": false,
+        "projected": null
+      },
+      {
+        "month": "2025-12",
+        "actual": 13,
+        "estimate": 19.0,
+        "delta": -6.0,
+        "is_partial": false,
+        "projected": null
+      },
+      {
+        "month": "2026-01",
+        "actual": 18,
+        "estimate": 16.3,
+        "delta": 1.7,
+        "is_partial": false,
+        "projected": null
+      },
+      {
+        "month": "2026-02",
+        "actual": 13,
+        "estimate": 15.0,
+        "delta": -2.0,
+        "is_partial": false,
+        "projected": null
+      },
+      {
+        "month": "2026-03",
+        "actual": 23,
+        "estimate": 14.7,
+        "delta": 8.3,
+        "is_partial": false,
+        "projected": null
+      },
+      {
+        "month": "2026-04",
+        "actual": 22,
+        "estimate": 18.0,
+        "delta": 4.0,
+        "is_partial": false,
+        "projected": null
+      },
+      {
+        "month": "2026-05",
+        "actual": 15,
+        "estimate": 19.3,
+        "delta": -4.3,
+        "is_partial": false,
+        "projected": null
+      },
+      {
+        "month": "2026-06",
+        "actual": 21,
+        "estimate": 20.0,
+        "delta": 1.0,
+        "is_partial": false,
+        "projected": null
+      },
+      {
+        "month": "2026-07",
+        "actual": 17,
+        "estimate": 19.3,
+        "delta": -2.3,
+        "is_partial": false,
+        "projected": null
+      },
+      {
+        "month": "2026-08",
+        "actual": 18,
+        "estimate": 17.7,
+        "delta": 0.3,
+        "is_partial": false,
+        "projected": null
+      },
+      {
+        "month": "2026-09",
+        "actual": 3,
+        "estimate": 18.7,
+        "delta": -15.7,
+        "is_partial": true,
+        "projected": 22.0
+      }
+    ],
+    "next_month": {
+      "month": "2026-10",
+      "estimate": 18.7,
+      "basis": "trailing 3-month average of completed months"
+    },
+    "mean_absolute_error": 3.33,
+    "posting_weekdays": [
+      "Mon",
+      "Tue",
+      "Wed",
+      "Thu",
+      "Sun"
+    ],
+    "weekday": [
+      {
+        "day": "Mon",
+        "battles": 63
+      },
+      {
+        "day": "Tue",
+        "battles": 65
+      },
+      {
+        "day": "Wed",
+        "battles": 64
+      },
+      {
+        "day": "Thu",
+        "battles": 61
+      },
+      {
+        "day": "Fri",
+        "battles": 3
+      },
+      {
+        "day": "Sat",
+        "battles": 0
+      },
+      {
+        "day": "Sun",
+        "battles": 63
+      }
+    ],
+    "hour_of_day": [
+      {
+        "hour": 4,
+        "battles": 1
+      },
+      {
+        "hour": 6,
+        "battles": 15
+      },
+      {
+        "hour": 7,
+        "battles": 1
+      },
+      {
+        "hour": 9,
+        "battles": 1
+      },
+      {
+        "hour": 15,
+        "battles": 1
+      },
+      {
+        "hour": 18,
+        "battles": 8
+      },
+      {
+        "hour": 19,
+        "battles": 15
+      },
+      {
+        "hour": 20,
+        "battles": 73
+      },
+      {
+        "hour": 21,
+        "battles": 195
+      },
+      {
+        "hour": 22,
+        "battles": 9
+      }
+    ],
+    "busiest_hour": 21,
+    "share_in_busiest_hour": 61.1
+  },
+  "momentum": {
+    "window_days": 30,
+    "recent": {
+      "start": "2026-08-05",
+      "end": "2026-09-03",
+      "battles": 18,
+      "decided_defenses": 16,
+      "upsets": 6,
+      "upset_rate": 37.5,
+      "avg_words": 86.33
+    },
+    "prior": {
+      "start": "2026-07-06",
+      "end": "2026-08-04",
+      "battles": 17,
+      "decided_defenses": 17,
+      "upsets": 7,
+      "upset_rate": 41.2,
+      "avg_words": 104.35
+    },
+    "battles_delta": 1,
+    "upset_rate_delta": -3.7
+  },
+  "recent_battles": [
+    {
+      "title": "Slaps vs. The Bear",
+      "url": "https://moviescenebattles.blogspot.com/2026/09/slaps-vs-bear.html",
+      "date": "2026-09-03",
+      "champion": "Slaps",
+      "champion_movie": "Vivacious Lady",
+      "challenger": "The Bear",
+      "challenger_movie": "Annihilation",
+      "champion_wins_before": 1,
+      "winner": null,
+      "retired_champion": false
+    },
+    {
+      "title": "Blood Test vs. Slaps",
+      "url": "https://moviescenebattles.blogspot.com/2026/09/blood-test-vs-slaps.html",
+      "date": "2026-09-02",
+      "champion": "Blood Test",
+      "champion_movie": "The Thing",
+      "challenger": "Slaps",
+      "challenger_movie": "Vivacious Lady",
+      "champion_wins_before": 1,
+      "winner": "Slaps",
+      "retired_champion": false
+    },
+    {
+      "title": "I Will Always Love You vs. Blood Test",
+      "url": "https://moviescenebattles.blogspot.com/2026/09/i-will-always-love-you-vs-blood-test.html",
+      "date": "2026-09-01",
+      "champion": "I Will Always Love You",
+      "champion_movie": "The Best Little Whorehouse in Texas",
+      "challenger": "Blood Test",
+      "challenger_movie": "The Thing",
+      "champion_wins_before": 3,
+      "winner": "Blood Test",
+      "retired_champion": false
+    },
+    {
+      "title": "I Will Always Love You vs. Singin' in the Rain",
+      "url": "https://moviescenebattles.blogspot.com/2026/08/i-will-always-love-you-vs-singin-in-rain.html",
+      "date": "2026-08-30",
+      "champion": "I Will Always Love You",
+      "champion_movie": "The Best Little Whorehouse in Texas",
+      "challenger": "Singin' in the Rain",
+      "challenger_movie": "Singin' in the Rain",
+      "champion_wins_before": 2,
+      "winner": "I Will Always Love You",
+      "retired_champion": false
+    },
+    {
+      "title": "I Will Always Love You vs. Toxic Love",
+      "url": "https://moviescenebattles.blogspot.com/2026/08/i-will-always-love-you-vs-toxic-love.html",
+      "date": "2026-08-26",
+      "champion": "I Will Always Love You",
+      "champion_movie": "The Best Little Whorehouse in Texas",
+      "challenger": "Toxic Love",
+      "challenger_movie": "Fern Gully: The Last Rainforest",
+      "champion_wins_before": 1,
+      "winner": "I Will Always Love You",
+      "retired_champion": false
+    },
+    {
+      "title": "Mer-Man vs. I Will Always Love You",
+      "url": "https://moviescenebattles.blogspot.com/2026/08/mer-man-vs-i-will-always-love-you.html",
+      "date": "2026-08-25",
+      "champion": "Mer-Man",
+      "champion_movie": "Zoolander",
+      "challenger": "I Will Always Love You",
+      "challenger_movie": "The Best Little Whorehouse in Texas",
+      "champion_wins_before": 1,
+      "winner": "I Will Always Love You",
+      "retired_champion": false
+    },
+    {
+      "title": "First Person vs. Mer-Man",
+      "url": "https://moviescenebattles.blogspot.com/2026/08/first-person-vs-mer-man.html",
+      "date": "2026-08-24",
+      "champion": "First Person",
+      "champion_movie": "Doom",
+      "challenger": "Mer-Man",
+      "challenger_movie": "Zoolander",
+      "champion_wins_before": 3,
+      "winner": "Mer-Man",
+      "retired_champion": false
+    },
+    {
+      "title": "First Person vs. Everybody Wants Some!!",
+      "url": "https://moviescenebattles.blogspot.com/2026/08/first-person-vs-everybody-wants-some.html",
+      "date": "2026-08-23",
+      "champion": "First Person",
+      "champion_movie": "Doom",
+      "challenger": "Everybody Wants Some!!",
+      "challenger_movie": "Better Off Dead",
+      "champion_wins_before": 2,
+      "winner": "First Person",
+      "retired_champion": false
+    },
+    {
+      "title": "First Person vs. Dogfight",
+      "url": "https://moviescenebattles.blogspot.com/2026/08/first-person-vs-dogfight.html",
+      "date": "2026-08-19",
+      "champion": "First Person",
+      "champion_movie": "Doom",
+      "challenger": "Dogfight",
+      "challenger_movie": "Hulk",
+      "champion_wins_before": 1,
+      "winner": "First Person",
+      "retired_champion": false
+    },
+    {
+      "title": "Horror Remakes vs. First Person",
+      "url": "https://moviescenebattles.blogspot.com/2026/08/horror-remakes-vs-first-person.html",
+      "date": "2026-08-18",
+      "champion": "Horror Remakes",
+      "champion_movie": "Scream 4",
+      "challenger": "First Person",
+      "challenger_movie": "Doom",
+      "champion_wins_before": 1,
+      "winner": "First Person",
+      "retired_champion": false
+    },
+    {
+      "title": "Folding a Child vs Horror Remakes",
+      "url": "https://moviescenebattles.blogspot.com/2026/08/folding-child-vs-horror-remakes.html",
+      "date": "2026-08-17",
+      "champion": "Folding a Child",
+      "champion_movie": "Mr. Vampire III",
+      "challenger": "Horror Remakes",
+      "challenger_movie": "Scream 4",
+      "champion_wins_before": 1,
+      "winner": "Horror Remakes",
+      "retired_champion": false
+    },
+    {
+      "title": "Folding a Child vs. Three Shells",
+      "url": "https://moviescenebattles.blogspot.com/2026/08/folding-child-vs-three-shells.html",
+      "date": "2026-08-16",
+      "champion": "Folding a Child",
+      "champion_movie": "Mr. Vampire III",
+      "challenger": "Three Shells",
+      "challenger_movie": "Demolition Man",
+      "champion_wins_before": 0,
+      "winner": "Folding a Child",
+      "retired_champion": false
+    },
+    {
+      "title": "Flames on the Side of My Face vs. Skidsteer Battle",
+      "url": "https://moviescenebattles.blogspot.com/2026/08/flames-on-side-of-my-face-vs-skidsteer.html",
+      "date": "2026-08-13",
+      "champion": "Flames on the Side of My Face",
+      "champion_movie": "Clue",
+      "challenger": "Skidsteer Battle",
+      "challenger_movie": "Carnosaur",
+      "champion_wins_before": 6,
+      "winner": "Flames on the Side of My Face",
+      "retired_champion": true
+    },
+    {
+      "title": "Flames on the Side of My Face vs. The Girls of Rock and Roll",
+      "url": "https://moviescenebattles.blogspot.com/2026/08/flames-on-side-of-my-face-vs-girls-of.html",
+      "date": "2026-08-12",
+      "champion": "Flames on the Side of My Face",
+      "champion_movie": "Clue",
+      "challenger": "The Girls of Rock and Roll",
+      "challenger_movie": "The Chipmunk Adventure",
+      "champion_wins_before": 5,
+      "winner": "Flames on the Side of My Face",
+      "retired_champion": false
+    },
+    {
+      "title": "Flames on the Side of My Face vs. Double Dents",
+      "url": "https://moviescenebattles.blogspot.com/2026/08/flames-on-side-of-my-face-vs-double.html",
+      "date": "2026-08-11",
+      "champion": "Flames on the Side of My Face",
+      "champion_movie": "Clue",
+      "challenger": "Double Dents",
+      "challenger_movie": "Meet Joe Black",
+      "champion_wins_before": 4,
+      "winner": "Flames on the Side of My Face",
+      "retired_champion": false
+    }
+  ],
+  "non_battle_posts": [
+    {
+      "title": "Template",
+      "url": "https://moviescenebattles.blogspot.com/2000/04/blog-post.html",
+      "published_at": "2000-04-01 18:54:00-08:00"
+    },
+    {
+      "title": "Hall of Fame",
+      "url": "https://moviescenebattles.blogspot.com/2000/05/hall-of-fame.html",
+      "published_at": "2000-05-01 18:40:00-07:00"
+    },
+    {
+      "title": "Submission Rules",
+      "url": "https://moviescenebattles.blogspot.com/2025/04/submission-rules.html",
+      "published_at": "2025-04-09 08:00:00-07:00"
+    },
+    {
+      "title": "A Return",
+      "url": "https://moviescenebattles.blogspot.com/2025/04/a-return.html",
+      "published_at": "2025-04-09 10:00:00-07:00"
+    },
+    {
+      "title": "No matchup today!",
+      "url": "https://moviescenebattles.blogspot.com/2025/09/no-matchup-today.html",
+      "published_at": "2025-09-11 22:06:00-07:00"
+    },
+    {
+      "title": "Holiday break",
+      "url": "https://moviescenebattles.blogspot.com/2025/12/holiday-break.html",
+      "published_at": "2025-12-19 06:09:00-08:00"
+    }
+  ]
+}
