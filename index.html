@@ -6,190 +6,159 @@
     <title>Movie Scene Battles - Tournament Intelligence</title>
     <meta
       name="description"
-      content="Every Movie Scene Battles post re-joined into one tournament ladder: winners, reigns, upsets, retirements and posting cadence."
+      content="Every Movie Scene Battles poll re-joined into one tournament ladder: votes, winners, reigns, upsets and the people sending scenes in."
     />
     <style>
       :root {
         color-scheme: dark;
         --bg: #0b0e14;
         --panel: #151a24;
-        --panel-2: #1c2330;
-        --ink: #f3f4f6;
-        --ink-2: #c3c7d1;
-        --muted: #8b93a1;
-        --grid: #262d3a;
-        --axis: #384153;
-        --border: rgba(255, 255, 255, 0.08);
+        --panel-2: #1b2230;
+        --ink: #f4f5f7;
+        --ink-2: #c5cad4;
+        --muted: #8c94a3;
+        --grid: #242b38;
+        --axis: #38414f;
+        --border: rgba(255, 255, 255, 0.09);
         --accent: #f5b301;
         --accent-ink: #ffd766;
         --link: #8ec0ff;
-        --series-1: #3987e5; /* actuals, primary series */
-        --series-2: #d95926; /* estimates, secondary series */
-        --series-3: #199e70;
-        --series-4: #c98500;
-        --good: #0ca30c;
-        --bad: #e05252;
+        --s1: #3987e5;
+        --s2: #d95926;
+        --s3: #199e70;
+        --s4: #c98500;
         --font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
       }
       * { box-sizing: border-box; }
-      html { scroll-behavior: smooth; }
       body {
-        margin: 0;
-        font-family: var(--font);
-        background: radial-gradient(1200px 600px at 20% -10%, #1b2a4a 0%, var(--bg) 55%);
-        color: var(--ink);
-        line-height: 1.45;
+        margin: 0; font-family: var(--font); line-height: 1.45; color: var(--ink);
+        background: radial-gradient(1100px 520px at 15% -12%, #1a2b4d 0%, var(--bg) 58%);
       }
       a { color: var(--link); text-decoration: none; }
       a:hover { text-decoration: underline; }
-      .container { max-width: 1120px; margin: 0 auto; padding: 20px 16px 56px; }
-      header.top {
-        display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: baseline; justify-content: space-between;
-        padding: 6px 0 18px;
-      }
-      header.top h1 { margin: 0; font-size: 26px; letter-spacing: -0.01em; }
-      header.top .sub { color: var(--muted); font-size: 14px; }
-      nav.jump { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 13px; }
-      nav.jump a { color: var(--ink-2); }
-      .eyebrow { font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 0 0 6px; }
-      section { margin-top: 22px; }
-      section > h2 { margin: 0 0 4px; font-size: 19px; }
-      section > .lede { margin: 0 0 12px; color: var(--ink-2); font-size: 14px; max-width: 78ch; }
-      .panel {
-        background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 16px 18px;
-      }
-      .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-      .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
-      .grid-2 > *, .grid-3 > *, .hero > *, .panel, .tile { min-width: 0; }
-      @media (max-width: 860px) { .grid-2, .grid-3 { grid-template-columns: 1fr; } }
+      .wrap { max-width: 1060px; margin: 0 auto; padding: 18px 16px 48px; }
+      .eyebrow { font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.09em; color: var(--muted); margin: 0 0 4px; }
+      header.top h1 { margin: 0; font-size: 25px; letter-spacing: -0.01em; }
+      header.top .sub { color: var(--muted); font-size: 13.5px; margin-top: 4px; }
 
-      /* Head-to-head hero */
-      .hero { display: grid; grid-template-columns: 1.2fr 1fr; gap: 14px; }
-      @media (max-width: 860px) { .hero { grid-template-columns: 1fr; } }
-      .h2h { position: relative; overflow: hidden; }
-      .h2h .sides { display: grid; grid-template-columns: 1fr auto 1fr; gap: 12px; align-items: center; margin: 10px 0 14px; }
-      .h2h .side { min-width: 0; }
-      .h2h .side .role { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
-      .h2h .side .scene { font-size: 22px; font-weight: 700; line-height: 1.15; margin: 4px 0 2px; overflow-wrap: anywhere; }
-      .h2h .side .movie { color: var(--ink-2); font-size: 14px; }
-      .h2h .side.right { text-align: right; }
-      .h2h .vs { font-weight: 800; font-size: 14px; color: var(--accent-ink); border: 1px solid var(--border); border-radius: 999px; padding: 6px 10px; }
-      .meter { margin-top: 6px; }
-      .meter .track { display: flex; gap: 3px; margin-top: 6px; }
-      .meter .pip { flex: 1; height: 8px; border-radius: 3px; background: #2a3550; }
-      .meter .pip.on { background: var(--accent); }
-      .meter .hint { font-size: 12px; color: var(--muted); margin-top: 6px; }
-      .cta { display: inline-block; margin-top: 12px; background: var(--accent); color: #1a1200; font-weight: 700; padding: 8px 14px; border-radius: 8px; font-size: 14px; }
-      .cta:hover { text-decoration: none; filter: brightness(1.05); }
-      .hero-figure { display: flex; flex-direction: column; justify-content: center; }
-      .hero-figure .big { font-size: 56px; font-weight: 700; line-height: 1; color: var(--accent-ink); margin: 6px 0; }
-      .hero-figure .what { font-size: 15px; color: var(--ink-2); }
-      .rejoinder { margin-top: 10px; padding-left: 10px; border-left: 3px solid var(--accent); color: var(--ink-2); font-size: 13.5px; }
-      .rejoinder b { color: var(--ink); }
+      /* Tabs */
+      .tabs {
+        display: flex; gap: 4px; overflow-x: auto; margin: 16px 0 0;
+        border-bottom: 1px solid var(--border); scrollbar-width: none;
+      }
+      .tabs::-webkit-scrollbar { display: none; }
+      .tabs button {
+        flex: 0 0 auto; background: none; border: 0; border-bottom: 2px solid transparent;
+        color: var(--muted); font: inherit; font-size: 14px; padding: 9px 13px; cursor: pointer;
+        white-space: nowrap; margin-bottom: -1px;
+      }
+      .tabs button:hover { color: var(--ink-2); }
+      .tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); font-weight: 600; }
+      .panelbody[hidden] { display: none; }
+      .panelbody { padding-top: 16px; animation: fade 0.18s ease-out; }
+      @keyframes fade { from { opacity: 0; transform: translateY(3px); } to { opacity: 1; transform: none; } }
+      .tabnote { color: var(--ink-2); font-size: 13.5px; margin: 0 0 14px; max-width: 80ch; }
 
-      /* Stat tiles */
-      .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; }
-      .tile { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; }
-      .tile .label { font-size: 13px; color: var(--muted); }
-      .tile .value { font-size: 30px; font-weight: 700; margin: 4px 0 2px; }
-      .tile .delta { font-size: 12.5px; color: var(--muted); }
-      .tile .delta.up { color: #3ed13e; }
-      .tile .delta.down { color: #ff7a7a; }
-      .tile .rejoinder { margin-top: auto; padding-top: 8px; }
+      .card { background: var(--panel); border: 1px solid var(--border); border-radius: 13px; padding: 15px 17px; }
+      .g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 13px; }
+      .g2 > *, .hero > *, .card, .tile { min-width: 0; }
+      @media (max-width: 840px) { .g2, .hero { grid-template-columns: 1fr !important; } }
+      h3.ch { margin: 0; font-size: 15px; }
+      .ch-row { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; flex-wrap: wrap; margin-bottom: 2px; }
+      .note { font-size: 12.5px; color: var(--muted); }
+
+      /* Hero / head-to-head */
+      .hero { display: grid; grid-template-columns: 1.25fr 1fr; gap: 13px; }
+      .sides { display: grid; grid-template-columns: 1fr auto 1fr; gap: 10px; align-items: center; margin: 10px 0 12px; }
+      .side .role { font-size: 11.5px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+      .side .scene { font-size: 21px; font-weight: 700; line-height: 1.15; margin: 3px 0 2px; overflow-wrap: anywhere; }
+      .side .movie { color: var(--ink-2); font-size: 13.5px; }
+      .side.right { text-align: right; }
+      .vs { font-weight: 800; font-size: 13px; color: var(--accent-ink); border: 1px solid var(--border); border-radius: 999px; padding: 5px 9px; }
+      .track { display: flex; gap: 3px; margin-top: 6px; }
+      .pip { flex: 1; height: 8px; border-radius: 3px; background: #2a3550; }
+      .pip.on { background: var(--accent); }
+      .cta { display: inline-block; margin-top: 11px; background: var(--accent); color: #1a1200; font-weight: 700; padding: 8px 14px; border-radius: 8px; font-size: 13.5px; }
+      .cta:hover { text-decoration: none; filter: brightness(1.06); }
+      .figure { display: flex; flex-direction: column; justify-content: center; }
+      .figure .big { font-size: 52px; font-weight: 700; line-height: 1; color: var(--accent-ink); margin: 5px 0; }
+      .rejoin { margin-top: 9px; padding-left: 10px; border-left: 3px solid var(--accent); color: var(--ink-2); font-size: 13px; }
+      .rejoin b { color: var(--ink); }
+
+      /* Tiles */
+      .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 12px; }
+      .tile { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 13px 15px; display: flex; flex-direction: column; }
+      .tile .label { font-size: 12.5px; color: var(--muted); }
+      .tile .value { font-size: 28px; font-weight: 700; margin: 3px 0 1px; }
+      .tile .rejoin { margin-top: auto; padding-top: 7px; }
 
       /* Charts */
-      .chart-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
-      .chart-head h3 { margin: 0; font-size: 15.5px; }
-      .chart-head .note { font-size: 12.5px; color: var(--muted); }
-      .legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 12.5px; color: var(--ink-2); margin: 8px 0 4px; }
-      .legend .key { display: inline-flex; align-items: center; gap: 6px; }
-      .legend .sw { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
-      .legend .ln { width: 18px; height: 2px; display: inline-block; border-radius: 1px; }
-      .legend .dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
-      .chart { width: 100%; overflow: visible; }
       .chart svg { width: 100%; height: auto; display: block; font-family: var(--font); }
       .chart text { fill: var(--muted); font-size: 11px; }
       .chart text.lbl { fill: var(--ink-2); font-size: 11px; font-variant-numeric: tabular-nums; }
       .chart .grid line { stroke: var(--grid); stroke-width: 1; }
       .chart .axis line { stroke: var(--axis); stroke-width: 1; }
-      .chart rect.bar { rx: 0; }
-      .chart .hit { fill: transparent; cursor: default; }
-      .chart .hit:hover + .mark, .chart .mark.hot { filter: brightness(1.18); }
-      .toolbar { display: flex; gap: 8px; align-items: center; }
-      button.tbl {
-        background: transparent; color: var(--ink-2); border: 1px solid var(--border); border-radius: 8px;
-        font: inherit; font-size: 12.5px; padding: 4px 10px; cursor: pointer;
-      }
+      .legend { display: flex; flex-wrap: wrap; gap: 5px 13px; font-size: 12.5px; color: var(--ink-2); margin: 7px 0 3px; }
+      .legend .key { display: inline-flex; align-items: center; gap: 6px; }
+      .legend .sw { width: 12px; height: 12px; border-radius: 3px; }
+      .legend .ln { width: 17px; height: 2px; border-radius: 1px; }
+      .legend .dot { width: 9px; height: 9px; border-radius: 50%; }
+      button.tbl { background: transparent; color: var(--ink-2); border: 1px solid var(--border); border-radius: 8px; font: inherit; font-size: 12.5px; padding: 3px 10px; cursor: pointer; }
       button.tbl:hover { background: var(--panel-2); }
       .tablewrap { overflow-x: auto; margin-top: 8px; }
       table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
-      th, td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--grid); vertical-align: top; }
-      th { color: var(--muted); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; }
+      th, td { text-align: left; padding: 6px 9px; border-bottom: 1px solid var(--grid); vertical-align: top; }
+      th { color: var(--muted); font-weight: 600; font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.05em; }
       td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
       tr:last-child td { border-bottom: 0; }
       .pill { display: inline-block; font-size: 11.5px; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--border); color: var(--ink-2); white-space: nowrap; }
-      .pill.retired { border-color: rgba(245, 179, 1, 0.5); color: var(--accent-ink); }
-      .pill.good { color: #3ed13e; }
-      .pill.bad { color: #ff7a7a; }
-      .tooltip {
-        position: fixed; pointer-events: none; z-index: 10; background: #0f1320; border: 1px solid var(--border);
-        color: var(--ink); border-radius: 8px; padding: 8px 10px; font-size: 12.5px; max-width: 280px; box-shadow: 0 8px 24px rgba(0,0,0,0.45);
-        display: none;
-      }
+      .pill.retired { border-color: rgba(245,179,1,0.5); color: var(--accent-ink); }
+      .pill.good { color: #45d945; }
+      .pill.bad { color: #ff8080; }
+
+      /* Vote split bar */
+      .vote { display: grid; grid-template-columns: 1fr auto; gap: 10px; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--grid); }
+      .vote:last-child { border-bottom: 0; }
+      .vote .names { font-size: 13px; margin-bottom: 5px; }
+      .vote .names .w { color: var(--ink); font-weight: 600; }
+      .vote .names .l { color: var(--muted); }
+      .vote .bar { display: flex; height: 16px; border-radius: 4px; overflow: hidden; background: var(--panel-2); }
+      .vote .bar span { display: block; height: 100%; font-size: 10.5px; }
+      .vote .bar .a { background: var(--s1); }
+      .vote .bar .b { background: var(--s2); margin-left: 2px; }
+      .vote .tally { font-variant-numeric: tabular-nums; font-size: 13px; color: var(--ink-2); white-space: nowrap; }
+      .vote .tally b { color: var(--ink); }
+
+      .tooltip { position: fixed; pointer-events: none; z-index: 20; background: #0f1320; border: 1px solid var(--border); color: var(--ink); border-radius: 8px; padding: 7px 10px; font-size: 12.5px; max-width: 280px; box-shadow: 0 8px 24px rgba(0,0,0,0.5); display: none; }
       .tooltip b { color: var(--accent-ink); }
-
-      /* Lists */
-      ol.ranked { margin: 8px 0 0; padding-left: 22px; }
-      ol.ranked li { margin: 0 0 8px; }
-      ol.ranked .meta { color: var(--muted); font-size: 12.5px; }
-      .hof-row { display: grid; grid-template-columns: minmax(150px, 220px) 1fr auto; gap: 10px; align-items: center; padding: 6px 0; border-bottom: 1px solid var(--grid); font-size: 13.5px; }
-      .hof-row:last-child { border-bottom: 0; }
-      .hof-row .name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-      .hof-row .name small { display: block; color: var(--muted); font-size: 12px; }
-      .hof-row .bar { height: 14px; border-radius: 0 4px 4px 0; background: var(--series-1); }
-      .hof-row .bar.dethroned { background: #4d5568; }
-      .hof-row .bar.reigning { background: var(--accent); }
-      .hof-row .days { color: var(--muted); font-size: 12.5px; white-space: nowrap; font-variant-numeric: tabular-nums; }
-
-      /* Debate card */
-      .debate { background: linear-gradient(135deg, #1b2440, #14192a); border: 1px solid rgba(245,179,1,0.35); }
-      .debate pre { white-space: pre-wrap; overflow-wrap: anywhere; font-family: var(--font); font-size: 13.5px; color: var(--ink-2); margin: 8px 0 10px; }
-
-      .integrity dl { display: grid; grid-template-columns: auto 1fr; gap: 6px 14px; margin: 10px 0 0; font-size: 13.5px; }
-      .integrity dt { color: var(--muted); }
-      .integrity dd { margin: 0; }
-      .callout { background: var(--panel-2); border-radius: 10px; padding: 10px 12px; margin-top: 12px; font-size: 13.5px; }
+      dl.kv { display: grid; grid-template-columns: auto 1fr; gap: 5px 14px; margin: 8px 0 0; font-size: 13.5px; }
+      dl.kv dt { color: var(--muted); }
+      dl.kv dd { margin: 0; }
+      .callout { background: var(--panel-2); border-radius: 10px; padding: 10px 12px; margin-top: 12px; font-size: 13px; }
       .callout ul { margin: 6px 0 0; padding-left: 18px; }
-      footer { margin-top: 30px; color: var(--muted); font-size: 12.5px; border-top: 1px solid var(--grid); padding-top: 14px; }
-      .error { color: #ff9c9c; }
-      .sr { position: absolute; left: -9999px; }
+      .callout li { margin-bottom: 5px; }
+      pre.share { white-space: pre-wrap; overflow-wrap: anywhere; font-family: var(--font); font-size: 13px; color: var(--ink-2); margin: 8px 0 10px; }
+      footer { margin-top: 26px; color: var(--muted); font-size: 12.5px; border-top: 1px solid var(--grid); padding-top: 12px; }
+      .err { color: #ff9c9c; }
     </style>
   </head>
   <body>
-    <div class="container">
+    <div class="wrap">
       <header class="top">
-        <div>
-          <p class="eyebrow">Movie Scene Battles</p>
-          <h1>Tournament Intelligence</h1>
-          <div class="sub" id="subline">Loading latest crawl snapshot...</div>
-        </div>
-        <nav class="jump" aria-label="Sections">
-          <a href="#today">Today</a>
-          <a href="#cadence">Cadence</a>
-          <a href="#momentum">Momentum</a>
-          <a href="#hall">Hall of Fame</a>
-          <a href="#clash">Category Clash</a>
-          <a href="#recent">Recent</a>
-          <a href="#integrity">Integrity</a>
-        </nav>
+        <p class="eyebrow">Movie Scene Battles</p>
+        <h1>Tournament Intelligence</h1>
+        <div class="sub" id="subline">Loading snapshot...</div>
       </header>
 
-      <div id="error" class="error" hidden></div>
+      <div id="error" class="err" hidden></div>
 
-      <section id="today">
+      <div class="tabs" role="tablist" id="tabs"></div>
+
+      <!-- TODAY -->
+      <section class="panelbody" id="tab-today" role="tabpanel" hidden>
         <div class="hero">
-          <article class="panel h2h">
-            <p class="eyebrow">Daily head-to-head - poll open on the site</p>
+          <article class="card">
+            <p class="eyebrow" id="h2h-kicker">Today's battle</p>
             <div class="sides">
               <div class="side">
                 <div class="role" id="h2h-left-role">Champion</div>
@@ -203,582 +172,760 @@
                 <div class="movie" id="h2h-right-movie"></div>
               </div>
             </div>
-            <div class="meter">
-              <div class="label" style="font-size:13px;color:var(--muted)" id="meter-label">Road to retirement</div>
-              <div class="track" id="meter-track"></div>
-              <div class="hint" id="meter-hint"></div>
-            </div>
+            <div class="note" id="meter-label"></div>
+            <div class="track" id="meter-track"></div>
+            <div class="note" id="meter-hint" style="margin-top:6px"></div>
             <a class="cta" id="h2h-link" href="#" target="_blank" rel="noopener noreferrer">Vote on today's battle</a>
-            <div class="rejoinder" id="h2h-rejoinder"></div>
+            <div class="rejoin" id="h2h-rejoin"></div>
           </article>
-          <article class="panel hero-figure">
+          <article class="card figure">
             <p class="eyebrow">The headline number</p>
             <div class="big" id="hero-value">-</div>
-            <div class="what" id="hero-what"></div>
-            <div class="rejoinder" id="hero-rejoinder"></div>
+            <div id="hero-what" style="font-size:14.5px;color:var(--ink-2)"></div>
+            <div class="rejoin" id="hero-rejoin"></div>
           </article>
         </div>
-      </section>
-
-      <section id="tiles">
-        <h2>The ladder at a glance</h2>
-        <p class="lede">Every headline carries its rejoinder: the number, then the thing the number is hiding.</p>
-        <div class="tiles" id="tile-grid"></div>
-      </section>
-
-      <section id="cadence">
-        <h2>Posting cadence: estimate vs actual</h2>
-        <p class="lede">
-          Battles published per month. The estimate for each month is the trailing three-month average of completed months,
-          so the gap between line and bar is how surprising that month was.
-        </p>
-        <article class="panel">
-          <div class="chart-head">
-            <h3>Battles per month</h3>
-            <div class="toolbar"><span class="note" id="cadence-note"></span><button class="tbl" data-toggle="cadence-table">Table</button></div>
-          </div>
-          <div class="legend">
-            <span class="key"><span class="sw" style="background:var(--series-1)"></span>Actual</span>
-            <span class="key"><span class="sw" style="background:var(--series-1);opacity:.45"></span>Actual (month in progress)</span>
-            <span class="key"><span class="ln" style="background:var(--series-2)"></span><span class="dot" style="background:var(--series-2)"></span>Estimate</span>
-            <span class="key"><span class="dot" style="background:var(--series-4)"></span>Projected month-end pace</span>
-          </div>
-          <div class="chart" id="cadence-chart"></div>
-          <div class="tablewrap" id="cadence-table" hidden></div>
-          <div class="rejoinder" id="cadence-rejoinder"></div>
+        <div class="tiles" id="tiles" style="margin-top:13px"></div>
+        <article class="card" style="margin-top:13px">
+          <div class="ch-row"><h3 class="ch">Last five results</h3><span class="note">bar length = share of the vote</span></div>
+          <div id="last-five"></div>
         </article>
-        <div class="grid-2" style="margin-top:14px">
-          <article class="panel">
-            <div class="chart-head"><h3>Battles by weekday</h3><button class="tbl" data-toggle="weekday-table">Table</button></div>
-            <div class="chart" id="weekday-chart"></div>
-            <div class="tablewrap" id="weekday-table" hidden></div>
-            <div class="rejoinder" id="weekday-rejoinder"></div>
-          </article>
-          <article class="panel">
-            <div class="chart-head"><h3>Publish hour (site local time)</h3><button class="tbl" data-toggle="hour-table">Table</button></div>
-            <div class="chart" id="hour-chart"></div>
-            <div class="tablewrap" id="hour-table" hidden></div>
-            <div class="rejoinder" id="hour-rejoinder"></div>
-          </article>
-        </div>
+        <article class="card" style="margin-top:13px">
+          <div class="ch-row"><h3 class="ch">Debate card</h3><button class="tbl" id="copy-btn">Copy</button></div>
+          <pre class="share" id="share-text"></pre>
+          <span class="note" id="copy-status"></span>
+        </article>
       </section>
 
-      <section id="momentum">
-        <h2>Does momentum exist?</h2>
-        <p class="lede">
-          Champion hold rate at each rung of the ladder. If crowds favour incumbents, the bars should climb from left to right.
-        </p>
-        <div class="grid-2">
-          <article class="panel">
-            <div class="chart-head"><h3>Hold rate by wins already banked</h3><button class="tbl" data-toggle="survival-table">Table</button></div>
+      <!-- THE VOTE -->
+      <section class="panelbody" id="tab-vote" role="tabpanel" hidden>
+        <p class="tabnote" id="vote-intro"></p>
+        <div class="tiles" id="vote-tiles"></div>
+        <div class="g2" style="margin-top:13px">
+          <article class="card">
+            <div class="ch-row"><h3 class="ch">How close are these polls?</h3><button class="tbl" data-toggle="margin-table">Table</button></div>
+            <div class="note">Battles by winning margin, in votes</div>
+            <div class="chart" id="margin-chart"></div>
+            <div class="tablewrap" id="margin-table" hidden></div>
+            <div class="rejoin" id="margin-rejoin"></div>
+          </article>
+          <article class="card">
+            <div class="ch-row"><h3 class="ch">Turnout per battle, by month</h3><button class="tbl" data-toggle="turnout-table">Table</button></div>
+            <div class="legend">
+              <span class="key"><span class="ln" style="background:var(--s1)"></span><span class="dot" style="background:var(--s1)"></span>Average votes cast</span>
+            </div>
+            <div class="chart" id="turnout-chart"></div>
+            <div class="tablewrap" id="turnout-table" hidden></div>
+            <div class="rejoin" id="turnout-rejoin"></div>
+          </article>
+        </div>
+        <div class="g2" style="margin-top:13px">
+          <article class="card">
+            <div class="ch-row"><h3 class="ch">Nail-biters</h3><span class="note">closest polls on record</span></div>
+            <div class="legend"><span class="key"><span class="sw" style="background:var(--s1)"></span>Winner's votes</span><span class="key"><span class="sw" style="background:var(--s2)"></span>Loser's votes</span></div>
+            <div id="closest-list"></div>
+          </article>
+          <article class="card">
+            <div class="ch-row"><h3 class="ch">Blowouts</h3><span class="note">widest margins on record</span></div>
+            <div id="blowout-list"></div>
+          </article>
+        </div>
+        <article class="card" style="margin-top:13px">
+          <div class="ch-row"><h3 class="ch">Does a hot streak pull a bigger crowd?</h3><button class="tbl" data-toggle="streak-turnout-table">Table</button></div>
+          <div class="note">Average votes cast, by how many wins the champion had already banked</div>
+          <div class="chart" id="streak-turnout-chart"></div>
+          <div class="tablewrap" id="streak-turnout-table" hidden></div>
+          <div class="rejoin" id="streak-turnout-rejoin"></div>
+        </article>
+        <article class="card" style="margin-top:13px">
+          <div class="ch-row"><h3 class="ch">Decided by the house</h3><span class="note">polls that ended level</span></div>
+          <div id="tiebreak-list"></div>
+          <div class="rejoin" id="tiebreak-rejoin"></div>
+        </article>
+      </section>
+
+      <!-- LADDER -->
+      <section class="panelbody" id="tab-ladder" role="tabpanel" hidden>
+        <p class="tabnote" id="ladder-intro"></p>
+        <div class="g2">
+          <article class="card">
+            <div class="ch-row"><h3 class="ch">Hold rate by wins banked</h3><button class="tbl" data-toggle="survival-table">Table</button></div>
             <div class="chart" id="survival-chart"></div>
             <div class="tablewrap" id="survival-table" hidden></div>
-            <div class="rejoinder" id="survival-rejoinder"></div>
+            <div class="rejoin" id="survival-rejoin"></div>
           </article>
-          <article class="panel">
-            <div class="chart-head"><h3>How long reigns last</h3><button class="tbl" data-toggle="reigns-table">Table</button></div>
+          <article class="card">
+            <div class="ch-row"><h3 class="ch">How long reigns last</h3><button class="tbl" data-toggle="reigns-table">Table</button></div>
             <div class="chart" id="reigns-chart"></div>
             <div class="tablewrap" id="reigns-table" hidden></div>
-            <div class="rejoinder" id="reigns-rejoinder"></div>
+            <div class="rejoin" id="reigns-rejoin"></div>
           </article>
         </div>
-        <article class="panel" style="margin-top:14px">
-          <div class="chart-head"><h3>Last 30 days vs the 30 before</h3><span class="note">Momentum tracker</span></div>
-          <div class="tablewrap" id="momentum-table"></div>
-          <div class="rejoinder" id="momentum-rejoinder"></div>
-        </article>
-      </section>
-
-      <section id="hall">
-        <h2>Hall of Fame and the near misses</h2>
-        <p class="lede">Reach seven wins and a scene retires. The longest reigns, with days on top and who they beat.</p>
-        <div class="grid-2">
-          <article class="panel">
-            <div class="chart-head"><h3>Longest reigns</h3><span class="note">bar = wins, hover for the victims</span></div>
+        <div class="g2" style="margin-top:13px">
+          <article class="card">
+            <div class="ch-row"><h3 class="ch">Hall of Fame and near misses</h3><span class="note">hover for the victims</span></div>
             <div class="legend">
-              <span class="key"><span class="sw" style="background:var(--series-1)"></span>Retired (7 wins)</span>
+              <span class="key"><span class="sw" style="background:var(--s1)"></span>Retired</span>
               <span class="key"><span class="sw" style="background:#4d5568"></span>Dethroned</span>
-              <span class="key"><span class="sw" style="background:var(--accent)"></span>Reigning now</span>
+              <span class="key"><span class="sw" style="background:var(--accent)"></span>Reigning</span>
             </div>
             <div id="hof-list"></div>
           </article>
-          <article class="panel">
-            <div class="chart-head"><h3>Giant killers</h3><span class="note">biggest upsets by champion wins at the time</span></div>
-            <ol class="ranked" id="giant-list"></ol>
-            <div class="rejoinder" id="giant-rejoinder"></div>
+          <article class="card">
+            <div class="ch-row"><h3 class="ch">Giant killers</h3><span class="note">by champion wins at the time</span></div>
+            <div class="tablewrap" id="giant-table"></div>
+            <div class="rejoin" id="giant-rejoin"></div>
           </article>
         </div>
+        <article class="card" style="margin-top:13px">
+          <div class="ch-row"><h3 class="ch">Most dominant reigns</h3><span class="note">average winning margin, reigns of 3+ wins</span></div>
+          <div class="tablewrap" id="dominant-table"></div>
+          <div class="rejoin" id="dominant-rejoin"></div>
+        </article>
       </section>
 
-      <section id="clash">
-        <h2>Category Clash: movies and decades</h2>
-        <p class="lede">A scene fights, but a movie gets the credit. Wins are inferred from the succession of posts.</p>
-        <div class="grid-2">
-          <article class="panel">
-            <div class="chart-head"><h3>Movie leaderboard</h3><span class="note" id="movie-note"></span></div>
+      <!-- MOVIES -->
+      <section class="panelbody" id="tab-movies" role="tabpanel" hidden>
+        <p class="tabnote" id="movies-intro"></p>
+        <div class="g2">
+          <article class="card">
+            <div class="ch-row"><h3 class="ch">Movie leaderboard</h3><span class="note" id="movie-note"></span></div>
             <div class="tablewrap" id="movie-table"></div>
           </article>
-          <article class="panel">
-            <div class="chart-head"><h3>Win rate by decade of release</h3><button class="tbl" data-toggle="decade-table">Table</button></div>
+          <article class="card">
+            <div class="ch-row"><h3 class="ch">Win rate by decade of release</h3><button class="tbl" data-toggle="decade-table">Table</button></div>
             <div class="legend">
-              <span class="key"><span class="sw" style="background:var(--series-1)"></span>Win rate</span>
-              <span class="key"><span class="ln" style="background:var(--axis)"></span>50% line</span>
+              <span class="key"><span class="sw" style="background:var(--s1)"></span>Win rate</span>
+              <span class="key"><span class="ln" style="background:var(--axis)"></span>Even (50%)</span>
             </div>
             <div class="chart" id="decade-chart"></div>
             <div class="tablewrap" id="decade-table" hidden></div>
-            <div class="rejoinder" id="decade-rejoinder"></div>
+            <div class="rejoin" id="decade-rejoin"></div>
           </article>
         </div>
       </section>
 
-      <section id="recent">
-        <h2>Recent battles</h2>
-        <p class="lede">The last fifteen posts, with the winner read off the next day's champion.</p>
-        <article class="panel">
+      <!-- CADENCE -->
+      <section class="panelbody" id="tab-cadence" role="tabpanel" hidden>
+        <p class="tabnote" id="cadence-intro"></p>
+        <article class="card">
+          <div class="ch-row"><h3 class="ch">Battles per month: estimate vs actual</h3>
+            <span><span class="note" id="cadence-note"></span> <button class="tbl" data-toggle="cadence-table">Table</button></span>
+          </div>
+          <div class="legend">
+            <span class="key"><span class="sw" style="background:var(--s1)"></span>Actual</span>
+            <span class="key"><span class="sw" style="background:var(--s1);opacity:.45"></span>Month in progress</span>
+            <span class="key"><span class="ln" style="background:var(--s2)"></span><span class="dot" style="background:var(--s2)"></span>Estimate</span>
+            <span class="key"><span class="dot" style="background:var(--s4)"></span>Pace to month end</span>
+          </div>
+          <div class="chart" id="cadence-chart"></div>
+          <div class="tablewrap" id="cadence-table" hidden></div>
+          <div class="rejoin" id="cadence-rejoin"></div>
+        </article>
+        <div class="g2" style="margin-top:13px">
+          <article class="card">
+            <div class="ch-row"><h3 class="ch">Battles by weekday</h3><button class="tbl" data-toggle="weekday-table">Table</button></div>
+            <div class="chart" id="weekday-chart"></div>
+            <div class="tablewrap" id="weekday-table" hidden></div>
+            <div class="rejoin" id="weekday-rejoin"></div>
+          </article>
+          <article class="card">
+            <div class="ch-row"><h3 class="ch">Publish hour</h3><button class="tbl" data-toggle="hour-table">Table</button></div>
+            <div class="chart" id="hour-chart"></div>
+            <div class="tablewrap" id="hour-table" hidden></div>
+            <div class="rejoin" id="hour-rejoin"></div>
+          </article>
+        </div>
+        <article class="card" style="margin-top:13px">
+          <div class="ch-row"><h3 class="ch">Last 30 days vs the 30 before</h3><span class="note">momentum</span></div>
+          <div class="tablewrap" id="momentum-table"></div>
+          <div class="rejoin" id="momentum-rejoin"></div>
+        </article>
+      </section>
+
+      <!-- PEOPLE -->
+      <section class="panelbody" id="tab-people" role="tabpanel" hidden>
+        <p class="tabnote" id="people-intro"></p>
+        <div class="tiles" id="people-tiles"></div>
+        <article class="card" style="margin-top:13px">
+          <div class="ch-row"><h3 class="ch">Credited submitters</h3><span class="note">scenes sent in, and how they fared</span></div>
+          <div class="tablewrap" id="people-table"></div>
+          <div class="rejoin" id="people-rejoin"></div>
+        </article>
+        <article class="card" style="margin-top:13px">
+          <div class="ch-row"><h3 class="ch">Every credited scene</h3><span class="note">hover a name above for the same list</span></div>
+          <div class="tablewrap" id="scenes-table"></div>
+        </article>
+      </section>
+
+      <!-- METHOD -->
+      <section class="panelbody" id="tab-method" role="tabpanel" hidden>
+        <p class="tabnote">
+          Each battle post publishes its poll result, and the next post names the winner as champion. Re-joining the two
+          gives an independent check on every result. Everything on this page is a pure function of the crawl.
+        </p>
+        <article class="card">
+          <div class="ch-row"><h3 class="ch">Reconstruction confidence</h3></div>
+          <dl class="kv" id="method-kv"></dl>
+          <div class="callout" id="method-callout"></div>
+        </article>
+        <article class="card" style="margin-top:13px">
+          <div class="ch-row"><h3 class="ch">Recent battles</h3><span class="note">winner read from the poll and confirmed by the next post</span></div>
           <div class="tablewrap" id="recent-table"></div>
         </article>
       </section>
 
-      <section id="debate">
-        <h2>Debate card</h2>
-        <p class="lede">A one-tap share for today's matchup. Copy, paste, argue.</p>
-        <article class="panel debate">
-          <pre id="debate-text"></pre>
-          <button class="tbl" id="copy-debate">Copy debate card</button>
-          <span class="note" id="copy-status" style="margin-left:8px;color:var(--muted)"></span>
-        </article>
-      </section>
-
-      <section id="integrity">
-        <h2>How this was rebuilt, and how much to trust it</h2>
-        <p class="lede">
-          The blog never publishes vote totals. Each post is re-joined to the next one: the scene that returns as champion won.
-          A fresh matchup after a seventh win marks a retirement. Everything above is a pure function of the crawl.
-        </p>
-        <article class="panel integrity">
-          <dl id="integrity-list"></dl>
-          <div class="callout" id="integrity-callout"></div>
-        </article>
-      </section>
-
       <footer>
-        Rankings stay integrity-first: crawl data is snapshotted immutably, winners are inferred by a documented rule,
-        and the inference is cross-checked against the site's own win counter. Source and crawler on
+        Integrity-first: crawl data is snapshotted immutably, winners come from the published polls and are cross-checked
+        against the succession of posts. Source on
         <a href="https://github.com/MAKaminski/movie_scene_battle_analyzer" target="_blank" rel="noopener noreferrer">GitHub</a>.
         <span id="crawl-note"></span>
       </footer>
     </div>
-    <div class="tooltip" id="tooltip" role="status" aria-live="polite"></div>
+    <div class="tooltip" id="tip" role="status" aria-live="polite"></div>
 
     <script>
       (function () {
-        const SVG_NS = "http://www.w3.org/2000/svg";
+        const NS = "http://www.w3.org/2000/svg";
         const $ = (id) => document.getElementById(id);
-        const fmt = (n, d = 0) => (n === null || n === undefined || Number.isNaN(n)) ? "-" : Number(n).toLocaleString("en-US", { maximumFractionDigits: d, minimumFractionDigits: 0 });
-        const pct = (n, d = 0) => (n === null || n === undefined) ? "-" : `${fmt(n, d)}%`;
-        const monthName = (ym) => {
-          const [y, m] = ym.split("-").map(Number);
-          return new Date(Date.UTC(y, m - 1, 1)).toLocaleString("en-US", { month: "short", year: "2-digit", timeZone: "UTC" });
+        const fmt = (n, d = 0) => (n == null || Number.isNaN(n)) ? "-" : Number(n).toLocaleString("en-US", { maximumFractionDigits: d });
+        const pct = (n, d = 0) => (n == null ? "-" : `${fmt(n, d)}%`);
+        const signed = (v, d = 1) => (v == null ? "-" : `${v > 0 ? "+" : ""}${fmt(v, d)}`);
+        const mon = (ym) => { const [y, m] = ym.split("-").map(Number); return new Date(Date.UTC(y, m - 1, 1)).toLocaleString("en-US", { month: "short", year: "2-digit", timeZone: "UTC" }); };
+        const day = (iso) => iso ? new Date(`${iso}T12:00:00Z`).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" }) : "-";
+        const txt = (id, v) => { const e = $(id); if (e) e.textContent = v; };
+        const html = (id, v) => { const e = $(id); if (e) e.innerHTML = v; };
+        const el = (t, a = {}, kids = []) => {
+          const n = document.createElement(t);
+          for (const [k, v] of Object.entries(a)) { if (k === "class") n.className = v; else if (k === "html") n.innerHTML = v; else n.setAttribute(k, v); }
+          for (const c of [].concat(kids)) if (c != null) n.append(c);
+          return n;
         };
-        const longDate = (iso) => iso ? new Date(`${iso}T12:00:00Z`).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" }) : "-";
-        const text = (id, value) => { const el = $(id); if (el) el.textContent = value; };
-        const el = (tag, attrs = {}, children = []) => {
-          const node = document.createElement(tag);
-          for (const [k, v] of Object.entries(attrs)) {
-            if (k === "class") node.className = v; else if (k === "html") node.innerHTML = v; else node.setAttribute(k, v);
-          }
-          for (const c of [].concat(children)) node.append(c);
-          return node;
-        };
-        const svgEl = (tag, attrs = {}) => {
-          const node = document.createElementNS(SVG_NS, tag);
-          for (const [k, v] of Object.entries(attrs)) node.setAttribute(k, v);
-          return node;
-        };
-        function safeUrl(rawUrl) {
-          try {
-            const parsed = new URL(rawUrl, window.location.origin);
-            if (parsed.protocol === "http:" || parsed.protocol === "https:") return parsed.href;
-          } catch (e) { return null; }
-          return null;
-        }
-        function link(href, label) {
-          const url = safeUrl(href);
-          if (!url) return document.createTextNode(label);
-          return el("a", { href: url, target: "_blank", rel: "noopener noreferrer" }, label);
-        }
+        const sv = (t, a = {}) => { const n = document.createElementNS(NS, t); for (const [k, v] of Object.entries(a)) n.setAttribute(k, v); return n; };
+        function safeUrl(u) { try { const p = new URL(u, location.origin); if (p.protocol === "http:" || p.protocol === "https:") return p.href; } catch (e) {} return null; }
+        function link(href, label) { const u = safeUrl(href); return u ? el("a", { href: u, target: "_blank", rel: "noopener noreferrer" }, label) : document.createTextNode(label); }
 
         /* Tooltip */
-        const tip = $("tooltip");
-        function showTip(evt, html) {
-          tip.innerHTML = html; tip.style.display = "block"; moveTip(evt);
-        }
-        function moveTip(evt) {
-          const pad = 14; const w = tip.offsetWidth; const h = tip.offsetHeight;
-          let x = evt.clientX + pad; let y = evt.clientY + pad;
-          if (x + w > window.innerWidth - 8) x = evt.clientX - w - pad;
-          if (y + h > window.innerHeight - 8) y = evt.clientY - h - pad;
+        const tip = $("tip");
+        const moveTip = (e) => {
+          const p = 14, w = tip.offsetWidth, h = tip.offsetHeight;
+          let x = e.clientX + p, y = e.clientY + p;
+          if (x + w > innerWidth - 8) x = e.clientX - w - p;
+          if (y + h > innerHeight - 8) y = e.clientY - h - p;
           tip.style.left = `${x}px`; tip.style.top = `${y}px`;
-        }
-        function hideTip() { tip.style.display = "none"; }
-        function attachTip(node, html) {
-          node.addEventListener("mouseenter", (e) => showTip(e, html));
+        };
+        function attachTip(node, content) {
+          node.addEventListener("mouseenter", (e) => { tip.innerHTML = content; tip.style.display = "block"; moveTip(e); });
           node.addEventListener("mousemove", moveTip);
-          node.addEventListener("mouseleave", hideTip);
+          node.addEventListener("mouseleave", () => { tip.style.display = "none"; });
           node.setAttribute("tabindex", "0");
-          node.addEventListener("focus", (e) => { const r = node.getBoundingClientRect(); showTip({ clientX: r.left + r.width / 2, clientY: r.top }, html); });
-          node.addEventListener("blur", hideTip);
+          node.addEventListener("focus", () => { const r = node.getBoundingClientRect(); tip.innerHTML = content; tip.style.display = "block"; moveTip({ clientX: r.left + r.width / 2, clientY: r.top }); });
+          node.addEventListener("blur", () => { tip.style.display = "none"; });
         }
+
+        /* Tabs */
+        const TABS = [
+          ["today", "Today"], ["vote", "The Vote"], ["ladder", "The Ladder"],
+          ["movies", "Movies"], ["cadence", "Cadence"], ["people", "People"], ["method", "Method"],
+        ];
+        function initTabs() {
+          const bar = $("tabs");
+          TABS.forEach(([id, label], i) => {
+            const b = el("button", { role: "tab", id: `t-${id}`, "aria-controls": `tab-${id}`, "aria-selected": "false", tabindex: "-1" }, label);
+            b.addEventListener("click", () => select(id, true));
+            b.addEventListener("keydown", (e) => {
+              const d = e.key === "ArrowRight" ? 1 : e.key === "ArrowLeft" ? -1 : 0;
+              if (!d) return;
+              e.preventDefault();
+              const next = TABS[(i + d + TABS.length) % TABS.length][0];
+              select(next, true); $(`t-${next}`).focus();
+            });
+            bar.append(b);
+          });
+          const fromHash = (location.hash || "").replace("#", "");
+          select(TABS.some(([id]) => id === fromHash) ? fromHash : "today", false);
+        }
+        function select(id, setHash) {
+          TABS.forEach(([t]) => {
+            const on = t === id;
+            const btn = $(`t-${t}`);
+            btn.setAttribute("aria-selected", String(on));
+            btn.tabIndex = on ? 0 : -1;
+            $(`tab-${t}`).hidden = !on;
+          });
+          if (setHash) history.replaceState(null, "", `#${id}`);
+        }
+        addEventListener("hashchange", () => {
+          const h = (location.hash || "").replace("#", "");
+          if (TABS.some(([id]) => id === h)) select(h, false);
+        });
 
         /* Table toggles */
-        document.querySelectorAll("button[data-toggle]").forEach((btn) => {
-          btn.addEventListener("click", () => {
-            const target = $(btn.dataset.toggle);
-            target.hidden = !target.hidden;
-            btn.textContent = target.hidden ? "Table" : "Hide table";
+        function wireToggles() {
+          document.querySelectorAll("button[data-toggle]").forEach((b) => {
+            b.addEventListener("click", () => {
+              const t = $(b.dataset.toggle);
+              t.hidden = !t.hidden;
+              b.textContent = t.hidden ? "Table" : "Hide";
+            });
           });
-        });
-        function table(columns, rows) {
-          const thead = el("thead", {}, el("tr", {}, columns.map((c) => el("th", { class: c.num ? "num" : "" }, c.label))));
-          const tbody = el("tbody", {}, rows.map((r) => el("tr", {}, columns.map((c) => {
-            const v = typeof c.get === "function" ? c.get(r) : r[c.key];
-            return el("td", { class: c.num ? "num" : "" }, v instanceof Node ? v : String(v ?? "-"));
-          }))));
-          return el("table", {}, [thead, tbody]);
         }
+        function table(cols, rows) {
+          return el("table", {}, [
+            el("thead", {}, el("tr", {}, cols.map((c) => el("th", { class: c.num ? "num" : "" }, c.label)))),
+            el("tbody", {}, rows.map((r, i) => el("tr", {}, cols.map((c) => {
+              const v = c.get ? c.get(r, i) : r[c.key];
+              return el("td", { class: c.num ? "num" : "" }, v instanceof Node ? v : String(v ?? "-"));
+            })))),
+          ]);
+        }
+        function fill(id, cols, rows) { const n = $(id); n.innerHTML = ""; n.append(table(cols, rows)); }
 
-        /* Column chart: bars + optional line overlay. Values are plain numbers. */
-        function columnChart(container, opts) {
-          const { categories, bars, line, points, height = 220, yMax, yFormat = (v) => fmt(v), tipFor, barColor, highlight, refLine, labelEvery = 1 } = opts;
-          const width = 640; const m = { t: 14, r: 12, b: 34, l: 38 };
-          const pw = width - m.l - m.r; const ph = height - m.t - m.b;
-          const maxRaw = Math.max(1, yMax || 0, ...bars.filter((v) => v != null), ...(line || []).filter((v) => v != null), ...(points || []).map((p) => p && p.value).filter((v) => v != null));
-          const niceMax = niceCeil(maxRaw);
-          const y = (v) => m.t + ph - (v / niceMax) * ph;
-          const band = pw / categories.length;
-          const barW = Math.min(24, band * 0.62);
-          const svg = svgEl("svg", { viewBox: `0 0 ${width} ${height}`, role: "img", "aria-label": opts.aria || "chart" });
-          const grid = svgEl("g", { class: "grid" });
-          const ticks = 4;
-          for (let i = 0; i <= ticks; i += 1) {
-            const v = (niceMax / ticks) * i; const yy = y(v);
-            grid.append(svgEl("line", { x1: m.l, x2: width - m.r, y1: yy, y2: yy }));
-            const t = svgEl("text", { x: m.l - 6, y: yy + 4, "text-anchor": "end" }); t.textContent = yFormat(v); grid.append(t);
+        /* Column chart with optional line + points */
+        function chart(node, o) {
+          const { cats, bars, line, points, height = 200, yMax, yFmt = (v) => fmt(v), tipFor, color, dim, refLine, every = 1, barLabel } = o;
+          // A full-width card scales the viewBox up, so wide charts get a wider
+          // coordinate space instead of a magnified one.
+          const W = o.wide ? 1040 : 640, m = { t: 14, r: 12, b: 32, l: 36 };
+          const pw = W - m.l - m.r, ph = height - m.t - m.b;
+          const peak = Math.max(1, yMax || 0, ...bars.filter((v) => v != null), ...(line || []).filter((v) => v != null), ...(points || []).map((p) => p && p.value).filter((v) => v != null));
+          const max = niceCeil(peak);
+          const y = (v) => m.t + ph - (v / max) * ph;
+          const band = pw / cats.length, bw = Math.min(24, band * 0.62);
+          const svg = sv("svg", { viewBox: `0 0 ${W} ${height}`, role: "img", "aria-label": o.aria || "chart" });
+          const g = sv("g", { class: "grid" });
+          for (let i = 0; i <= 4; i += 1) {
+            const v = (max / 4) * i, yy = y(v);
+            g.append(sv("line", { x1: m.l, x2: W - m.r, y1: yy, y2: yy }));
+            const t = sv("text", { x: m.l - 6, y: yy + 4, "text-anchor": "end" }); t.textContent = yFmt(v); g.append(t);
           }
-          svg.append(grid);
-          if (refLine != null) {
-            svg.append(svgEl("line", { x1: m.l, x2: width - m.r, y1: y(refLine), y2: y(refLine), stroke: "var(--axis)", "stroke-width": 1.5 }));
-          }
-          const axis = svgEl("g", { class: "axis" });
-          axis.append(svgEl("line", { x1: m.l, x2: width - m.r, y1: m.t + ph, y2: m.t + ph }));
-          svg.append(axis);
-          categories.forEach((c, i) => {
+          svg.append(g);
+          if (refLine != null) svg.append(sv("line", { x1: m.l, x2: W - m.r, y1: y(refLine), y2: y(refLine), stroke: "var(--axis)", "stroke-width": 1.5 }));
+          const ax = sv("g", { class: "axis" });
+          ax.append(sv("line", { x1: m.l, x2: W - m.r, y1: m.t + ph, y2: m.t + ph }));
+          svg.append(ax);
+          cats.forEach((c, i) => {
             const cx = m.l + band * i + band / 2;
-            if ((categories.length - 1 - i) % labelEvery === 0) {
-              const t = svgEl("text", { x: cx, y: height - 12, "text-anchor": "middle" }); t.textContent = c; svg.append(t);
-            }
+            if ((cats.length - 1 - i) % every === 0) { const t = sv("text", { x: cx, y: height - 11, "text-anchor": "middle" }); t.textContent = c; svg.append(t); }
             const v = bars[i];
-            if (v != null) {
-              const top = y(v); const h = Math.max(0, m.t + ph - top);
-              const color = (barColor && barColor(i)) || "var(--series-1)";
-              const g = svgEl("g");
-              const hit = svgEl("rect", { class: "hit", x: m.l + band * i, y: m.t, width: band, height: ph });
-              const rect = svgEl("path", { class: "mark", d: roundedTop(cx - barW / 2, top, barW, h, 4), fill: color });
-              if (highlight && highlight(i)) rect.setAttribute("opacity", "0.45");
-              g.append(hit, rect);
-              if (tipFor) attachTip(g, tipFor(i));
-              svg.append(g);
-              if (opts.barLabel && opts.barLabel(i)) {
-                const lbl = svgEl("text", { class: "lbl", x: cx, y: top - 5, "text-anchor": "middle" }); lbl.textContent = opts.barLabel(i); svg.append(lbl);
-              }
-            }
+            if (v == null) return;
+            const top = y(v), h = Math.max(0, m.t + ph - top);
+            const grp = sv("g");
+            grp.append(sv("rect", { x: m.l + band * i, y: m.t, width: band, height: ph, fill: "transparent" }));
+            const r = sv("path", { d: roundTop(cx - bw / 2, top, bw, h, 4), fill: (color && color(i)) || "var(--s1)" });
+            if (dim && dim(i)) r.setAttribute("opacity", "0.45");
+            grp.append(r);
+            if (tipFor) attachTip(grp, tipFor(i));
+            svg.append(grp);
+            if (barLabel && barLabel(i)) { const t = sv("text", { class: "lbl", x: cx, y: top - 5, "text-anchor": "middle" }); t.textContent = barLabel(i); svg.append(t); }
           });
           if (line) {
-            let d = ""; let started = false;
-            line.forEach((v, i) => {
-              if (v == null) { started = false; return; }
-              const cx = m.l + band * i + band / 2; d += `${started ? "L" : "M"}${cx},${y(v)} `; started = true;
-            });
-            svg.append(svgEl("path", { d, fill: "none", stroke: "var(--series-2)", "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round" }));
-            line.forEach((v, i) => {
-              if (v == null) return;
-              const cx = m.l + band * i + band / 2;
-              svg.append(svgEl("circle", { cx, cy: y(v), r: 4, fill: "var(--series-2)", stroke: "var(--panel)", "stroke-width": 2 }));
-            });
+            let d = "", started = false;
+            line.forEach((v, i) => { if (v == null) { started = false; return; } const cx = m.l + band * i + band / 2; d += `${started ? "L" : "M"}${cx},${y(v)} `; started = true; });
+            svg.append(sv("path", { d, fill: "none", stroke: "var(--s2)", "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round" }));
+            line.forEach((v, i) => { if (v == null) return; svg.append(sv("circle", { cx: m.l + band * i + band / 2, cy: y(v), r: 4, fill: "var(--s2)", stroke: "var(--panel)", "stroke-width": 2 })); });
           }
           (points || []).forEach((p, i) => {
             if (!p || p.value == null) return;
             const cx = m.l + band * i + band / 2;
-            svg.append(svgEl("circle", { cx, cy: y(p.value), r: 5, fill: p.color || "var(--series-4)", stroke: "var(--panel)", "stroke-width": 2 }));
-            const lbl = svgEl("text", { class: "lbl", x: cx, y: y(p.value) - 9, "text-anchor": "middle" }); lbl.textContent = p.label; svg.append(lbl);
+            svg.append(sv("circle", { cx, cy: y(p.value), r: 5, fill: "var(--s4)", stroke: "var(--panel)", "stroke-width": 2 }));
+            const t = sv("text", { class: "lbl", x: cx, y: y(p.value) - 9, "text-anchor": "middle" }); t.textContent = p.label; svg.append(t);
           });
-          container.innerHTML = ""; container.append(svg);
+          node.innerHTML = ""; node.append(svg);
         }
-        function roundedTop(x, y, w, h, r) {
+        /* Line chart for a continuous series */
+        function lineChart(node, o) {
+          const { cats, values, height = 200, tipFor, every = 1, yFmt = (v) => fmt(v, 1) } = o;
+          const W = o.wide ? 1040 : 640, m = { t: 14, r: 12, b: 32, l: 36 };
+          const pw = W - m.l - m.r, ph = height - m.t - m.b;
+          const max = niceCeil(Math.max(...values.filter((v) => v != null)));
+          const y = (v) => m.t + ph - (v / max) * ph;
+          const step = values.length > 1 ? pw / (values.length - 1) : 0;
+          const x = (i) => m.l + step * i;
+          const svg = sv("svg", { viewBox: `0 0 ${W} ${height}`, role: "img", "aria-label": o.aria || "chart" });
+          const g = sv("g", { class: "grid" });
+          for (let i = 0; i <= 4; i += 1) {
+            const v = (max / 4) * i, yy = y(v);
+            g.append(sv("line", { x1: m.l, x2: W - m.r, y1: yy, y2: yy }));
+            const t = sv("text", { x: m.l - 6, y: yy + 4, "text-anchor": "end" }); t.textContent = yFmt(v); g.append(t);
+          }
+          svg.append(g);
+          let d = "";
+          values.forEach((v, i) => { if (v == null) return; d += `${d ? "L" : "M"}${x(i)},${y(v)} `; });
+          svg.append(sv("path", { d, fill: "none", stroke: "var(--s1)", "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round" }));
+          values.forEach((v, i) => {
+            if (v == null) return;
+            const grp = sv("g");
+            grp.append(sv("rect", { x: x(i) - step / 2, y: m.t, width: Math.max(step, 10), height: ph, fill: "transparent" }));
+            grp.append(sv("circle", { cx: x(i), cy: y(v), r: 4, fill: "var(--s1)", stroke: "var(--panel)", "stroke-width": 2 }));
+            if (tipFor) attachTip(grp, tipFor(i));
+            svg.append(grp);
+            if ((values.length - 1 - i) % every === 0) { const t = sv("text", { x: x(i), y: height - 11, "text-anchor": "middle" }); t.textContent = cats[i]; svg.append(t); }
+          });
+          node.innerHTML = ""; node.append(svg);
+        }
+        function roundTop(x, y, w, h, r) {
           if (h <= 0) return "";
           const rr = Math.min(r, h, w / 2);
           return `M${x},${y + h} V${y + rr} Q${x},${y} ${x + rr},${y} H${x + w - rr} Q${x + w},${y} ${x + w},${y + rr} V${y + h} Z`;
         }
         function niceCeil(v) {
           if (v <= 0) return 1;
-          const p = Math.pow(10, Math.floor(Math.log10(v)));
-          const f = v / p;
-          const nice = f <= 1 ? 1 : f <= 2 ? 2 : f <= 2.5 ? 2.5 : f <= 4 ? 4 : f <= 5 ? 5 : f <= 8 ? 8 : 10;
-          return nice * p;
+          const p = Math.pow(10, Math.floor(Math.log10(v))), f = v / p;
+          return (f <= 1 ? 1 : f <= 2 ? 2 : f <= 2.5 ? 2.5 : f <= 4 ? 4 : f <= 5 ? 5 : f <= 8 ? 8 : 10) * p;
         }
-        const signed = (v, d = 1) => (v == null ? "-" : `${v > 0 ? "+" : ""}${fmt(v, d)}`);
-
-        /* Tiles */
-        function tile(label, value, rejoinder, delta) {
-          const node = el("article", { class: "tile" }, [
+        function tile(label, value, rejoinder) {
+          return el("article", { class: "tile" }, [
             el("div", { class: "label" }, label),
             el("div", { class: "value" }, value),
+            el("div", { class: "rejoin", html: rejoinder }),
           ]);
-          if (delta) node.append(el("div", { class: `delta ${delta.dir || ""}` }, delta.text));
-          node.append(el("div", { class: "rejoinder", html: rejoinder }));
-          return node;
         }
+        /* One battle rendered as a split vote bar */
+        function voteRow(b) {
+          const champWon = b.champion_votes >= b.challenger_votes;
+          const total = b.turnout || (b.champion_votes + b.challenger_votes) || 1;
+          const wName = champWon ? b.champion : b.challenger, lName = champWon ? b.challenger : b.champion;
+          const wMovie = champWon ? b.champion_movie : b.challenger_movie, lMovie = champWon ? b.challenger_movie : b.champion_movie;
+          const wV = champWon ? b.champion_votes : b.challenger_votes, lV = champWon ? b.challenger_votes : b.champion_votes;
+          const row = el("div", { class: "vote" }, [
+            el("div", {}, [
+              el("div", { class: "names", html: `<span class="w">${escapeHtml(wName)}</span> <span class="l">beat ${escapeHtml(lName)}</span>${b.tiebreaker ? ' <span class="pill">tiebreaker</span>' : ""}` }),
+              el("div", { class: "bar" }, [
+                el("span", { class: "a", style: `width:${(wV / total) * 100}%` }),
+                el("span", { class: "b", style: `width:${(lV / total) * 100}%` }),
+              ]),
+            ]),
+            el("div", { class: "tally", html: `<b>${wV}</b>-${lV}` }),
+          ]);
+          attachTip(row, `<b>${escapeHtml(wName)}</b> (${escapeHtml(wMovie)}) ${wV}<br>${escapeHtml(lName)} (${escapeHtml(lMovie)}) ${lV}<br>${day(b.date)} - ${total} votes cast`);
+          return row;
+        }
+        const escapeHtml = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
         async function load() {
-          const [statsRes, insightsRes] = await Promise.all([
+          const [a, b] = await Promise.all([
             fetch("data/site_stats.json", { cache: "no-store" }),
             fetch("data/site_insights.json", { cache: "no-store" }),
           ]);
-          if (!statsRes.ok || !insightsRes.ok) throw new Error("Failed to fetch snapshot JSON.");
-          const statsPayload = await statsRes.json();
-          const ins = await insightsRes.json();
-          render(statsPayload, ins);
+          if (!a.ok || !b.ok) throw new Error("snapshot fetch failed");
+          render(await a.json(), await b.json());
         }
 
         function render(statsPayload, ins) {
           const stats = statsPayload.stats || {};
-          const s = ins.summary; const dq = ins.data_quality; const h2h = ins.head_to_head; const cad = ins.cadence; const mo = ins.momentum;
+          const s = ins.summary, dq = ins.data_quality, h2h = ins.head_to_head;
+          const cad = ins.cadence, mo = ins.momentum, v = ins.voting || {}, sub = ins.submitters || { people: [] };
 
-          text("subline", `${ins.generated_from_posts} posts crawled - ${s.battles} battles re-joined into one ladder - data through ${longDate(ins.as_of)}`);
-          text("crawl-note", ` Snapshot built ${stats.crawl_completed_at ? String(stats.crawl_completed_at).slice(0, 16).replace("T", " ") : "unknown"} UTC.`);
+          txt("subline", `${ins.generated_from_posts} posts - ${s.battles} battles - ${fmt(v.total_votes)} votes counted - through ${day(ins.as_of)}`);
+          txt("crawl-note", ` Snapshot ${String(stats.crawl_completed_at || "").slice(0, 16).replace("T", " ")} UTC.`);
 
-          /* Head-to-head */
-          const isFresh = h2h.battle_type === "fresh";
-          text("h2h-left-role", isFresh ? "Challenger" : "Champion");
-          text("h2h-left", h2h.champion);
-          text("h2h-left-movie", `${h2h.champion_movie}${h2h.champion_movie_year ? ` (${h2h.champion_movie_year})` : ""}`);
-          text("h2h-right", h2h.challenger);
-          text("h2h-right-movie", `${h2h.challenger_movie}${h2h.challenger_movie_year ? ` (${h2h.challenger_movie_year})` : ""}`);
-          const cta = $("h2h-link"); const voteUrl = safeUrl(h2h.url); if (voteUrl) cta.href = voteUrl; else cta.hidden = true;
-          const track = $("meter-track"); track.innerHTML = "";
-          for (let i = 0; i < ins.retirement_wins; i += 1) track.append(el("span", { class: `pip${i < h2h.champion_wins ? " on" : ""}` }));
-          text("meter-label", `${h2h.champion}: road to retirement`);
-          text("meter-hint", `${h2h.champion_wins} of ${ins.retirement_wins} wins banked - ${h2h.wins_to_retire} more to join the Hall of Fame. Posted ${longDate(h2h.published_at)}${h2h.decided ? " (already decided)" : " (poll open)"}.`);
+          /* ---- TODAY ---- */
+          const fresh = h2h.battle_type === "fresh";
+          txt("h2h-kicker", fresh ? "Today's battle - fresh matchup" : "Today's battle - title defense");
+          txt("h2h-left-role", fresh ? "Challenger" : "Champion");
+          txt("h2h-left", h2h.champion);
+          txt("h2h-left-movie", `${h2h.champion_movie}${h2h.champion_movie_year ? ` (${h2h.champion_movie_year})` : ""}`);
+          txt("h2h-right", h2h.challenger);
+          txt("h2h-right-movie", `${h2h.challenger_movie}${h2h.challenger_movie_year ? ` (${h2h.challenger_movie_year})` : ""}`);
+          const cta = $("h2h-link"), u = safeUrl(h2h.url); if (u) cta.href = u; else cta.hidden = true;
+          const tr = $("meter-track"); tr.innerHTML = "";
+          for (let i = 0; i < ins.retirement_wins; i += 1) tr.append(el("span", { class: `pip${i < h2h.champion_wins ? " on" : ""}` }));
+          txt("meter-label", `${h2h.champion}: road to retirement`);
+          txt("meter-hint", `${h2h.champion_wins} of ${ins.retirement_wins} wins banked - ${h2h.wins_to_retire} to go. Posted ${day(h2h.published_at)}${h2h.decided ? " (decided)" : " (poll open)"}.`);
           const rung = (ins.streak_survival || []).find((r) => r.wins_before_battle === h2h.champion_wins);
-          $("h2h-rejoinder").innerHTML = rung
-            ? `<b>Rejoinder:</b> champions defending with ${h2h.champion_wins} win${h2h.champion_wins === 1 ? "" : "s"} have held <b>${pct(rung.hold_rate)}</b> of the time (${rung.held} of ${rung.defenses}). The crown is ${rung.hold_rate >= 60 ? "sticky" : "a coin flip"} at this rung.`
-            : `<b>Rejoinder:</b> ${isFresh ? "a fresh matchup: neither scene has a win, so the ladder restarts here." : "no history at this rung yet."}`;
+          html("h2h-rejoin", rung
+            ? `<b>Rejoinder:</b> champions defending with ${h2h.champion_wins} win${h2h.champion_wins === 1 ? "" : "s"} have held <b>${pct(rung.hold_rate)}</b> of the time (${rung.held} of ${rung.defenses}) - and ${pct(v.one_vote_share)} of all polls come down to a single vote.`
+            : `<b>Rejoinder:</b> a fresh matchup - neither scene has a win, so the ladder restarts here.`);
 
-          /* Hero figure */
-          text("hero-value", pct(s.upset_rate));
-          text("hero-what", `of title defenses end with the challenger winning (${s.upsets} upsets in ${s.defenses} defenses).`);
-          $("hero-rejoinder").innerHTML = `<b>Rejoinder:</b> that sounds chaotic, but it compounds: only <b>${s.retired_scenes}</b> of ${s.finished_reigns} finished reigns reached seven wins, and the median reign is <b>${s.median_reign_wins}</b> win${s.median_reign_wins === 1 ? "" : "s"}.`;
+          txt("hero-value", pct(s.upset_rate));
+          txt("hero-what", `of title defenses end with the challenger winning (${s.upsets} upsets in ${s.defenses} defenses).`);
+          html("hero-rejoin", `<b>Rejoinder:</b> chaotic per battle, brutal in aggregate: only <b>${s.retired_scenes}</b> of ${s.finished_reigns} finished reigns ever reached seven wins, and the median reign is <b>${s.median_reign_wins}</b> win${s.median_reign_wins === 1 ? "" : "s"}.`);
 
-          /* Tiles */
-          const grid = $("tile-grid"); grid.innerHTML = "";
-          const recentBattles = mo.recent.battles; const priorBattles = mo.prior.battles;
-          grid.append(
-            tile("Battles decided", fmt(s.decided_battles),
-              `<b>Rejoinder:</b> ${s.pending_battles} still open, ${s.fresh_matchups} were fresh matchups after a retirement, across ${fmt(s.days_active)} days.`),
-            tile("Scenes that reached the Hall of Fame", fmt(s.retired_scenes),
-              `<b>Rejoinder:</b> ${(ins.reign_length_distribution || []).filter((r) => r.wins === 6).map((r) => r.reigns)[0] || 0} more got to six and lost the seventh. Nobody remembers sixth place.`),
-            tile("Average reign", `${fmt(s.average_reign_wins, 2)} wins`,
-              `<b>Rejoinder:</b> the mean is dragged up by retirees. Most reigns end on the first defense (${(ins.reign_length_distribution || []).find((r) => r.wins === 1)?.reigns || 0} of ${s.finished_reigns}).`),
-            tile("Battles in the last 30 days", fmt(recentBattles),
-              `<b>Rejoinder:</b> the cadence is a metronome. Estimates have missed actuals by only ${fmt(cad.mean_absolute_error, 1)} battles a month on average.`,
-              { text: `${signed(mo.battles_delta, 0)} vs prior 30 days`, dir: mo.battles_delta > 0 ? "up" : mo.battles_delta < 0 ? "down" : "" }),
-            tile("Movies in the arena", fmt(s.unique_movies),
-              `<b>Rejoinder:</b> ${fmt(s.unique_scenes)} distinct scenes, so almost every movie gets exactly one shot. The leaderboard is about who came back.`),
-            tile("Winner inference confidence", pct(dq.winner_inference_rate, 1),
-              `<b>Rejoinder:</b> cross-checked against the site's own "(N)" win counter ${dq.win_counter_checks} times; it agreed ${pct(dq.win_counter_agreement_rate, 1)}. The misses are in the integrity panel.`)
+          const tiles = $("tiles"); tiles.innerHTML = "";
+          const sixers = (ins.reign_length_distribution || []).find((r) => r.wins === 6)?.reigns || 0;
+          tiles.append(
+            tile("Votes counted", fmt(v.total_votes),
+              `<b>Rejoinder:</b> across ${fmt(v.scored_battles)} polls, so the average battle is decided by just <b>${fmt(v.avg_turnout, 1)}</b> people.`),
+            tile("Decided by one vote", `${fmt(v.one_vote_battles)}`,
+              `<b>Rejoinder:</b> that is ${pct(v.one_vote_share)} of every poll. One extra friend swings a third of this tournament.`),
+            tile("Scenes in the Hall of Fame", fmt(s.retired_scenes),
+              `<b>Rejoinder:</b> ${sixers} more reached six wins and lost the seventh. Nobody remembers sixth place.`)
           );
 
-          /* Cadence chart */
-          const months = cad.monthly || [];
-          const partial = months.find((m) => m.is_partial);
-          columnChart($("cadence-chart"), {
-            aria: "Battles per month, actual versus estimate",
-            categories: months.map((m) => monthName(m.month)),
-            bars: months.map((m) => m.actual),
-            line: months.map((m) => m.estimate),
-            points: months.map((m) => (m.is_partial && m.projected != null ? { value: m.projected, label: `pace ${fmt(m.projected, 0)}` } : null)),
-            highlight: (i) => months[i].is_partial,
-            labelEvery: months.length > 14 ? 2 : 1,
-            tipFor: (i) => {
-              const m = months[i];
-              return `<b>${monthName(m.month)}</b><br>Actual: ${fmt(m.actual)}${m.is_partial ? " (so far)" : ""}<br>Estimate: ${m.estimate == null ? "-" : fmt(m.estimate, 1)}<br>Delta: ${signed(m.delta)}${m.projected != null ? `<br>Pace to month end: ${fmt(m.projected, 1)}` : ""}`;
-            },
+          const lastFive = $("last-five"); lastFive.innerHTML = "";
+          const recentScored = (ins.recent_battles || []).filter((b) => b.champion_votes != null).slice(0, 5);
+          recentScored.forEach((b) => lastFive.append(voteRow({
+            champion: b.champion, champion_movie: b.champion_movie, champion_votes: b.champion_votes,
+            challenger: b.challenger, challenger_movie: b.challenger_movie, challenger_votes: b.challenger_votes,
+            turnout: b.champion_votes + b.challenger_votes, tiebreaker: b.tiebreaker, date: b.date,
+          })));
+          if (!recentScored.length) lastFive.append(el("div", { class: "note" }, "No closed polls in the latest batch."));
+
+          const card = [
+            `${fresh ? "Fresh matchup" : "Title defense"} on Movie Scene Battles - ${day(h2h.published_at)}`,
+            `${h2h.champion} (${h2h.champion_movie}) vs ${h2h.challenger} (${h2h.challenger_movie})`,
+            `${h2h.champion} has ${h2h.champion_wins} win${h2h.champion_wins === 1 ? "" : "s"}; ${h2h.wins_to_retire} more to retire.`,
+            `${pct(v.one_vote_share)} of these polls are decided by a single vote, on an average turnout of ${fmt(v.avg_turnout, 1)}. Your vote is not symbolic.`,
+            `Vote: ${h2h.url}`,
+          ].join("\n");
+          txt("share-text", card);
+          $("copy-btn").addEventListener("click", async () => {
+            try { await navigator.clipboard.writeText(card); txt("copy-status", "Copied."); }
+            catch (e) { txt("copy-status", "Select the text to copy."); }
           });
-          text("cadence-note", cad.next_month && cad.next_month.estimate != null ? `Next month (${monthName(cad.next_month.month)}) estimate: ${fmt(cad.next_month.estimate, 1)} battles` : "");
-          $("cadence-table").innerHTML = ""; $("cadence-table").append(table([
-            { label: "Month", get: (m) => monthName(m.month) + (m.is_partial ? " (in progress)" : "") },
-            { label: "Actual", key: "actual", num: true },
-            { label: "Estimate", get: (m) => (m.estimate == null ? "-" : fmt(m.estimate, 1)), num: true },
-            { label: "Delta", get: (m) => signed(m.delta), num: true },
-            { label: "Pace", get: (m) => (m.projected == null ? "-" : fmt(m.projected, 1)), num: true },
-          ], months));
-          const full = months.filter((m) => !m.is_partial && m.delta != null);
-          const biggestMiss = full.reduce((a, b) => (Math.abs(b.delta) > Math.abs(a.delta) ? b : a), full[0] || { delta: 0 });
-          const beats = full.filter((m) => m.delta > 0).length;
-          $("cadence-rejoinder").innerHTML = full.length
-            ? `<b>Rejoinder:</b> actuals beat the estimate in ${beats} of ${full.length} completed months. The biggest miss was ${monthName(biggestMiss.month)} at ${signed(biggestMiss.delta)}.${partial && partial.projected != null ? ` ${monthName(partial.month)} is pacing to ${fmt(partial.projected, 0)} against an estimate of ${fmt(partial.estimate, 1)}, counting only ${cad.posting_weekdays.join("/")} as posting days.` : ""}`
-            : "";
 
-          /* Weekday + hour */
-          const wd = cad.weekday || [];
-          columnChart($("weekday-chart"), { aria: "Battles by weekday", categories: wd.map((d) => d.day), bars: wd.map((d) => d.battles), height: 190, tipFor: (i) => `<b>${wd[i].day}</b><br>${fmt(wd[i].battles)} battles`, barLabel: (i) => fmt(wd[i].battles) });
-          $("weekday-table").append(table([{ label: "Day", key: "day" }, { label: "Battles", key: "battles", num: true }], wd));
-          const quiet = wd.filter((d) => !cad.posting_weekdays.includes(d.day)).map((d) => d.day);
-          $("weekday-rejoinder").innerHTML = `<b>Rejoinder:</b> the site posts ${cad.posting_weekdays.join(", ")} and goes dark on ${quiet.join(" and ") || "no day"}. Five battles a week is the real cadence, not seven.`;
-          const hours = cad.hour_of_day || [];
-          columnChart($("hour-chart"), { aria: "Battles by publish hour", categories: hours.map((h) => `${h.hour}:00`), bars: hours.map((h) => h.battles), height: 190, tipFor: (i) => `<b>${hours[i].hour}:00</b><br>${fmt(hours[i].battles)} battles`, barLabel: (i) => (hours[i].battles >= 10 ? fmt(hours[i].battles) : "") });
-          $("hour-table").append(table([{ label: "Hour", get: (h) => `${h.hour}:00` }, { label: "Battles", key: "battles", num: true }], hours));
-          $("hour-rejoinder").innerHTML = `<b>Rejoinder:</b> ${pct(cad.share_in_busiest_hour)} of battles go live in the ${cad.busiest_hour}:00 hour. Readers know exactly when to show up, and so do bots.`;
+          /* ---- THE VOTE ---- */
+          txt("vote-intro", `Every closed battle publishes its poll result. That is ${fmt(v.scored_battles)} polls and ${fmt(v.total_votes)} votes - a small, fiercely contested electorate.`);
+          const vt = $("vote-tiles"); vt.innerHTML = "";
+          vt.append(
+            tile("Average turnout", fmt(v.avg_turnout, 1),
+              `<b>Rejoinder:</b> the range is ${v.min_turnout} to ${v.max_turnout}. This is a living-room electorate, not a stadium.`),
+            tile("Average margin", `${fmt(v.avg_margin, 2)} votes`,
+              `<b>Rejoinder:</b> on ~${fmt(v.avg_turnout, 0)} votes cast, that is a photo finish nearly every day.`),
+            tile("Polls that ended level", fmt((v.tiebreakers || []).length),
+              `<b>Rejoinder:</b> the house broke the tie in each. Four battles in this tournament were literally decided by the referee.`)
+          );
 
-          /* Survival */
-          const sv = ins.streak_survival || [];
-          columnChart($("survival-chart"), {
-            aria: "Champion hold rate by wins already banked", categories: sv.map((r) => `${r.wins_before_battle} win${r.wins_before_battle === 1 ? "" : "s"}`), bars: sv.map((r) => r.hold_rate), yMax: 100, refLine: 50, height: 210,
-            yFormat: (v) => `${fmt(v)}%`, barLabel: (i) => `${fmt(sv[i].hold_rate)}%`,
-            tipFor: (i) => `<b>Defending with ${sv[i].wins_before_battle} win${sv[i].wins_before_battle === 1 ? "" : "s"}</b><br>Held ${sv[i].held} of ${sv[i].defenses} (${pct(sv[i].hold_rate, 1)})`,
+          const mh = v.margin_histogram || [];
+          chart($("margin-chart"), {
+            aria: "Battles by winning margin", cats: mh.map((r) => String(r.margin)), bars: mh.map((r) => r.battles), height: 200,
+            color: (i) => (mh[i].margin === 1 ? "var(--accent)" : "var(--s1)"),
+            barLabel: (i) => (mh[i].battles >= 6 ? fmt(mh[i].battles) : ""),
+            tipFor: (i) => `<b>Margin of ${mh[i].margin} vote${mh[i].margin === 1 ? "" : "s"}</b><br>${fmt(mh[i].battles)} battles (${pct((mh[i].battles / v.scored_battles) * 100, 1)})`,
           });
-          $("survival-table").append(table([{ label: "Wins banked", key: "wins_before_battle", num: true }, { label: "Defenses", key: "defenses", num: true }, { label: "Held", key: "held", num: true }, { label: "Hold rate", get: (r) => pct(r.hold_rate, 1), num: true }], sv));
-          const first = sv[0]; const last = sv[sv.length - 1];
-          $("survival-rejoinder").innerHTML = first && last
-            ? `<b>Rejoinder:</b> hold rate climbs from ${pct(first.hold_rate)} on the first defense to ${pct(last.hold_rate)} at ${last.wins_before_battle} wins. Survivorship does the work: bad scenes are filtered out early, so the late rungs only contain crowd favourites. Sample sizes shrink to ${last.defenses} by the top rung.`
-            : "";
+          fill("margin-table", [{ label: "Margin", key: "margin", num: true }, { label: "Battles", key: "battles", num: true },
+            { label: "Share", get: (r) => pct((r.battles / v.scored_battles) * 100, 1), num: true }], mh);
+          html("margin-rejoin", `<b>Rejoinder:</b> the amber bar is a one-vote margin - ${fmt(v.one_vote_battles)} battles, ${pct(v.one_vote_share)} of the tournament. Half of all battles are decided by two votes or fewer.`);
 
-          /* Reign lengths */
+          const tbm = v.turnout_by_month || [];
+          lineChart($("turnout-chart"), {
+            aria: "Average turnout per battle by month", cats: tbm.map((r) => mon(r.month)), values: tbm.map((r) => r.avg_turnout), height: 200,
+            every: tbm.length > 12 ? 3 : 1,
+            tipFor: (i) => `<b>${mon(tbm[i].month)}</b><br>${fmt(tbm[i].avg_turnout, 1)} votes per battle<br>${fmt(tbm[i].total_votes)} votes across ${tbm[i].battles} battles`,
+          });
+          fill("turnout-table", [{ label: "Month", get: (r) => mon(r.month) }, { label: "Battles", key: "battles", num: true },
+            { label: "Total votes", key: "total_votes", num: true }, { label: "Avg turnout", get: (r) => fmt(r.avg_turnout, 1), num: true }], tbm);
+          const firstM = tbm[0], lastFull = tbm.filter((r) => r.battles >= 5).slice(-1)[0];
+          html("turnout-rejoin", firstM && lastFull
+            ? `<b>Rejoinder:</b> turnout has drifted from ${fmt(firstM.avg_turnout, 1)} in ${mon(firstM.month)} to ${fmt(lastFull.avg_turnout, 1)} in ${mon(lastFull.month)} - growth, but slow. The audience is loyal rather than expanding.`
+            : "");
+
+          const closest = $("closest-list"); closest.innerHTML = "";
+          (v.closest_battles || []).slice(0, 6).forEach((b) => closest.append(voteRow(b)));
+          const blow = $("blowout-list"); blow.innerHTML = "";
+          (v.biggest_blowouts || []).slice(0, 6).forEach((b) => blow.append(voteRow(b)));
+
+          const tbs = v.turnout_by_streak || [];
+          chart($("streak-turnout-chart"), {
+            aria: "Average turnout by champion streak", cats: tbs.map((r) => `${r.wins_before_battle}W`), bars: tbs.map((r) => r.avg_turnout), height: 200, wide: true,
+            barLabel: (i) => fmt(tbs[i].avg_turnout, 1),
+            tipFor: (i) => `<b>Champion with ${tbs[i].wins_before_battle} win${tbs[i].wins_before_battle === 1 ? "" : "s"}</b><br>${fmt(tbs[i].avg_turnout, 1)} average votes over ${tbs[i].battles} battles`,
+          });
+          fill("streak-turnout-table", [{ label: "Wins banked", key: "wins_before_battle", num: true }, { label: "Battles", key: "battles", num: true },
+            { label: "Avg turnout", get: (r) => fmt(r.avg_turnout, 1), num: true }], tbs);
+          const lo = Math.min(...tbs.map((r) => r.avg_turnout)), hi = Math.max(...tbs.map((r) => r.avg_turnout));
+          html("streak-turnout-rejoin", `<b>Rejoinder:</b> no. Turnout sits between ${fmt(lo, 1)} and ${fmt(hi, 1)} at every rung - a spread of ${fmt(hi - lo, 1)} votes. A seven-win dynasty draws the same crowd as a rookie, so the hold rate on the Ladder tab is voters changing their minds, not new voters arriving.`);
+
+          const tb = $("tiebreak-list"); tb.innerHTML = "";
+          (v.tiebreakers || []).forEach((b) => tb.append(voteRow(b)));
+          if (!(v.tiebreakers || []).length) tb.append(el("div", { class: "note" }, "No tied polls on record."));
+          html("tiebreak-rejoin", `<b>Rejoinder:</b> the scores shown are post-tiebreak, which is why they look like one-vote wins. Four times the community deadlocked and the house decided.`);
+
+          /* ---- LADDER ---- */
+          txt("ladder-intro", `A scene stays champion until it loses or reaches ${ins.retirement_wins} wins. ${fmt(s.reigns)} reigns so far, ${fmt(s.retired_scenes)} of them retired.`);
+          const sv2 = ins.streak_survival || [];
+          chart($("survival-chart"), {
+            aria: "Champion hold rate by wins banked", cats: sv2.map((r) => `${r.wins_before_battle}W`), bars: sv2.map((r) => r.hold_rate),
+            yMax: 100, refLine: 50, height: 200, yFmt: (x) => `${fmt(x)}%`, barLabel: (i) => `${fmt(sv2[i].hold_rate)}%`,
+            tipFor: (i) => `<b>Defending with ${sv2[i].wins_before_battle} win${sv2[i].wins_before_battle === 1 ? "" : "s"}</b><br>Held ${sv2[i].held} of ${sv2[i].defenses} (${pct(sv2[i].hold_rate, 1)})`,
+          });
+          fill("survival-table", [{ label: "Wins banked", key: "wins_before_battle", num: true }, { label: "Defenses", key: "defenses", num: true },
+            { label: "Held", key: "held", num: true }, { label: "Hold rate", get: (r) => pct(r.hold_rate, 1), num: true }], sv2);
+          const f0 = sv2[0], l0 = sv2[sv2.length - 1];
+          html("survival-rejoin", f0 && l0
+            ? `<b>Rejoinder:</b> climbs from ${pct(f0.hold_rate)} to ${pct(l0.hold_rate)}, but read it as survivorship, not momentum: turnout is flat across rungs, so weak scenes are simply filtered out early. Only ${l0.defenses} battles reach the top rung.`
+            : "");
+
           const rl = ins.reign_length_distribution || [];
-          columnChart($("reigns-chart"), {
-            aria: "Distribution of reign lengths", categories: rl.map((r) => `${r.wins}${r.wins === ins.retirement_wins ? " (retired)" : ""}`), bars: rl.map((r) => r.reigns), height: 210,
-            barColor: (i) => (rl[i].wins === ins.retirement_wins ? "var(--accent)" : "var(--series-1)"), barLabel: (i) => fmt(rl[i].reigns),
+          chart($("reigns-chart"), {
+            aria: "Distribution of reign lengths", cats: rl.map((r) => String(r.wins)), bars: rl.map((r) => r.reigns), height: 200,
+            color: (i) => (rl[i].wins === ins.retirement_wins ? "var(--accent)" : "var(--s1)"), barLabel: (i) => fmt(rl[i].reigns),
             tipFor: (i) => `<b>${rl[i].wins} win${rl[i].wins === 1 ? "" : "s"}</b><br>${fmt(rl[i].reigns)} reigns ended here`,
           });
-          $("reigns-table").append(table([{ label: "Wins", key: "wins", num: true }, { label: "Reigns", key: "reigns", num: true }], rl));
-          const six = rl.find((r) => r.wins === 6)?.reigns || 0;
-          $("reigns-rejoinder").innerHTML = `<b>Rejoinder:</b> the amber bar is the Hall of Fame. The ${six} reigns that died at six wins are the cruellest bar on this page.`;
+          fill("reigns-table", [{ label: "Wins", key: "wins", num: true }, { label: "Reigns", key: "reigns", num: true }], rl);
+          html("reigns-rejoin", `<b>Rejoinder:</b> amber is the Hall of Fame. The ${sixers} reigns that died at six are the cruellest bar here.`);
 
-          /* Momentum table */
-          const momRows = [
-            { metric: "Battles posted", recent: fmt(mo.recent.battles), prior: fmt(mo.prior.battles), delta: signed(mo.battles_delta, 0) },
-            { metric: "Upsets (challenger wins)", recent: fmt(mo.recent.upsets), prior: fmt(mo.prior.upsets), delta: signed(mo.recent.upsets - mo.prior.upsets, 0) },
-            { metric: "Upset rate", recent: pct(mo.recent.upset_rate, 1), prior: pct(mo.prior.upset_rate, 1), delta: mo.upset_rate_delta == null ? "-" : `${signed(mo.upset_rate_delta)} pts` },
-            { metric: "Average words per post", recent: fmt(mo.recent.avg_words, 0), prior: fmt(mo.prior.avg_words, 0), delta: mo.recent.avg_words != null && mo.prior.avg_words != null ? signed(mo.recent.avg_words - mo.prior.avg_words, 0) : "-" },
-          ];
-          $("momentum-table").append(table([
-            { label: "Metric", key: "metric" },
-            { label: `Last ${mo.window_days}d`, key: "recent", num: true },
-            { label: `Prior ${mo.window_days}d`, key: "prior", num: true },
-            { label: "Delta", key: "delta", num: true },
-          ], momRows));
-          $("momentum-rejoinder").innerHTML = `Windows: ${longDate(mo.recent.start)} to ${longDate(mo.recent.end)} vs ${longDate(mo.prior.start)} to ${longDate(mo.prior.end)}. <b>Rejoinder:</b> ${mo.upset_rate_delta != null && mo.upset_rate_delta < 0 ? "champions are holding on more often lately" : "challengers are winning more often lately"}, and the write-ups are ${mo.recent.avg_words != null && mo.prior.avg_words != null && mo.recent.avg_words < mo.prior.avg_words ? "getting shorter" : "getting longer"}. Thirty-day windows are noisy; treat this as a nudge, not a trend.`;
-
-          /* Hall of Fame list */
           const hof = $("hof-list"); hof.innerHTML = "";
-          const reigns = ins.longest_reigns || [];
-          reigns.forEach((r) => {
-            const row = el("div", { class: "hof-row" });
-            const name = el("div", { class: "name" }, [document.createTextNode(r.scene), el("small", {}, `${r.movie}${r.movie_year ? ` (${r.movie_year})` : ""}`)]);
-            const barWrap = el("div", {}, el("div", { class: `bar ${r.status}`, style: `width:${(r.wins / ins.retirement_wins) * 100}%` }));
-            const days = el("div", { class: "days" }, `${r.wins} wins - ${r.days_on_top}d`);
-            row.append(name, barWrap, days);
-            const victims = (r.defeated || []).map((d) => `${d.scene} (${d.movie})`).join("<br>");
-            attachTip(row, `<b>${r.scene}</b> - ${r.status}${r.dethroned_by ? ` by ${r.dethroned_by.scene}` : ""}<br>${longDate(r.started_at)} to ${r.ended_at ? longDate(r.ended_at) : "now"}<br><br>Defeated:<br>${victims || "-"}`);
+          (ins.longest_reigns || []).slice(0, 12).forEach((r) => {
+            const row = el("div", { style: "display:grid;grid-template-columns:minmax(130px,200px) 1fr auto;gap:10px;align-items:center;padding:5px 0;border-bottom:1px solid var(--grid);font-size:13px" }, [
+              el("div", { style: "overflow:hidden" }, [document.createTextNode(r.scene), el("small", { style: "display:block;color:var(--muted);font-size:11.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis" }, `${r.movie}${r.movie_year ? ` (${r.movie_year})` : ""}`)]),
+              el("div", {}, el("div", { style: `height:13px;border-radius:0 4px 4px 0;width:${(r.wins / ins.retirement_wins) * 100}%;background:${r.status === "retired" ? "var(--s1)" : r.status === "reigning" ? "var(--accent)" : "#4d5568"}` })),
+              el("div", { style: "color:var(--muted);font-size:12.5px;font-variant-numeric:tabular-nums;white-space:nowrap" }, `${r.wins}W - ${r.days_on_top}d`),
+            ]);
+            attachTip(row, `<b>${escapeHtml(r.scene)}</b> - ${r.status}${r.dethroned_by ? ` by ${escapeHtml(r.dethroned_by.scene)}` : ""}<br>${day(r.started_at)} to ${r.ended_at ? day(r.ended_at) : "now"}<br><br>Defeated:<br>${(r.defeated || []).map((d) => escapeHtml(`${d.scene} (${d.movie})`)).join("<br>") || "-"}`);
             hof.append(row);
           });
 
-          /* Giant killers */
-          const giants = $("giant-list"); giants.innerHTML = "";
-          (ins.giant_killers || []).forEach((g) => {
-            giants.append(el("li", {}, [
-              link(g.url, `${g.scene}`), document.createTextNode(` (${g.movie}) ended `), el("b", {}, g.beat),
-              el("div", { class: "meta" }, `${g.beat_movie} - champion sat on ${g.champion_wins_before} win${g.champion_wins_before === 1 ? "" : "s"} - ${longDate(g.date)}`),
-            ]));
-          });
+          fill("giant-table", [
+            { label: "Killer", get: (g) => link(g.url, g.scene) },
+            { label: "Ended", key: "beat" },
+            { label: "Champ wins", key: "champion_wins_before", num: true },
+            { label: "Date", get: (g) => day(g.date) },
+          ], (ins.giant_killers || []).slice(0, 8));
           const top = (ins.giant_killers || [])[0];
-          $("giant-rejoinder").innerHTML = top ? `<b>Rejoinder:</b> ${top.beat} was one vote away from the Hall of Fame. ${top.scene} is the reason this site has drama.` : "";
+          html("giant-rejoin", top ? `<b>Rejoinder:</b> ${escapeHtml(top.beat)} was one win from the Hall of Fame when ${escapeHtml(top.scene)} ended it.` : "");
 
-          /* Movie leaderboard */
+          const dom = v.most_dominant_reigns || [];
+          fill("dominant-table", [
+            { label: "Scene", key: "scene" }, { label: "Movie", key: "movie" },
+            { label: "Wins", key: "wins", num: true },
+            { label: "Avg margin", get: (r) => `+${fmt(r.avg_margin, 2)}`, num: true },
+            { label: "Votes for", key: "total_votes_for", num: true },
+          ], dom);
+          html("dominant-rejoin", dom[0]
+            ? `<b>Rejoinder:</b> ${escapeHtml(dom[0].scene)} did not just win seven times, it won by an average of ${fmt(dom[0].avg_margin, 1)} votes on a ~${fmt(v.avg_turnout, 0)}-vote turnout. That is the closest thing here to a consensus favourite.`
+            : "");
+
+          /* ---- MOVIES ---- */
+          txt("movies-intro", `${fmt(ins.movie_count)} movies have appeared. A scene fights, but the movie gets the credit.`);
           const movies = ins.movie_leaderboard || [];
-          $("movie-table").append(table([
-            { label: "#", get: (m, i) => "", num: true },
+          fill("movie-table", [
+            { label: "#", get: (m, i) => String(i + 1), num: true },
             { label: "Movie", get: (m) => `${m.movie}${m.year ? ` (${m.year})` : ""}` },
-            { label: "Scenes", key: "scenes", num: true },
             { label: "W-L", get: (m) => `${m.wins}-${m.losses}`, num: true },
             { label: "Win rate", get: (m) => pct(m.win_rate), num: true },
-            { label: "HoF", get: (m) => (m.retired_scenes ? el("span", { class: "pill retired" }, `${m.retired_scenes} retired`) : ""), num: true },
-          ], movies));
-          $("movie-table").querySelectorAll("tbody tr").forEach((tr, i) => { tr.firstChild.textContent = String(i + 1); });
-          text("movie-note", `top ${movies.length} of ${fmt(ins.movie_count)} movies by wins`);
+            { label: "HoF", get: (m) => (m.retired_scenes ? el("span", { class: "pill retired" }, `${m.retired_scenes}`) : ""), num: true },
+          ], movies);
+          txt("movie-note", `top ${movies.length} of ${fmt(ins.movie_count)}`);
 
-          /* Decades */
           const dec = (ins.decades || []).filter((d) => d.decade !== "unknown");
-          columnChart($("decade-chart"), {
-            aria: "Win rate by decade of release", categories: dec.map((d) => d.decade), bars: dec.map((d) => d.win_rate), yMax: 100, refLine: 50, height: 210, yFormat: (v) => `${fmt(v)}%`,
-            barLabel: (i) => `${fmt(dec[i].win_rate)}%`,
-            tipFor: (i) => `<b>${dec[i].decade}</b><br>${dec[i].movies} movies, ${dec[i].battles} battle appearances<br>${dec[i].wins}-${dec[i].losses} (${pct(dec[i].win_rate, 1)})`,
+          chart($("decade-chart"), {
+            aria: "Win rate by decade", cats: dec.map((d) => d.decade), bars: dec.map((d) => d.win_rate), yMax: 100, refLine: 50, height: 200,
+            yFmt: (x) => `${fmt(x)}%`, barLabel: (i) => `${fmt(dec[i].win_rate)}%`,
+            dim: (i) => dec[i].battles < 40,
+            tipFor: (i) => `<b>${dec[i].decade}</b><br>${dec[i].movies} movies, ${dec[i].battles} appearances<br>${dec[i].wins}-${dec[i].losses} (${pct(dec[i].win_rate, 1)})${dec[i].battles < 40 ? "<br><i>small sample</i>" : ""}`,
           });
-          $("decade-table").append(table([{ label: "Decade", key: "decade" }, { label: "Movies", key: "movies", num: true }, { label: "Appearances", key: "battles", num: true }, { label: "W-L", get: (d) => `${d.wins}-${d.losses}`, num: true }, { label: "Win rate", get: (d) => pct(d.win_rate, 1), num: true }], dec));
+          fill("decade-table", [{ label: "Decade", key: "decade" }, { label: "Movies", key: "movies", num: true },
+            { label: "Appearances", key: "battles", num: true }, { label: "W-L", get: (d) => `${d.wins}-${d.losses}`, num: true },
+            { label: "Win rate", get: (d) => pct(d.win_rate, 1), num: true }], dec);
           const big = dec.filter((d) => d.battles >= 40);
           const best = big.reduce((a, b) => (b.win_rate > a.win_rate ? b : a), big[0]);
           const worst = big.reduce((a, b) => (b.win_rate < a.win_rate ? b : a), big[0]);
-          $("decade-rejoinder").innerHTML = best && worst
-            ? `<b>Rejoinder:</b> among decades with 40+ appearances, the ${best.decade} win ${pct(best.win_rate)} and the ${worst.decade} win ${pct(worst.win_rate)}. Nostalgia is a voting bloc. Decades under 40 appearances are too thin to read.`
-            : "";
+          html("decade-rejoin", best && worst
+            ? `<b>Rejoinder:</b> among decades with 40+ appearances the ${best.decade} win ${pct(best.win_rate)} and the ${worst.decade} win ${pct(worst.win_rate)}. Nostalgia is a voting bloc. Faded bars are under 40 appearances - too thin to read.`
+            : "");
 
-          /* Recent battles */
-          const recent = ins.recent_battles || [];
-          $("recent-table").append(table([
-            { label: "Date", get: (b) => longDate(b.date) },
-            { label: "Champion", get: (b) => el("span", {}, [document.createTextNode(`${b.champion} `), el("span", { class: "pill" }, `${b.champion_wins_before}W`)]) },
-            { label: "Challenger", get: (b) => `${b.challenger} (${b.challenger_movie})` },
-            { label: "Winner", get: (b) => (b.winner ? el("span", { class: `pill ${b.winner === b.champion ? "good" : "bad"}` }, `${b.winner}${b.retired_champion ? " - retired" : ""}`) : el("span", { class: "pill" }, "poll open")) },
-            { label: "Post", get: (b) => link(b.url, "open") },
-          ], recent));
-
-          /* Debate card */
-          const card = [
-            `${isFresh ? "Fresh matchup" : "Title defense"} on Movie Scene Battles - ${longDate(h2h.published_at)}`,
-            `${h2h.champion} (${h2h.champion_movie}${h2h.champion_movie_year ? `, ${h2h.champion_movie_year}` : ""}) vs ${h2h.challenger} (${h2h.challenger_movie}${h2h.challenger_movie_year ? `, ${h2h.challenger_movie_year}` : ""})`,
-            `${h2h.champion} has ${h2h.champion_wins} win${h2h.champion_wins === 1 ? "" : "s"}; ${h2h.wins_to_retire} more to retire to the Hall of Fame.`,
-            rung ? `Champions at this rung hold ${pct(rung.hold_rate)} of the time. Site-wide upset rate: ${pct(s.upset_rate)}.` : `Site-wide upset rate: ${pct(s.upset_rate)}.`,
-            `Vote: ${h2h.url}`,
-          ].join("\n");
-          text("debate-text", card);
-          $("copy-debate").addEventListener("click", async () => {
-            try { await navigator.clipboard.writeText(card); text("copy-status", "Copied."); }
-            catch (e) { text("copy-status", "Select the text above to copy."); }
+          /* ---- CADENCE ---- */
+          txt("cadence-intro", `The site posts ${cad.posting_weekdays.join(", ")}. Each month's estimate is the trailing three-month average of completed months.`);
+          const months = cad.monthly || [], partial = months.find((m) => m.is_partial);
+          chart($("cadence-chart"), {
+            aria: "Battles per month, actual vs estimate", cats: months.map((m) => mon(m.month)), bars: months.map((m) => m.actual),
+            line: months.map((m) => m.estimate), points: months.map((m) => (m.is_partial && m.projected != null ? { value: m.projected, label: `pace ${fmt(m.projected, 0)}` } : null)),
+            dim: (i) => months[i].is_partial, every: months.length > 14 ? 2 : 1, height: 230, wide: true,
+            tipFor: (i) => { const m = months[i]; return `<b>${mon(m.month)}</b><br>Actual: ${fmt(m.actual)}${m.is_partial ? " so far" : ""}<br>Estimate: ${m.estimate == null ? "-" : fmt(m.estimate, 1)}<br>Delta: ${signed(m.delta)}`; },
           });
+          txt("cadence-note", cad.next_month?.estimate != null ? `${mon(cad.next_month.month)} estimate: ${fmt(cad.next_month.estimate, 1)}` : "");
+          fill("cadence-table", [{ label: "Month", get: (m) => mon(m.month) + (m.is_partial ? " (partial)" : "") },
+            { label: "Actual", key: "actual", num: true }, { label: "Estimate", get: (m) => (m.estimate == null ? "-" : fmt(m.estimate, 1)), num: true },
+            { label: "Delta", get: (m) => signed(m.delta), num: true }, { label: "Pace", get: (m) => (m.projected == null ? "-" : fmt(m.projected, 1)), num: true }], months);
+          const full = months.filter((m) => !m.is_partial && m.delta != null);
+          const miss = full.reduce((a, b) => (Math.abs(b.delta) > Math.abs(a.delta) ? b : a), full[0] || { delta: 0 });
+          html("cadence-rejoin", full.length
+            ? `<b>Rejoinder:</b> actuals beat the estimate in ${full.filter((m) => m.delta > 0).length} of ${full.length} completed months, average miss ${fmt(cad.mean_absolute_error, 1)} battles. Biggest miss: ${mon(miss.month)} at ${signed(miss.delta)}.${partial?.projected != null ? ` ${mon(partial.month)} is pacing to ${fmt(partial.projected, 0)}.` : ""}`
+            : "");
 
-          /* Integrity */
-          const dl = $("integrity-list"); dl.innerHTML = "";
-          const rows = [
-            ["Posts crawled", `${fmt(dq.posts_total)} (${fmt(dq.battle_posts)} battles, ${fmt(dq.non_battle_posts)} housekeeping posts)`],
-            ["Winners inferred", `${fmt(dq.winners_inferred)} of ${fmt(dq.battle_posts)} (${pct(dq.winner_inference_rate, 1)}); the remainder is the open poll`],
-            ["Cross-check vs site win counter", `${fmt(dq.win_counter_agreement)} of ${fmt(dq.win_counter_checks)} agree (${pct(dq.win_counter_agreement_rate, 1)})`],
-            ["Hall of Fame reconciliation", dq.hall_of_fame_matches_page === null ? "Hall of Fame page not in crawl" : `${fmt(dq.retired_reigns_found)} retirements inferred vs ${fmt(dq.hall_of_fame_label_count)} movies labelled on the Hall of Fame page - ${dq.hall_of_fame_matches_page ? "match" : "MISMATCH"}`],
-            ["Movies without a release year", fmt(dq.movies_without_label_year)],
-            ["Retirement rule", `${ins.retirement_wins} wins, read from the site's "A Return" post`],
-          ];
-          rows.forEach(([k, v]) => dl.append(el("dt", {}, k), el("dd", {}, v)));
-          const callout = $("integrity-callout"); callout.innerHTML = "";
+          const wd = cad.weekday || [];
+          chart($("weekday-chart"), { aria: "Battles by weekday", cats: wd.map((d) => d.day), bars: wd.map((d) => d.battles), height: 180, barLabel: (i) => fmt(wd[i].battles), tipFor: (i) => `<b>${wd[i].day}</b><br>${fmt(wd[i].battles)} battles` });
+          fill("weekday-table", [{ label: "Day", key: "day" }, { label: "Battles", key: "battles", num: true }], wd);
+          const quiet = wd.filter((d) => !cad.posting_weekdays.includes(d.day)).map((d) => d.day);
+          html("weekday-rejoin", `<b>Rejoinder:</b> dark on ${quiet.join(" and ") || "no day"}. Five battles a week is the real cadence, not seven.`);
+
+          const hrs = cad.hour_of_day || [];
+          chart($("hour-chart"), { aria: "Battles by publish hour", cats: hrs.map((h) => `${h.hour}`), bars: hrs.map((h) => h.battles), height: 180, barLabel: (i) => (hrs[i].battles >= 10 ? fmt(hrs[i].battles) : ""), tipFor: (i) => `<b>${hrs[i].hour}:00</b><br>${fmt(hrs[i].battles)} battles` });
+          fill("hour-table", [{ label: "Hour", get: (h) => `${h.hour}:00` }, { label: "Battles", key: "battles", num: true }], hrs);
+          html("hour-rejoin", `<b>Rejoinder:</b> ${pct(cad.share_in_busiest_hour)} of battles go live in the ${cad.busiest_hour}:00 hour. The audience knows exactly when to show up.`);
+
+          fill("momentum-table", [
+            { label: "Metric", key: "metric" }, { label: `Last ${mo.window_days}d`, key: "recent", num: true },
+            { label: `Prior ${mo.window_days}d`, key: "prior", num: true }, { label: "Delta", key: "delta", num: true },
+          ], [
+            { metric: "Battles posted", recent: fmt(mo.recent.battles), prior: fmt(mo.prior.battles), delta: signed(mo.battles_delta, 0) },
+            { metric: "Upsets", recent: fmt(mo.recent.upsets), prior: fmt(mo.prior.upsets), delta: signed(mo.recent.upsets - mo.prior.upsets, 0) },
+            { metric: "Upset rate", recent: pct(mo.recent.upset_rate, 1), prior: pct(mo.prior.upset_rate, 1), delta: mo.upset_rate_delta == null ? "-" : `${signed(mo.upset_rate_delta)} pts` },
+          ]);
+          html("momentum-rejoin", `Windows: ${day(mo.recent.start)}-${day(mo.recent.end)} vs ${day(mo.prior.start)}-${day(mo.prior.end)}. <b>Rejoinder:</b> thirty-day windows on ~17 battles are noisy - a nudge, not a trend.`);
+
+          /* ---- PEOPLE ---- */
+          const people = sub.people || [];
+          txt("people-intro", `The site takes scene submissions by email and credits them by name. ${fmt(sub.credited_people)} people are named across ${fmt(sub.credited_battles)} battles.`);
+          const pt = $("people-tiles"); pt.innerHTML = "";
+          const wins = people.reduce((a, p) => a + p.wins, 0), losses = people.reduce((a, p) => a + p.losses, 0);
+          const bestRun = people.reduce((a, p) => Math.max(a, p.best_run), 0);
+          pt.append(
+            tile("Named contributors", fmt(sub.credited_people),
+              `<b>Rejoinder:</b> only ${pct(sub.credited_share, 1)} of battles carry a credit, so this is the floor - the rules let submitters stay anonymous.`),
+            tile("Scenes sent in", fmt(sub.total_credited_scenes),
+              `<b>Rejoinder:</b> against ${fmt(ins.summary.unique_scenes)} scenes overall. The programming is still mostly the owner's own picks.`),
+            tile("Record of submitted scenes", `${wins}-${losses}`,
+              `<b>Rejoinder:</b> ${pct((wins / Math.max(1, wins + losses)) * 100)}, against a ${pct(100 - s.upset_rate)} baseline for champions. The best submitted scene ran to ${bestRun} straight wins.`)
+          );
+          fill("people-table", [
+            { label: "#", get: (p, i) => String(i + 1), num: true },
+            { label: "Name", get: (p) => { const n = el("span", { style: "border-bottom:1px dotted var(--axis);cursor:help" }, p.name); attachTip(n, `<b>${escapeHtml(p.name)}</b><br>${p.scenes.map((sc) => `${escapeHtml(sc.scene)} - ${sc.wins}W`).join("<br>")}`); return n; } },
+            { label: "Scenes", key: "scene_count", num: true },
+            { label: "Battles", key: "battles", num: true },
+            { label: "W-L", get: (p) => `${p.wins}-${p.losses}`, num: true },
+            { label: "Win rate", get: (p) => pct(p.win_rate), num: true },
+            { label: "Best run", get: (p) => `${p.best_run}W`, num: true },
+            { label: "Active", get: (p) => `${day(p.first_credit)} - ${day(p.last_credit)}` },
+          ], people);
+          const lead = people[0];
+          html("people-rejoin", lead
+            ? `<b>Rejoinder:</b> ${escapeHtml(lead.name)} leads with ${lead.scene_count} scenes over ${lead.battles} battles at ${pct(lead.win_rate)}. With a ${fmt(v.avg_turnout, 0)}-vote electorate, a handful of regulars genuinely shape this tournament.`
+            : "");
+          const sceneRows = people.flatMap((p) => p.scenes.map((sc) => ({ who: p.name, ...sc })));
+          fill("scenes-table", [
+            { label: "Submitter", key: "who" }, { label: "Scene", key: "scene" },
+            { label: "Battles", key: "battles", num: true },
+            { label: "W-L", get: (r) => `${r.wins}-${r.losses}`, num: true },
+          ], sceneRows);
+
+          /* ---- METHOD ---- */
+          const kv = $("method-kv"); kv.innerHTML = "";
+          [
+            ["Posts crawled", `${fmt(dq.posts_total)} (${fmt(dq.battle_posts)} battles, ${fmt(dq.non_battle_posts)} housekeeping)`],
+            ["Polls read", `${fmt(dq.scored_battles)} of ${fmt(dq.battle_posts)} battles publish a result`],
+            ["Poll winner vs next-post champion", `${fmt(dq.poll_vs_chain_checks - (dq.poll_vs_chain_mismatches || []).length)} of ${fmt(dq.poll_vs_chain_checks)} agree (${pct(dq.poll_vs_chain_agreement_rate, 1)})`],
+            ["Site win counter", `${fmt(dq.win_counter_agreement)} of ${fmt(dq.win_counter_checks)} agree (${pct(dq.win_counter_agreement_rate, 1)})`],
+            ["Hall of Fame reconciliation", dq.hall_of_fame_matches_page == null ? "not in crawl" : `${fmt(dq.retired_reigns_found)} inferred vs ${fmt(dq.hall_of_fame_label_count)} labelled - ${dq.hall_of_fame_matches_page ? "match" : "MISMATCH"}`],
+            ["Retirement rule", `${ins.retirement_wins} wins, per the site's own "A Return" post`],
+          ].forEach(([k, val]) => kv.append(el("dt", {}, k), el("dd", {}, val)));
+
+          const co = $("method-callout"); co.innerHTML = "";
           const items = [];
-          (dq.name_drift || []).forEach((d) => items.push(el("li", {}, [document.createTextNode(`Scene name drifted "${d.from}" to "${d.to}" (${d.movie}) on `), link(d.url, longDate(d.date)), document.createTextNode(". Matched on the movie instead.")])));
-          (dq.win_counter_mismatches || []).forEach((m) => items.push(el("li", {}, [document.createTextNode(`The site's counter said ${m.claimed} wins but the chain says ${m.inferred} in `), link(m.url, m.title), document.createTextNode(` (${longDate(m.date)}). The chain is consistent with the Hall of Fame list, so the post's counter looks like a typo.`)])));
-          callout.append(el("b", {}, items.length ? "Where the chain needed judgement" : "The chain needed no judgement calls"), el("ul", {}, items));
+          (dq.name_drift || []).forEach((d) => items.push(el("li", {}, [document.createTextNode(`Scene name drifted "${d.from}" to "${d.to}" (${d.movie}) on `), link(d.url, day(d.date)), document.createTextNode(" - matched on the movie instead.")])));
+          (dq.win_counter_mismatches || []).forEach((m) => items.push(el("li", {}, [document.createTextNode(`Win counter reads ${m.claimed} but the chain says ${m.inferred} in `), link(m.url, m.title), document.createTextNode(` (${day(m.date)}) - the Hall of Fame page agrees with the chain.`)])));
+          (dq.unreadable_scores || []).forEach((u) => items.push(el("li", {}, [document.createTextNode(`Score line names a scene that is not in the matchup ("${u.text}") in `), link(u.url, u.title), document.createTextNode(` (${day(u.date)}) - left uncounted rather than guessed.`)])));
+          co.append(el("b", {}, items.length ? "Where the data needed judgement" : "No judgement calls needed"), el("ul", {}, items));
           const nb = (ins.non_battle_posts || []).map((p) => p.title).filter(Boolean);
-          if (nb.length) callout.append(el("div", { style: "margin-top:8px;color:var(--muted)" }, `Skipped as housekeeping: ${nb.join(", ")}.`));
+          if (nb.length) co.append(el("div", { style: "margin-top:8px;color:var(--muted)" }, `Skipped as housekeeping: ${nb.join(", ")}.`));
+
+          fill("recent-table", [
+            { label: "Date", get: (b) => day(b.date) },
+            { label: "Champion", get: (b) => el("span", {}, [document.createTextNode(`${b.champion} `), el("span", { class: "pill" }, `${b.champion_wins_before}W`)]) },
+            { label: "Challenger", key: "challenger" },
+            { label: "Poll", get: (b) => (b.champion_votes == null ? "open" : `${b.champion_votes}-${b.challenger_votes}`), num: true },
+            { label: "Winner", get: (b) => (b.winner ? el("span", { class: `pill ${b.winner === b.champion ? "good" : "bad"}` }, `${b.winner}${b.retired_champion ? " - retired" : ""}`) : el("span", { class: "pill" }, "open")) },
+            { label: "Post", get: (b) => link(b.url, "open") },
+          ], ins.recent_battles || []);
         }
 
-        load().catch((error) => {
-          const box = $("error"); box.hidden = false; box.textContent = `Could not load the snapshot: ${error}`;
-          text("subline", "Snapshot unavailable.");
+        initTabs();
+        wireToggles();
+        load().catch((e) => {
+          const b = $("error"); b.hidden = false; b.textContent = `Could not load the snapshot: ${e}`;
+          txt("subline", "Snapshot unavailable.");
         });
       })();
     </script>

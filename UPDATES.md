@@ -1,5 +1,35 @@
 # Product Updates
 
+## 2026-09-04 - The vote, surfaced
+
+### What we achieved
+
+- **Read the actual votes.** Every closed battle publishes its poll result, and we now parse all of them: **3,962 votes
+  across 317 polls**. The previous release wrongly assumed vote totals were never published.
+- **Validated the whole reconstruction against them.** The poll winner and the next post's champion agree on **317 of
+  317** decided battles, on top of the win-counter check (308 of 309) and the Hall of Fame reconciliation (9 of 9).
+- **Surfaced the community.** Submitter credits are now attributed to the scene they sit beside, giving a leaderboard of
+  the **6 named contributors** behind 11 scenes and 16 battles.
+- **Reorganised the page into seven tabs**, so each view is a screen or two instead of one long scroll.
+
+### The findings worth arguing about
+
+- **31% of all battles are decided by a single vote** (97 of 317), on an average turnout of 12.5.
+- **Four polls ended level** and were settled by the site owner's tiebreaker.
+- **Turnout is flat across the ladder** (12.2 to 13.3 votes at every rung), so the rising hold rate for long-running
+  champions is voters changing their minds, not a bandwagon arriving.
+- **The most dominant reign** is The Rules for Surviving Horror Movies (Scream), seven wins at an average margin of 6.5.
+
+### Interactive feature callout
+
+- **The Vote tab** puts every poll on a split bar - nail-biters, blowouts and tiebreakers - so a reader can see how close
+  the tournament really is.
+
+### Fairness and transparency
+
+- Every number remains a pure function of the crawl. One score line on the site names a scene that is not in its own
+  matchup; it is reported in the Method tab and left uncounted rather than guessed.
+
 ## 2026-09-04 - Tournament Intelligence refresh
 
 ### What we achieved

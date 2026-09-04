@@ -12,17 +12,26 @@
 ## How the tournament is rebuilt
 
 Movie Scene Battles is a king-of-the-hill ladder: two scenes are posted, readers vote, the winner returns the next day as
-champion and keeps defending until it loses or reaches seven wins, at which point it retires to the Hall of Fame. The blog
-never publishes vote totals, so `insights.py` **re-joins** every post to its successor:
+champion and keeps defending until it loses or reaches seven wins, at which point it retires to the Hall of Fame.
 
-- the scene that comes back as champion won the previous battle;
-- a post that introduces two challengers after a seventh win marks a retirement;
-- the champion's "(N)" win counter in each post body is used as an independent cross-check;
-- scene-name typos are tolerated by anchoring identity on the movie and a fuzzy name match.
+Each post carries three independent signals, and `insights.py` **re-joins** them:
 
-The resulting `data/site_insights.json` carries reigns, Hall of Fame, upset rates, hold rate by streak, movie and decade
-leaderboards, monthly cadence with trailing-average estimates vs actuals, and a data-quality block that reports every
-judgement call the chain needed.
+- **The published poll** - every closed battle ends with `The Score: <scene> <votes>, <scene> <votes>`, sometimes marked
+  `(tiebreaker used)` when the poll ended level and the owner cast the deciding vote.
+- **The succession of posts** - the scene that comes back as champion won the previous battle, and a post introducing two
+  challengers marks a retirement at seven wins.
+- **The site's own counter** - the champion's `(N)` in each "The Case for" heading.
+
+Cross-checking the three is what makes the reconstruction trustworthy: on the current snapshot the poll result and the
+next post's champion agree on **317 of 317** decided battles. Scene-name typos are tolerated by anchoring identity on the
+movie plus a fuzzy name match, and anything that cannot be resolved is reported rather than guessed.
+
+Submitter credits (`(Submitted by <name>)`) are attributed positionally to the scene whose "The Case for" block they sit
+in, because the credit rides that scene through its entire reign.
+
+The resulting `data/site_insights.json` carries vote turnout and margins, reigns, Hall of Fame, upset rates, hold rate by
+streak, movie and decade leaderboards, a submitter leaderboard, monthly cadence with trailing-average estimates vs
+actuals, and a data-quality block reporting every judgement call.
 
 ## Project structure
 
@@ -56,6 +65,7 @@ Stores one crawlable matchup post:
 - `content_text` (optional)
 - `champion`, `champion_movie`, `challenger`, `challenger_movie` (parsed from the post body)
 - `champion_wins_claimed` (the site's own "(N)" counter) and `battle_type` (`defense` or `fresh`)
+- `score_entries` (the published vote counts), `tiebreaker`, and `submitters` (credited name plus the scene credited)
 
 ### `SiteStats`
 Stores aggregate website metrics:
@@ -106,10 +116,20 @@ This repository includes a deployable `index.html` dashboard that reads snapshot
 - `data/site_stats.json`
 - `data/site_insights.json`
 
-It renders today's head-to-head with a road-to-retirement meter, stat tiles that each carry a rejoinder, an
-estimate-vs-actual cadence chart, hold rate by streak, reign length distribution, the Hall of Fame with near misses,
-giant killers, a movie leaderboard, win rate by decade, a shareable debate card and a data-integrity panel. Every chart has
-a table view and hover tooltips, and the page is plain HTML with no build step.
+The page is organised as seven tabs so no single view runs long — deep-link to any of them with a hash:
+
+| Tab | `#hash` | What it holds |
+|---|---|---|
+| Today | `#today` | Live head-to-head, road-to-retirement meter, last five results, debate card |
+| The Vote | `#vote` | Turnout, margin distribution, nail-biters, blowouts, tiebreakers, turnout by streak |
+| The Ladder | `#ladder` | Hold rate by streak, reign lengths, Hall of Fame, giant killers, most dominant reigns |
+| Movies | `#movies` | Movie leaderboard, win rate by decade |
+| Cadence | `#cadence` | Estimate vs actual per month, weekday and hour, 30-day momentum |
+| People | `#people` | Credited submitters, their scenes and records |
+| Method | `#method` | Reconstruction confidence and every judgement call |
+
+Every chart has a table view and hover tooltips, tabs are keyboard-navigable, and the page is plain HTML with no build
+step.
 
 To refresh the dataset, stats and insights before deploy:
 
