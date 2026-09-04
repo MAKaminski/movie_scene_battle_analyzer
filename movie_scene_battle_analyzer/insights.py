@@ -14,6 +14,7 @@ the dataset so the output can be regenerated and verified offline.
 from __future__ import annotations
 
 import calendar
+import math
 import re
 from collections import Counter
 from datetime import date, datetime, timedelta
@@ -85,7 +86,10 @@ def _pct(numerator: float, denominator: float) -> float | None:
 def _mean(values: list[float]) -> float | None:
     if not values:
         return None
-    return round(sum(values) / len(values), 2)
+    # math.fsum is correctly rounded on every Python version; plain sum() changed
+    # to compensated summation in 3.12, which can flip a value sitting on a
+    # rounding boundary and make the committed snapshot fail verification.
+    return round(math.fsum(values) / len(values), 2)
 
 
 def _split_category(category: str) -> tuple[str, int | None]:

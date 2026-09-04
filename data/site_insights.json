@@ -1822,7 +1822,7 @@
       "estimate": 18.7,
       "basis": "trailing 3-month average of completed months"
     },
-    "mean_absolute_error": 3.32,
+    "mean_absolute_error": 3.33,
     "posting_weekdays": [
       "Mon",
       "Tue",
