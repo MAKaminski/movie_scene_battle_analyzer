@@ -1,17 +1,17 @@
 {
   "site_title": "Movie Scene Battles",
   "site_url": "https://moviescenebattles.blogspot.com",
-  "generated_from_posts": 325,
+  "generated_from_posts": 329,
   "stats": {
-    "total_posts": 325,
+    "total_posts": 329,
     "total_comments": 0,
     "average_comments_per_post": 0.0,
-    "average_words_per_post": 110.37,
-    "posts_with_explicit_matchup": 319,
+    "average_words_per_post": 110.16,
+    "posts_with_explicit_matchup": 323,
     "posts_by_year": {
       "2000": 2,
       "2025": 173,
-      "2026": 150
+      "2026": 154
     },
     "top_categories": [
       {
@@ -57,32 +57,32 @@
     ],
     "most_commented_posts": [
       {
+        "title": "Helm Hammerhand Still Stands vs. Truth Serum",
+        "url": "https://moviescenebattles.blogspot.com/2026/09/helm-hammerhand-still-stands-vs-truth.html",
+        "comment_count": 0
+      },
+      {
+        "title": "Oh No He Died! vs. Helm Hammerhand Still Stands",
+        "url": "https://moviescenebattles.blogspot.com/2026/09/oh-no-he-died-vs-helm-hammerhand-still.html",
+        "comment_count": 0
+      },
+      {
+        "title": "Slaps vs. Oh No He Died!",
+        "url": "https://moviescenebattles.blogspot.com/2026/09/slaps-vs-oh-no-he-died.html",
+        "comment_count": 0
+      },
+      {
+        "title": "Slaps vs. The Legend of the Legendary Warrior",
+        "url": "https://moviescenebattles.blogspot.com/2026/09/slaps-vs-legend-of-legendary-warrior.html",
+        "comment_count": 0
+      },
+      {
         "title": "Slaps vs. The Bear",
         "url": "https://moviescenebattles.blogspot.com/2026/09/slaps-vs-bear.html",
         "comment_count": 0
-      },
-      {
-        "title": "Blood Test vs. Slaps",
-        "url": "https://moviescenebattles.blogspot.com/2026/09/blood-test-vs-slaps.html",
-        "comment_count": 0
-      },
-      {
-        "title": "I Will Always Love You vs. Blood Test",
-        "url": "https://moviescenebattles.blogspot.com/2026/09/i-will-always-love-you-vs-blood-test.html",
-        "comment_count": 0
-      },
-      {
-        "title": "I Will Always Love You vs. Singin' in the Rain",
-        "url": "https://moviescenebattles.blogspot.com/2026/08/i-will-always-love-you-vs-singin-in-rain.html",
-        "comment_count": 0
-      },
-      {
-        "title": "I Will Always Love You vs. Toxic Love",
-        "url": "https://moviescenebattles.blogspot.com/2026/08/i-will-always-love-you-vs-toxic-love.html",
-        "comment_count": 0
       }
     ],
-    "last_post_update": "2026-09-03 06:35:45.558000-07:00",
-    "crawl_completed_at": "2026-09-04 13:59:05.551547+00:00"
+    "last_post_update": "2026-09-10 20:54:49.627000-07:00",
+    "crawl_completed_at": "2026-09-12 10:51:48.775347+00:00"
   }
 }
