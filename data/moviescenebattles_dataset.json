@@ -3,17 +3,197 @@
   "site_url": "https://moviescenebattles.blogspot.com",
   "posts": [
     {
+      "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-7878376832637545704",
+      "title": "Godzilla Visits Tokyo vs. Tackiness",
+      "url": "https://moviescenebattles.blogspot.com/2026/09/godzilla-visits-tokyo-vs-tackiness.html",
+      "published_at": "2026-09-17 21:00:08.349000-07:00",
+      "updated_at": "2026-09-17 21:00:08.349000-07:00",
+      "comment_count": 0,
+      "categories": [
+        "Godzilla 1954",
+        "Murder By Death 1976"
+      ],
+      "word_count": 63,
+      "content_text": null,
+      "champion": "Godzilla Visits Tokyo",
+      "champion_movie": "Godzilla",
+      "challenger": "Tackiness",
+      "challenger_movie": "Murder By Death",
+      "champion_wins_claimed": 2,
+      "battle_type": "defense"
+    },
+    {
+      "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-6262573115083173479",
+      "title": "Godzilla Visits Tokyo vs. Maybe This Time",
+      "url": "https://moviescenebattles.blogspot.com/2026/09/godzilla-visits-tokyo-vs-maybe-this-time.html",
+      "published_at": "2026-09-16 21:12:53.752000-07:00",
+      "updated_at": "2026-09-17 20:57:20.287000-07:00",
+      "comment_count": 0,
+      "categories": [
+        "Cabaret 1972",
+        "Godzilla 1954"
+      ],
+      "word_count": 74,
+      "content_text": null,
+      "champion": "Godzilla Visits Tokyo",
+      "champion_movie": "Godzilla",
+      "challenger": "Maybe This Time",
+      "challenger_movie": "Cabaret",
+      "champion_wins_claimed": 1,
+      "battle_type": "defense"
+    },
+    {
+      "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-1307251567644146281",
+      "title": "The Three Caballeros vs. Godzilla Visits Tokyo",
+      "url": "https://moviescenebattles.blogspot.com/2026/09/the-three-caballeros-vs-godzilla-visits.html",
+      "published_at": "2026-09-15 21:09:52.534000-07:00",
+      "updated_at": "2026-09-16 21:09:22.961000-07:00",
+      "comment_count": 0,
+      "categories": [
+        "Godzilla 1954",
+        "The Three Caballeros 1944"
+      ],
+      "word_count": 73,
+      "content_text": null,
+      "champion": "The Three Caballeros",
+      "champion_movie": "The Three Caballeros",
+      "challenger": "Godzilla Visits Tokyo",
+      "challenger_movie": "Godzilla",
+      "champion_wins_claimed": 2,
+      "battle_type": "defense"
+    },
+    {
+      "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-4128674851930813204",
+      "title": "The Three Caballeros vs. Frontier Gibberish",
+      "url": "https://moviescenebattles.blogspot.com/2026/09/the-three-caballeros-vs-frontier.html",
+      "published_at": "2026-09-15 06:35:38.233000-07:00",
+      "updated_at": "2026-09-15 21:07:44.711000-07:00",
+      "comment_count": 0,
+      "categories": [
+        "Blazing Saddles 1974",
+        "The Three Caballeros 1944"
+      ],
+      "word_count": 108,
+      "content_text": null,
+      "champion": "The Three Caballeros",
+      "champion_movie": "The Three Caballeros",
+      "challenger": "Frontier Gibberish",
+      "challenger_movie": "Blazing Saddles",
+      "champion_wins_claimed": 1,
+      "battle_type": "defense"
+    },
+    {
+      "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-8132312435098732189",
+      "title": "Truth Serum vs. The Three Caballeros",
+      "url": "https://moviescenebattles.blogspot.com/2026/09/truth-serum-vs-three-caballeros.html",
+      "published_at": "2026-09-13 21:18:36.500000-07:00",
+      "updated_at": "2026-09-15 06:33:17.631000-07:00",
+      "comment_count": 0,
+      "categories": [
+        "Ant-Man and the Wasp 2018",
+        "The Three Caballeros 1944"
+      ],
+      "word_count": 77,
+      "content_text": null,
+      "champion": "Truth Serum",
+      "champion_movie": "Ant-Man and the Wasp",
+      "challenger": "The Three Caballeros",
+      "challenger_movie": "The Three Caballeros",
+      "champion_wins_claimed": 1,
+      "battle_type": "defense"
+    },
+    {
+      "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-6569450985212096655",
+      "title": "Helm Hammerhand Still Stands vs. Truth Serum",
+      "url": "https://moviescenebattles.blogspot.com/2026/09/helm-hammerhand-still-stands-vs-truth.html",
+      "published_at": "2026-09-10 20:54:49.627000-07:00",
+      "updated_at": "2026-09-13 21:15:54.942000-07:00",
+      "comment_count": 0,
+      "categories": [
+        "Ant-Man and the Wasp 2018",
+        "Lord of the Rings: The War of the Rohirrim 2024"
+      ],
+      "word_count": 92,
+      "content_text": null,
+      "champion": "Helm Hammerhand Still Stands",
+      "champion_movie": "Lord of the Rings: The War of the Rohirrim",
+      "challenger": "Truth Serum",
+      "challenger_movie": "Ant-Man and the Wasp",
+      "champion_wins_claimed": 1,
+      "battle_type": "defense"
+    },
+    {
+      "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-733273408597334768",
+      "title": "Oh No He Died! vs. Helm Hammerhand Still Stands",
+      "url": "https://moviescenebattles.blogspot.com/2026/09/oh-no-he-died-vs-helm-hammerhand-still.html",
+      "published_at": "2026-09-09 21:13:24.355000-07:00",
+      "updated_at": "2026-09-10 20:50:44.621000-07:00",
+      "comment_count": 0,
+      "categories": [
+        "Game Night 2018",
+        "Lord of the Rings: The War of the Rohirrim 2024"
+      ],
+      "word_count": 103,
+      "content_text": null,
+      "champion": "Oh No He Died!",
+      "champion_movie": "Game Night",
+      "challenger": "Helm Hammerhand Still Stands",
+      "challenger_movie": "Lord of the Rings: The War of the Rohirrim",
+      "champion_wins_claimed": 1,
+      "battle_type": "defense"
+    },
+    {
+      "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-8898553544398832614",
+      "title": "Slaps vs. Oh No He Died!",
+      "url": "https://moviescenebattles.blogspot.com/2026/09/slaps-vs-oh-no-he-died.html",
+      "published_at": "2026-09-08 21:09:19.991000-07:00",
+      "updated_at": "2026-09-09 21:12:06.120000-07:00",
+      "comment_count": 0,
+      "categories": [
+        "Game Night 2018",
+        "Vivacious Lady 1938"
+      ],
+      "word_count": 92,
+      "content_text": null,
+      "champion": "Slaps",
+      "champion_movie": "Vivacious Lady",
+      "challenger": "Oh No He Died!",
+      "challenger_movie": "Game Night",
+      "champion_wins_claimed": 3,
+      "battle_type": "defense"
+    },
+    {
+      "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-8538680429937486546",
+      "title": "Slaps vs. The Legend of the Legendary Warrior",
+      "url": "https://moviescenebattles.blogspot.com/2026/09/slaps-vs-legend-of-legendary-warrior.html",
+      "published_at": "2026-09-07 20:12:12.421000-07:00",
+      "updated_at": "2026-09-08 21:08:02.695000-07:00",
+      "comment_count": 0,
+      "categories": [
+        "Kung Fu Panda 2008",
+        "Vivacious Lady 1938"
+      ],
+      "word_count": 86,
+      "content_text": null,
+      "champion": "Slaps",
+      "champion_movie": "Vivacious Lady",
+      "challenger": "The Legend of the Legendary Warrior",
+      "challenger_movie": "Kung Fu Panda",
+      "champion_wins_claimed": 2,
+      "battle_type": "defense"
+    },
+    {
       "post_id": "tag:blogger.com,1999:blog-2266631100380427373.post-1798710713603607224",
       "title": "Slaps vs. The Bear",
       "url": "https://moviescenebattles.blogspot.com/2026/09/slaps-vs-bear.html",
       "published_at": "2026-09-03 06:35:45.558000-07:00",
-      "updated_at": "2026-09-03 06:35:45.558000-07:00",
+      "updated_at": "2026-09-07 20:09:19.158000-07:00",
       "comment_count": 0,
       "categories": [
         "Annihilation 2018",
         "Vivacious Lady 1938"
       ],
-      "word_count": 89,
+      "word_count": 93,
       "content_text": null,
       "champion": "Slaps",
       "champion_movie": "Vivacious Lady",
@@ -6501,15 +6681,15 @@
     }
   ],
   "stats": {
-    "total_posts": 325,
+    "total_posts": 334,
     "total_comments": 0,
     "average_comments_per_post": 0.0,
-    "average_words_per_post": 110.37,
-    "posts_with_explicit_matchup": 319,
+    "average_words_per_post": 109.71,
+    "posts_with_explicit_matchup": 328,
     "posts_by_year": {
       "2000": 2,
       "2025": 173,
-      "2026": 150
+      "2026": 159
     },
     "top_categories": [
       {
@@ -6555,32 +6735,32 @@
     ],
     "most_commented_posts": [
       {
-        "title": "Slaps vs. The Bear",
-        "url": "https://moviescenebattles.blogspot.com/2026/09/slaps-vs-bear.html",
+        "title": "Godzilla Visits Tokyo vs. Tackiness",
+        "url": "https://moviescenebattles.blogspot.com/2026/09/godzilla-visits-tokyo-vs-tackiness.html",
         "comment_count": 0
       },
       {
-        "title": "Blood Test vs. Slaps",
-        "url": "https://moviescenebattles.blogspot.com/2026/09/blood-test-vs-slaps.html",
+        "title": "Godzilla Visits Tokyo vs. Maybe This Time",
+        "url": "https://moviescenebattles.blogspot.com/2026/09/godzilla-visits-tokyo-vs-maybe-this-time.html",
         "comment_count": 0
       },
       {
-        "title": "I Will Always Love You vs. Blood Test",
-        "url": "https://moviescenebattles.blogspot.com/2026/09/i-will-always-love-you-vs-blood-test.html",
+        "title": "The Three Caballeros vs. Godzilla Visits Tokyo",
+        "url": "https://moviescenebattles.blogspot.com/2026/09/the-three-caballeros-vs-godzilla-visits.html",
         "comment_count": 0
       },
       {
-        "title": "I Will Always Love You vs. Singin' in the Rain",
-        "url": "https://moviescenebattles.blogspot.com/2026/08/i-will-always-love-you-vs-singin-in-rain.html",
+        "title": "The Three Caballeros vs. Frontier Gibberish",
+        "url": "https://moviescenebattles.blogspot.com/2026/09/the-three-caballeros-vs-frontier.html",
         "comment_count": 0
       },
       {
-        "title": "I Will Always Love You vs. Toxic Love",
-        "url": "https://moviescenebattles.blogspot.com/2026/08/i-will-always-love-you-vs-toxic-love.html",
+        "title": "Truth Serum vs. The Three Caballeros",
+        "url": "https://moviescenebattles.blogspot.com/2026/09/truth-serum-vs-three-caballeros.html",
         "comment_count": 0
       }
     ],
-    "last_post_update": "2026-09-03 06:35:45.558000-07:00",
-    "crawl_completed_at": "2026-09-04 13:59:05.551547+00:00"
+    "last_post_update": "2026-09-17 21:00:08.349000-07:00",
+    "crawl_completed_at": "2026-09-19 11:04:37.864951+00:00"
   }
 }
