@@ -1,36 +1,36 @@
 {
   "site_title": "Movie Scene Battles",
   "site_url": "https://moviescenebattles.blogspot.com",
-  "generated_from_posts": 325,
-  "as_of": "2026-09-03",
+  "generated_from_posts": 339,
+  "as_of": "2026-09-24",
   "first_battle_at": "2025-04-13",
   "retirement_wins": 7,
   "summary": {
-    "battles": 319,
-    "decided_battles": 318,
+    "battles": 333,
+    "decided_battles": 332,
     "pending_battles": 1,
-    "defenses": 308,
+    "defenses": 322,
     "fresh_matchups": 10,
-    "upsets": 133,
-    "upset_rate": 43.2,
-    "unique_scenes": 332,
-    "unique_movies": 303,
-    "reigns": 143,
-    "finished_reigns": 142,
+    "upsets": 140,
+    "upset_rate": 43.5,
+    "unique_scenes": 346,
+    "unique_movies": 315,
+    "reigns": 150,
+    "finished_reigns": 149,
     "retired_scenes": 9,
-    "average_reign_wins": 2.23,
+    "average_reign_wins": 2.21,
     "median_reign_wins": 2,
-    "average_words_per_battle": 109.15,
-    "days_active": 509
+    "average_words_per_battle": 108.28,
+    "days_active": 530
   },
   "data_quality": {
-    "posts_total": 325,
-    "battle_posts": 319,
+    "posts_total": 339,
+    "battle_posts": 333,
     "non_battle_posts": 6,
-    "winners_inferred": 318,
+    "winners_inferred": 332,
     "winner_inference_rate": 99.7,
-    "win_counter_checks": 309,
-    "win_counter_agreement": 308,
+    "win_counter_checks": 323,
+    "win_counter_agreement": 322,
     "win_counter_agreement_rate": 99.7,
     "movies_without_label_year": 0,
     "name_drift": [
@@ -88,39 +88,45 @@
     "hall_of_fame_matches_page": true
   },
   "head_to_head": {
-    "title": "Slaps vs. The Bear",
-    "url": "https://moviescenebattles.blogspot.com/2026/09/slaps-vs-bear.html",
-    "published_at": "2026-09-03",
+    "title": "Age of Aquarius vs. Somewhere I Don't Belong",
+    "url": "https://moviescenebattles.blogspot.com/2026/09/age-of-aquarius-vs-somewhere-i-dont.html",
+    "published_at": "2026-09-24",
     "battle_type": "defense",
-    "champion": "Slaps",
-    "champion_movie": "Vivacious Lady",
-    "champion_movie_year": 1938,
-    "champion_wins": 1,
-    "challenger": "The Bear",
-    "challenger_movie": "Annihilation",
-    "challenger_movie_year": 2018,
+    "champion": "Age of Aquarius",
+    "champion_movie": "Hair",
+    "champion_movie_year": 1979,
+    "champion_wins": 2,
+    "challenger": "Somewhere I Don't Belong",
+    "challenger_movie": "Eternal Sunshine of the Spotless Mind",
+    "challenger_movie_year": 2004,
     "decided": false,
-    "wins_to_retire": 6
+    "wins_to_retire": 5
   },
   "current_reign": {
-    "scene": "Slaps",
-    "movie": "Vivacious Lady",
-    "movie_year": 1938,
-    "wins": 1,
+    "scene": "Age of Aquarius",
+    "movie": "Hair",
+    "movie_year": 1979,
+    "wins": 2,
     "status": "reigning",
-    "started_at": "2026-09-02",
+    "started_at": "2026-09-22",
     "ended_at": null,
     "days_on_top": 0,
     "dethroned_by": null,
     "defeated": [
       {
-        "scene": "Blood Test",
-        "movie": "The Thing",
-        "date": "2026-09-02",
-        "url": "https://moviescenebattles.blogspot.com/2026/09/blood-test-vs-slaps.html"
+        "scene": "I Kick Ass for the Lord!",
+        "movie": "Dead Alive",
+        "date": "2026-09-22",
+        "url": "https://moviescenebattles.blogspot.com/2026/09/i-kick-ass-for-lord-vs-age-of-aquarius.html"
+      },
+      {
+        "scene": "Cold Coffee",
+        "movie": "The Other Guys",
+        "date": "2026-09-23",
+        "url": "https://moviescenebattles.blogspot.com/2026/09/age-of-aquarius-vs-cold-coffee.html"
       }
     ],
-    "first_battle_url": "https://moviescenebattles.blogspot.com/2026/09/slaps-vs-bear.html"
+    "first_battle_url": "https://moviescenebattles.blogspot.com/2026/09/age-of-aquarius-vs-cold-coffee.html"
   },
   "hall_of_fame": [
     {
@@ -1296,15 +1302,15 @@
   "reign_length_distribution": [
     {
       "wins": 1,
-      "reigns": 71
+      "reigns": 74
     },
     {
       "wins": 2,
-      "reigns": 30
+      "reigns": 32
     },
     {
       "wins": 3,
-      "reigns": 15
+      "reigns": 17
     },
     {
       "wins": 4,
@@ -1326,21 +1332,21 @@
   "streak_survival": [
     {
       "wins_before_battle": 1,
-      "defenses": 142,
-      "held": 71,
-      "hold_rate": 50.0
+      "defenses": 150,
+      "held": 76,
+      "hold_rate": 50.7
     },
     {
       "wins_before_battle": 2,
-      "defenses": 71,
-      "held": 41,
-      "hold_rate": 57.7
+      "defenses": 75,
+      "held": 43,
+      "hold_rate": 57.3
     },
     {
       "wins_before_battle": 3,
-      "defenses": 41,
+      "defenses": 43,
       "held": 26,
-      "hold_rate": 63.4
+      "hold_rate": 60.5
     },
     {
       "wins_before_battle": 4,
@@ -1547,6 +1553,16 @@
       "retired_scenes": 1
     },
     {
+      "movie": "Godzilla",
+      "year": 2014,
+      "scenes": 2,
+      "battles": 8,
+      "wins": 6,
+      "losses": 2,
+      "win_rate": 75.0,
+      "retired_scenes": 0
+    },
+    {
       "movie": "Final Destination 2",
       "year": 2003,
       "scenes": 1,
@@ -1575,35 +1591,25 @@
       "losses": 1,
       "win_rate": 85.7,
       "retired_scenes": 0
-    },
-    {
-      "movie": "Clueless",
-      "year": 1995,
-      "scenes": 2,
-      "battles": 7,
-      "wins": 5,
-      "losses": 2,
-      "win_rate": 71.4,
-      "retired_scenes": 0
     }
   ],
-  "movie_count": 303,
+  "movie_count": 315,
   "decades": [
     {
       "decade": "1930s",
       "movies": 6,
-      "battles": 12,
-      "wins": 5,
-      "losses": 6,
-      "win_rate": 45.5
+      "battles": 14,
+      "wins": 7,
+      "losses": 7,
+      "win_rate": 50.0
     },
     {
       "decade": "1940s",
-      "movies": 5,
-      "battles": 8,
-      "wins": 3,
-      "losses": 5,
-      "win_rate": 37.5
+      "movies": 6,
+      "battles": 11,
+      "wins": 5,
+      "losses": 6,
+      "win_rate": 45.5
     },
     {
       "decade": "1950s",
@@ -1623,51 +1629,51 @@
     },
     {
       "decade": "1970s",
-      "movies": 23,
-      "battles": 41,
-      "wins": 19,
-      "losses": 22,
-      "win_rate": 46.3
+      "movies": 26,
+      "battles": 47,
+      "wins": 21,
+      "losses": 25,
+      "win_rate": 45.7
     },
     {
       "decade": "1980s",
-      "movies": 49,
-      "battles": 114,
+      "movies": 50,
+      "battles": 115,
       "wins": 65,
-      "losses": 49,
-      "win_rate": 57.0
+      "losses": 50,
+      "win_rate": 56.5
     },
     {
       "decade": "1990s",
-      "movies": 63,
-      "battles": 162,
-      "wins": 93,
-      "losses": 69,
-      "win_rate": 57.4
+      "movies": 64,
+      "battles": 165,
+      "wins": 95,
+      "losses": 70,
+      "win_rate": 57.6
     },
     {
       "decade": "2000s",
-      "movies": 65,
-      "battles": 146,
+      "movies": 67,
+      "battles": 148,
       "wins": 74,
-      "losses": 72,
-      "win_rate": 50.7
+      "losses": 73,
+      "win_rate": 50.3
     },
     {
       "decade": "2010s",
-      "movies": 45,
-      "battles": 73,
-      "wins": 29,
-      "losses": 43,
-      "win_rate": 40.3
+      "movies": 48,
+      "battles": 82,
+      "wins": 34,
+      "losses": 48,
+      "win_rate": 41.5
     },
     {
       "decade": "2020s",
-      "movies": 29,
-      "battles": 54,
-      "wins": 21,
-      "losses": 33,
-      "win_rate": 38.9
+      "movies": 30,
+      "battles": 56,
+      "wins": 22,
+      "losses": 34,
+      "win_rate": 39.3
     }
   ],
   "cadence": {
@@ -1810,11 +1816,11 @@
       },
       {
         "month": "2026-09",
-        "actual": 3,
+        "actual": 17,
         "estimate": 18.7,
-        "delta": -15.7,
+        "delta": -1.7,
         "is_partial": true,
-        "projected": 22.0
+        "projected": 20.8
       }
     ],
     "next_month": {
@@ -1833,19 +1839,19 @@
     "weekday": [
       {
         "day": "Mon",
-        "battles": 63
-      },
-      {
-        "day": "Tue",
         "battles": 65
       },
       {
+        "day": "Tue",
+        "battles": 69
+      },
+      {
         "day": "Wed",
-        "battles": 64
+        "battles": 67
       },
       {
         "day": "Thu",
-        "battles": 61
+        "battles": 64
       },
       {
         "day": "Fri",
@@ -1857,7 +1863,7 @@
       },
       {
         "day": "Sun",
-        "battles": 63
+        "battles": 65
       }
     ],
     "hour_of_day": [
@@ -1867,7 +1873,7 @@
       },
       {
         "hour": 6,
-        "battles": 15
+        "battles": 16
       },
       {
         "hour": 7,
@@ -1887,15 +1893,15 @@
       },
       {
         "hour": 19,
-        "battles": 15
+        "battles": 16
       },
       {
         "hour": 20,
-        "battles": 73
+        "battles": 75
       },
       {
         "hour": 21,
-        "battles": 195
+        "battles": 205
       },
       {
         "hour": 22,
@@ -1903,32 +1909,200 @@
       }
     ],
     "busiest_hour": 21,
-    "share_in_busiest_hour": 61.1
+    "share_in_busiest_hour": 61.6
   },
   "momentum": {
     "window_days": 30,
     "recent": {
-      "start": "2026-08-05",
-      "end": "2026-09-03",
-      "battles": 18,
-      "decided_defenses": 16,
-      "upsets": 6,
-      "upset_rate": 37.5,
-      "avg_words": 86.33
+      "start": "2026-08-26",
+      "end": "2026-09-24",
+      "battles": 19,
+      "decided_defenses": 18,
+      "upsets": 9,
+      "upset_rate": 50.0,
+      "avg_words": 89.21
     },
     "prior": {
-      "start": "2026-07-06",
-      "end": "2026-08-04",
-      "battles": 17,
-      "decided_defenses": 17,
+      "start": "2026-07-27",
+      "end": "2026-08-25",
+      "battles": 20,
+      "decided_defenses": 19,
       "upsets": 7,
-      "upset_rate": 41.2,
-      "avg_words": 104.35
+      "upset_rate": 36.8,
+      "avg_words": 93.2
     },
-    "battles_delta": 1,
-    "upset_rate_delta": -3.7
+    "battles_delta": -1,
+    "upset_rate_delta": 13.2
   },
   "recent_battles": [
+    {
+      "title": "Age of Aquarius vs. Somewhere I Don't Belong",
+      "url": "https://moviescenebattles.blogspot.com/2026/09/age-of-aquarius-vs-somewhere-i-dont.html",
+      "date": "2026-09-24",
+      "champion": "Age of Aquarius",
+      "champion_movie": "Hair",
+      "challenger": "Somewhere I Don't Belong",
+      "challenger_movie": "Eternal Sunshine of the Spotless Mind",
+      "champion_wins_before": 2,
+      "winner": null,
+      "retired_champion": false
+    },
+    {
+      "title": "Age of Aquarius vs. Cold Coffee",
+      "url": "https://moviescenebattles.blogspot.com/2026/09/age-of-aquarius-vs-cold-coffee.html",
+      "date": "2026-09-23",
+      "champion": "Age of Aquarius",
+      "champion_movie": "Hair",
+      "challenger": "Cold Coffee",
+      "challenger_movie": "The Other Guys",
+      "champion_wins_before": 1,
+      "winner": "Age of Aquarius",
+      "retired_champion": false
+    },
+    {
+      "title": "I Kick Ass for the Lord! vs. Age of Aquarius",
+      "url": "https://moviescenebattles.blogspot.com/2026/09/i-kick-ass-for-lord-vs-age-of-aquarius.html",
+      "date": "2026-09-22",
+      "champion": "I Kick Ass for the Lord!",
+      "champion_movie": "Dead Alive",
+      "challenger": "Age of Aquarius",
+      "challenger_movie": "Hair",
+      "champion_wins_before": 2,
+      "winner": "Age of Aquarius",
+      "retired_champion": false
+    },
+    {
+      "title": "I Kick Ass for the Lord! vs. Hydration Level",
+      "url": "https://moviescenebattles.blogspot.com/2026/09/i-kick-ass-for-lord-vs-hydration-level.html",
+      "date": "2026-09-21",
+      "champion": "I Kick Ass for the Lord!",
+      "champion_movie": "Dead Alive",
+      "challenger": "Hydration Level",
+      "challenger_movie": "Back to the Future Part II",
+      "champion_wins_before": 1,
+      "winner": "I Kick Ass for the Lord!",
+      "retired_champion": false
+    },
+    {
+      "title": "Godzilla Visits Tokyo vs. I Kick Ass for the Lord!",
+      "url": "https://moviescenebattles.blogspot.com/2026/09/godzilla-visits-tokyo-vs-i-kick-ass-for.html",
+      "date": "2026-09-20",
+      "champion": "Godzilla Visits Tokyo",
+      "champion_movie": "Godzilla",
+      "challenger": "I Kick Ass for the Lord!",
+      "challenger_movie": "Dead Alive",
+      "champion_wins_before": 3,
+      "winner": "I Kick Ass for the Lord!",
+      "retired_champion": false
+    },
+    {
+      "title": "Godzilla Visits Tokyo vs. Tackiness",
+      "url": "https://moviescenebattles.blogspot.com/2026/09/godzilla-visits-tokyo-vs-tackiness.html",
+      "date": "2026-09-17",
+      "champion": "Godzilla Visits Tokyo",
+      "champion_movie": "Godzilla",
+      "challenger": "Tackiness",
+      "challenger_movie": "Murder By Death",
+      "champion_wins_before": 2,
+      "winner": "Godzilla Visits Tokyo",
+      "retired_champion": false
+    },
+    {
+      "title": "Godzilla Visits Tokyo vs. Maybe This Time",
+      "url": "https://moviescenebattles.blogspot.com/2026/09/godzilla-visits-tokyo-vs-maybe-this-time.html",
+      "date": "2026-09-16",
+      "champion": "Godzilla Visits Tokyo",
+      "champion_movie": "Godzilla",
+      "challenger": "Maybe This Time",
+      "challenger_movie": "Cabaret",
+      "champion_wins_before": 1,
+      "winner": "Godzilla Visits Tokyo",
+      "retired_champion": false
+    },
+    {
+      "title": "The Three Caballeros vs. Godzilla Visits Tokyo",
+      "url": "https://moviescenebattles.blogspot.com/2026/09/the-three-caballeros-vs-godzilla-visits.html",
+      "date": "2026-09-15",
+      "champion": "The Three Caballeros",
+      "champion_movie": "The Three Caballeros",
+      "challenger": "Godzilla Visits Tokyo",
+      "challenger_movie": "Godzilla",
+      "champion_wins_before": 2,
+      "winner": "Godzilla Visits Tokyo",
+      "retired_champion": false
+    },
+    {
+      "title": "The Three Caballeros vs. Frontier Gibberish",
+      "url": "https://moviescenebattles.blogspot.com/2026/09/the-three-caballeros-vs-frontier.html",
+      "date": "2026-09-15",
+      "champion": "The Three Caballeros",
+      "champion_movie": "The Three Caballeros",
+      "challenger": "Frontier Gibberish",
+      "challenger_movie": "Blazing Saddles",
+      "champion_wins_before": 1,
+      "winner": "The Three Caballeros",
+      "retired_champion": false
+    },
+    {
+      "title": "Truth Serum vs. The Three Caballeros",
+      "url": "https://moviescenebattles.blogspot.com/2026/09/truth-serum-vs-three-caballeros.html",
+      "date": "2026-09-13",
+      "champion": "Truth Serum",
+      "champion_movie": "Ant-Man and the Wasp",
+      "challenger": "The Three Caballeros",
+      "challenger_movie": "The Three Caballeros",
+      "champion_wins_before": 1,
+      "winner": "The Three Caballeros",
+      "retired_champion": false
+    },
+    {
+      "title": "Helm Hammerhand Still Stands vs. Truth Serum",
+      "url": "https://moviescenebattles.blogspot.com/2026/09/helm-hammerhand-still-stands-vs-truth.html",
+      "date": "2026-09-10",
+      "champion": "Helm Hammerhand Still Stands",
+      "champion_movie": "Lord of the Rings: The War of the Rohirrim",
+      "challenger": "Truth Serum",
+      "challenger_movie": "Ant-Man and the Wasp",
+      "champion_wins_before": 1,
+      "winner": "Truth Serum",
+      "retired_champion": false
+    },
+    {
+      "title": "Oh No He Died! vs. Helm Hammerhand Still Stands",
+      "url": "https://moviescenebattles.blogspot.com/2026/09/oh-no-he-died-vs-helm-hammerhand-still.html",
+      "date": "2026-09-09",
+      "champion": "Oh No He Died!",
+      "champion_movie": "Game Night",
+      "challenger": "Helm Hammerhand Still Stands",
+      "challenger_movie": "Lord of the Rings: The War of the Rohirrim",
+      "champion_wins_before": 1,
+      "winner": "Helm Hammerhand Still Stands",
+      "retired_champion": false
+    },
+    {
+      "title": "Slaps vs. Oh No He Died!",
+      "url": "https://moviescenebattles.blogspot.com/2026/09/slaps-vs-oh-no-he-died.html",
+      "date": "2026-09-08",
+      "champion": "Slaps",
+      "champion_movie": "Vivacious Lady",
+      "challenger": "Oh No He Died!",
+      "challenger_movie": "Game Night",
+      "champion_wins_before": 3,
+      "winner": "Oh No He Died!",
+      "retired_champion": false
+    },
+    {
+      "title": "Slaps vs. The Legend of the Legendary Warrior",
+      "url": "https://moviescenebattles.blogspot.com/2026/09/slaps-vs-legend-of-legendary-warrior.html",
+      "date": "2026-09-07",
+      "champion": "Slaps",
+      "champion_movie": "Vivacious Lady",
+      "challenger": "The Legend of the Legendary Warrior",
+      "challenger_movie": "Kung Fu Panda",
+      "champion_wins_before": 2,
+      "winner": "Slaps",
+      "retired_champion": false
+    },
     {
       "title": "Slaps vs. The Bear",
       "url": "https://moviescenebattles.blogspot.com/2026/09/slaps-vs-bear.html",
@@ -1938,175 +2112,7 @@
       "challenger": "The Bear",
       "challenger_movie": "Annihilation",
       "champion_wins_before": 1,
-      "winner": null,
-      "retired_champion": false
-    },
-    {
-      "title": "Blood Test vs. Slaps",
-      "url": "https://moviescenebattles.blogspot.com/2026/09/blood-test-vs-slaps.html",
-      "date": "2026-09-02",
-      "champion": "Blood Test",
-      "champion_movie": "The Thing",
-      "challenger": "Slaps",
-      "challenger_movie": "Vivacious Lady",
-      "champion_wins_before": 1,
       "winner": "Slaps",
-      "retired_champion": false
-    },
-    {
-      "title": "I Will Always Love You vs. Blood Test",
-      "url": "https://moviescenebattles.blogspot.com/2026/09/i-will-always-love-you-vs-blood-test.html",
-      "date": "2026-09-01",
-      "champion": "I Will Always Love You",
-      "champion_movie": "The Best Little Whorehouse in Texas",
-      "challenger": "Blood Test",
-      "challenger_movie": "The Thing",
-      "champion_wins_before": 3,
-      "winner": "Blood Test",
-      "retired_champion": false
-    },
-    {
-      "title": "I Will Always Love You vs. Singin' in the Rain",
-      "url": "https://moviescenebattles.blogspot.com/2026/08/i-will-always-love-you-vs-singin-in-rain.html",
-      "date": "2026-08-30",
-      "champion": "I Will Always Love You",
-      "champion_movie": "The Best Little Whorehouse in Texas",
-      "challenger": "Singin' in the Rain",
-      "challenger_movie": "Singin' in the Rain",
-      "champion_wins_before": 2,
-      "winner": "I Will Always Love You",
-      "retired_champion": false
-    },
-    {
-      "title": "I Will Always Love You vs. Toxic Love",
-      "url": "https://moviescenebattles.blogspot.com/2026/08/i-will-always-love-you-vs-toxic-love.html",
-      "date": "2026-08-26",
-      "champion": "I Will Always Love You",
-      "champion_movie": "The Best Little Whorehouse in Texas",
-      "challenger": "Toxic Love",
-      "challenger_movie": "Fern Gully: The Last Rainforest",
-      "champion_wins_before": 1,
-      "winner": "I Will Always Love You",
-      "retired_champion": false
-    },
-    {
-      "title": "Mer-Man vs. I Will Always Love You",
-      "url": "https://moviescenebattles.blogspot.com/2026/08/mer-man-vs-i-will-always-love-you.html",
-      "date": "2026-08-25",
-      "champion": "Mer-Man",
-      "champion_movie": "Zoolander",
-      "challenger": "I Will Always Love You",
-      "challenger_movie": "The Best Little Whorehouse in Texas",
-      "champion_wins_before": 1,
-      "winner": "I Will Always Love You",
-      "retired_champion": false
-    },
-    {
-      "title": "First Person vs. Mer-Man",
-      "url": "https://moviescenebattles.blogspot.com/2026/08/first-person-vs-mer-man.html",
-      "date": "2026-08-24",
-      "champion": "First Person",
-      "champion_movie": "Doom",
-      "challenger": "Mer-Man",
-      "challenger_movie": "Zoolander",
-      "champion_wins_before": 3,
-      "winner": "Mer-Man",
-      "retired_champion": false
-    },
-    {
-      "title": "First Person vs. Everybody Wants Some!!",
-      "url": "https://moviescenebattles.blogspot.com/2026/08/first-person-vs-everybody-wants-some.html",
-      "date": "2026-08-23",
-      "champion": "First Person",
-      "champion_movie": "Doom",
-      "challenger": "Everybody Wants Some!!",
-      "challenger_movie": "Better Off Dead",
-      "champion_wins_before": 2,
-      "winner": "First Person",
-      "retired_champion": false
-    },
-    {
-      "title": "First Person vs. Dogfight",
-      "url": "https://moviescenebattles.blogspot.com/2026/08/first-person-vs-dogfight.html",
-      "date": "2026-08-19",
-      "champion": "First Person",
-      "champion_movie": "Doom",
-      "challenger": "Dogfight",
-      "challenger_movie": "Hulk",
-      "champion_wins_before": 1,
-      "winner": "First Person",
-      "retired_champion": false
-    },
-    {
-      "title": "Horror Remakes vs. First Person",
-      "url": "https://moviescenebattles.blogspot.com/2026/08/horror-remakes-vs-first-person.html",
-      "date": "2026-08-18",
-      "champion": "Horror Remakes",
-      "champion_movie": "Scream 4",
-      "challenger": "First Person",
-      "challenger_movie": "Doom",
-      "champion_wins_before": 1,
-      "winner": "First Person",
-      "retired_champion": false
-    },
-    {
-      "title": "Folding a Child vs Horror Remakes",
-      "url": "https://moviescenebattles.blogspot.com/2026/08/folding-child-vs-horror-remakes.html",
-      "date": "2026-08-17",
-      "champion": "Folding a Child",
-      "champion_movie": "Mr. Vampire III",
-      "challenger": "Horror Remakes",
-      "challenger_movie": "Scream 4",
-      "champion_wins_before": 1,
-      "winner": "Horror Remakes",
-      "retired_champion": false
-    },
-    {
-      "title": "Folding a Child vs. Three Shells",
-      "url": "https://moviescenebattles.blogspot.com/2026/08/folding-child-vs-three-shells.html",
-      "date": "2026-08-16",
-      "champion": "Folding a Child",
-      "champion_movie": "Mr. Vampire III",
-      "challenger": "Three Shells",
-      "challenger_movie": "Demolition Man",
-      "champion_wins_before": 0,
-      "winner": "Folding a Child",
-      "retired_champion": false
-    },
-    {
-      "title": "Flames on the Side of My Face vs. Skidsteer Battle",
-      "url": "https://moviescenebattles.blogspot.com/2026/08/flames-on-side-of-my-face-vs-skidsteer.html",
-      "date": "2026-08-13",
-      "champion": "Flames on the Side of My Face",
-      "champion_movie": "Clue",
-      "challenger": "Skidsteer Battle",
-      "challenger_movie": "Carnosaur",
-      "champion_wins_before": 6,
-      "winner": "Flames on the Side of My Face",
-      "retired_champion": true
-    },
-    {
-      "title": "Flames on the Side of My Face vs. The Girls of Rock and Roll",
-      "url": "https://moviescenebattles.blogspot.com/2026/08/flames-on-side-of-my-face-vs-girls-of.html",
-      "date": "2026-08-12",
-      "champion": "Flames on the Side of My Face",
-      "champion_movie": "Clue",
-      "challenger": "The Girls of Rock and Roll",
-      "challenger_movie": "The Chipmunk Adventure",
-      "champion_wins_before": 5,
-      "winner": "Flames on the Side of My Face",
-      "retired_champion": false
-    },
-    {
-      "title": "Flames on the Side of My Face vs. Double Dents",
-      "url": "https://moviescenebattles.blogspot.com/2026/08/flames-on-side-of-my-face-vs-double.html",
-      "date": "2026-08-11",
-      "champion": "Flames on the Side of My Face",
-      "champion_movie": "Clue",
-      "challenger": "Double Dents",
-      "challenger_movie": "Meet Joe Black",
-      "champion_wins_before": 4,
-      "winner": "Flames on the Side of My Face",
       "retired_champion": false
     }
   ],
