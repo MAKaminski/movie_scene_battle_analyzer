@@ -1,17 +1,17 @@
 {
   "site_title": "Movie Scene Battles",
   "site_url": "https://moviescenebattles.blogspot.com",
-  "generated_from_posts": 325,
+  "generated_from_posts": 344,
   "stats": {
-    "total_posts": 325,
+    "total_posts": 344,
     "total_comments": 0,
     "average_comments_per_post": 0.0,
-    "average_words_per_post": 110.37,
-    "posts_with_explicit_matchup": 319,
+    "average_words_per_post": 109.56,
+    "posts_with_explicit_matchup": 338,
     "posts_by_year": {
       "2000": 2,
       "2025": 173,
-      "2026": 150
+      "2026": 169
     },
     "top_categories": [
       {
@@ -57,32 +57,32 @@
     ],
     "most_commented_posts": [
       {
-        "title": "Slaps vs. The Bear",
-        "url": "https://moviescenebattles.blogspot.com/2026/09/slaps-vs-bear.html",
+        "title": "I Lied to You vs. Baraka Battle",
+        "url": "https://moviescenebattles.blogspot.com/2026/10/i-lied-to-you-vs-baraka-battle.html",
         "comment_count": 0
       },
       {
-        "title": "Blood Test vs. Slaps",
-        "url": "https://moviescenebattles.blogspot.com/2026/09/blood-test-vs-slaps.html",
+        "title": "Somewhere I Don't Belong vs. I Lied to You",
+        "url": "https://moviescenebattles.blogspot.com/2026/09/somewhere-i-dont-belong-vs-i-lied-to-you.html",
         "comment_count": 0
       },
       {
-        "title": "I Will Always Love You vs. Blood Test",
-        "url": "https://moviescenebattles.blogspot.com/2026/09/i-will-always-love-you-vs-blood-test.html",
+        "title": "Somewhere I Don't Belong vs. Toot and Boom",
+        "url": "https://moviescenebattles.blogspot.com/2026/09/somewhere-i-dont-belong-vs-toot-and-boom.html",
         "comment_count": 0
       },
       {
-        "title": "I Will Always Love You vs. Singin' in the Rain",
-        "url": "https://moviescenebattles.blogspot.com/2026/08/i-will-always-love-you-vs-singin-in-rain.html",
+        "title": "Somewhere I Don't Belong vs. Fighting the Brigands",
+        "url": "https://moviescenebattles.blogspot.com/2026/09/somewhere-i-dont-belong-vs-fighting.html",
         "comment_count": 0
       },
       {
-        "title": "I Will Always Love You vs. Toxic Love",
-        "url": "https://moviescenebattles.blogspot.com/2026/08/i-will-always-love-you-vs-toxic-love.html",
+        "title": "Somewhere I Don't Belong vs. Bear Attack",
+        "url": "https://moviescenebattles.blogspot.com/2026/09/somewhere-i-dont-belong-vs-bear-attack.html",
         "comment_count": 0
       }
     ],
-    "last_post_update": "2026-09-03 06:35:45.558000-07:00",
-    "crawl_completed_at": "2026-09-04 13:59:05.551547+00:00"
+    "last_post_update": "2026-10-01 21:01:08.630000-07:00",
+    "crawl_completed_at": "2026-10-03 11:43:40.021852+00:00"
   }
 }
